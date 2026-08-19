@@ -1,0 +1,780 @@
+{
+  "generated": "2026-08-19T15:43:01.363371+00:00",
+  "date": "2026-08-19",
+  "sources": {
+    "cisa_kev": {
+      "status": "ok",
+      "count": 5
+    },
+    "threatfox": {
+      "status": "ok",
+      "count": 8
+    },
+    "urlhaus": {
+      "status": "ok",
+      "count": 6
+    },
+    "ransomware_live": {
+      "status": "ok",
+      "count": 10
+    },
+    "circl": {
+      "status": "ok",
+      "count": 30
+    },
+    "epss": {
+      "status": "ok (21/35 scored)",
+      "count": 21
+    }
+  },
+  "kev": [
+    {
+      "cve": "CVE-2026-33824",
+      "added": "2026-08-18",
+      "vendor": "Microsoft",
+      "product": "Internet Key Exchange (IKE) Service Extensions",
+      "description": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "2026-08-21",
+      "ransomware_use": "Unknown",
+      "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33824 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-priori",
+      "links": [
+        "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33824 ",
+        " https://nvd.nist.gov/vuln/detail/CVE-2026-33824"
+      ],
+      "epss": 0.779,
+      "epss_percentile": 0.9954
+    },
+    {
+      "cve": "CVE-2026-59310",
+      "added": "2026-08-18",
+      "vendor": "Broadcom",
+      "product": "VMware vCenter",
+      "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "2026-08-21",
+      "ransomware_use": "Unknown",
+      "notes": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/38017 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod",
+      "links": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/38017 ",
+        " https://nvd.nist.gov/vuln/detail/CVE-2026-59310"
+      ],
+      "epss": 0.024,
+      "epss_percentile": 0.8274
+    },
+    {
+      "cve": "CVE-2026-55040",
+      "added": "2026-08-18",
+      "vendor": "Microsoft",
+      "product": "SharePoint",
+      "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "2026-08-21",
+      "ransomware_use": "Unknown",
+      "notes": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55040 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing",
+      "links": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55040 ",
+        " https://nvd.nist.gov/vuln/detail/CVE-2026-55040"
+      ],
+      "epss": 0.0549,
+      "epss_percentile": 0.9214
+    },
+    {
+      "cve": "CVE-2026-65400",
+      "added": "2026-08-18",
+      "vendor": "Apple",
+      "product": "macOS",
+      "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "2026-08-21",
+      "ransomware_use": "Unknown",
+      "notes": "https://support.apple.com/en-us/148170; https://support.apple.com/en-us/148171; https://support.apple.com/en-us/148172 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directi",
+      "links": [
+        "https://support.apple.com/en-us/148170",
+        " https://support.apple.com/en-us/148171"
+      ],
+      "epss": 0.0075,
+      "epss_percentile": 0.5216
+    },
+    {
+      "cve": "CVE-2025-62593",
+      "added": "2026-08-17",
+      "vendor": "Ray-Project",
+      "product": "Ray",
+      "description": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "2026-08-20",
+      "ransomware_use": "Unknown",
+      "notes": "https://github.com/ray-project/ray/security/advisories/GHSA-q279-jhrf-cc6v ; https://github.com/ray-project/ray/commit/70e7c72780bdec075dba6cad1afe0832772bfe09 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements:",
+      "links": [
+        "https://github.com/ray-project/ray/security/advisories/GHSA-q279-jhrf-cc6v ",
+        " https://github.com/ray-project/ray/commit/70e7c72780bdec075dba6cad1afe0832772bfe09 "
+      ],
+      "epss": 0.0101,
+      "epss_percentile": 0.6055
+    }
+  ],
+  "threatfox": [
+    {
+      "type": "IOC",
+      "value": "equiloompro-ai.ch",
+      "ioc_type": "domain",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "seen": "2026-08-19 15:26:31 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "ed8depc8.cardioslim-t.com",
+      "ioc_type": "domain",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "seen": "2026-08-19 15:25:14 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "cardioslim-t.com",
+      "ioc_type": "domain",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "seen": "2026-08-19 15:23:57 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "http://zakuiru.shop:9048/files",
+      "ioc_type": "url",
+      "malware": "Remus",
+      "confidence": 75,
+      "seen": "2026-08-19 15:21:23 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "docjesco.ch",
+      "ioc_type": "domain",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "seen": "2026-08-19 15:16:30 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "my-service.eu.cc",
+      "ioc_type": "domain",
+      "malware": "SparkRAT",
+      "confidence": 100,
+      "seen": "2026-08-19 15:14:37 UTC",
+      "links": [
+        "https://bazaar.abuse.ch/sample/edaff13bad2401227db98e70ecef36c910a4ad7079796b03da6a7977e3b7713c/",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.spark_rat"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "wolfcubdigital.co.uk",
+      "ioc_type": "domain",
+      "malware": "IClickFix",
+      "confidence": 100,
+      "seen": "2026-08-19 15:14:19 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/js.iclickfix"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "http://zakuiru.shop:9048/videos",
+      "ioc_type": "url",
+      "malware": "Remus",
+      "confidence": 75,
+      "seen": "2026-08-19 15:10:56 UTC",
+      "links": [
+        "https://bazaar.abuse.ch/sample/8e11c717fa2e8c37b5f1ed695d8c8e1898d4e1f40a976e79ece0a8f4260fa9b4/",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus"
+      ]
+    }
+  ],
+  "urlhaus": [
+    {
+      "type": "URL",
+      "value": "http://42.224.121.161:40429/i",
+      "host": "42.224.121.161",
+      "status": "offline",
+      "seen": "2026-08-19 15:33:25 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3905846/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://156.146.26.225:55397/i",
+      "host": "156.146.26.225",
+      "status": "offline",
+      "seen": "2026-08-19 15:27:20 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3905845/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://42.224.121.161:40429/bin.sh",
+      "host": "42.224.121.161",
+      "status": "offline",
+      "seen": "2026-08-19 15:23:21 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3905844/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://125.43.38.255:44908/bin.sh",
+      "host": "125.43.38.255",
+      "status": "online",
+      "seen": "2026-08-19 15:07:18 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3905843/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://2.58.56.49/ConnectProAgentSetup.msi",
+      "host": "2.58.56.49",
+      "status": "offline",
+      "seen": "2026-08-19 15:04:09 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3905842/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://219.155.12.214:51034/i",
+      "host": "219.155.12.214",
+      "status": "online",
+      "seen": "2026-08-19 14:56:06 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3905841/"
+      ]
+    }
+  ],
+  "ransomware": [
+    {
+      "group": "direwolf",
+      "sector": "Healthcare",
+      "country": "SE",
+      "description": "Hospitals &amp; Physicians Clinics",
+      "discovered": "2026-08-19T00:54:08",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "direwolf",
+      "sector": "Financial Services",
+      "country": "",
+      "description": "Financial Software",
+      "discovered": "2026-08-19T00:54:47",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "direwolf",
+      "sector": "Technology",
+      "country": "US",
+      "description": "software provider",
+      "discovered": "2026-08-19T00:55:20",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "direwolf",
+      "sector": "Healthcare",
+      "country": "US",
+      "description": "Healthcare",
+      "discovered": "2026-08-19T00:55:57",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "SilentRansomGroup",
+      "sector": "Professional Services",
+      "country": "US",
+      "description": "2nd time we attacked them in a year (first time through physical intrusion), will continue our attacks\u2026",
+      "discovered": "2026-08-18T22:51:57",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "SilentRansomGroup",
+      "sector": "Not Found",
+      "country": "",
+      "description": "Redacted entry - full company name pending disclosure (FULL DATA TIMER active).",
+      "discovered": "2026-08-18T18:52:28",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "dragonforce",
+      "sector": "Manufacturing",
+      "country": "US",
+      "description": "&D Machine and Engineering, LLC specializes in CNC machining of precision metal components primarily for the aerospace, defense, and space industries. The company is known for its ability to maintain ",
+      "discovered": "2026-08-18T17:55:14",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "play",
+      "sector": "Technology",
+      "country": "US",
+      "description": "United States",
+      "discovered": "2026-08-18T17:31:54",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "qilin",
+      "sector": "Other",
+      "country": "DE",
+      "description": "N/A",
+      "discovered": "2026-08-18T11:59:45",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "gunra",
+      "sector": "Not Found",
+      "country": "HN",
+      "description": "Sector: Service Contractor | Revenue: US$ 20,000,000",
+      "discovered": "2026-08-18T10:55:52",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    }
+  ],
+  "circl": [
+    {
+      "id": "PYSEC-2025-19",
+      "aliases": [
+        "CVE-2025-1889"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2025-03-03",
+      "details": "picklescan before 0.0.22 only considers standard pickle file extensions in the scope for its vulnerability scan. An attacker could craft a malicious model that uses Pickle and include a malicious pickle file with a non-standard file extension. Becaus",
+      "links": [
+        "https://sites.google.com/sonatype.com/vulnerabilities/cve-2025-1889",
+        "https://github.com/advisories/GHSA-769v-p64c-89pr"
+      ],
+      "epss": 0.0038,
+      "epss_percentile": 0.3139
+    },
+    {
+      "id": "PYSEC-2024-115",
+      "aliases": [
+        "CVE-2024-8309"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2024-11-05",
+      "details": "A vulnerability in the GraphCypherQAChain class of langchain-ai/langchain-community version 0.2.5 allows for SQL injection through prompt injection. This vulnerability can lead to unauthorized data manipulation, data exfiltration, denial of service (",
+      "links": [
+        "https://huntr.com/bounties/8f4ad910-7fdc-4089-8f0a-b5df5f32e7c5",
+        "https://github.com/langchain-ai/langchain/commit/c2a3021bb0c5f54649d380b42a0684ca5778c255",
+        "https://github.com/advisories/GHSA-45pg-36p6-83v9"
+      ],
+      "epss": 0.1374,
+      "epss_percentile": 0.962
+    },
+    {
+      "id": "CVE-2026-14664",
+      "aliases": [
+        "CVE-2026-14664"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-13",
+      "details": "Heap buffer overflow in PostgreSQL regexp allows the query author to execute arbitrary code as the operating system user running the database, via text that would not pass encoding validation.  This shares heritage with CVE-2026-2006, but this case i",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-14664"
+      ],
+      "epss": 0.006,
+      "epss_percentile": 0.4586
+    },
+    {
+      "id": "CVE-2026-14663",
+      "aliases": [
+        "CVE-2026-14663"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-13",
+      "details": "Cleartext storage in PostgreSQL pgcrypto disabled ciphers allows a user to recover cleartext, via direct observation of the faulty ciphertext.  The OpenSSL version and OpenSSL configuration determine the disabled ciphers.  If the application accepts ",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-14663"
+      ],
+      "epss": 0.0011,
+      "epss_percentile": 0.0169
+    },
+    {
+      "id": "CVE-2026-14662",
+      "aliases": [
+        "CVE-2026-14662"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-13",
+      "details": "Integer wraparound in PostgreSQL tsvector and tsquery data type functions allows an unprivileged database user to cause the server to undersize an allocation and write out-of-bounds, via crafted large inputs.  This may execute arbitrary code as the o",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-14662"
+      ],
+      "epss": 0.0066,
+      "epss_percentile": 0.4862
+    },
+    {
+      "id": "CVE-2026-50577",
+      "aliases": [
+        "CVE-2026-50577"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-18",
+      "details": "ePA 3.x Integration implements the authorization workflow and writes Medical Information Objects to Germany's electronic patient record. Prior to 1.3.0, ePA 3.x Integration leaves request_counter unchanged in app/vau/VAUProtokoll.py while constructin",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-50577"
+      ],
+      "epss": 0.0031,
+      "epss_percentile": 0.2422
+    },
+    {
+      "id": "CVE-2026-56797",
+      "aliases": [
+        "CVE-2026-56797"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "Dell Command Update (DCU), versions prior to 5.7.1, a Time-of-check Time-of-use (TOCTOU) Race Condition vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-56797"
+      ]
+    },
+    {
+      "id": "CVE-2026-69219",
+      "aliases": [
+        "CVE-2026-69219"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-18",
+      "details": "The RabbitMQ Java client library allows Java and JVM-based applications to connect to and interact with RabbitMQ nodes. Prior to 5.33.1, src/main/java/com/rabbitmq/client/impl/ValueReader.java uses ValueReader.readBytes to accept a wire-declared cont",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-69219"
+      ],
+      "epss": 0.004,
+      "epss_percentile": 0.3334
+    },
+    {
+      "id": "CVE-2026-19980",
+      "aliases": [
+        "CVE-2026-19980"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-17",
+      "details": "A security flaw has been discovered in GL.iNet A1300, AX1800, AXT1800, BE1400, BE3600, BE6500, BE9300, BE10000, E5800, MT2500, MT3000, MT3600BE, MT5000, MT6000, X2000, X3000 and XE3000 up to 4.8.x. Affected by this issue is the function ui.update_lan",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-19980"
+      ],
+      "epss": 0.0023,
+      "epss_percentile": 0.1377
+    },
+    {
+      "id": "CVE-2026-40508",
+      "aliases": [
+        "CVE-2026-40508"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "OpenEMR before 8.3.0 contains a stored cross-site scripting vulnerability in the patient portal template import handler that allows authenticated attackers with Forms Administration permissions to upload template files containing arbitrary HTML or Ja",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-40508"
+      ]
+    },
+    {
+      "id": "CVE-2017-20261",
+      "aliases": [
+        "CVE-2017-20261"
+      ],
+      "severity": "N/A",
+      "published": "2026-06-19",
+      "details": "Joomla! Component Bargain Product VM3 1.0 contains an SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the product_id parameter. Attackers can supply crafted SQL st",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2017-20261"
+      ],
+      "epss": 0.0045,
+      "epss_percentile": 0.3749
+    },
+    {
+      "id": "CVE-2026-49816",
+      "aliases": [
+        "CVE-2026-49816"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "Dell Command Update (DCU), versions prior to 5.7.1, contain a Deserialization of Untrusted Data vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-49816"
+      ]
+    },
+    {
+      "id": "CVE-2026-49224",
+      "aliases": [
+        "CVE-2026-49224"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-18",
+      "details": "Vvveb is a powerful and easy to use CMS with page builder to build websites, blogs or ecommerce stores. Prior to 1.0.8.4, Vvveb backend post revision operations allow a low-privileged Author to access revisions for posts owned by another Author. The ",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-49224"
+      ],
+      "epss": 0.0042,
+      "epss_percentile": 0.3555
+    },
+    {
+      "id": "CVE-2026-52792",
+      "aliases": [
+        "CVE-2026-52792"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "Algernon is a small self-contained pure-Go web server. Prior to 1.17.9, Algernon on Windows selects a file handler in engine/handlers.go by calling filepath.Ext() without first rejecting NTFS-equivalent names such as x.lua::$DATA, x.lua., and x.lua .",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-52792"
+      ]
+    },
+    {
+      "id": "CVE-2026-49289",
+      "aliases": [
+        "CVE-2026-49289"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "The SimpleSAMLphp SAML2 library is a PHP library for SAML2 related functionality. In 4.19.2 and 4.20.2, the library permits attacker-controlled XPath transforms while processing XML signatures in specially crafted SAML messages. XPath evaluation can ",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-49289"
+      ]
+    },
+    {
+      "id": "CVE-2026-40507",
+      "aliases": [
+        "CVE-2026-40507"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "OpenEMR before 8.3.0 contains a reflected cross-site scripting vulnerability in the patient portal template import handler. The templateHtml GET parameter is reflected into the page response without sanitization. An attacker can craft a URL that exec",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-40507"
+      ]
+    },
+    {
+      "id": "CVE-2026-49817",
+      "aliases": [
+        "CVE-2026-49817"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "Dell Command Update (DCU), versions prior to 5.7.1, contain a Deserialization of Untrusted Data vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of Privileges.",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-49817"
+      ]
+    },
+    {
+      "id": "CVE-2026-49283",
+      "aliases": [
+        "CVE-2026-49283"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "The SimpleSAMLphp SAML2 library is a PHP library for SAML2 related functionality. Prior to versions 4.19.3, 4.20.2, 5.0.6, and 6.2.1, the HTTPArtifact::receive() flow can treat an unsigned embedded SAML Response as cryptographically valid for the wro",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-49283"
+      ]
+    },
+    {
+      "id": "CVE-2026-49226",
+      "aliases": [
+        "CVE-2026-49226"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-18",
+      "details": "Vvveb is a powerful and easy to use CMS with page builder to build websites, blogs or ecommerce stores. Prior to 1.0.8.4, Vvveb backend post operations allow a low-privileged Author to access posts owned by another Author. The admin/controller/conten",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-49226"
+      ],
+      "epss": 0.0033,
+      "epss_percentile": 0.261
+    },
+    {
+      "id": "CVE-2026-75952",
+      "aliases": [
+        "CVE-2026-75952"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "Joomla Extension - cmsjunkie.com -  Cross-site request forgery in J-BusinessDirectory < 6.2.3 - Tokens were missing on many AJAX/state-changing tasks: contact/quote forms, cart, bookmarks, uploads, messages, AI text generation, and several administra",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-75952"
+      ]
+    },
+    {
+      "id": "CVE-2026-19965",
+      "aliases": [
+        "CVE-2026-19965"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-17",
+      "details": "A vulnerability was determined in automad up to 2.0.0-beta.32. This vulnerability affects the function requestPasswordResetToken of the file automad/src/server/Controllers/API/UserController.php of the component Password Reset Endpoint. This manipula",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-19965"
+      ],
+      "epss": 0.004,
+      "epss_percentile": 0.3295
+    },
+    {
+      "id": "CVE-2026-18756",
+      "aliases": [
+        "CVE-2026-18756"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "HumHub Community Edition 1.18.4 contains a reflected cross-site scripting vulnerability in the Space membership-request workflow. An attacker can place attacker-controlled button configuration in the options query-string parameter of space/membership",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-18756"
+      ]
+    },
+    {
+      "id": "CVE-2026-56796",
+      "aliases": [
+        "CVE-2026-56796"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "Dell Command Update (DCU), versions prior to 5.7.1, contain an Improper Link Resolution Before File Access ('Link Following') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevatio",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-56796"
+      ]
+    },
+    {
+      "id": "CVE-2026-75091",
+      "aliases": [
+        "CVE-2026-75091"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-18",
+      "details": "The Quill Forms | Conversational Multi Step Forms, Surveys & quizzes plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 5.7.1 due to insufficient input sanitization and output escaping. This makes ",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-75091"
+      ],
+      "epss": 0.0019,
+      "epss_percentile": 0.0949
+    },
+    {
+      "id": "CVE-2026-45124",
+      "aliases": [
+        "CVE-2026-45124"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-18",
+      "details": "MyBB is free and open source forum software. Prior to 1.8.40, the Mod CP Report Center does not check permissions consistently, allowing moderators without report-management permission to mark reports as resolved. The modcp.php?action=do_reports Mark",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-45124"
+      ],
+      "epss": 0.0025,
+      "epss_percentile": 0.1621
+    },
+    {
+      "id": "CVE-2026-75953",
+      "aliases": [
+        "CVE-2026-75953"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "Joomla Extension - cmsjunkie.com -  Open mail relay in J-BusinessDirectory < 6.2.3 - Recipient address was taken from the request (contact_id_offer / contact_id_event) instead of the server-side offer/event record, so mail could be sent to an arbitra",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-75953"
+      ]
+    },
+    {
+      "id": "CVE-2026-71138",
+      "aliases": [
+        "CVE-2026-71138"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-18",
+      "details": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).   The supported version that is affected is 7.2.14. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where ",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-71138"
+      ],
+      "epss": 0.0015,
+      "epss_percentile": 0.0434
+    },
+    {
+      "id": "CVE-2026-53451",
+      "aliases": [
+        "CVE-2026-53451"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "Ground Station is a browser-based suite for satellite tracking, SDR reception, hardware control, and telemetry decoding. Prior to version 0.4.13, the unauthenticated save-waterfall-snapshot Socket.IO command passes attacker-controlled snapshotName in",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-53451"
+      ]
+    },
+    {
+      "id": "CVE-2026-75955",
+      "aliases": [
+        "CVE-2026-75955"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-19",
+      "details": "Joomla Extension - cmsjunkie.com - Reflected XSS / XML injection in J-BusinessDirectory < 6.2.3 - companyName from the request was written unescaped into an XML attribute.",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-75955"
+      ]
+    },
+    {
+      "id": "CVE-2026-71139",
+      "aliases": [
+        "CVE-2026-71139"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-18",
+      "details": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).   The supported version that is affected is 7.2.14. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where ",
+      "links": [
+        "https://vulnerability.circl.lu/advisories/cve-2026-71139"
+      ],
+      "epss": 0.0014,
+      "epss_percentile": 0.042
+    }
+  ]
+}
