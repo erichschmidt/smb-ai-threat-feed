@@ -18,7 +18,7 @@ Most threat intelligence is written for enterprise SOCs: full of jargon, and use
 |---|---|
 | `briefs/MM-DD-YYYY.md` | Human-readable daily brief (the 3-minute read) |
 | `data/YYYY-MM-DD.json` | Structured machine-readable data for each day |
-| `posts/YYYY-MM-DD.md` | Archive of each day's X post (tweet link + exact text) |
+| `posts/MM-DD-YYYY.md` | Archive of each day's X post (tweet link + exact text) |
 | `latest.json` | Always points at today's structured data — poll this URL for automation |
 | `GLOSSARY.md` | Plain-language definitions of every term used |
 | `collector/` | The open-source generator — run it yourself, verify the feed |
