@@ -5,12 +5,12 @@ status: active
 created: 2026-08-20
 tags: [threat-feed, daily, smb-ai-lens]
 source: "cisa-kev, cisa-advisories, ransomware.live, circl, epss, threatfox, urlhaus"
-related: "[[Threat Feed Glossary]]"
+related: "https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/GLOSSARY.md"
 ---
 
 # Threat Feed — 08-20-2026
 
-> **Reader promise:** 3-minute read. Headlines alone tell you what to do. New term? Check the [[Threat Feed Glossary]].
+> **Reader promise:** 3-minute read. Headlines alone tell you what to do. New term? Check the [GLOSSARY.md](https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/GLOSSARY.md).
 > **Lens:** threats that hit AI tools, automations, and small-business money.
 > **Sources:** every finding links to its primary source. If you want to verify, click.
 
