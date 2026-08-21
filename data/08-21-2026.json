@@ -1,6 +1,6 @@
 {
   "generated": "2026-08-21T13:01:04.030324+00:00",
-  "date": "2026-08-21",
+  "date": "08-21-2026",
   "sources": {
     "cisa_kev": {
       "status": "ok",
@@ -30,12 +30,12 @@
   "kev": [
     {
       "cve": "CVE-2026-72530",
-      "added": "2026-08-20",
+      "added": "08-20-2026",
       "vendor": "TrueConf",
       "product": "Server",
       "description": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-03",
+      "due": "09-03-2026",
       "ransomware_use": "Unknown",
       "notes": "https://trueconf.com/blog/news/security-fixes-updates-and-advisories ; https://ics-cert.kaspersky.com/advisories/2026/08/11/trueconf-server-breakout-from-isolated-environment/ ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Tria",
       "links": [
@@ -47,12 +47,12 @@
     },
     {
       "cve": "CVE-2026-72529",
-      "added": "2026-08-20",
+      "added": "08-20-2026",
       "vendor": "TrueConf",
       "product": "Server",
       "description": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-23",
+      "due": "08-23-2026",
       "ransomware_use": "Unknown",
       "notes": "https://trueconf.com/blog/news/security-fixes-updates-and-advisories ; https://ics-cert.kaspersky.com/advisories/2026/08/11/trueconf-server-missing-authentication-for-critical-function/ ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Fore",
       "links": [
@@ -64,12 +64,12 @@
     },
     {
       "cve": "CVE-2026-64849",
-      "added": "2026-08-19",
+      "added": "08-19-2026",
       "vendor": "MLflow",
       "product": "MLflow",
       "description": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-02",
+      "due": "09-02-2026",
       "ransomware_use": "Unknown",
       "notes": "https://github.com/mlflow/mlflow/pull/24258 ; https://github.com/mlflow/mlflow/issues/24179 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementatio",
       "links": [
@@ -81,12 +81,12 @@
     },
     {
       "cve": "CVE-2026-33824",
-      "added": "2026-08-18",
+      "added": "08-18-2026",
       "vendor": "Microsoft",
       "product": "Internet Key Exchange (IKE) Service Extensions",
       "description": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-21",
+      "due": "08-21-2026",
       "ransomware_use": "Unknown",
       "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-33824 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-priori",
       "links": [
@@ -98,12 +98,12 @@
     },
     {
       "cve": "CVE-2026-59310",
-      "added": "2026-08-18",
+      "added": "08-18-2026",
       "vendor": "Broadcom",
       "product": "VMware vCenter",
       "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-21",
+      "due": "08-21-2026",
       "ransomware_use": "Unknown",
       "notes": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/38017 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod",
       "links": [
@@ -115,12 +115,12 @@
     },
     {
       "cve": "CVE-2026-55040",
-      "added": "2026-08-18",
+      "added": "08-18-2026",
       "vendor": "Microsoft",
       "product": "SharePoint",
       "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-21",
+      "due": "08-21-2026",
       "ransomware_use": "Unknown",
       "notes": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55040 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing",
       "links": [
@@ -132,12 +132,12 @@
     },
     {
       "cve": "CVE-2026-65400",
-      "added": "2026-08-18",
+      "added": "08-18-2026",
       "vendor": "Apple",
       "product": "macOS",
       "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-21",
+      "due": "08-21-2026",
       "ransomware_use": "Unknown",
       "notes": "https://support.apple.com/en-us/148170; https://support.apple.com/en-us/148171; https://support.apple.com/en-us/148172 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directi",
       "links": [
@@ -149,12 +149,12 @@
     },
     {
       "cve": "CVE-2025-62593",
-      "added": "2026-08-17",
+      "added": "08-17-2026",
       "vendor": "Ray-Project",
       "product": "Ray",
       "description": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-20",
+      "due": "08-20-2026",
       "ransomware_use": "Unknown",
       "notes": "https://github.com/ray-project/ray/security/advisories/GHSA-q279-jhrf-cc6v ; https://github.com/ray-project/ray/commit/70e7c72780bdec075dba6cad1afe0832772bfe09 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements:",
       "links": [

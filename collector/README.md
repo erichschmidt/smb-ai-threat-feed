@@ -27,7 +27,7 @@ export ABUSE_CH_KEY=your_abuse_ch_key   # optional
 python collector.py --out ../data
 ```
 
-Writes `YYYY-MM-DD.json` (and prints a digest to stdout). Idempotent — safe to run multiple times per day.
+Writes `MM-DD-YYYY.json` (and prints a digest to stdout). Idempotent — safe to run multiple times per day.
 
 ## Safety
 

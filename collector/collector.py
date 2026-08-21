@@ -15,6 +15,17 @@ import os
 
 import requests
 
+
+def _iso_to_mmdd(value):
+    """Date-only YYYY-MM-DD → MM-DD-YYYY. Leave timestamps/other strings alone."""
+    if not value or not isinstance(value, str):
+        return value
+    s = value.strip()
+    if len(s) >= 10 and s[4] == "-" and s[7] == "-" and s[:4].isdigit():
+        y, m, d = s[:10].split("-")
+        return f"{m}-{d}-{y}" + s[10:]
+    return value
+
 ABUSE_HEADERS = {}
 if os.getenv("ABUSE_CH_KEY"):
     ABUSE_HEADERS = {"Auth-Key": os.getenv("ABUSE_CH_KEY")}
@@ -70,6 +81,9 @@ def fetch_cisa_kev(days=7):
                 "links": [u for u in (v.get("notes") or "").split(";") if u.strip().startswith("http")][:2],
             })
     items.sort(key=lambda x: x["added"], reverse=True)
+    for it in items:
+        it["added"] = _iso_to_mmdd(it.get("added"))
+        it["due"] = _iso_to_mmdd(it.get("due"))
     return {"count": len(items), "items": items}
 
 
@@ -197,7 +211,7 @@ def build_packet():
 
     return {
         "generated": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "date": datetime.datetime.now().strftime("%Y-%m-%d"),
+        "date": datetime.datetime.now().strftime("%m-%d-%Y"),
         "sources": {
             "cisa_kev": {"status": "ok" if not kev.get("_error") else kev["_error"], "count": kev.get("count", 0)},
             "threatfox": {"status": "ok" if not tf.get("_error") else tf["_error"], "count": tf.get("count", 0)},

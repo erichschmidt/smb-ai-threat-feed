@@ -16,8 +16,8 @@ Most threat intelligence is written for enterprise SOCs: full of jargon, and use
 
 | Path | What it is |
 |---|---|
-| `briefs/MM-DD-YYYY.md` | Human-readable daily brief (the 3-minute read) |
-| `data/YYYY-MM-DD.json` | Structured machine-readable data for each day |
+| `briefs/Threat-Feed-MM-DD-YYYY.md` | Human-readable daily brief (the 3-minute read) |
+| `data/MM-DD-YYYY.json` | Structured machine-readable data for each day |
 | `posts/MM-DD-YYYY.md` | Archive of each day's X post (tweet link + exact text) |
 | `latest.json` | Always points at today's structured data — poll this URL for automation |
 | `GLOSSARY.md` | Plain-language definitions of every term used |
@@ -25,11 +25,11 @@ Most threat intelligence is written for enterprise SOCs: full of jargon, and use
 
 ## Consuming the data
 
-The structured feed is in `data/YYYY-MM-DD.json` (mirrored to `latest.json`). Shape:
+The structured feed is in `data/MM-DD-YYYY.json` (mirrored to `latest.json`). Shape:
 
 ```json
 {
-  "date": "2026-08-19",
+  "date": "08-19-2026",
   "sources": { "cisa_kev": {"status": "ok", "count": 5}, "...": "..." },
   "kev": [ { "cve": "CVE-2026-33824", "product": "...", "epss": 0.779, "epss_percentile": 0.995, "links": ["..."] } ],
   "ransomware": [ { "group": "...", "sector": "...", "country": "...", "discovered": "..." } ],
