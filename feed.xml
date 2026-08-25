@@ -4,9 +4,18 @@
   <id>https://github.com/erichschmidt/smb-ai-threat-feed</id>
   <link href="https://github.com/erichschmidt/smb-ai-threat-feed"/>
   <link rel="self" href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/feed.xml"/>
-  <updated>2026-08-24T12:00:00Z</updated>
+  <updated>2026-08-25T12:00:00Z</updated>
   <author><name>SMB AI Threat Feed</name></author>
   <subtitle>Daily plain-language threat intelligence for small businesses deploying AI and automation.</subtitle>
+  <entry>
+    <title>CRITICAL — NEW: Oracle HTTP Server / WebLogic Proxy Plug-in (CVE-2026-21962)</title>
+    <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-08-25-2026.md"/>
+    <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-08-25-2026.md</id>
+    <updated>2026-08-25T12:00:00Z</updated>
+    <published>2026-08-25T12:00:00Z</published>
+    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source.</summary>
+    <content type="html">Daily briefing: <a href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-08-25-2026.md">read on GitHub</a> · <a href="https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-08-25-2026.md">raw markdown</a></content>
+  </entry>
   <entry>
     <title>HIGH — Your AI experiment-tracking tool can still be used to steal cloud keys — check it this morning</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-08-24-2026.md"/>
