@@ -18,6 +18,15 @@
   </entry>
   <entry>
     <title>Daily threat briefing for small businesses running AI tools</title>
+    <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-26-2026.md"/>
+    <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-26-2026.md</id>
+    <updated>2026-09-26T12:00:00Z</updated>
+    <published>2026-09-26T12:00:00Z</published>
+    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source.</summary>
+    <content type="html">Daily briefing: <a href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-26-2026.md">read on GitHub</a> · <a href="https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-26-2026.md">raw markdown</a></content>
+  </entry>
+  <entry>
+    <title>Daily threat briefing for small businesses running AI tools</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-25-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-25-2026.md</id>
     <updated>2026-09-25T12:00:00Z</updated>
@@ -267,14 +276,5 @@
     <published>2026-08-21T12:00:00Z</published>
     <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source.</summary>
     <content type="html">Daily briefing: <a href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-08-21-2026.md">read on GitHub</a> · <a href="https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-08-21-2026.md">raw markdown</a></content>
-  </entry>
-  <entry>
-    <title>CRITICAL — Actively exploited flaw in Microsoft Internet Key Exchange (IKE) Service Extensions</title>
-    <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-08-20-2026.md"/>
-    <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-08-20-2026.md</id>
-    <updated>2026-08-20T12:00:00Z</updated>
-    <published>2026-08-20T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source.</summary>
-    <content type="html">Daily briefing: <a href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-08-20-2026.md">read on GitHub</a> · <a href="https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-08-20-2026.md">raw markdown</a></content>
   </entry>
 </feed>
