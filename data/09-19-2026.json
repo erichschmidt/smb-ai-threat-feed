@@ -30,12 +30,12 @@
   "kev": [
     {
       "cve": "CVE-2025-39964",
-      "added": "2026-09-18",
+      "added": "09-18-2026",
       "vendor": "Linux",
       "product": "Kernel",
       "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-21",
+      "due": "09-21-2026",
       "ransomware_use": "Unknown",
       "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: ; https://git.kernel.org/stable/c/0f28c4adbc4a97437874c9b669fd7958a8c6d6ce; https://git.kernel.org/stable/c/e4",
       "links": [
@@ -47,12 +47,12 @@
     },
     {
       "cve": "CVE-2026-53266",
-      "added": "2026-09-18",
+      "added": "09-18-2026",
       "vendor": "Linux",
       "product": "Kernel",
       "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-21",
+      "due": "09-21-2026",
       "ransomware_use": "Unknown",
       "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: ; https://git.kernel.org/stable/c/bf84ad7c7a9ede46e31afaa41a1ba06a159e8c87; https://git.kernel.org/stable/c/76",
       "links": [
@@ -64,12 +64,12 @@
     },
     {
       "cve": "CVE-2025-39682",
-      "added": "2026-09-18",
+      "added": "09-18-2026",
       "vendor": "Linux",
       "product": "Kernel",
       "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using inc",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-21",
+      "due": "09-21-2026",
       "ransomware_use": "Unknown",
       "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: ; https://git.kernel.org/stable/c/2902c3ebcca52ca845c03182000e8d71d3a5196f; https://git.kernel.org/stable/c/c0",
       "links": [
@@ -81,12 +81,12 @@
     },
     {
       "cve": "CVE-2026-58704",
-      "added": "2026-09-16",
+      "added": "09-16-2026",
       "vendor": "Google",
       "product": "Pixel",
       "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-19",
+      "due": "09-19-2026",
       "ransomware_use": "Unknown",
       "notes": "https://source.android.com/docs/security/bulletin/pixel/2026/2026-09-01 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritiz",
       "links": [
@@ -98,12 +98,12 @@
     },
     {
       "cve": "CVE-2026-76460",
-      "added": "2026-09-16",
+      "added": "09-16-2026",
       "vendor": "Cisco",
       "product": "Identity Services Engine",
       "description": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker to gain unauthorized access to the affected device by bypassing the web-based management interface.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-19",
+      "due": "09-19-2026",
       "ransomware_use": "Unknown",
       "notes": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-i",
       "links": [
@@ -115,12 +115,12 @@
     },
     {
       "cve": "CVE-2026-87886",
-      "added": "2026-09-16",
+      "added": "09-16-2026",
       "vendor": "Acronis",
       "product": "Backup",
       "description": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-19",
+      "due": "09-19-2026",
       "ransomware_use": "Unknown",
       "notes": "https://security-advisory.acronis.com/advisories/SEC-10986 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-",
       "links": [
@@ -132,12 +132,12 @@
     },
     {
       "cve": "CVE-2026-76461",
-      "added": "2026-09-14",
+      "added": "09-14-2026",
       "vendor": "Cisco",
       "product": "Secure Email Gateway",
       "description": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-17",
+      "due": "09-17-2026",
       "ransomware_use": "Unknown",
       "notes": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-i",
       "links": [

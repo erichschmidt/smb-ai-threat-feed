@@ -17,10 +17,23 @@ Most threat intelligence is written for enterprise security teams. It's full of 
 This feed is written with AI, and here's exactly how:
 
 1. **Collect (deterministic code).** [`collector/collector.py`](collector/collector.py) pulls from the public sources listed below and writes that day's structured data to `data/MM-DD-YYYY.json`. There's no AI in this step. Each source is isolated, so one failing source never kills the run.
-2. **Draft (AI).** An AI model writes the brief from that day's collected data, in the fixed format above, with a source link for every finding.
-3. **Publish (automatic).** The brief, data and RSS are committed here automatically. **No one reviews each brief before it goes out.**
+2. **Draft (AI).** An AI model writes the brief from that day's collected data, in the fixed format above, with a source link for every finding. When a current CISA advisory is relevant, the drafting step pulls it in too.
+3. **Self-check (automated).** Before saving, the drafting step checks its own output: a source line on every finding, the disclosure line present, severity matching the rubric below, headlines that don't claim more than their body, and no internal or brand names. These checks are run by the same AI, so they aren't a substitute for a human reviewer.
+4. **Publish (automatic).** The brief, data, glossary and RSS are committed here automatically. **No one reviews each brief before it goes out.** A separate watchdog checks each morning that the brief is live and current, and alerts if it isn't.
 
 So treat it the way you'd treat a sharp but junior analyst's morning notes: useful for knowing *what to look at*, never the final word. Every claim links to its source, so check it and your vendor's advisory before you change anything. If you spot an error, [open an issue](https://github.com/erichschmidt/smb-ai-threat-feed/issues).
+
+## Severity levels
+
+Every finding gets one label, chosen from evidence rather than tone. When in doubt, it gets the lower one.
+
+| Label | Means |
+|---|---|
+| **CRITICAL** | Actively exploited (in CISA KEV) **and** either exploitable without a login or known to be used by ransomware gangs |
+| **HIGH** | Actively exploited (in CISA KEV), **or** a high chance of exploitation (EPSS ≥ 0.1 or top 5%), **or** confirmed remote code execution without a login |
+| **WATCH** | Everything else worth knowing: it needs an account or an unusual setup, it only crashes the service, or there's little sign anyone's exploiting it |
+
+Briefs before 10-09-2026 were labeled before this rubric existed.
 
 ## Not advice
 
@@ -60,6 +73,7 @@ Full field documentation: [SCHEMA.md](SCHEMA.md).
 ## Sources (all public, free, read-only)
 
 - **CISA KEV:** vulnerabilities confirmed as actively exploited (the prioritization anchor)
+- **CISA Advisories:** joint NSA/CISA/FBI campaign warnings (pulled during drafting when a current one is relevant)
 - **FIRST EPSS:** exploitation-likelihood scoring
 - **Ransomware.live:** victim disclosures and sector targeting (leak-site links are deliberately excluded)
 - **CIRCL Vulnerability Lookup:** current CVE coverage

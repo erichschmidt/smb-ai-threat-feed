@@ -30,12 +30,12 @@
   "kev": [
     {
       "cve": "CVE-2021-23758",
-      "added": "2026-08-26",
+      "added": "08-26-2026",
       "vendor": "Ajax.NET Professional",
       "product": "Ajax.NET Professional",
       "description": "Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to ",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-09",
+      "due": "09-09-2026",
       "ransomware_use": "Unknown",
       "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://github.com/michaelschwarz/Ajax.NET-Professional/commit/b0e63be5f0bb20dfce507cb8a1a9568f6e73de57 ; BOD ",
       "links": [
@@ -46,12 +46,12 @@
     },
     {
       "cve": "CVE-2015-3246",
-      "added": "2026-08-26",
+      "added": "08-26-2026",
       "vendor": "Red Hat",
       "product": "Libuser",
       "description": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation. ",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-09",
+      "due": "09-09-2026",
       "ransomware_use": "Unknown",
       "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://access.redhat.com/articles/1537873 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-",
       "links": [
@@ -62,12 +62,12 @@
     },
     {
       "cve": "CVE-2015-5287",
-      "added": "2026-08-26",
+      "added": "08-26-2026",
       "vendor": "Red Hat",
       "product": "Automatic Bug Reporting Tool",
       "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). U",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-09",
+      "due": "09-09-2026",
       "ransomware_use": "Unknown",
       "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://github.com/abrt/abrt/commit/3c1b60cfa62d39e5fff5a53a5bc53dae189e740e ; BOD 26-04: https://www.cisa.gov",
       "links": [
@@ -78,12 +78,12 @@
     },
     {
       "cve": "CVE-2022-0995",
-      "added": "2026-08-26",
+      "added": "08-26-2026",
       "vendor": "Linux",
       "product": "Kernel",
       "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-09",
+      "due": "09-09-2026",
       "ransomware_use": "Unknown",
       "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=93ce93587d36493f2f86921fa79921b3",
       "links": [
@@ -94,12 +94,12 @@
     },
     {
       "cve": "CVE-2026-8452",
-      "added": "2026-08-26",
+      "added": "08-26-2026",
       "vendor": "Citrix",
       "product": "NetScaler ADC and NetScaler Gateway",
       "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service. ",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-29",
+      "due": "08-29-2026",
       "ransomware_use": "Unknown",
       "notes": "https://support.citrix.com/support-home/kbsearch/article?articleNumber=CTX696604 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-",
       "links": [
@@ -111,12 +111,12 @@
     },
     {
       "cve": "CVE-2019-1068",
-      "added": "2026-08-26",
+      "added": "08-26-2026",
       "vendor": "Microsoft",
       "product": "SQL Server",
       "description": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-29",
+      "due": "08-29-2026",
       "ransomware_use": "Unknown",
       "notes": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1068 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-",
       "links": [
@@ -128,12 +128,12 @@
     },
     {
       "cve": "CVE-2026-60004",
-      "added": "2026-08-25",
+      "added": "08-25-2026",
       "vendor": "Gitea",
       "product": "Gitea",
       "description": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-28",
+      "due": "08-28-2026",
       "ransomware_use": "Unknown",
       "notes": "https://github.com/go-gitea/gitea/security/advisories/GHSA-rcr6-4jqh-j84m ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-priorit",
       "links": [
@@ -145,12 +145,12 @@
     },
     {
       "cve": "CVE-2026-21962",
-      "added": "2026-08-24",
+      "added": "08-24-2026",
       "vendor": "Oracle",
       "product": "HTTP Server and Oracle Weblogic Server Proxy Plug-in",
       "description": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthorized access to critical data or complete access to all Oracle HTTP Server and Ora",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-27",
+      "due": "08-27-2026",
       "ransomware_use": "Unknown",
       "notes": "https://www.oracle.com/security-alerts/cpujan2026.html ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-upda",
       "links": [
@@ -162,12 +162,12 @@
     },
     {
       "cve": "CVE-2026-73570",
-      "added": "2026-08-21",
+      "added": "08-21-2026",
       "vendor": "Synacor",
       "product": "Zimbra Collaboration Suite (ZCS)",
       "description": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-24",
+      "due": "08-24-2026",
       "ransomware_use": "Unknown",
       "notes": "https://wiki.zimbra.com/wiki/Zimbra_Security_Advisories ; https://blog.zimbra.com/2026/07/patch-release-update-zimbra-10-1-20/ ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events",
       "links": [

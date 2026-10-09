@@ -30,12 +30,12 @@
   "kev": [
     {
       "cve": "CVE-2026-5430",
-      "added": "2026-09-24",
+      "added": "09-24-2026",
       "vendor": "WSO2",
       "product": "Multiple Products",
       "description": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. ",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-27",
+      "due": "09-27-2026",
       "ransomware_use": "Unknown",
       "notes": "https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/2026/WSO2-2026-5328/ ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-0",
       "links": [
@@ -47,12 +47,12 @@
     },
     {
       "cve": "CVE-2026-71362",
-      "added": "2026-09-24",
+      "added": "09-24-2026",
       "vendor": "Adobe",
       "product": "Commerce and Magento ",
       "description": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction. ",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-27",
+      "due": "09-27-2026",
       "ransomware_use": "Unknown",
       "notes": "https://helpx.adobe.com/security/products/magento/apsb26-92.html ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-s",
       "links": [
@@ -64,12 +64,12 @@
     },
     {
       "cve": "CVE-2026-93952",
-      "added": "2026-09-22",
+      "added": "09-22-2026",
       "vendor": "Arista",
       "product": "VeloCloud Orchestrator",
       "description": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchest",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-25",
+      "due": "09-25-2026",
       "ransomware_use": "Unknown",
       "notes": "https://www.arista.com/en/support/advisories-notices/security-advisory/24765-security-advisory-0183 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-imp",
       "links": [
@@ -81,12 +81,12 @@
     },
     {
       "cve": "CVE-2026-94127",
-      "added": "2026-09-22",
+      "added": "09-22-2026",
       "vendor": "F5",
       "product": "BIG-IP APM",
       "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-25",
+      "due": "09-25-2026",
       "ransomware_use": "Unknown",
       "notes": "For temporary mitigation to allow for proactive forensic triage, apply the vendor-provided iRule. Once completed, install the final vendor patch as soon as possible. For more information please see: https://my.f5.com/manage/s/article/K000162605 ; BOD 26-04: https://www.cisa.gov/news-events/directive",
       "links": [
@@ -97,12 +97,12 @@
     },
     {
       "cve": "CVE-2026-93616",
-      "added": "2026-09-22",
+      "added": "09-22-2026",
       "vendor": "Check Point",
       "product": "Multiple Products",
       "description": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server, and SmartEvent contain a path traversal vulnerability that allows an unauthenticated attacker to upload and execute arbitrary scripts.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-25",
+      "due": "09-25-2026",
       "ransomware_use": "Unknown",
       "notes": "https://support.checkpoint.com/results/sk/sk1000171/ ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-upda",
       "links": [
@@ -114,12 +114,12 @@
     },
     {
       "cve": "CVE-2026-85102",
-      "added": "2026-09-22",
+      "added": "09-22-2026",
       "vendor": "Check Point",
       "product": "Multiple Products",
       "description": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-25",
+      "due": "09-25-2026",
       "ransomware_use": "Unknown",
       "notes": "https://support.checkpoint.com/results/sk/sk1000117 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updat",
       "links": [
@@ -131,12 +131,12 @@
     },
     {
       "cve": "CVE-2026-7273",
-      "added": "2026-09-21",
+      "added": "09-21-2026",
       "vendor": "Zyxel",
       "product": "GS1900 Series Switches",
       "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-24",
+      "due": "09-24-2026",
       "ransomware_use": "Unknown",
       "notes": "https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-stack-based-buffer-overflow-vulnerability-in-gs1900-series-switches-06-16-2026 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requ",
       "links": [

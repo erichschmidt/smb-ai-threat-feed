@@ -30,12 +30,12 @@
   "kev": [
     {
       "cve": "CVE-2026-88779",
-      "added": "2026-10-04",
+      "added": "10-04-2026",
       "vendor": "Citrix",
       "product": "NetScaler",
       "description": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-10-07",
+      "due": "10-07-2026",
       "ransomware_use": "Unknown",
       "notes": "https://support.citrix.com/support-home/kbsearch/article?articleNumber=CTX697174 ; https://community.citrix.com/techzone-blogs/110_security-updates/understanding-and-addressing-cve-2026-88779-in-citrix-netscaler-adc-and-citrix-netscaler-gateway/ ; BOD 26-04: https://www.cisa.gov/news-events/directiv",
       "links": [
@@ -47,12 +47,12 @@
     },
     {
       "cve": "CVE-2026-102490",
-      "added": "2026-10-02",
+      "added": "10-02-2026",
       "vendor": "Zammad GmbH",
       "product": "Zammad",
       "description": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-10-05",
+      "due": "10-05-2026",
       "ransomware_use": "Unknown",
       "notes": "https://zammad.com/en/product/releases/ ; https://community.zammad.org/t/take-care-local-privilege-escalation-cve-2026-102490-is-reported-as-being-actively-exploited/21297/2 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage",
       "links": [
@@ -64,12 +64,12 @@
     },
     {
       "cve": "CVE-2026-102489",
-      "added": "2026-10-02",
+      "added": "10-02-2026",
       "vendor": "Zammad GmbH",
       "product": "Zammad",
       "description": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-10-05",
+      "due": "10-05-2026",
       "ransomware_use": "Unknown",
       "notes": "https://zammad.com/en/product/releases/ ; https://community.zammad.org/t/take-care-local-privilege-escalation-cve-2026-102490-is-reported-as-being-actively-exploited/21297/2 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage",
       "links": [
@@ -81,12 +81,12 @@
     },
     {
       "cve": "CVE-2026-104286",
-      "added": "2026-10-01",
+      "added": "10-01-2026",
       "vendor": "Fortinet",
       "product": "FortiMail",
       "description": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-10-04",
+      "due": "10-04-2026",
       "ransomware_use": "Unknown",
       "notes": "https://fortiguard.fortinet.com/psirt/FG-IR-26-175 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-update",
       "links": [

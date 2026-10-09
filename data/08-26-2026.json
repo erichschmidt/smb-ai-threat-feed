@@ -30,12 +30,12 @@
   "kev": [
     {
       "cve": "CVE-2026-60004",
-      "added": "2026-08-25",
+      "added": "08-25-2026",
       "vendor": "Gitea",
       "product": "Gitea",
       "description": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-28",
+      "due": "08-28-2026",
       "ransomware_use": "Unknown",
       "notes": "https://github.com/go-gitea/gitea/security/advisories/GHSA-rcr6-4jqh-j84m ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-priorit",
       "links": [
@@ -47,12 +47,12 @@
     },
     {
       "cve": "CVE-2026-21962",
-      "added": "2026-08-24",
+      "added": "08-24-2026",
       "vendor": "Oracle",
       "product": "HTTP Server and Oracle Weblogic Server Proxy Plug-in",
       "description": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthorized access to critical data or complete access to all Oracle HTTP Server and Ora",
       "action": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-      "due": "2026-08-27",
+      "due": "08-27-2026",
       "ransomware_use": "Unknown",
       "notes": "https://www.oracle.com/security-alerts/cpujan2026.html ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-upda",
       "links": [
@@ -64,12 +64,12 @@
     },
     {
       "cve": "CVE-2026-73570",
-      "added": "2026-08-21",
+      "added": "08-21-2026",
       "vendor": "Synacor",
       "product": "Zimbra Collaboration Suite (ZCS)",
       "description": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-24",
+      "due": "08-24-2026",
       "ransomware_use": "Unknown",
       "notes": "https://wiki.zimbra.com/wiki/Zimbra_Security_Advisories ; https://blog.zimbra.com/2026/07/patch-release-update-zimbra-10-1-20/ ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events",
       "links": [
@@ -81,12 +81,12 @@
     },
     {
       "cve": "CVE-2026-72530",
-      "added": "2026-08-20",
+      "added": "08-20-2026",
       "vendor": "TrueConf",
       "product": "Server",
       "description": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-03",
+      "due": "09-03-2026",
       "ransomware_use": "Unknown",
       "notes": "https://trueconf.com/blog/news/security-fixes-updates-and-advisories ; https://ics-cert.kaspersky.com/advisories/2026/08/11/trueconf-server-breakout-from-isolated-environment/ ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Tria",
       "links": [
@@ -98,12 +98,12 @@
     },
     {
       "cve": "CVE-2026-72529",
-      "added": "2026-08-20",
+      "added": "08-20-2026",
       "vendor": "TrueConf",
       "product": "Server",
       "description": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-08-23",
+      "due": "08-23-2026",
       "ransomware_use": "Unknown",
       "notes": "https://trueconf.com/blog/news/security-fixes-updates-and-advisories ; https://ics-cert.kaspersky.com/advisories/2026/08/11/trueconf-server-missing-authentication-for-critical-function/ ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Fore",
       "links": [

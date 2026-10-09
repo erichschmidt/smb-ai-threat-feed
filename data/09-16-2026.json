@@ -30,12 +30,12 @@
   "kev": [
     {
       "cve": "CVE-2026-76461",
-      "added": "2026-09-14",
+      "added": "09-14-2026",
       "vendor": "Cisco",
       "product": "Secure Email Gateway",
       "description": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-17",
+      "due": "09-17-2026",
       "ransomware_use": "Unknown",
       "notes": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-i",
       "links": [
@@ -47,12 +47,12 @@
     },
     {
       "cve": "CVE-2026-84869",
-      "added": "2026-09-11",
+      "added": "09-11-2026",
       "vendor": "ConnectWise",
       "product": "ScreenConnect",
       "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sessions without authorization or host confirmation.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-14",
+      "due": "09-14-2026",
       "ransomware_use": "Unknown",
       "notes": "https://www.connectwise.com/company/trust/security-bulletins/2026-09-08-screenconnect-bulletin ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementa",
       "links": [
@@ -64,12 +64,12 @@
     },
     {
       "cve": "CVE-2026-42016",
-      "added": "2026-09-11",
+      "added": "09-11-2026",
       "vendor": "JFrog",
       "product": "Artifactory",
       "description": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token\u2019s scope.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-25",
+      "due": "09-25-2026",
       "ransomware_use": "Unknown",
       "notes": "https://docs.jfrog.com/releases/docs/jfrog-security-advisories ; https://docs.jfrog.com/releases/docs/artifactory-self-managed-releases ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/ne",
       "links": [
@@ -81,12 +81,12 @@
     },
     {
       "cve": "CVE-2026-42018",
-      "added": "2026-09-11",
+      "added": "09-11-2026",
       "vendor": "JFrog",
       "product": "Artifactory",
       "description": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-25",
+      "due": "09-25-2026",
       "ransomware_use": "Unknown",
       "notes": "https://docs.jfrog.com/releases/docs/jfrog-security-advisories ; https://docs.jfrog.com/releases/docs/artifactory-self-managed-releases ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/ne",
       "links": [
@@ -98,12 +98,12 @@
     },
     {
       "cve": "CVE-2026-85706",
-      "added": "2026-09-11",
+      "added": "09-11-2026",
       "vendor": "GitLab",
       "product": "Community Edition and Enterprise Edition",
       "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforcement in the repository commits API.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-14",
+      "due": "09-14-2026",
       "ransomware_use": "Unknown",
       "notes": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/ ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-pr",
       "links": [
@@ -115,12 +115,12 @@
     },
     {
       "cve": "CVE-2026-86060",
-      "added": "2026-09-10",
+      "added": "09-10-2026",
       "vendor": "MikroTik",
       "product": "RouterOS",
       "description": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacked to change the trusted RouterOS policy mask, leading to privilege escalation.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-13",
+      "due": "09-13-2026",
       "ransomware_use": "Unknown",
       "notes": " ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-",
       "links": [
@@ -131,12 +131,12 @@
     },
     {
       "cve": "CVE-2026-67277",
-      "added": "2026-09-10",
+      "added": "09-10-2026",
       "vendor": "MikroTik",
       "product": "RouterOS",
       "description": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
       "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "2026-09-13",
+      "due": "09-13-2026",
       "ransomware_use": "Unknown",
       "notes": "https://mikrotik.com/supportsec/september-2026-vulnerability/ ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-securi",
       "links": [
