@@ -1,6 +1,6 @@
 # SMB + AI Threat Feed
 
-A plain-language threat briefing for **small businesses running AI and automation**. EPSS-prioritized vulnerabilities, a ransomware sector pulse, and IOCs, compiled from free public sources and published most mornings.
+A plain-language threat briefing for **small businesses running AI and automation**. New security advisories for common AI tools, actively exploited flaws worth knowing about, and on Mondays one plain-language AI risk, compiled from free public sources and published most mornings.
 
 **Read it:** [erichschmidt.com/briefing](https://erichschmidt.com/briefing/) · **RSS:** [erichschmidt.com/feed.xml](https://erichschmidt.com/feed.xml) · Built by [Erich Schmidt](https://erichschmidt.com)
 
@@ -17,15 +17,22 @@ Most threat intelligence is written for enterprise security teams. It's full of 
 This feed is written with AI, and here's exactly how:
 
 1. **Collect (deterministic code).** [`collector/collector.py`](collector/collector.py) pulls from the public sources listed below and writes that day's structured data to `data/MM-DD-YYYY.json`. There's no AI in this step. Each source is isolated, so one failing source never kills the run.
-2. **Draft (AI).** An AI model writes the brief from that day's collected data, in the fixed format above, with a source link for every finding. When a current CISA advisory is relevant, the drafting step pulls it in too.
-3. **Self-check (automated).** Before saving, the drafting step checks its own output: a source line on every finding, the disclosure line present, severity matching the rubric below, headlines that don't claim more than their body, and no internal or brand names. These checks are run by the same AI, so they aren't a substitute for a human reviewer.
-4. **Publish (automatic).** The brief, data, glossary and RSS are committed here automatically. **No one reviews each brief before it goes out.** A separate watchdog checks each morning that the brief is live and current, and alerts if it isn't.
+2. **Select and rate (deterministic code).** The same collector decides what the brief covers. It picks at most 3 findings, puts AI tools first, and rates each one with the severity rubric below. It skips anything already reported on an earlier day unless that item got worse: it newly entered CISA's actively-exploited list, or its EPSS score crossed 0.1. On Mondays it adds one plain-language AI risk that has no CVE. The plan is saved in each day's data file as `brief_plan`.
+3. **Draft (AI).** An AI model writes the prose for exactly those items, in the fixed format above, with a source link for every finding. It doesn't choose the findings or their severity.
+4. **Check (code, then AI).** Before anything is published, code checks the brief:
+   - the disclosure line is present
+   - every finding has a source link
+   - the findings and their severity labels match the plan
+   - no internal or brand names appear
+
+   If any of those checks fails, the brief isn't published. The AI also re-reads its own draft for headlines that claim more than their body. That part isn't a substitute for a human reviewer.
+5. **Publish (automatic).** The brief, data, glossary and RSS are committed here automatically. **No one reviews each brief before it goes out.** A separate watchdog checks each morning that the brief is live and current, and alerts if it isn't.
 
 So treat it the way you'd treat a sharp but junior analyst's morning notes: useful for knowing *what to look at*, never the final word. Every claim links to its source, so check it and your vendor's advisory before you change anything. If you spot an error, [open an issue](https://github.com/erichschmidt/smb-ai-threat-feed/issues).
 
 ## Severity levels
 
-Every finding gets one label, chosen from evidence rather than tone. When in doubt, it gets the lower one.
+Every finding gets one label, chosen from evidence rather than tone. Since 10-12-2026 the label is computed by the collector (`rate_severity`), not by the AI. When in doubt, it gets the lower one.
 
 | Label | Means |
 |---|---|
@@ -61,10 +68,14 @@ Each day's data is in `data/MM-DD-YYYY.json`, mirrored to `latest.json`. Shape:
   "kev": [ { "cve": "CVE-2026-33824", "product": "...", "epss": 0.779, "epss_percentile": 0.995, "links": ["..."] } ],
   "ransomware": [ { "group": "...", "sector": "...", "country": "...", "discovered": "..." } ],
   "circl": [ { "id": "...", "aliases": ["CVE-..."], "severity": "...", "details": "...", "links": ["..."] } ],
+  "ai_advisories": [ { "id": "GHSA-...", "cve": "CVE-...", "package": "langflow", "severity": "critical", "patched": "...", "first_seen": "...", "links": ["..."] } ],
   "threatfox": [ { "value": "...", "ioc_type": "...", "malware": "...", "links": ["..."] } ],
-  "urlhaus": [ { "value": "...", "status": "...", "links": ["..."] } ]
+  "urlhaus": [ { "value": "...", "status": "...", "links": ["..."] } ],
+  "brief_plan": { "findings": [ { "id": "...", "severity": "HIGH", "severity_reason": "..." } ], "on_the_radar": [], "quiet_ai_day": false, "ai_risk_topic": null }
 }
 ```
+
+Malware IOCs (ThreatFox, URLhaus) are in the data files rather than the brief.
 
 Full field documentation: [SCHEMA.md](SCHEMA.md).
 
@@ -72,8 +83,8 @@ Full field documentation: [SCHEMA.md](SCHEMA.md).
 
 ## Sources (all public, free, read-only)
 
+- **GitHub Advisory Database:** reviewed security advisories for a watchlist of common AI and automation tools, such as LangChain, n8n, Flowise, Langflow, Open WebUI, Ollama, LiteLLM and the MCP SDKs (see `AI_WATCHLIST` in the collector)
 - **CISA KEV:** vulnerabilities confirmed as actively exploited (the prioritization anchor)
-- **CISA Advisories:** joint NSA/CISA/FBI campaign warnings (pulled during drafting when a current one is relevant)
 - **FIRST EPSS:** exploitation-likelihood scoring
 - **Ransomware.live:** victim disclosures and sector targeting (leak-site links are deliberately excluded)
 - **CIRCL Vulnerability Lookup:** current CVE coverage

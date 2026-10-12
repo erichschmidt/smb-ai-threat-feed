@@ -7,7 +7,12 @@ structured JSON packet (see ../SCHEMA.md). This is the same collection logic
 the published feed runs each morning; no AI is involved in this step.
 
 Sources: CISA KEV, ThreatFox, URLhaus, Ransomware.live, CIRCL Vulnerability
-Lookup, FIRST EPSS enrichment.
+Lookup, GitHub Advisory Database (AI tool watchlist), FIRST EPSS enrichment.
+
+It also picks what the brief covers (`brief_plan`): which findings, in what
+order, at what severity, and which ones were already reported on earlier days.
+That keeps selection and severity in deterministic code; the drafting step only
+writes the prose.
 
 Credentials: ABUSE_CH_KEY environment variable (or a local .env file). Optional;
 only ThreatFox and URLhaus need it. The other sources are keyless.
@@ -17,9 +22,12 @@ isolated, so one failure never kills the run. Ransomware leak-site (.onion)
 links are never emitted.
 """
 import argparse
+import collections
 import datetime
+import glob
 import json
 import os
+import re
 
 import requests
 
@@ -50,6 +58,60 @@ URLHAUS_URL = "https://urlhaus-api.abuse.ch/api/v1/"
 RL_URL = "https://api.ransomware.live/v1/recentvictims"
 CIRCL_URL = "https://vulnerability.circl.lu/api/last"
 EPSS_URL = "https://api.first.org/data/v1/epss"
+GHSA_URL = "https://api.github.com/advisories"
+
+# AI and automation packages small businesses commonly run or build on, by
+# GitHub advisory ecosystem. Edit freely; each ecosystem is one API call.
+AI_WATCHLIST = {
+    "pip": ["langchain", "langchain-core", "langchain-community", "langgraph",
+            "llama-index-core", "litellm", "open-webui", "transformers", "vllm",
+            "gradio", "mlflow", "ray", "picklescan", "crewai", "mcp", "chromadb",
+            "langflow"],
+    "npm": ["n8n", "flowise", "langchain", "@langchain/core",
+            "@modelcontextprotocol/sdk", "ai"],
+    "go": ["github.com/ollama/ollama"],
+}
+# The subset most likely to be run directly by a small business; ranked first.
+AI_SMB_COMMON = {"n8n", "flowise", "open-webui", "github.com/ollama/ollama",
+                 "langchain", "langchain-core", "langchain-community",
+                 "@langchain/core", "litellm", "mcp", "@modelcontextprotocol/sdk",
+                 "langflow"}
+# Words that mark a KEV/CIRCL entry as being about an AI or automation product.
+AI_TERMS = re.compile(
+    r"\b(llms?|large language models?|langchain|langgraph|llama[-_ ]?index|litellm|"
+    r"open[- ]?webui|ollama|vllm|gradio|mlflow|picklescan|crewai|mcp|"
+    r"model context protocol|chromadb|langflow|flowise|n8n|openai|anthropic|"
+    r"copilot|chatgpt|gpt-\d|retrieval[- ]augmented|rag pipeline|prompt injection|"
+    r"ai agents?|agentic|hugging ?face|pytorch|tensorflow)\b", re.I)
+
+# Plain-language AI risks that have no CVE. One is covered each Monday, in order.
+AI_RISK_TOPICS = [
+    {"title": "Prompt injection through emails and documents",
+     "scope": "Hidden instructions in an email, web page or shared file that an AI assistant reads and then follows."},
+    {"title": "Sensitive data pasted into AI tools",
+     "scope": "Staff pasting customer, financial or HR data into consumer AI tools that keep or train on it."},
+    {"title": "AI integrations with too much access",
+     "scope": "OAuth grants, API keys and MCP servers that give an AI tool more access than its job needs."},
+    {"title": "Deepfake voice and video payment fraud",
+     "scope": "Cloned voices or faces of a boss or vendor used to push an urgent payment or bank-detail change."},
+    {"title": "AI-written phishing",
+     "scope": "Polished, personalized phishing that no longer has the spelling mistakes people were taught to look for."},
+    {"title": "Malicious models, extensions and packages",
+     "scope": "Downloaded models, browser extensions and AI plugins that carry hidden code."},
+    {"title": "Unapproved \"shadow AI\" tools",
+     "scope": "AI apps staff sign up for on their own, outside any review of what data they can reach."},
+    {"title": "AI agents that can act, not just answer",
+     "scope": "Agents with write access to email, files or payments, and why a human approval step matters."},
+]
+
+SEVERITY_RANK = {"CRITICAL": 0, "HIGH": 1, "WATCH": 2}
+GHSA_SEVERITY_RANK = {"critical": 0, "high": 1, "medium": 2, "moderate": 2, "low": 3}
+NO_LOGIN = re.compile(
+    r"\bunauthenticated\b|without (?:any )?(?:authentication|logging in|login|credentials)|"
+    r"no authentication|pre-?auth(?:entication)?\b|does not require authentication", re.I)
+RCE = re.compile(
+    r"remote code execution|execute arbitrary (?:code|commands)|arbitrary code execution|"
+    r"run arbitrary code|command injection|code injection", re.I)
 
 
 def fetch_epss(cve_ids, batch=100):
@@ -118,7 +180,7 @@ def fetch_cisa_kev(days=7):
                 "due": v.get("dueDate"),
                 "ransomware_use": v.get("knownRansomwareCampaignUse", "Unknown"),
                 "notes": v.get("notes", "")[:300],
-                "links": [u for u in (v.get("notes") or "").split(";") if u.strip().startswith("http")][:2],
+                "links": [u.strip() for u in (v.get("notes") or "").split(";") if u.strip().startswith("http")][:2],
             })
     items.sort(key=lambda x: x["added"], reverse=True)
     return {"count": len(items), "items": items}
@@ -217,20 +279,252 @@ def fetch_circl(limit=30):
     return {"count": len(items), "items": items}
 
 
-def build_packet():
+def fetch_ai_advisories(days=7, limit=15):
+    """Recent GitHub-reviewed advisories for the AI tool watchlist (no auth).
+
+    One call per ecosystem. A failed ecosystem is reported in `_error` while
+    items from the others are kept.
+    """
+    since = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=days)).strftime("%Y-%m-%d")
+    watched = {p for pkgs in AI_WATCHLIST.values() for p in pkgs}
+    raw, errors = {}, []
+    for eco, pkgs in AI_WATCHLIST.items():
+        data = _get(GHSA_URL, params={"ecosystem": eco, "affects": ",".join(pkgs), "type": "reviewed",
+                                      "published": f">={since}", "per_page": 100},
+                    headers={"Accept": "application/vnd.github+json"})
+        if not isinstance(data, list):
+            errors.append(f"{eco}: {data.get('_error', 'bad response') if isinstance(data, dict) else 'bad response'}")
+            continue
+        for a in data:
+            if a.get("ghsa_id") and not a.get("withdrawn_at"):
+                raw[a["ghsa_id"]] = (eco, a)
+    items = []
+    for eco, a in raw.values():
+        vulns = [v for v in a.get("vulnerabilities") or [] if (v.get("package") or {}).get("name") in watched]
+        v = vulns[0] if vulns else {}
+        patched = v.get("first_patched_version")
+        if isinstance(patched, dict):
+            patched = patched.get("identifier")
+        package = (v.get("package") or {}).get("name", "N/A")
+        items.append({
+            "id": a["ghsa_id"],
+            "cve": a.get("cve_id"),
+            "package": package,
+            "ecosystem": eco,
+            "smb_common": package in AI_SMB_COMMON,
+            "severity": a.get("severity", "N/A"),
+            "cvss": (a.get("cvss") or {}).get("score"),
+            "summary": (a.get("summary") or "")[:250],
+            "details": (a.get("description") or "")[:400],
+            "affected": v.get("vulnerable_version_range"),
+            "patched": patched,
+            "published": (a.get("published_at") or "")[:10],
+            "links": [u for u in [a.get("html_url")] if u],
+        })
+    items.sort(key=lambda x: x["published"], reverse=True)
+    items.sort(key=lambda x: (GHSA_SEVERITY_RANK.get(x["severity"], 4), not x["smb_common"]))
+    items = items[:limit]
+    for x in items:
+        x["published"] = iso_to_mmdd(x["published"])
+    result = {"count": len(items), "items": items}
+    if errors:
+        result["_error"] = "; ".join(errors)
+    return result
+
+
+def _parse_mmdd(value):
+    try:
+        return datetime.datetime.strptime(value, "%m-%d-%Y")
+    except (TypeError, ValueError):
+        return None
+
+
+def _item_keys(item):
+    keys = {item.get("cve"), item.get("id"), *(item.get("aliases") or [])}
+    return {k for k in keys if k and k != "N/A"}
+
+
+def load_prior_packets(paths, today):
+    """Earlier daily packets, oldest first. Today's own file is skipped so re-runs are idempotent."""
+    prior = []
+    for path in paths:
+        try:
+            with open(path) as f:
+                p = json.load(f)
+        except Exception:
+            continue
+        day = _parse_mmdd(p.get("date") if isinstance(p, dict) else None)
+        if day and p["date"] != today:
+            prior.append((day, p))
+    prior.sort(key=lambda x: x[0])
+    return prior
+
+
+def annotate_history(packet, prior):
+    """Add `first_seen` and `prev_epss` to every KEV, CIRCL and AI advisory item.
+
+    KEV is tracked on its own, so an old CVE that newly lands in KEV counts as new
+    there. CIRCL and AI advisories share one history.
+    """
+    first = {"kev": {}, "vuln": {}}
+    last_epss = {"kev": {}, "vuln": {}}
+    for day, p in prior:
+        for section in ("kev", "circl", "ai_advisories"):
+            bucket = "kev" if section == "kev" else "vuln"
+            for item in p.get(section) or []:
+                for k in _item_keys(item):
+                    first[bucket].setdefault(k, day)
+                    last_epss[bucket][k] = item.get("epss")
+    for section in ("kev", "circl", "ai_advisories"):
+        bucket = "kev" if section == "kev" else "vuln"
+        for item in packet.get(section) or []:
+            keys = _item_keys(item)
+            seen = [first[bucket][k] for k in keys if k in first[bucket]]
+            item["first_seen"] = min(seen).strftime("%m-%d-%Y") if seen else packet["date"]
+            item["prev_epss"] = next((last_epss[bucket][k] for k in keys if k in last_epss[bucket]), None)
+
+
+def rate_severity(section, item):
+    """The public severity rubric (README), as code. Returns (label, reason)."""
+    text = " ".join(str(item.get(k) or "") for k in ("description", "details", "summary"))
+    epss = item.get("epss") or 0
+    pct = item.get("epss_percentile") or 0
+    no_login = bool(NO_LOGIN.search(text))
+    if section == "kev":
+        if item.get("ransomware_use") == "Known":
+            return "CRITICAL", "in CISA KEV · known ransomware use"
+        if no_login:
+            return "CRITICAL", "in CISA KEV · no login needed"
+        return "HIGH", "in CISA KEV"
+    if epss >= 0.1 or pct >= 0.95:
+        return "HIGH", f"not in KEV · EPSS {epss} ({pct * 100:.0f}th percentile)"
+    if no_login and RCE.search(text):
+        return "HIGH", "not in KEV · remote code execution without a login"
+    if item.get("epss") is None:
+        return "WATCH", "not in KEV · no EPSS score yet"
+    return "WATCH", f"not in KEV · low EPSS ({epss})"
+
+
+def _is_ai(section, item):
+    if section == "ai_advisories":
+        return True
+    text = " ".join(str(item.get(k) or "") for k in ("vendor", "product", "description", "id", "details"))
+    return bool(AI_TERMS.search(text))
+
+
+def ransomware_pulse(items, top=3):
+    """One factual sentence on recent ransomware victim claims, for the brief to copy as-is."""
+    if not items:
+        return "No recent ransomware victim claims in the latest listing."
+    skip = {"", "N/A", "Not Found", "Other", "Unknown"}
+    sectors = collections.Counter(r.get("sector") for r in items if r.get("sector") not in skip)
+    countries = collections.Counter(r.get("country") for r in items if r.get("country") not in skip)
+    parts = [f"{len(items)} recent victim claims"]
+    if sectors:
+        parts.append("most-hit sectors: " + ", ".join(f"{s} ({n})" for s, n in sectors.most_common(top)))
+    if countries:
+        parts.append("countries: " + ", ".join(f"{c} ({n})" for c, n in countries.most_common(top)))
+    return "; ".join(parts) + "."
+
+
+def plan_brief(packet, max_findings=3, radar_days=14, radar_max=3):
+    """Decide what the brief covers. The drafting step must follow this exactly.
+
+    - Findings: at most `max_findings`. AI items first. An item qualifies if it is
+      new today, or seen before but its EPSS crossed 0.1 since then. One finding
+      per product. At most one non-AI item, and only a new CRITICAL KEV entry.
+    - On the radar (one-line mentions): new AI items that didn't make the cut,
+      plus AI items rated HIGH or CRITICAL first seen in the last `radar_days` days.
+    - Quiet AI day: no AI finding today.
+    - AI risk of the week: Mondays only, rotating through AI_RISK_TOPICS.
+    """
+    today = _parse_mmdd(packet["date"])
+    candidates = {}
+    for section in ("kev", "ai_advisories", "circl"):
+        for item in packet.get(section) or []:
+            severity, reason = rate_severity(section, item)
+            ai = _is_ai(section, item)
+            if section == "ai_advisories" and item.get("severity") == "low":
+                continue
+            new = item.get("first_seen") == packet["date"]
+            prev, epss = item.get("prev_epss"), item.get("epss")
+            escalated = not new and prev is not None and epss is not None and prev < 0.1 <= epss
+            entry = {
+                "section": section,
+                "id": item.get("cve") if section == "kev" else item.get("id"),
+                "cve": item.get("cve") or next((a for a in item.get("aliases") or [] if a.startswith("CVE-")), None),
+                "severity": severity,
+                "severity_reason": reason,
+                "ai": ai,
+                "selected_because": "new today" if new else ("EPSS crossed 0.1 since last seen" if escalated else None),
+                "first_seen": item.get("first_seen"),
+                "item": item,
+            }
+            key = entry["cve"] or entry["id"]
+            have = candidates.get(key)
+            # The same CVE can appear in several sources: keep the strongest rating.
+            if not have or SEVERITY_RANK[severity] < SEVERITY_RANK[have["severity"]]:
+                candidates[key] = entry
+
+    def rank(e):
+        return (SEVERITY_RANK[e["severity"]], GHSA_SEVERITY_RANK.get(str(e["item"].get("severity")).lower(), 4),
+                not e["item"].get("smb_common", False), -(e["item"].get("epss") or 0))
+
+    fresh = [e for e in candidates.values() if e["selected_because"]]
+    other_pool = sorted([e for e in fresh if not e["ai"] and e["section"] == "kev" and e["severity"] == "CRITICAL"], key=rank)
+    ai_slots = max_findings - min(1, len(other_pool))
+    ai_findings, products = [], set()
+    for e in sorted((e for e in fresh if e["ai"]), key=rank):
+        # One finding per product; the rest can go on the radar.
+        product = e["item"].get("package") or e["item"].get("product") or e["id"]
+        if len(ai_findings) < ai_slots and product not in products:
+            ai_findings.append(e)
+            products.add(product)
+    findings = ai_findings + other_pool[:1]
+
+    chosen = {id(e) for e in findings}
+    radar = []
+    for e in sorted((e for e in candidates.values() if e["ai"] and id(e) not in chosen), key=rank):
+        seen = _parse_mmdd(e["first_seen"])
+        recent_high = e["severity"] in ("CRITICAL", "HIGH") and seen and (today - seen).days <= radar_days
+        if e["selected_because"] or recent_high:
+            radar.append({k: e[k] for k in ("section", "id", "cve", "severity", "severity_reason", "first_seen")}
+                              | {"product": e["item"].get("package") or e["item"].get("product") or "",
+                                 "links": e["item"].get("links") or []})
+        if len(radar) == radar_max:
+            break
+
+    topic = None
+    if today and today.weekday() == 0:
+        topic = AI_RISK_TOPICS[today.isocalendar()[1] % len(AI_RISK_TOPICS)]
+
+    return {
+        "rules": "max 3 findings; AI first; repeats only on a stated change; at most one non-AI item (new CRITICAL KEV)",
+        "findings": [{k: e[k] for k in ("section", "id", "cve", "severity", "severity_reason", "ai", "selected_because", "item")}
+                     for e in findings],
+        "on_the_radar": radar,
+        "quiet_ai_day": not any(e["ai"] for e in findings),
+        "ai_risk_topic": topic,
+        "ransomware_pulse": ransomware_pulse(packet.get("ransomware") or []),
+    }
+
+
+def build_packet(prior_paths=()):
     kev = fetch_cisa_kev()
     tf = fetch_threatfox()
     uh = fetch_urlhaus()
     rl = fetch_ransomware_live()
     circl = fetch_circl()
+    ai = fetch_ai_advisories()
 
-    # EPSS enrichment: score all CVE ids seen in KEV + CIRCL aliases
+    # EPSS enrichment: score all CVE ids seen in KEV, CIRCL aliases and AI advisories
     cve_ids = [v["cve"] for v in kev.get("items", [])]
     cve_ids += [a for v in circl.get("items", []) for a in v.get("aliases", [])]
+    cve_ids += [v["cve"] for v in ai.get("items", []) if v.get("cve")]
     epss = fetch_epss(cve_ids)
-    for v in kev.get("items", []):
-        v["epss"] = epss.get(v["cve"], {}).get("epss")
-        v["epss_percentile"] = epss.get(v["cve"], {}).get("percentile")
+    for v in kev.get("items", []) + ai.get("items", []):
+        v["epss"] = epss.get(v.get("cve"), {}).get("epss")
+        v["epss_percentile"] = epss.get(v.get("cve"), {}).get("percentile")
     for v in circl.get("items", []):
         hit = next((epss.get(a) for a in v.get("aliases", []) if a in epss), None)
         if hit:
@@ -248,6 +542,7 @@ def build_packet():
             "urlhaus": {"status": "ok" if not uh.get("_error") else uh["_error"], "count": uh.get("count", 0)},
             "ransomware_live": {"status": "ok" if not rl.get("_error") else rl["_error"], "count": rl.get("count", 0)},
             "circl": {"status": "ok" if not circl.get("_error") else circl["_error"], "count": circl.get("count", 0)},
+            "ai_advisories": {"status": "ok" if not ai.get("_error") else ai["_error"], "count": ai.get("count", 0)},
             "epss": {"status": f"ok ({len(epss)}/{len(set(cve_ids))} scored)" if epss else "no scores", "count": len(epss)},
         },
         "kev": kev.get("items", []),
@@ -255,12 +550,34 @@ def build_packet():
         "urlhaus": uh.get("items", []),
         "ransomware": rl.get("items", []),
         "circl": circl.get("items", []),
+        "ai_advisories": ai.get("items", []),
     }
     packet["date"] = DATE_STR
     for v in packet["kev"]:
         v["added"] = iso_to_mmdd(v.get("added"))
         v["due"] = iso_to_mmdd(v.get("due"))
+    annotate_history(packet, load_prior_packets(prior_paths, packet["date"]))
+    packet["brief_plan"] = plan_brief(packet)
     return packet
+
+
+def print_plan(plan):
+    """The brief plan in plain text, for the drafting step's context."""
+    print("\nBRIEF PLAN (follow exactly; do not add, drop, reorder or re-rate findings):")
+    if not plan["findings"]:
+        print("  No findings today.")
+    for n, f in enumerate(plan["findings"], 1):
+        item = f["item"]
+        what = item.get("package") or " ".join(x for x in (item.get("vendor"), item.get("product")) if x) or item.get("id")
+        print(f"  {n}. {f['severity']} | {f['section']} {f['id']}{' / ' + f['cve'] if f['cve'] and f['cve'] != f['id'] else ''}"
+              f" | {what} | reason: {f['severity_reason']} | {'AI' if f['ai'] else 'not AI: open with General IT hygiene'}"
+              f" | {f['selected_because']}")
+    for r in plan["on_the_radar"]:
+        print(f"  On the radar: {r['severity']} {r['id']} {r['product']} (first seen {r['first_seen']})")
+    print(f"  Quiet AI day: {'yes' if plan['quiet_ai_day'] else 'no'}")
+    topic = plan["ai_risk_topic"]
+    print(f"  AI risk of the week: {topic['title'] if topic else 'none (Mondays only)'}")
+    print(f"  Ransomware pulse (copy exactly): {plan['ransomware_pulse']}")
 
 
 def main():
@@ -268,7 +585,10 @@ def main():
     ap.add_argument("--out", default=".", help="Output directory (default: current dir)")
     args = ap.parse_args()
 
-    packet = build_packet()
+    # Earlier packets in the output dir tell the planner what was already reported.
+    prior = [p for p in glob.glob(os.path.join(args.out, "*.json"))
+             if re.fullmatch(r"\d{2}-\d{2}-\d{4}\.json", os.path.basename(p))]
+    packet = build_packet(prior)
     path = os.path.join(args.out, f"{packet['date']}.json")
     with open(path, "w") as f:
         json.dump(packet, f, indent=2)
@@ -276,6 +596,7 @@ def main():
     print(f"Wrote {path}")
     for name, meta in packet["sources"].items():
         print(f"  {name}: {meta['status']} ({meta['count']} items)")
+    print_plan(packet["brief_plan"])
     print("\nQuick digest:")
     for v in packet["kev"][:5]:
         ep = f" | EPSS {v['epss']} (p{v['epss_percentile']})" if v.get("epss") is not None else ""
@@ -284,6 +605,9 @@ def main():
         print(f"  RL group={v['group']} sector={v['sector']} country={v['country']} discovered={v['discovered']}")
     for v in packet["circl"][:5]:
         print(f"  CIRCL {v['id']} sev={v['severity']} aliases={','.join(v['aliases'][:2])}")
+    for v in packet["ai_advisories"][:8]:
+        seen = "new" if v["first_seen"] == packet["date"] else f"seen since {v['first_seen']}"
+        print(f"  AI {v['id']} {v['package']} sev={v['severity']} cve={v['cve']} ({seen})")
 
 
 if __name__ == "__main__":
