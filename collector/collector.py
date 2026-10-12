@@ -485,10 +485,12 @@ def plan_brief(packet, max_findings=3, radar_days=14, radar_max=3):
       per product. At most one non-AI item, and only a new CRITICAL KEV entry.
     - On the radar (one-line mentions): new AI items that didn't make the cut,
       plus AI items rated HIGH or CRITICAL first seen in the last `radar_days` days.
-    - Quiet AI day: no AI finding today.
+    - AI advisories checked: the AI advisory source loaded fully today.
+    - Quiet AI day: no AI finding today, and the AI advisories were checked.
     - AI risk of the week: Mondays only, rotating through AI_RISK_TOPICS.
     """
     today = _parse_mmdd(packet["date"])
+    ai_checked = ((packet.get("sources") or {}).get("ai_advisories") or {}).get("status") == "ok"
     candidates = {}
     for section in ("kev", "ai_advisories", "circl"):
         for item in packet.get(section) or []:
@@ -553,7 +555,9 @@ def plan_brief(packet, max_findings=3, radar_days=14, radar_max=3):
         "findings": [{k: e[k] for k in ("section", "id", "cve", "severity", "severity_reason", "ai", "selected_because", "item")}
                      for e in findings],
         "on_the_radar": radar,
-        "quiet_ai_day": not any(e["ai"] for e in findings),
+        "ai_advisories_checked": ai_checked,
+        # A failed check is not a quiet day.
+        "quiet_ai_day": ai_checked and not any(e["ai"] for e in findings),
         "ai_risk_topic": topic,
         "ransomware_pulse": ransomware_pulse(packet.get("ransomware") or []),
     }
@@ -611,7 +615,7 @@ def build_packet(prior_paths=()):
     return packet
 
 
-def print_plan(plan):
+def print_plan(plan, ai_status="ok"):
     """The brief plan in plain text, for the drafting step's context."""
     print("\nBRIEF PLAN (follow exactly; do not add, drop, reorder or re-rate findings):")
     if not plan["findings"]:
@@ -624,6 +628,7 @@ def print_plan(plan):
               f" | {f['selected_because']}")
     for r in plan["on_the_radar"]:
         print(f"  On the radar: {r['severity']} {r['id']} {r['product']} (first seen {r['first_seen']})")
+    print(f"  AI advisories checked: {'yes' if plan['ai_advisories_checked'] else f'no ({ai_status})'}")
     print(f"  Quiet AI day: {'yes' if plan['quiet_ai_day'] else 'no'}")
     topic = plan["ai_risk_topic"]
     print(f"  AI risk of the week: {topic['title'] if topic else 'none (Mondays only)'}")
@@ -646,7 +651,7 @@ def main():
     print(f"Wrote {path}")
     for name, meta in packet["sources"].items():
         print(f"  {name}: {meta['status']} ({meta['count']} items)")
-    print_plan(packet["brief_plan"])
+    print_plan(packet["brief_plan"], packet["sources"]["ai_advisories"]["status"])
     print("\nQuick digest:")
     for v in packet["kev"][:5]:
         ep = f" | EPSS {v['epss']} (p{v['epss_percentile']})" if v.get("epss") is not None else ""

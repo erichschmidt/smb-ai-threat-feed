@@ -89,7 +89,8 @@ Selection and severity are deterministic code (`plan_brief` and `rate_severity` 
 |---|---|---|
 | `findings` | array | Up to 3, AI tools first, one per product. Each has `section`, `id`, `cve`, `severity` (CRITICAL/HIGH/WATCH), `severity_reason`, `ai`, `selected_because` (`new today` or `EPSS crossed 0.1 since last seen`) and `item` (the full source record). At most one non-AI finding, and only a new CRITICAL KEV entry. |
 | `on_the_radar` | array | Up to 3 one-line mentions: new AI items that didn't make the cut, or recent HIGH/CRITICAL ones |
-| `quiet_ai_day` | boolean | No AI finding today |
+| `ai_advisories_checked` | boolean | The AI advisory source loaded fully today (`sources.ai_advisories.status` is `"ok"`) |
+| `quiet_ai_day` | boolean | No AI finding today, and `ai_advisories_checked` is true. A failed check is never a quiet day. |
 | `ai_risk_topic` | object/null | Mondays only: `{title, scope}` for a plain-language AI risk with no CVE, rotating weekly |
 | `ransomware_pulse` | string | One factual sentence: recent victim count, most-hit sectors and countries |
 

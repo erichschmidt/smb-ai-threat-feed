@@ -71,7 +71,7 @@ Each day's data is in `data/MM-DD-YYYY.json`, mirrored to `latest.json`. Shape:
   "ai_advisories": [ { "id": "GHSA-...", "cve": "CVE-...", "package": "langflow", "severity": "critical", "patched": "...", "first_seen": "...", "links": ["..."] } ],
   "threatfox": [ { "value": "...", "ioc_type": "...", "malware": "...", "links": ["..."] } ],
   "urlhaus": [ { "value": "...", "status": "...", "links": ["..."] } ],
-  "brief_plan": { "findings": [ { "id": "...", "severity": "HIGH", "severity_reason": "..." } ], "on_the_radar": [], "quiet_ai_day": false, "ai_risk_topic": null }
+  "brief_plan": { "findings": [ { "id": "...", "severity": "HIGH", "severity_reason": "..." } ], "on_the_radar": [], "ai_advisories_checked": true, "quiet_ai_day": false, "ai_risk_topic": null }
 }
 ```
 

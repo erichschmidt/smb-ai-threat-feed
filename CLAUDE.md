@@ -43,7 +43,7 @@ The collector writes `<out>/MM-DD-YYYY.json` for **today** and prints a BRIEF PL
 - **Dates are `MM-DD-YYYY`** in file names, `date`, and KEV `added`/`due`. Upstream ISO dates are converted with `iso_to_mmdd()` at the end of `build_packet()`. `generated` is the only field that stays an ISO-8601 UTC timestamp. An earlier bug left KEV dates as `YYYY-MM-DD` in old data files until 52ded78, so check any date handling against `SCHEMA.md`.
 - **EPSS enrichment** runs once, after all fetches, over the CVE IDs from KEV, the CIRCL aliases and the AI advisories. Unscored CVEs get `null`.
 - CIRCL's `/api/last` returns a mix of OSV-style records and raw CVE 5.x records. `fetch_circl()` normalizes both shapes.
-- **AI coverage** comes from `fetch_ai_advisories()`: GitHub's advisory API, unauthenticated, with one call per ecosystem in `AI_WATCHLIST`. Packages in `AI_SMB_COMMON` rank first. `AI_TERMS` decides whether a KEV or CIRCL entry counts as AI.
+- **AI coverage** comes from `fetch_ai_advisories()`: GitHub-reviewed advisories from OSV.dev, unauthenticated, with one batch query for the whole `AI_WATCHLIST`. Packages in `AI_SMB_COMMON` rank first. If that source fails at all, `brief_plan.ai_advisories_checked` is false and the day is never reported as quiet. `AI_TERMS` decides whether a KEV or CIRCL entry counts as AI.
 - **History.** `annotate_history()` sets `first_seen` and `prev_epss` from earlier packets, tracking KEV separately from CIRCL and AI advisories. Today's own file is ignored, so same-day re-runs give the same plan.
 - **Planning.** Change what the brief covers in `plan_brief()`, `rate_severity()` or `AI_RISK_TOPICS`, not in the drafting prompt. Keep `brief_plan` JSON-serializable; it is published in the data file.
 
