@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-11T13:00:46.851318+00:00",
-  "date": "10-11-2026",
+  "generated": "2026-10-12T13:00:53.619610+00:00",
+  "date": "10-12-2026",
   "sources": {
     "cisa_kev": {
       "status": "ok",
@@ -22,9 +22,13 @@
       "status": "ok",
       "count": 30
     },
+    "ai_advisories": {
+      "status": "ok",
+      "count": 15
+    },
     "epss": {
-      "status": "ok (7/35 scored)",
-      "count": 7
+      "status": "ok (23/27 scored)",
+      "count": 23
     }
   },
   "kev": [
@@ -39,11 +43,13 @@
       "ransomware_use": "Unknown",
       "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://web.archive.org/web/20150729014733/https://kb.isc.org/article/AA-01272 ; https://access.redhat.co",
       "links": [
-        " https://access.redhat.com/errata/RHSA-2015:1513.html",
-        " https://supportportal.juniper.net/s/article/2016-01-Security-Bulletin-Junos-Vulnerability-in-ISC-BIND-named-CVE-2015-5477 "
+        "https://access.redhat.com/errata/RHSA-2015:1513.html",
+        "https://supportportal.juniper.net/s/article/2016-01-Security-Bulletin-Junos-Vulnerability-in-ISC-BIND-named-CVE-2015-5477"
       ],
       "epss": 0.9941,
-      "epss_percentile": 0.9994
+      "epss_percentile": 0.9994,
+      "first_seen": "10-09-2026",
+      "prev_epss": 0.9941
     },
     {
       "cve": "CVE-2016-3081",
@@ -56,10 +62,12 @@
       "ransomware_use": "Unknown",
       "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://cwiki.apache.org/confluence/display/WW/S2-032 ; ; BOD 26-04: https://www.cisa.gov/news-events/dir",
       "links": [
-        " https://nvd.nist.gov/vuln/detail/CVE-2016-3081"
+        "https://nvd.nist.gov/vuln/detail/CVE-2016-3081"
       ],
       "epss": 0.9605,
-      "epss_percentile": 0.9988
+      "epss_percentile": 0.9988,
+      "first_seen": "10-09-2026",
+      "prev_epss": 0.9605
     },
     {
       "cve": "CVE-2023-22894",
@@ -72,11 +80,13 @@
       "ransomware_use": "Unknown",
       "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://strapi.io/blog/security-disclosure-of-vulnerabilities-cve ; https://github.com/strapi/strapi/rele",
       "links": [
-        " https://github.com/strapi/strapi/releases ",
-        " https://nvd.nist.gov/vuln/detail/CVE-2023-22894"
+        "https://github.com/strapi/strapi/releases",
+        "https://nvd.nist.gov/vuln/detail/CVE-2023-22894"
       ],
       "epss": 0.0361,
-      "epss_percentile": 0.892
+      "epss_percentile": 0.8921,
+      "first_seen": "10-09-2026",
+      "prev_epss": 0.0361
     },
     {
       "cve": "CVE-2021-3199",
@@ -89,11 +99,13 @@
       "ransomware_use": "Unknown",
       "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: ; https://github.com/ONLYOFFICE/DocumentServer/blob/903fe5ab7a275bd69c3c3346af2d21cf87ebeabf/CHANGELOG.md",
       "links": [
-        " https://github.com/ONLYOFFICE/DocumentServer/blob/903fe5ab7a275bd69c3c3346af2d21cf87ebeabf/CHANGELOG.md#563 ",
-        " https://nvd.nist.gov/vuln/detail/CVE-2021-3199"
+        "https://github.com/ONLYOFFICE/DocumentServer/blob/903fe5ab7a275bd69c3c3346af2d21cf87ebeabf/CHANGELOG.md#563",
+        "https://nvd.nist.gov/vuln/detail/CVE-2021-3199"
       ],
       "epss": 0.1935,
-      "epss_percentile": 0.9729
+      "epss_percentile": 0.973,
+      "first_seen": "10-09-2026",
+      "prev_epss": 0.1935
     },
     {
       "cve": "CVE-2015-3306",
@@ -106,262 +118,266 @@
       "ransomware_use": "Unknown",
       "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: http://www.proftpd.org/ ; https://lists.debian.org/debian-security-announce/2015/msg00154.html ; https://",
       "links": [
-        " https://lists.debian.org/debian-security-announce/2015/msg00154.html ",
-        " https://lists.opensuse.org/archives/list/updates@lists.opensuse.org/message/WE6YZRG5UVXMGQ7IVDRYBPIWV4M6UUGM/ "
+        "https://lists.debian.org/debian-security-announce/2015/msg00154.html",
+        "https://lists.opensuse.org/archives/list/updates@lists.opensuse.org/message/WE6YZRG5UVXMGQ7IVDRYBPIWV4M6UUGM/"
       ],
       "epss": 0.995,
-      "epss_percentile": 0.9994
+      "epss_percentile": 0.9994,
+      "first_seen": "10-09-2026",
+      "prev_epss": 0.995
     }
   ],
   "threatfox": [
     {
       "type": "IOC",
-      "value": "http://crownsquareproductions.com:4219",
+      "value": "https://steamcommunity.com/profiles/76561198622044578",
       "ioc_type": "url",
-      "malware": "Remus",
+      "malware": "Vidar",
       "confidence": 75,
-      "seen": "2026-10-11 12:53:48 UTC",
+      "seen": "2026-10-12 12:55:22 UTC",
       "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus"
+        "https://bazaar.abuse.ch/sample/4b525f710b59464a67ea50c171c358afbe2b4afd22d1388af4aefcb8358d76ca/",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
     },
     {
       "type": "IOC",
-      "value": "http://tyxa.today:4894",
+      "value": "https://t.me/scii0n",
       "ioc_type": "url",
-      "malware": "Remus",
+      "malware": "Vidar",
       "confidence": 75,
-      "seen": "2026-10-11 12:48:23 UTC",
+      "seen": "2026-10-12 12:55:21 UTC",
       "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus"
+        "https://bazaar.abuse.ch/sample/4b525f710b59464a67ea50c171c358afbe2b4afd22d1388af4aefcb8358d76ca/",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
     },
     {
       "type": "IOC",
-      "value": "https://antimalwarediagnostics.st/api/upload",
+      "value": "https://b6y.6666k.org",
       "ioc_type": "url",
-      "malware": "Unknown malware",
+      "malware": "Vidar",
       "confidence": 100,
-      "seen": "2026-10-11 12:39:00 UTC",
+      "seen": "2026-10-12 12:54:26 UTC",
       "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/unknown"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
     },
     {
       "type": "IOC",
-      "value": "https://antimalwarediagnostics.st/api/log/create",
-      "ioc_type": "url",
-      "malware": "Unknown malware",
-      "confidence": 100,
-      "seen": "2026-10-11 12:39:00 UTC",
+      "value": "2049da3488d66859ee508aac684897f65ccd46bc420403a63772c5349fe59b95",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-12 12:53:16 UTC",
       "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/unknown"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
       ]
     },
     {
       "type": "IOC",
-      "value": "https://antimalwarediagnostics.st/api/app-credentials",
-      "ioc_type": "url",
-      "malware": "Unknown malware",
-      "confidence": 100,
-      "seen": "2026-10-11 12:39:00 UTC",
+      "value": "c8a95d34a2888680a4d1911c62d12c44f19ff8b15834f6219d9fa0ac17f68c7d",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-12 12:53:15 UTC",
       "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/unknown"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
       ]
     },
     {
       "type": "IOC",
-      "value": "https://antimalwarediagnostics.st/api/upload/file",
-      "ioc_type": "url",
-      "malware": "Unknown malware",
-      "confidence": 100,
-      "seen": "2026-10-11 12:39:00 UTC",
+      "value": "da7b51d67d37cacea6d6af111cfe9cf28e57edd391830555eec06004dc757e1d",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-12 12:53:14 UTC",
       "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/unknown"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
       ]
     },
     {
       "type": "IOC",
-      "value": "https://antimalwarediagnostics.st/api/discordi/injection",
-      "ioc_type": "url",
-      "malware": "Unknown malware",
-      "confidence": 100,
-      "seen": "2026-10-11 12:39:00 UTC",
+      "value": "3eeeca19923ce623ffe7cb8ef441e3b38ec758cefc1848dd226efc1416a3818f",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-12 12:53:13 UTC",
       "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/unknown"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
       ]
     },
     {
       "type": "IOC",
-      "value": "https://antimalwarediagnostics.st/api/ping",
-      "ioc_type": "url",
-      "malware": "Unknown malware",
-      "confidence": 100,
-      "seen": "2026-10-11 12:39:00 UTC",
+      "value": "97e0e3f726d105b2c42e812ed023c34399576e3dd81012f7fa0a12bc65f1e8a5",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-12 12:53:12 UTC",
       "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/unknown"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
       ]
     }
   ],
   "urlhaus": [
     {
       "type": "URL",
-      "value": "http://115.53.220.37:43200/i",
-      "host": "115.53.220.37",
+      "value": "http://210.208.110.4:37963/i",
+      "host": "210.208.110.4",
       "status": "online",
-      "seen": "2026-10-11 12:52:11 UTC",
+      "seen": "2026-10-12 12:47:09 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3947999/"
+        "https://urlhaus.abuse.ch/url/3949069/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://91.92.242.236/files-129312398/files/file_4aa3e284d0ae6318.exe",
-      "host": "91.92.242.236",
+      "value": "http://115.57.82.253:47965/bin.sh",
+      "host": "115.57.82.253",
       "status": "online",
-      "seen": "2026-10-11 12:52:08 UTC",
+      "seen": "2026-10-12 12:47:08 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3947998/"
+        "https://urlhaus.abuse.ch/url/3949068/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://42.176.125.25:55108/i",
-      "host": "42.176.125.25",
+      "value": "http://96.246.230.97:37176/i",
+      "host": "96.246.230.97",
       "status": "online",
-      "seen": "2026-10-11 12:47:07 UTC",
+      "seen": "2026-10-12 12:47:07 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3947997/"
+        "https://urlhaus.abuse.ch/url/3949066/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://221.235.139.104:57238/bin.sh",
-      "host": "221.235.139.104",
+      "value": "http://36.89.252.178:52289/i",
+      "host": "36.89.252.178",
       "status": "online",
-      "seen": "2026-10-11 12:39:16 UTC",
+      "seen": "2026-10-12 12:47:07 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3947996/"
+        "https://urlhaus.abuse.ch/url/3949067/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://115.53.220.37:43200/bin.sh",
-      "host": "115.53.220.37",
+      "value": "http://38.60.179.31:9999/payload.b64",
+      "host": "38.60.179.31",
       "status": "online",
-      "seen": "2026-10-11 12:29:13 UTC",
+      "seen": "2026-10-12 12:43:06 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3947995/"
+        "https://urlhaus.abuse.ch/url/3949065/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://42.238.168.152:41810/i",
-      "host": "42.238.168.152",
-      "status": "online",
-      "seen": "2026-10-11 12:17:07 UTC",
+      "value": "http://38.60.179.31:9999/c2.py",
+      "host": "38.60.179.31",
+      "status": "offline",
+      "seen": "2026-10-12 12:43:05 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3947993/"
+        "https://urlhaus.abuse.ch/url/3949061/"
       ]
     }
   ],
   "ransomware": [
     {
-      "group": "qilin",
-      "sector": "Energy & Utilities",
-      "country": "CO",
-      "description": "N/A",
-      "discovered": "2026-10-11T02:58:30",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "dragonforce",
-      "sector": "Manufacturing",
-      "country": "TW",
-      "description": "TEXMA International Co., Ltd. is a leading Taiwanese apparel manufacturer specializing in high-quality women's woven apparel, activewear, and sportswear. Founded in 1975, the company operates under a ",
-      "discovered": "2026-10-10T20:31:45",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "thegentlemen",
-      "sector": "Government & Defense",
-      "country": "TH",
-      "description": "rtaf.mi.th is the official portal of the Royal Thai Air Force, one of Asia's oldest air forces (founded November 2, 1913; independent since 1937), with ~46,000 personnel and 11 combat wings, now runni",
-      "discovered": "2026-10-10T20:30:08",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "UmBra",
-      "sector": "Education",
-      "country": "EG",
-      "description": "Helwan International Technological University \u2014 a pioneering Egyptian institution offering cutting-edge programs in Cybersecurity, Data Science, Artificial Intelligence, and Mechatronics, equipped wit",
-      "discovered": "2026-10-10T16:54:23",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
       "group": "Redact",
-      "sector": "Healthcare",
+      "sector": "Energy & Utilities",
       "country": "US",
-      "description": "Sector: Medical Equipment | Revenue: $4.97B USD",
-      "discovered": "2026-10-10T16:53:38",
+      "description": "Sector: Energy Distribution | Revenue: $14B USD",
+      "discovered": "2026-10-12T03:23:11",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
-      "group": "qilin",
-      "sector": "Other",
-      "country": "CO",
-      "description": "N/A",
-      "discovered": "2026-10-10T16:06:32",
+      "group": "emperador",
+      "sector": "Transportation",
+      "country": "",
+      "description": "Dear Spelman Logistics,\n\nWe are now in possession of 1.2M contact records (emails and phone numbers), 245K carrier profiles complete with EIN and SSN, 57K bank accounts including routing numbers, 334K",
+      "discovered": "2026-10-11T22:21:27",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
-      "group": "qilin",
-      "sector": "Government & Defense",
-      "country": "AR",
-      "description": "N/A",
-      "discovered": "2026-10-10T16:05:54",
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "",
+      "description": "smart building & surveillance integration \u00b7 California, USA | [PENDING EXPOSURE: data publishes 2026-10-14 18:00 UTC]",
+      "discovered": "2026-10-11T20:53:02",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
-      "group": "exitium",
-      "sector": "Manufacturing",
-      "country": "JP",
-      "description": "Website: koike-japan.com\nYou have time until Tuesday(10.13.2026). If you wouldn't contact us we will start selling data.\nWe have 5.8 TB of data: \nagreements\nconfidential data \ncorrespondence files\nall",
-      "discovered": "2026-10-10T14:31:50",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "rhysida",
-      "sector": "Professional Services",
+      "group": "BrainCipher",
+      "sector": "Not Found",
       "country": "US",
-      "description": "Gress Clark Young & Schoepper 167,804 files / ~166.4 GBBanking details - of the firm and its clients.SSNs + signatures of clients/witnesses; W-9, I-9 forms with DL/SSN card copies; W-4 forms.BIIA case",
-      "discovered": "2026-10-10T12:46:50",
+      "description": "[AI generated] N/A\n\nI don't have verified, reliable information about a specific company at \"huntcompanies.com\" to describe accurately. Providing fabricated details about a company's operations, indus",
+      "discovered": "2026-10-11T20:21:17",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
-      "group": "qilin",
-      "sector": "Hospitality",
-      "country": "US",
-      "description": "N/A",
-      "discovered": "2026-10-10T12:45:59",
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "",
+      "description": "smart building & surveillance integration \u00b7 California, USA | [PENDING EXPOSURE: data publishes 2026-10-14 18:00 UTC]",
+      "discovered": "2026-10-11T18:56:11",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "",
+      "description": "architecture & design \u00b7 Florida, USA | [PENDING EXPOSURE: data publishes 2026-10-14 12:00 UTC]",
+      "discovered": "2026-10-11T18:55:38",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "",
+      "description": "neurology practice \u00b7 New South Wales, Australia | [PENDING EXPOSURE: data publishes 2026-10-13 12:37 UTC]",
+      "discovered": "2026-10-11T18:55:04",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "",
+      "description": "cannabis operator \u00b7 Michigan, USA | [PENDING EXPOSURE: data publishes 2026-10-13 09:40 UTC]",
+      "discovered": "2026-10-11T18:54:28",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "",
+      "description": "confectionery & telehealth \u00b7 New York, USA | [PENDING EXPOSURE: data publishes 2026-10-13 09:40 UTC]",
+      "discovered": "2026-10-11T18:53:54",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "CA",
+      "description": "Financial services \u00b7 Canada | [HONORED: settled 2026-10-07 17:00 UTC \u00b7 before their deadline]",
+      "discovered": "2026-10-11T18:53:20",
       "links": [
         "https://www.ransomware.live"
       ]
@@ -386,7 +402,9 @@
         "https://github.com/advisories/GHSA-769v-p64c-89pr"
       ],
       "epss": 0.004,
-      "epss_percentile": 0.317
+      "epss_percentile": 0.3175,
+      "first_seen": "08-19-2026",
+      "prev_epss": 0.004
     },
     {
       "id": "PYSEC-2024-115",
@@ -407,523 +425,949 @@
         "https://github.com/advisories/GHSA-45pg-36p6-83v9"
       ],
       "epss": 0.1374,
-      "epss_percentile": 0.9643
+      "epss_percentile": 0.9643,
+      "first_seen": "08-19-2026",
+      "prev_epss": 0.1374
     },
     {
-      "id": "GHSA-wxjw-vcvf-mvw9",
+      "id": "CVE-2026-85499",
       "aliases": [
-        "CVE-2026-108574"
+        "CVE-2026-85499"
       ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Improper Authorization vulnerability in Apache SkyWalking BanyanDB.\n\n\n\nThe Canopy includes incomplete proof-of-concept role and monitoring-proxy functionality.\u00a0Under a non-default configuration with a readonly Canopy user and a reachable\u00a0monitoring t",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-85499"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-81774",
+      "aliases": [
+        "CVE-2026-81774"
+      ],
+      "severity": "N/A",
+      "published": "2026-09-02",
+      "details": "Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability in Dotstore WooCommerce Product Attachment woo-product-attachment allows Retrieve Embedded Sensitive Data.This issue affects WooCommerce Product Attachment: from",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-81774"
+      ],
+      "epss": 0.0042,
+      "epss_percentile": 0.3396,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108828",
+      "aliases": [
+        "CVE-2026-108828"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "A vulnerability was identified in Zen Cart 2.2.2. Affected by this vulnerability is the function eval of the file admin/configuration.php of the component Admin Panel. The manipulation of the argument gID leads to sql injection. The attack may be ini",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108828"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108827",
+      "aliases": [
+        "CVE-2026-108827"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "A vulnerability was determined in Zen Cart up to 2.2.2. Affected is the function zen_call_function of the file admin/includes/functions/general.php of the component Administrative Module Management. Executing a manipulation of the argument use_functi",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108827"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-105283",
+      "aliases": [
+        "CVE-2026-105283"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Generation of Error Message Containing Sensitive Information vulnerability in ash-project ash_typescript allows an unauthenticated attacker to read internal Elixir terms from an RPC error response by provoking an error the error builder has no dedica",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-105283"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-77812",
+      "aliases": [
+        "CVE-2026-77812"
+      ],
+      "severity": "N/A",
+      "published": "2026-08-21",
+      "details": "DJI drones transmit DUML (DJI Universal Markup Language) protocol messages over BLE (Bluetooth Low Energy) without encryption. When a client attempts to connect to the drone over Wi-Fi, or when the drone is switched to QuickTransfer mode, the DJI Fly",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-77812"
+      ],
+      "epss": 0.0009,
+      "epss_percentile": 0.0037,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:76734",
+      "aliases": [],
       "severity": [
         {
           "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
-        },
-        {
-          "type": "CVSS_V4",
-          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N"
         }
       ],
-      "published": "2026-10-11",
-      "details": "A flaw has been found in BerriAI LiteLLM up to 1.95.0. Affected by this issue is the function ui_view_session_spend_logs of the file litellm/proxy/spend_tracking/spend_management_endpoints.py of the component Spend Tracking. Executing a manipulation ",
+      "published": "2026-10-07",
+      "details": "An implementation of the RPM PGP interface using Sequoia.\n\nSecurity Fix(es):\n\n* sequoia-openpgp: sequoia-openpgp: Cryptographic integrity compromise via key flag confusion (CVE-2026-42784)\n\nBug Fix(es) and Enhancement(s):\n\n* Uninformative error messa",
       "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-108574"
-      ]
+        "https://errata.rockylinux.org/RLSA-2026:76734",
+        "https://access.redhat.com/errata/RHSA-2026:76734"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
     },
     {
-      "id": "GHSA-p5x9-rh29-4r44",
-      "aliases": [
-        "CVE-2026-108568"
-      ],
+      "id": "RLSA-2026:74442",
+      "aliases": [],
       "severity": [
         {
           "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
-        },
-        {
-          "type": "CVSS_V4",
-          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:H"
         }
       ],
-      "published": "2026-10-11",
-      "details": "A vulnerability was determined in InstantSoft icms2 up to 2.18.2. The affected element is the function validatePaypalOrder of the file system/controllers/billing/actions/paypal.php of the component Billing Module. Executing a manipulation of the argu",
+      "published": "2026-10-02",
+      "details": "The libpcap packages provide a portable framework for low-level network monitoring. The libpcap library provides network statistics collection, security monitoring, and network debugging.\n\nSecurity Fix(es):\n\n* libpcap: libpcap: Out-of-bounds read and",
       "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-108568"
-      ]
+        "https://errata.rockylinux.org/RLSA-2026:74442",
+        "https://access.redhat.com/errata/RHSA-2026:74442"
+      ],
+      "first_seen": "10-04-2026",
+      "prev_epss": null
     },
     {
-      "id": "GHSA-j944-2cmv-5vxf",
-      "aliases": [
-        "CVE-2026-108566"
-      ],
+      "id": "RLSA-2026:79371",
+      "aliases": [],
       "severity": [
         {
           "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
-        },
-        {
-          "type": "CVSS_V4",
-          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:H"
         }
       ],
-      "published": "2026-10-11",
-      "details": "A vulnerability has been found in InstantSoft icms2 up to 2.18.2. This issue affects the function index of the file templates/default/controllers/messages/index.tpl.php of the component Private Message Handler. Such manipulation of the argument nickn",
+      "published": "2026-10-10",
+      "details": "Dovecot is an IMAP server for Linux and other UNIX-like systems, written primarily with security in mind. It also contains a small POP3 server, and supports e-mail in either the maildir or mbox format. The SQL drivers and authentication plug-ins are ",
       "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-108566"
-      ]
+        "https://errata.rockylinux.org/RLSA-2026:79371",
+        "https://access.redhat.com/errata/RHSA-2026:79371"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
     },
     {
-      "id": "GHSA-h4c8-m9wv-p9hq",
-      "aliases": [
-        "CVE-2026-108572"
-      ],
+      "id": "RLSA-2026:79122",
+      "aliases": [],
       "severity": [
         {
           "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
-        },
-        {
-          "type": "CVSS_V4",
-          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
         }
       ],
-      "published": "2026-10-11",
-      "details": "A security vulnerability has been detected in Casdoor up to 3.164.0/4.10.0. Affected is the function CasP3ProxyValidate of the file controllers/cas.go of the component Proxy Validation. Such manipulation of the argument pgtUrl leads to server-side re",
+      "published": "2026-10-10",
+      "details": "CJose is C library implementing the Javascript Object Signing and Encryption (JOSE).\n\nSecurity Fix(es):\n\n* cjose: cjose: Heap buffer overflow in AES Key Wrap decryption leads to denial of service (CVE-2026-53938)\n\nFor more details about the security ",
       "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-108572"
-      ]
+        "https://errata.rockylinux.org/RLSA-2026:79122",
+        "https://access.redhat.com/errata/RHSA-2026:79122"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
     },
     {
-      "id": "GHSA-gw95-8pcg-7gvv",
-      "aliases": [
-        "CVE-2026-108575"
-      ],
+      "id": "RLSA-2026:77690",
+      "aliases": [],
       "severity": [
         {
           "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
-        },
-        {
-          "type": "CVSS_V4",
-          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
         }
       ],
-      "published": "2026-10-11",
-      "details": "A vulnerability has been found in BerriAI LiteLLM up to 1.94.0. This affects the function get_secret of the file secret_managers/main.py of the component Secret Resolution. The manipulation of the argument api_key leads to improper authorization. The",
+      "published": "2026-10-09",
+      "details": "The kernel packages contain the Linux kernel, the core of any Linux operating system.\n\nSecurity Fix(es):\n\n* kernel: ipvlan: Make the addrs_lock be per port (CVE-2026-23103)\n\n* kernel: KVM: SEV: Require in-GHCB scratch area if GHCB v2+ is in use (CVE-",
       "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-108575"
-      ]
+        "https://errata.rockylinux.org/RLSA-2026:77690",
+        "https://access.redhat.com/errata/RHSA-2026:77690"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
     },
     {
-      "id": "GHSA-gr76-wjxc-qwm3",
-      "aliases": [
-        "CVE-2026-108570"
-      ],
+      "id": "RLSA-2026:77534",
+      "aliases": [],
       "severity": [
         {
           "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
-        },
-        {
-          "type": "CVSS_V4",
-          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+          "score": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
         }
       ],
-      "published": "2026-10-11",
-      "details": "A security flaw has been discovered in Furion .NET Framework up to 4.9.9.95. This affects the function RunCompile of the file framework/Furion/ViewEngine/Engines/ViewEngine.cs of the component View Engine. The manipulation of the argument content res",
+      "published": "2026-10-09",
+      "details": "The System Security Services Daemon (SSSD) service provides a set of daemons to manage access to remote directories and authentication mechanisms. It also provides the Name Service Switch (NSS) and the Pluggable Authentication Modules (PAM) interface",
       "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-108570"
-      ]
+        "https://errata.rockylinux.org/RLSA-2026:77534",
+        "https://access.redhat.com/errata/RHSA-2026:77534"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
     },
     {
-      "id": "GHSA-82r4-qmh5-8qxf",
-      "aliases": [
-        "CVE-2026-97183"
-      ],
+      "id": "RLSA-2026:77020",
+      "aliases": [],
       "severity": [
         {
           "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
         }
       ],
-      "published": "2026-10-11",
-      "details": "The WP-Invoice  WordPress plugin through 4.3.1 does not perform capability checks in several of its AJAX handlers, allowing any authenticated user, such as a Subscriber, to retrieve the email addresses, display names and profile details of all regist",
+      "published": "2026-10-09",
+      "details": "Python is an interpreted, interactive, object-oriented programming language, which includes modules, classes, exceptions, very high level dynamic data types and dynamic typing. Python supports interfaces to many system calls and libraries, as well as",
       "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-97183"
-      ]
+        "https://errata.rockylinux.org/RLSA-2026:77020",
+        "https://access.redhat.com/errata/RHSA-2026:77020"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
     },
     {
-      "id": "GHSA-7v6v-f62m-6jgf",
-      "aliases": [
-        "CVE-2026-108573"
-      ],
+      "id": "RLSA-2026:77648",
+      "aliases": [],
       "severity": [
         {
           "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:L"
-        },
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "published": "2026-10-09",
+      "details": "IdM PKI is an enterprise software system designed to manage enterprise Public Key Infrastructure deployments.  IdM PKI consists of the following components: \n  * Certificate Authority (CA)\n  * Key Recovery Authority (KRA)\n  * Online Certificate Statu",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:77648",
+        "https://access.redhat.com/errata/RHSA-2026:77648"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:76781",
+      "aliases": [],
+      "severity": [
         {
-          "type": "CVSS_V4",
-          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:H/A:H"
         }
       ],
       "published": "2026-10-11",
-      "details": "A vulnerability was detected in Open Asset Import Library Assimp up to 6.0.5. Affected by this vulnerability is the function IOStreamBuffer::getNextBlock of the component PLY File Handler. Performing a manipulation results in out-of-bounds read. It i",
+      "details": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux syst",
       "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-108573"
-      ]
+        "https://errata.rockylinux.org/RLSA-2026:76781",
+        "https://access.redhat.com/errata/RHSA-2026:76781"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
     },
     {
-      "id": "GHSA-6pfh-rcm2-3cv3",
-      "aliases": [
-        "CVE-2026-96227"
+      "id": "RLSA-2026:76918",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H"
+        }
       ],
+      "published": "2026-10-08",
+      "details": "OpenSSL is a toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, as well as a full-strength general-purpose cryptography library.\n\nSecurity Fix(es):\n\n* openssl: compat-openssl: DTLS Retransmits Handsha",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:76918",
+        "https://access.redhat.com/errata/RHSA-2026:76918"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:77018",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2026-10-09",
+      "details": "Python is an interpreted, interactive, object-oriented programming language, which includes modules, classes, exceptions, very high level dynamic data types and dynamic typing. Python supports interfaces to many system calls and libraries, as well as",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:77018",
+        "https://access.redhat.com/errata/RHSA-2026:77018"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:76737",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N"
+        }
+      ],
+      "published": "2026-10-07",
+      "details": "Command-line frontends for Sequoia.\n\nSecurity Fix(es):\n\n* sequoia-openpgp: sequoia-openpgp: Cryptographic integrity compromise via key flag confusion (CVE-2026-42784)\n\nBug Fix(es) and Enhancement(s):\n\n* Unbundle capnproto from sequoia-sq [rhel-10.2.z",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:76737",
+        "https://access.redhat.com/errata/RHSA-2026:76737"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:76762",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "published": "2026-10-07",
+      "details": "The perl-DBI package provides the standard database interface module for the Perl programming language. It implements a database-independent interface, meaning it defines a consistent set of methods, variables, and conventions for database operations",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:76762",
+        "https://access.redhat.com/errata/RHSA-2026:76762"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:76735",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N"
+        }
+      ],
+      "published": "2026-10-07",
+      "details": "A simple OpenPGP signature verification program.\n\nSecurity Fix(es):\n\n* sequoia-openpgp: sequoia-openpgp: Cryptographic integrity compromise via key flag confusion (CVE-2026-42784)\n\nFor more details about the security issue(s), including the impact, a",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:76735",
+        "https://access.redhat.com/errata/RHSA-2026:76735"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:76743",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "published": "2026-10-07",
+      "details": "Collector with the supported components for a Rocky Enterprise Software Foundation build of OpenTelemetry\n\nSecurity Fix(es):\n\n* google.golang.org/grpc: gRPC-Go: Denial of Service via malformed RPC requests (CVE-2026-84445)\n\nFor more details about the",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:76743",
+        "https://access.redhat.com/errata/RHSA-2026:76743"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:75864",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "published": "2026-10-06",
+      "details": "Node.js is a platform built on Chrome's JavaScript runtime \\ for easily building fast, scalable network applications. \\ Node.js uses an event-driven, non-blocking I/O model that \\ makes it lightweight and efficient, perfect for data-intensive \\ real-",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:75864",
+        "https://access.redhat.com/errata/RHSA-2026:75864"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:75769",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2026-10-06",
+      "details": "Vim (Vi IMproved) is an updated and improved version of the vi editor.\n\nSecurity Fix(es):\n\n* vim: Vim: Arbitrary command execution via crafted tags file in C omni-completion (CVE-2026-73073)\n\nFor more details about the security issue(s), including th",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:75769",
+        "https://access.redhat.com/errata/RHSA-2026:75769"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:75576",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2026-10-06",
+      "details": "The kernel packages contain the Linux kernel, the core of any Linux operating system.\n\nSecurity Fix(es):\n\n* kernel: net: mana: Fix TOCTOU double-fetch of hwc_msg_id from DMA buffer (CVE-2026-64034)\n\n* kernel: dm-integrity: don't increment hash_offset",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:75576",
+        "https://access.redhat.com/errata/RHSA-2026:75576"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:75583",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2026-10-06",
+      "details": "The libvirt library contains a C API for managing and interacting with the virtualization capabilities of Linux and other operating systems. In addition, libvirt provides tools for remote management of virtualized systems.\n\nSecurity Fix(es):\n\n* libvi",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:75583",
+        "https://access.redhat.com/errata/RHSA-2026:75583"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:75577",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "published": "2026-10-06",
+      "details": "The Berkeley Internet Name Domain (BIND) is an implementation of the Domain Name System (DNS) protocols. BIND includes a DNS server (named); a resolver library (routines for applications to use when interfacing with DNS); and tools for verifying that",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:75577",
+        "https://access.redhat.com/errata/RHSA-2026:75577"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:75579",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2026-10-06",
+      "details": "The sudo packages contain the sudo utility which allows system administrators to provide certain users with the permission to execute privileged commands, which are used for system management purposes, without having to log in as root.\n\nSecurity Fix(",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:75579",
+        "https://access.redhat.com/errata/RHSA-2026:75579"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:75570",
+      "aliases": [],
       "severity": [
         {
           "type": "CVSS_V3",
           "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
         }
       ],
-      "published": "2026-10-11",
-      "details": "The Piotnet Forms WordPress plugin through 1.0.30 does not authenticate or validate a form-submission file-upload request and permits browser-renderable file types to be stored, allowing unauthenticated attackers to store a file that executes arbitra",
+      "published": "2026-10-06",
+      "details": "FreeRDP is a free implementation of the Remote Desktop Protocol (RDP), released under the Apache license. The xfreerdp client can connect to RDP servers such as Microsoft Windows machines, xrdp, and VirtualBox.\n\nSecurity Fix(es):\n\n* FreeRDP: freerdp-",
       "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-96227"
-      ]
-    },
-    {
-      "id": "GHSA-3cf5-29f4-vxgm",
-      "aliases": [
-        "CVE-2026-108571"
+        "https://errata.rockylinux.org/RLSA-2026:75570",
+        "https://access.redhat.com/errata/RHSA-2026:75570"
       ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
-        },
-        {
-          "type": "CVSS_V4",
-          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "A weakness has been identified in Xinhu Rainrock RockOA up to 2.7.6. This impacts the function kqjcmdModel::returnchuli of the file webmain/task/openapi/openkqjAction.php of the component Openkqj Action. This manipulation of the argument ID causes sq",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-108571"
-      ]
-    },
-    {
-      "id": "GHSA-384j-rrq8-q3g3",
-      "aliases": [
-        "CVE-2026-108569"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
-        },
-        {
-          "type": "CVSS_V4",
-          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "A vulnerability was identified in Furion .NET Framework up to 4.9.9.92. The impacted element is the function String.Replace of the file framework/Furion/Templates/Extensions/StringRenderExtensions.cs. The manipulation of the argument Name leads to sq",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-108569"
-      ]
-    },
-    {
-      "id": "GHSA-2x23-44x6-qv92",
-      "aliases": [
-        "CVE-2026-108567"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
-        },
-        {
-          "type": "CVSS_V4",
-          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "A vulnerability was found in InstantSoft icms2 up to 2.18.2. Impacted is the function files_delete_file of the file system/fields/image.php of the component Image Handler. Performing a manipulation of the argument size results in path traversal. The ",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-108567"
-      ]
-    },
-    {
-      "id": "GHSA-xwx7-jj6g-vhp6",
-      "aliases": [
-        "CVE-2026-89302"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The Post Voting System WordPress plugin through 1.0 does not properly sanitize and escape a parameter before using it in a SQL query, allowing unauthenticated users to perform SQL injection attacks.",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-89302"
-      ]
-    },
-    {
-      "id": "GHSA-vv5r-wf9f-5j7m",
-      "aliases": [
-        "CVE-2026-88785"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The Simple Membership WordPress plugin before 4.8.3 does not avoid transmitting a newly registered member's plaintext password in a URL query string when an optional auto-login-after-registration feature is enabled, exposing the credential in browser",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-88785"
-      ]
-    },
-    {
-      "id": "GHSA-vrpv-vc9c-j35f",
-      "aliases": [
-        "CVE-2026-88903"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The Topcontent WordPress plugin through 1.2.1 does not properly authorise one of its request handlers and disables HTML sanitisation before storing the submitted content, allowing unauthenticated attackers to publish arbitrary posts containing malici",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-88903"
-      ]
-    },
-    {
-      "id": "GHSA-v69x-x643-f98h",
-      "aliases": [
-        "CVE-2026-85121"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The Insurify  WordPress plugin through 1.0 does not have authorisation and nonce checks on one of its AJAX actions, allowing unauthenticated users to create and overwrite arbitrary WordPress options with request data, which can take the site offline ",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-85121"
-      ]
-    },
-    {
-      "id": "GHSA-rx89-7fw5-qgmg",
-      "aliases": [
-        "CVE-2026-85118"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The AI Content Generator Marketing WordPress plugin through 1.0.0 does not enforce a nonce or capability check on some of its AJAX actions, allowing unauthenticated users to update and delete arbitrary WordPress options, which can be used to gain adm",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-85118"
-      ]
-    },
-    {
-      "id": "GHSA-q3fq-h679-wfvh",
-      "aliases": [
-        "CVE-2026-87764"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The BuddyPress Instant Chat WordPress plugin through 1.6 does not check that the sender of a chat message belongs to the conversation it is being added to, nor does it escape message content before outputting it back, allowing unauthenticated users t",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-87764"
-      ]
-    },
-    {
-      "id": "GHSA-pwvc-4967-h5ch",
-      "aliases": [
-        "CVE-2026-87760"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The Web Vitals Tracking WordPress plugin through 5.4.2 does not validate or escape performance measurements submitted by unauthenticated visitors before storing them and outputting them in a script context on an administrative page, allowing unauthen",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-87760"
-      ]
-    },
-    {
-      "id": "GHSA-prwf-5jq7-v6fg",
-      "aliases": [
-        "CVE-2026-91829"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The Subscribe to Comments WordPress plugin before 2.3.3 does not properly validate a parameter before reflecting it into a link target, allowing unauthenticated attackers to perform Reflected Cross-Site Scripting via a crafted URL against anyone who ",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-91829"
-      ]
-    },
-    {
-      "id": "GHSA-ph9q-7h7p-9p8w",
-      "aliases": [
-        "CVE-2026-89214"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The WpCues Basic Quiz WordPress plugin through 1.6.5 does not properly sanitise and escape values before using them in a SQL statement, which allows unauthenticated attackers to perform SQL injection attacks and read data from the database.",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-89214"
-      ]
-    },
-    {
-      "id": "GHSA-pgv8-gvc5-v6h7",
-      "aliases": [
-        "CVE-2026-88826"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The SmugMug Embed WordPress plugin through 3.13 does not have authorisation or CSRF checks on an AJAX action that stores gallery data, and does not sanitise or escape that data before outputting it, allowing unauthenticated users to store arbitrary w",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-88826"
-      ]
-    },
-    {
-      "id": "GHSA-p977-wr5v-fw6x",
-      "aliases": [
-        "CVE-2026-89283"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The WP Posts Password Batch Manager WordPress plugin through 1.1 does not perform any capability or nonce check on a bulk post-password action that runs on an always-loaded admin handler, allowing unauthenticated attackers to reset or overwrite the p",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-89283"
-      ]
-    },
-    {
-      "id": "GHSA-mm7c-7mwq-mppr",
-      "aliases": [
-        "CVE-2026-89299"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The WP Verify API WordPress plugin through 1.0.0 does not properly sanitize and escape a parameter before using it in a SQL query, allowing unauthenticated users to perform SQL injection attacks.",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-89299"
-      ]
-    },
-    {
-      "id": "GHSA-jx49-gcm7-9vg4",
-      "aliases": [
-        "CVE-2026-86706"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The Quick quotes  WordPress plugin through 1.0.0 does not perform any capability or nonce check on one of its AJAX actions and lets the caller choose which option is written, allowing unauthenticated users to alter arbitrary site settings and to make",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-86706"
-      ]
-    },
-    {
-      "id": "GHSA-jpjw-mhpj-4h5q",
-      "aliases": [
-        "CVE-2026-85126"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The Crowdfundly WordPress plugin through 2.2.2 does not have capability checks on some of its AJAX actions, allowing users holding one of its own low privileged roles to grant themselves the administrator role or arbitrary capabilities, leading to a ",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-85126"
-      ]
-    },
-    {
-      "id": "GHSA-j26v-2f6c-4g64",
-      "aliases": [
-        "CVE-2026-89195"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The Site Setup Wizard WordPress plugin through 1.5.8 does not properly sanitise and escape a parameter before using it in a SQL statement, which allows unauthenticated attackers to perform SQL injection attacks and read data from the database.",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-89195"
-      ]
-    },
-    {
-      "id": "GHSA-hxhg-9p9q-54v7",
-      "aliases": [
-        "CVE-2026-93550"
-      ],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
-        }
-      ],
-      "published": "2026-10-11",
-      "details": "The Veeqo for WooCommerce WordPress plugin through 2.2.8 does not restrict who can trigger its remote bridge-installation process or validate the URL it is given before downloading and extracting it, allowing users with Subscriber-level access and ab",
-      "links": [
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-93550"
-      ]
+      "first_seen": "10-12-2026",
+      "prev_epss": null
     }
-  ]
+  ],
+  "ai_advisories": [
+    {
+      "id": "GHSA-w794-rj3p-xv45",
+      "cve": "CVE-2026-105697",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "critical",
+      "cvss": 9.9,
+      "summary": "Langflow: OS command injection (RCE) via arbitrary command in MCP stdio server configuration",
+      "details": "### Summary\n\nBefore **Langflow 1.10.3**, the MCP stdio transport launched whatever `command` / `args` a user put in an MCP server configuration, with no allowlist and (before 1.10.3) wrapped in `bash -c \"exec {command} ...\"`. Any user able to reach the MCP server settings (\"Settings \u2192 MCP Servers \u2192 Add MCP Server\", `POST/PATCH /api/v2/mcp/servers/{server_name}`) or to build a flow with the MCP Too",
+      "affected": ">= 1.1.2, < 1.10.3",
+      "patched": "1.10.3",
+      "published": "10-07-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-w794-rj3p-xv45"
+      ],
+      "epss": 0.0047,
+      "epss_percentile": 0.3893,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-w7x8-q2gp-5cgg",
+      "cve": "CVE-2026-73487",
+      "package": "flowise",
+      "ecosystem": "npm",
+      "smb_common": true,
+      "severity": "critical",
+      "cvss": null,
+      "summary": "Flowise Prompt Injection to RCE and SSRF via CSV/Airtable Agent Python Validator Bypass",
+      "details": "## Summary\n\nFlowise <= 3.1.2 CSV Agent and Airtable Agent nodes use a regex-based blocklist (`validatePythonCodeForDataFrame()`) to sanitize LLM-generated Python code before execution in Pyodide. The validator has multiple structural bypasses that allow an attacker to exfiltrate all loaded data to an external server, perform SSRF against internal services, and potentially achieve further code exec",
+      "affected": "<= 3.1.2",
+      "patched": "3.1.3",
+      "published": "10-07-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-w7x8-q2gp-5cgg"
+      ],
+      "epss": 0.0096,
+      "epss_percentile": 0.6048,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-9gvv-qjj3-2p6g",
+      "cve": "CVE-2026-73483",
+      "package": "flowise",
+      "ecosystem": "npm",
+      "smb_common": true,
+      "severity": "critical",
+      "cvss": null,
+      "summary": "Flowise NodeVM sandbox escape via puppeteer allowlist - authenticated RCE and arbitrary file read via Chromium",
+      "details": "Flowise (packages flowise and flowise-components) in versions <= 3.1.2 contain a sandbox escape in the `vm2/@flowiseai/nodevm` JavaScript sandbox. An authenticated user with access to the `/api/v1/node-custom-function` endpoint can escape the sandbox by supplying attacker-controlled executablePath and args parameters to puppeteer.launch(), which internally invokes child_process.spawn() outside the",
+      "affected": "<= 3.1.2",
+      "patched": "3.1.3",
+      "published": "10-07-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-9gvv-qjj3-2p6g"
+      ],
+      "epss": 0.0062,
+      "epss_percentile": 0.483,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-8qpj-27x8-pwpq",
+      "cve": "CVE-2026-10561",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "critical",
+      "cvss": 9.9,
+      "summary": "Langflow: PythonREPLComponent executes unsandboxed Python code, enabling authenticated RCE and privilege escalation",
+      "details": "### Summary\n\nLangflow's built-in Python interpreter components \u2014 `PythonREPLComponent` (Python Interpreter) and the legacy `PythonREPLToolComponent` (Python REPL Tool) \u2014 executed arbitrary user- or model-supplied Python code inside flows without effective sandboxing. Because the code ran in-process with the privileges of the Langflow service, any **authenticated** user who could edit and run a flo",
+      "affected": "< 1.10.1",
+      "patched": "1.10.1",
+      "published": "10-06-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-8qpj-27x8-pwpq"
+      ],
+      "epss": 0.0082,
+      "epss_percentile": 0.5607,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-jxw3-mjmx-3pqm",
+      "cve": "CVE-2026-9205",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "critical",
+      "cvss": 9.1,
+      "summary": "Langflow: Weak Fernet Key via random.seed()",
+      "details": "### Summary\n\nLangflow uses Python's `random` module (Mersenne Twister, a non-cryptographic PRNG) seeded with the `SECRET_KEY` to derive the Fernet encryption key for all stored user credentials (API keys, LLM provider secrets, database passwords). When the `SECRET_KEY` is shorter than 32 characters \u2014 a common scenario for self-hosted deployments using simple/memorable secrets \u2014 the derived encrypt",
+      "affected": "<= 1.10.0",
+      "patched": "1.10.1",
+      "published": "10-05-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-jxw3-mjmx-3pqm"
+      ],
+      "epss": 0.003,
+      "epss_percentile": 0.211,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-cf6m-vc3m-7cgm",
+      "cve": "CVE-2026-8505",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "critical",
+      "cvss": 9.8,
+      "summary": "Langflow: Unauthenticated Flow Execution via Webhook Authentication Bypass",
+      "details": "### Summary\nA vulnerability in Langflow's webhook authentication logic allows unauthenticated users to trigger the execution of any flow. The system incorrectly bypasses API key validation when the `WEBHOOK_AUTH_ENABLE` configuration is set to `False`. This allows a remote attacker who knows a flow's UUID to execute it as if they were the owner, potentially leading to Remote Code Execution (RCE) o",
+      "affected": ">= 1.7.0, <= 1.9.0",
+      "patched": "1.9.1",
+      "published": "10-05-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-cf6m-vc3m-7cgm"
+      ],
+      "epss": 0.0072,
+      "epss_percentile": 0.5258,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-4hmc-cfm3-w43c",
+      "cve": "CVE-2026-105699",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "high",
+      "cvss": null,
+      "summary": "Langflow has Authenticated Cross-Project File Disclosure via Unscoped MCP Resource Handlers",
+      "details": "### Summary\nLangflow's project-scoped MCP transport authenticates the caller for the `project_id` in the connection URL, but the subsequent `resources/read` operation does not authorize the resource URI being requested. An authenticated user can connect to their own project-scoped MCP endpoint and supply a crafted file-download URI that points to another user's flow-backed file. The server then re",
+      "affected": ">= 1.6.8, <= 1.9.0",
+      "patched": "1.9.1",
+      "published": "10-07-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-4hmc-cfm3-w43c"
+      ],
+      "epss": 0.0025,
+      "epss_percentile": 0.1462,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-4f6c-2vvp-gw82",
+      "cve": "CVE-2026-105741",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "high",
+      "cvss": 7.1,
+      "summary": "Langflow: IP Spoofing Bypass via `X-Forwarded-For` Allowing Remote Configuration Write",
+      "details": "**Description**:\n### Summary\nAn IP spoofing vulnerability in the Model Context Protocol (MCP) configuration installation endpoint (`POST /api/v1/mcp/project/{project_id}/install`) allowed authenticated remote attackers to bypass the \"local-only\" access restriction. By sending a spoofed `X-Forwarded-For: 127.0.0.1` header, an attacker could make the server treat the request as originating from loca",
+      "affected": ">= 1.5.0, < 1.10.3",
+      "patched": "1.10.3",
+      "published": "10-07-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-4f6c-2vvp-gw82"
+      ],
+      "epss": 0.0021,
+      "epss_percentile": 0.1059,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-6qxp-vccf-f47h",
+      "cve": "CVE-2026-104850",
+      "package": "@modelcontextprotocol/sdk",
+      "ecosystem": "npm",
+      "smb_common": true,
+      "severity": "high",
+      "cvss": 7.5,
+      "summary": "MCP TypeScript SDK: OAuth client could send credentials to an authorization server chosen by the MCP server",
+      "details": "### Summary\nIn affected versions, the SDK's OAuth client let the MCP server decide which authorization server received the client's OAuth credentials. Credentials were not tied to the authorization server they belong to.\n\nA malicious or compromised MCP server could name its own authorization server. With no user interaction, the client would send it:\n\n- the `refresh_token` and `client_secret` stor",
+      "affected": ">= 1.12.0, < 1.31.0",
+      "patched": "1.31.0",
+      "published": "10-06-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-6qxp-vccf-f47h"
+      ],
+      "epss": 0.0018,
+      "epss_percentile": 0.0651,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-w584-2h2r-2hvf",
+      "cve": "CVE-2026-51886",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "high",
+      "cvss": 8.8,
+      "summary": "Langflow: Title Authenticated Remote Code Execution in  validate_code  via Malicious Decorators  Description",
+      "details": "###Summary:\nA critical Authenticated Remote Code Execution (RCE) vulnerability exists in the validate_code  function of Langflow. The` /api/v1/validate/code` endpoint, meant to validate user-supplied code, leverages Python's exec()  function. While it attempts to restrict execution to function definitions, it fails to account for decorators, which are evaluated at definition time. This allows any ",
+      "affected": ">= 1.7.2, < 1.10.1",
+      "patched": "1.10.1",
+      "published": "10-05-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-w584-2h2r-2hvf"
+      ],
+      "epss": 0.004,
+      "epss_percentile": 0.3261,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-9fpm-3445-2vx4",
+      "cve": "CVE-2026-7700",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "high",
+      "cvss": 8.8,
+      "summary": "Langflow: Prompt injection in Langflow Smart Transform can lead to code execution",
+      "details": "## Summary\n\nLangflow versions 1.3.0 through 1.10.2 contain a code-injection vulnerability in the Smart Transform (`LambdaFilterComponent`) component.\n\nSmart Transform places flow-author instructions and a preview of its input data into a prompt asking an LLM to generate a Python lambda. It then extracts a one-line lambda from the model response, applies only syntactic format checks, evaluates it w",
+      "affected": ">= 1.3.0, < 1.10.3",
+      "patched": "1.10.3",
+      "published": "10-05-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-9fpm-3445-2vx4"
+      ],
+      "epss": 0.0031,
+      "epss_percentile": 0.2242,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-gh98-4phw-6fmw",
+      "cve": "CVE-2026-105698",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "medium",
+      "cvss": 5.4,
+      "summary": "Langflow : Cross-user flow access and vertex execution via deprecated /api/v1/build/{flow_id}/vertices endpoints",
+      "details": "### Summary\n\nBefore **Langflow 1.10.1**, two deprecated but still-routed endpoints in the chat API did not check that the authenticated caller owns the flow referenced in the URL path:\n\n- `POST /api/v1/build/{flow_id}/vertices` (`retrieve_vertices_order`)\n- `POST /api/v1/build/{flow_id}/vertices/{vertex_id}` (`build_vertex`)\n\nAny authenticated user who knows (or obtains) another user's `flow_id` c",
+      "affected": ">= 1.0.0, < 1.10.1",
+      "patched": "1.10.1",
+      "published": "10-07-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-gh98-4phw-6fmw"
+      ],
+      "epss": 0.0018,
+      "epss_percentile": 0.0672,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-j8f7-x8jm-wmm4",
+      "cve": null,
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "medium",
+      "cvss": null,
+      "summary": "Langflow: SSRF in URL-taking components (protection disabled by default / warn-only, not applied to RSS, SearXNG, Web Search, Home Assistant, Glean, Docling)",
+      "details": "### Summary\n\nBefore **Langflow 1.10.3**, several built-in components sent server-side HTTP requests to URLs the flow author controls, with no SSRF enforcement. An authenticated user who can build or run flows could make the Langflow server reach loopback, RFC 1918 / private networks, link-local addresses and cloud metadata endpoints (for example `http://169.254.169.254/latest/meta-data/`), and in ",
+      "affected": "< 1.10.3",
+      "patched": "1.10.3",
+      "published": "10-06-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-j8f7-x8jm-wmm4"
+      ],
+      "epss": null,
+      "epss_percentile": null,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-ph3r-5jfg-f84f",
+      "cve": "CVE-2026-105753",
+      "package": "vllm",
+      "ecosystem": "pip",
+      "smb_common": false,
+      "severity": "medium",
+      "cvss": 6.5,
+      "summary": "vLLM: Mirrored multimodal IPC caches desync after a rejected request \u2014 a later request reusing the same media hash trips a receiver assertion in the engine core",
+      "details": "## Affected\n\n- **Ecosystem / package:** pip / `vllm`\n- **Affected versions:** vLLM \u2264 0.25.1 (confirmed on 0.25.1, commit [`752a3a504485`](https://github.com/vllm-project/vllm/tree/752a3a504485790a2e8491cacbb35c137339ad34)). The lower bound predates 0.25.1; maintainers can confirm how far back the mirrored sender/receiver cache protocol reaches.\n\n## Summary\n\nvLLM's default multimodal cache (`mm_pro",
+      "affected": "< 0.28.0",
+      "patched": "0.28.0",
+      "published": "10-06-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-ph3r-5jfg-f84f"
+      ],
+      "epss": 0.0043,
+      "epss_percentile": 0.3511,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-x6mc-67gf-chw4",
+      "cve": "CVE-2026-105758",
+      "package": "vllm",
+      "ecosystem": "pip",
+      "smb_common": false,
+      "severity": "medium",
+      "cvss": 5.3,
+      "summary": "vLLM: Qwen2-VL / Qwen3-VL video samplers bound on request-controlled max_frames, which the num_frames ceiling does not reach",
+      "details": "### Summary\n\nAn unauthenticated remote attacker can exhaust the memory of the vLLM API-server process by raising the request-level `media_io_kwargs.video.max_frames` and `fps` knobs on any deployment serving a Qwen2-VL or Qwen3-VL model. 74 extra bytes of JSON took the server's peak RSS from 2 271 MiB to 13 629 MiB over unauthenticated `POST /tokenize`.\n\nThe `num_frames` ceiling reported in GHSA-v",
+      "affected": ">= 0.24.0, < 0.30.0",
+      "patched": "0.30.0",
+      "published": "10-05-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-x6mc-67gf-chw4"
+      ],
+      "epss": 0.003,
+      "epss_percentile": 0.2126,
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    }
+  ],
+  "brief_plan": {
+    "rules": "max 3 findings; AI first; repeats only on a stated change; at most one non-AI item (new CRITICAL KEV)",
+    "findings": [
+      {
+        "section": "ai_advisories",
+        "id": "GHSA-cf6m-vc3m-7cgm",
+        "cve": "CVE-2026-8505",
+        "severity": "HIGH",
+        "severity_reason": "not in KEV \u00b7 remote code execution without a login",
+        "ai": true,
+        "selected_because": "new today",
+        "item": {
+          "id": "GHSA-cf6m-vc3m-7cgm",
+          "cve": "CVE-2026-8505",
+          "package": "langflow",
+          "ecosystem": "pip",
+          "smb_common": true,
+          "severity": "critical",
+          "cvss": 9.8,
+          "summary": "Langflow: Unauthenticated Flow Execution via Webhook Authentication Bypass",
+          "details": "### Summary\nA vulnerability in Langflow's webhook authentication logic allows unauthenticated users to trigger the execution of any flow. The system incorrectly bypasses API key validation when the `WEBHOOK_AUTH_ENABLE` configuration is set to `False`. This allows a remote attacker who knows a flow's UUID to execute it as if they were the owner, potentially leading to Remote Code Execution (RCE) o",
+          "affected": ">= 1.7.0, <= 1.9.0",
+          "patched": "1.9.1",
+          "published": "10-05-2026",
+          "links": [
+            "https://github.com/advisories/GHSA-cf6m-vc3m-7cgm"
+          ],
+          "epss": 0.0072,
+          "epss_percentile": 0.5258,
+          "first_seen": "10-12-2026",
+          "prev_epss": null
+        }
+      },
+      {
+        "section": "ai_advisories",
+        "id": "GHSA-w7x8-q2gp-5cgg",
+        "cve": "CVE-2026-73487",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0096)",
+        "ai": true,
+        "selected_because": "new today",
+        "item": {
+          "id": "GHSA-w7x8-q2gp-5cgg",
+          "cve": "CVE-2026-73487",
+          "package": "flowise",
+          "ecosystem": "npm",
+          "smb_common": true,
+          "severity": "critical",
+          "cvss": null,
+          "summary": "Flowise Prompt Injection to RCE and SSRF via CSV/Airtable Agent Python Validator Bypass",
+          "details": "## Summary\n\nFlowise <= 3.1.2 CSV Agent and Airtable Agent nodes use a regex-based blocklist (`validatePythonCodeForDataFrame()`) to sanitize LLM-generated Python code before execution in Pyodide. The validator has multiple structural bypasses that allow an attacker to exfiltrate all loaded data to an external server, perform SSRF against internal services, and potentially achieve further code exec",
+          "affected": "<= 3.1.2",
+          "patched": "3.1.3",
+          "published": "10-07-2026",
+          "links": [
+            "https://github.com/advisories/GHSA-w7x8-q2gp-5cgg"
+          ],
+          "epss": 0.0096,
+          "epss_percentile": 0.6048,
+          "first_seen": "10-12-2026",
+          "prev_epss": null
+        }
+      },
+      {
+        "section": "ai_advisories",
+        "id": "GHSA-6qxp-vccf-f47h",
+        "cve": "CVE-2026-104850",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0018)",
+        "ai": true,
+        "selected_because": "new today",
+        "item": {
+          "id": "GHSA-6qxp-vccf-f47h",
+          "cve": "CVE-2026-104850",
+          "package": "@modelcontextprotocol/sdk",
+          "ecosystem": "npm",
+          "smb_common": true,
+          "severity": "high",
+          "cvss": 7.5,
+          "summary": "MCP TypeScript SDK: OAuth client could send credentials to an authorization server chosen by the MCP server",
+          "details": "### Summary\nIn affected versions, the SDK's OAuth client let the MCP server decide which authorization server received the client's OAuth credentials. Credentials were not tied to the authorization server they belong to.\n\nA malicious or compromised MCP server could name its own authorization server. With no user interaction, the client would send it:\n\n- the `refresh_token` and `client_secret` stor",
+          "affected": ">= 1.12.0, < 1.31.0",
+          "patched": "1.31.0",
+          "published": "10-06-2026",
+          "links": [
+            "https://github.com/advisories/GHSA-6qxp-vccf-f47h"
+          ],
+          "epss": 0.0018,
+          "epss_percentile": 0.0651,
+          "first_seen": "10-12-2026",
+          "prev_epss": null
+        }
+      }
+    ],
+    "on_the_radar": [
+      {
+        "section": "ai_advisories",
+        "id": "GHSA-8qpj-27x8-pwpq",
+        "cve": "CVE-2026-10561",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0082)",
+        "first_seen": "10-12-2026",
+        "product": "langflow",
+        "links": [
+          "https://github.com/advisories/GHSA-8qpj-27x8-pwpq"
+        ]
+      },
+      {
+        "section": "ai_advisories",
+        "id": "GHSA-9gvv-qjj3-2p6g",
+        "cve": "CVE-2026-73483",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0062)",
+        "first_seen": "10-12-2026",
+        "product": "flowise",
+        "links": [
+          "https://github.com/advisories/GHSA-9gvv-qjj3-2p6g"
+        ]
+      },
+      {
+        "section": "ai_advisories",
+        "id": "GHSA-w794-rj3p-xv45",
+        "cve": "CVE-2026-105697",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0047)",
+        "first_seen": "10-12-2026",
+        "product": "langflow",
+        "links": [
+          "https://github.com/advisories/GHSA-w794-rj3p-xv45"
+        ]
+      }
+    ],
+    "quiet_ai_day": false,
+    "ai_risk_topic": {
+      "title": "AI integrations with too much access",
+      "scope": "OAuth grants, API keys and MCP servers that give an AI tool more access than its job needs."
+    },
+    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Energy & Utilities (1), Transportation (1); countries: US (2), CA (1)."
+  }
 }
