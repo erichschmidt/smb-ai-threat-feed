@@ -7,7 +7,8 @@ structured JSON packet (see ../SCHEMA.md). This is the same collection logic
 the published feed runs each morning; no AI is involved in this step.
 
 Sources: CISA KEV, ThreatFox, URLhaus, Ransomware.live, CIRCL Vulnerability
-Lookup, GitHub Advisory Database (AI tool watchlist), FIRST EPSS enrichment.
+Lookup, GitHub-reviewed advisories for an AI tool watchlist (via OSV.dev),
+FIRST EPSS enrichment.
 
 It also picks what the brief covers (`brief_plan`): which findings, in what
 order, at what severity, and which ones were already reported on earlier days.
@@ -58,10 +59,12 @@ URLHAUS_URL = "https://urlhaus-api.abuse.ch/api/v1/"
 RL_URL = "https://api.ransomware.live/v1/recentvictims"
 CIRCL_URL = "https://vulnerability.circl.lu/api/last"
 EPSS_URL = "https://api.first.org/data/v1/epss"
-GHSA_URL = "https://api.github.com/advisories"
+OSV_BATCH_URL = "https://api.osv.dev/v1/querybatch"
+OSV_VULN_URL = "https://api.osv.dev/v1/vulns/"
+OSV_ECOSYSTEMS = {"pip": "PyPI", "npm": "npm", "go": "Go"}
 
 # AI and automation packages small businesses commonly run or build on, by
-# GitHub advisory ecosystem. Edit freely; each ecosystem is one API call.
+# ecosystem. Edit freely; the whole list is one OSV batch query.
 AI_WATCHLIST = {
     "pip": ["langchain", "langchain-core", "langchain-community", "langgraph",
             "llama-index-core", "litellm", "open-webui", "transformers", "vllm",
@@ -279,47 +282,94 @@ def fetch_circl(limit=30):
     return {"count": len(items), "items": items}
 
 
-def fetch_ai_advisories(days=7, limit=15):
-    """Recent GitHub-reviewed advisories for the AI tool watchlist (no auth).
+def cvss3_score(vector):
+    """CVSS 3.x base score from a vector string, or None if it isn't a valid v3 vector."""
+    try:
+        m = dict(part.split(":") for part in vector.split("/")[1:])
+        changed = m["S"] == "C"
+        av = {"N": 0.85, "A": 0.62, "L": 0.55, "P": 0.2}[m["AV"]]
+        ac = {"L": 0.77, "H": 0.44}[m["AC"]]
+        pr = ({"N": 0.85, "L": 0.68, "H": 0.5} if changed else {"N": 0.85, "L": 0.62, "H": 0.27})[m["PR"]]
+        ui = {"N": 0.85, "R": 0.62}[m["UI"]]
+        cia = [{"H": 0.56, "L": 0.22, "N": 0.0}[m[k]] for k in ("C", "I", "A")]
+    except (AttributeError, KeyError, ValueError):
+        return None
+    iss = 1 - (1 - cia[0]) * (1 - cia[1]) * (1 - cia[2])
+    impact = 7.52 * (iss - 0.029) - 3.25 * (iss - 0.02) ** 15 if changed else 6.42 * iss
+    if impact <= 0:
+        return 0.0
+    raw = min((1.08 if changed else 1) * (impact + 8.22 * av * ac * pr * ui), 10)
+    n = round(raw * 100000)  # CVSS 3.1 Roundup
+    return n / 100000 if n % 10000 == 0 else (n // 10000 + 1) / 10
 
-    One call per ecosystem. A failed ecosystem is reported in `_error` while
-    items from the others are kept.
+
+def _osv_range(affected):
+    """GitHub-style vulnerable range and first fixed version from an OSV `affected` entry."""
+    events = [e for r in affected.get("ranges") or [] for e in r.get("events") or []]
+    introduced = next((e["introduced"] for e in events if "introduced" in e), None)
+    fixed = next((e["fixed"] for e in events if "fixed" in e), None)
+    last = next((e["last_affected"] for e in events if "last_affected" in e), None)
+    parts = [f">= {introduced}"] if introduced and introduced != "0" else []
+    known = (affected.get("database_specific") or {}).get("last_known_affected_version_range")
+    if known:
+        parts.append(known)
+    elif fixed:
+        parts.append(f"< {fixed}")
+    elif last:
+        parts.append(f"<= {last}")
+    return ", ".join(parts) or None, fixed
+
+
+def fetch_ai_advisories(days=7, limit=15):
+    """Recent GitHub-reviewed advisories for the AI tool watchlist, from OSV.dev (no auth).
+
+    One batch query lists every advisory for the watched packages; only the
+    ones modified inside the window are fetched in full. Failed fetches are
+    reported in `_error` while the rest are kept.
     """
     since = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=days)).strftime("%Y-%m-%d")
-    watched = {p for pkgs in AI_WATCHLIST.values() for p in pkgs}
-    raw, errors = {}, []
-    for eco, pkgs in AI_WATCHLIST.items():
-        data = _get(GHSA_URL, params={"ecosystem": eco, "affects": ",".join(pkgs), "type": "reviewed",
-                                      "published": f">={since}", "per_page": 100},
-                    headers={"Accept": "application/vnd.github+json"})
-        if not isinstance(data, list):
-            errors.append(f"{eco}: {data.get('_error', 'bad response') if isinstance(data, dict) else 'bad response'}")
+    watched = {(OSV_ECOSYSTEMS[eco], p): eco for eco, pkgs in AI_WATCHLIST.items() for p in pkgs}
+    queries = [{"package": {"name": name, "ecosystem": osv_eco}} for osv_eco, name in watched]
+    try:
+        r = requests.post(OSV_BATCH_URL, json={"queries": queries}, timeout=30)
+        r.raise_for_status()
+        results = r.json().get("results") or []
+    except Exception as e:
+        return {"count": 0, "items": [], "_error": f"osv: {type(e).__name__}: {e}"}
+    ids = {v["id"] for res in results for v in res.get("vulns") or []
+           if v.get("id", "").startswith("GHSA-") and (v.get("modified") or "")[:10] >= since}
+
+    items, errors = [], []
+    for ghsa in sorted(ids):
+        a = _get(OSV_VULN_URL + ghsa, timeout=20)
+        if a.get("_error"):
+            errors.append(f"{ghsa}: {a['_error']}")
             continue
-        for a in data:
-            if a.get("ghsa_id") and not a.get("withdrawn_at"):
-                raw[a["ghsa_id"]] = (eco, a)
-    items = []
-    for eco, a in raw.values():
-        vulns = [v for v in a.get("vulnerabilities") or [] if (v.get("package") or {}).get("name") in watched]
-        v = vulns[0] if vulns else {}
-        patched = v.get("first_patched_version")
-        if isinstance(patched, dict):
-            patched = patched.get("identifier")
-        package = (v.get("package") or {}).get("name", "N/A")
+        db = a.get("database_specific") or {}
+        if a.get("withdrawn") or not db.get("github_reviewed") or (a.get("published") or "")[:10] < since:
+            continue
+        hit = next((v for v in a.get("affected") or []
+                    if ((v.get("package") or {}).get("ecosystem"), (v.get("package") or {}).get("name")) in watched), None)
+        if not hit:
+            continue
+        pkg = hit["package"]
+        affected, patched = _osv_range(hit)
+        vector = next((s.get("score") for s in a.get("severity") or [] if s.get("type") == "CVSS_V3"), None)
+        severity = str(db.get("severity") or "N/A").lower()
         items.append({
-            "id": a["ghsa_id"],
-            "cve": a.get("cve_id"),
-            "package": package,
-            "ecosystem": eco,
-            "smb_common": package in AI_SMB_COMMON,
-            "severity": a.get("severity", "N/A"),
-            "cvss": (a.get("cvss") or {}).get("score"),
+            "id": a["id"],
+            "cve": next((x for x in a.get("aliases") or [] if x.startswith("CVE-")), None),
+            "package": pkg["name"],
+            "ecosystem": watched[(pkg["ecosystem"], pkg["name"])],
+            "smb_common": pkg["name"] in AI_SMB_COMMON,
+            "severity": "medium" if severity == "moderate" else severity,
+            "cvss": cvss3_score(vector),
             "summary": (a.get("summary") or "")[:250],
-            "details": (a.get("description") or "")[:400],
-            "affected": v.get("vulnerable_version_range"),
+            "details": (a.get("details") or "")[:400],
+            "affected": affected,
             "patched": patched,
-            "published": (a.get("published_at") or "")[:10],
-            "links": [u for u in [a.get("html_url")] if u],
+            "published": a["published"][:10],
+            "links": [f"https://github.com/advisories/{a['id']}"],
         })
     items.sort(key=lambda x: x["published"], reverse=True)
     items.sort(key=lambda x: (GHSA_SEVERITY_RANK.get(x["severity"], 4), not x["smb_common"]))
@@ -328,7 +378,7 @@ def fetch_ai_advisories(days=7, limit=15):
         x["published"] = iso_to_mmdd(x["published"])
     result = {"count": len(items), "items": items}
     if errors:
-        result["_error"] = "; ".join(errors)
+        result["_error"] = f"osv: {len(errors)} of {len(ids)} advisories failed to load ({errors[0]})"
     return result
 
 

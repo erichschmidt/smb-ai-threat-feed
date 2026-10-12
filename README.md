@@ -83,7 +83,7 @@ Full field documentation: [SCHEMA.md](SCHEMA.md).
 
 ## Sources (all public, free, read-only)
 
-- **GitHub Advisory Database:** reviewed security advisories for a watchlist of common AI and automation tools, such as LangChain, n8n, Flowise, Langflow, Open WebUI, Ollama, LiteLLM and the MCP SDKs (see `AI_WATCHLIST` in the collector)
+- **GitHub Advisory Database (via [OSV.dev](https://osv.dev)):** GitHub-reviewed security advisories for a watchlist of common AI and automation tools, such as LangChain, n8n, Flowise, Langflow, Open WebUI, Ollama, LiteLLM and the MCP SDKs (see `AI_WATCHLIST` in the collector)
 - **CISA KEV:** vulnerabilities confirmed as actively exploited (the prioritization anchor)
 - **FIRST EPSS:** exploitation-likelihood scoring
 - **Ransomware.live:** victim disclosures and sector targeting (leak-site links are deliberately excluded)
