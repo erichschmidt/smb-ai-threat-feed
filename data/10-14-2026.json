@@ -1,0 +1,1044 @@
+{
+  "generated": "2026-10-14T13:00:46.798178+00:00",
+  "date": "10-14-2026",
+  "sources": {
+    "cisa_kev": {
+      "status": "ok",
+      "count": 7
+    },
+    "threatfox": {
+      "status": "ok",
+      "count": 8
+    },
+    "urlhaus": {
+      "status": "ok",
+      "count": 6
+    },
+    "ransomware_live": {
+      "status": "ok",
+      "count": 10
+    },
+    "circl": {
+      "status": "ok",
+      "count": 30
+    },
+    "ai_advisories": {
+      "status": "ok",
+      "count": 6
+    },
+    "epss": {
+      "status": "ok (36/43 scored)",
+      "count": 36
+    }
+  },
+  "kev": [
+    {
+      "cve": "CVE-2026-104935",
+      "added": "10-13-2026",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-16-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https:/forums.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-CVE-2026-104935 ; https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+      "links": [
+        "https:/forums.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-CVE-2026-104935",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-104935"
+      ],
+      "epss": null,
+      "epss_percentile": null,
+      "first_seen": "10-13-2026",
+      "prev_epss": null
+    },
+    {
+      "cve": "CVE-2026-96951",
+      "added": "10-13-2026",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-16-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-96951 ; BOD 26-04: BOD 26-04: Prioritizing Security Updates Based on Risk | CISA ; Forensics Triage Requirements: BOD 26-04: Implementation Guidance for Prioritizing Security Updates Based on Risk | CISA ;  https://nvd.nist.gov/vul",
+      "links": [
+        "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-96951",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-96951"
+      ],
+      "epss": null,
+      "epss_percentile": null,
+      "first_seen": "10-13-2026",
+      "prev_epss": null
+    },
+    {
+      "cve": "CVE-2015-5477",
+      "added": "10-08-2026",
+      "vendor": "ISC",
+      "product": "BIND",
+      "description": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-11-2026",
+      "ransomware_use": "Unknown",
+      "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://web.archive.org/web/20150729014733/https://kb.isc.org/article/AA-01272 ; https://access.redhat.co",
+      "links": [
+        "https://access.redhat.com/errata/RHSA-2015:1513.html",
+        "https://supportportal.juniper.net/s/article/2016-01-Security-Bulletin-Junos-Vulnerability-in-ISC-BIND-named-CVE-2015-5477"
+      ],
+      "epss": 0.9941,
+      "epss_percentile": 0.9994,
+      "first_seen": "10-09-2026",
+      "prev_epss": 0.9941
+    },
+    {
+      "cve": "CVE-2016-3081",
+      "added": "10-08-2026",
+      "vendor": "Apache",
+      "product": "Struts",
+      "description": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-11-2026",
+      "ransomware_use": "Unknown",
+      "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://cwiki.apache.org/confluence/display/WW/S2-032 ; ; BOD 26-04: https://www.cisa.gov/news-events/dir",
+      "links": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2016-3081"
+      ],
+      "epss": 0.9605,
+      "epss_percentile": 0.9988,
+      "first_seen": "10-09-2026",
+      "prev_epss": 0.9605
+    },
+    {
+      "cve": "CVE-2023-22894",
+      "added": "10-08-2026",
+      "vendor": "Strapi",
+      "product": "Strapi",
+      "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontin",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-11-2026",
+      "ransomware_use": "Unknown",
+      "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://strapi.io/blog/security-disclosure-of-vulnerabilities-cve ; https://github.com/strapi/strapi/rele",
+      "links": [
+        "https://github.com/strapi/strapi/releases",
+        "https://nvd.nist.gov/vuln/detail/CVE-2023-22894"
+      ],
+      "epss": 0.0361,
+      "epss_percentile": 0.8923,
+      "first_seen": "10-09-2026",
+      "prev_epss": 0.0361
+    },
+    {
+      "cve": "CVE-2021-3199",
+      "added": "10-08-2026",
+      "vendor": "ONLYOFFICE",
+      "product": "Docs",
+      "description": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-11-2026",
+      "ransomware_use": "Unknown",
+      "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: ; https://github.com/ONLYOFFICE/DocumentServer/blob/903fe5ab7a275bd69c3c3346af2d21cf87ebeabf/CHANGELOG.md",
+      "links": [
+        "https://github.com/ONLYOFFICE/DocumentServer/blob/903fe5ab7a275bd69c3c3346af2d21cf87ebeabf/CHANGELOG.md#563",
+        "https://nvd.nist.gov/vuln/detail/CVE-2021-3199"
+      ],
+      "epss": 0.1935,
+      "epss_percentile": 0.973,
+      "first_seen": "10-09-2026",
+      "prev_epss": 0.1935
+    },
+    {
+      "cve": "CVE-2015-3306",
+      "added": "10-08-2026",
+      "vendor": "ProFTPD",
+      "product": "ProFTPD",
+      "description": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-11-2026",
+      "ransomware_use": "Unknown",
+      "notes": "This vulnerability could affect an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: http://www.proftpd.org/ ; https://lists.debian.org/debian-security-announce/2015/msg00154.html ; https://",
+      "links": [
+        "https://lists.debian.org/debian-security-announce/2015/msg00154.html",
+        "https://lists.opensuse.org/archives/list/updates@lists.opensuse.org/message/WE6YZRG5UVXMGQ7IVDRYBPIWV4M6UUGM/"
+      ],
+      "epss": 0.995,
+      "epss_percentile": 0.9994,
+      "first_seen": "10-09-2026",
+      "prev_epss": 0.995
+    }
+  ],
+  "threatfox": [
+    {
+      "type": "IOC",
+      "value": "https://ot.777wins.org/zar",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-14 12:59:07 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://ot.777wins.org/y4",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-14 12:56:29 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://ot.777wins.org/lo/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-14 12:55:48 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://ot.777wins.org/lo",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-14 12:55:04 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "50.241.254.35.bc.googleusercontent.com",
+      "ioc_type": "domain",
+      "malware": "php.shin_webshell",
+      "confidence": 50,
+      "seen": "2026-10-14 12:54:06 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/php.shin_webshell"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://ot.777wins.org/y7",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-14 12:53:55 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "221.149.70.136.bc.googleusercontent.com",
+      "ioc_type": "domain",
+      "malware": "php.shin_webshell",
+      "confidence": 50,
+      "seen": "2026-10-14 12:52:42 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/php.shin_webshell"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "aeab2a46685337814afd5c7c3a1b95697de2ea63438099d6c397b83011b5001a",
+      "ioc_type": "sha256_hash",
+      "malware": "AMOS",
+      "confidence": 100,
+      "seen": "2026-10-14 12:51:21 UTC",
+      "links": [
+        "https://www.virustotal.com/gui/file/aeab2a46685337814afd5c7c3a1b95697de2ea63438099d6c397b83011b5001a",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
+      ]
+    }
+  ],
+  "urlhaus": [
+    {
+      "type": "URL",
+      "value": "http://120.84.214.181:47414/i",
+      "host": "120.84.214.181",
+      "status": "online",
+      "seen": "2026-10-14 12:47:14 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3950042/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://120.84.231.69:42721/bin.sh",
+      "host": "120.84.231.69",
+      "status": "online",
+      "seen": "2026-10-14 12:47:08 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3950041/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://120.84.231.69:42721/i",
+      "host": "120.84.231.69",
+      "status": "online",
+      "seen": "2026-10-14 12:47:07 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3950040/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://221.14.174.24:40978/bin.sh",
+      "host": "221.14.174.24",
+      "status": "online",
+      "seen": "2026-10-14 12:47:06 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3950038/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://103.172.186.163:40942/i",
+      "host": "103.172.186.163",
+      "status": "online",
+      "seen": "2026-10-14 12:47:06 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3950039/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://196.189.68.239:54705/bin.sh",
+      "host": "196.189.68.239",
+      "status": "online",
+      "seen": "2026-10-14 12:44:08 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3950037/"
+      ]
+    }
+  ],
+  "ransomware": [
+    {
+      "group": "dragonforce",
+      "sector": "Manufacturing",
+      "country": "US",
+      "description": "Lane Equipment Company has been a trusted food service partner in Texas since 1966, specializing in the sales, leasing, repairs, and parts for commercial kitchen equipment. They offer a wide range of ",
+      "discovered": "2026-10-14T00:30:19",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "BR",
+      "description": "packaging manufacturing (extrusion) \u00b7 Brazil | [PENDING EXPOSURE]",
+      "discovered": "2026-10-13T23:22:05",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "qilin",
+      "sector": "Financial Services",
+      "country": "",
+      "description": "N/A",
+      "discovered": "2026-10-13T21:13:07",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Wallstreet",
+      "sector": "Healthcare",
+      "country": "DE",
+      "description": "A nonprofit senior-living facility in Hildesheim, Germany, providing residential nursing care, short-term care, respite care, and assisted living",
+      "discovered": "2026-10-13T16:52:00",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Wallstreet",
+      "sector": "Other",
+      "country": "SE",
+      "description": "A holding company associated with Mantum, a Swedish transport and logistics group serving construction, recycling, and freight sectors",
+      "discovered": "2026-10-13T16:52:20",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Wallstreet",
+      "sector": "Professional Services",
+      "country": "SE",
+      "description": "Stockholm architecture practice focused on community buildings and urban development",
+      "discovered": "2026-10-13T16:52:39",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Wallstreet",
+      "sector": "Healthcare",
+      "country": "SE",
+      "description": "A Swedish foundation that operates elder-care services, including residential care at Danvikshem in Nacka",
+      "discovered": "2026-10-13T16:52:58",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Wallstreet",
+      "sector": "Not Found",
+      "country": "SE",
+      "description": "[AI generated] N/A\n\nI don't have reliable, verified information about a specific company called \"Briab Group AB.\" Rather than provide potentially fabricated details about its operations, industry spec",
+      "discovered": "2026-10-13T16:53:19",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Wallstreet",
+      "sector": "Professional Services",
+      "country": "SE",
+      "description": "Stockholm architecture firm working in architecture and urban development, including housing, offices, retail, and renovation projects",
+      "discovered": "2026-10-13T16:53:38",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Wallstreet",
+      "sector": "Manufacturing",
+      "country": "SE",
+      "description": "Swedish supplier of electronic components and telecommunications equipment; also provides installation and technical support related to industrial equipment.",
+      "discovered": "2026-10-13T16:53:57",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    }
+  ],
+  "circl": [
+    {
+      "id": "PYSEC-2025-19",
+      "aliases": [
+        "CVE-2025-1889"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2025-03-03",
+      "details": "picklescan before 0.0.22 only considers standard pickle file extensions in the scope for its vulnerability scan. An attacker could craft a malicious model that uses Pickle and include a malicious pickle file with a non-standard file extension. Becaus",
+      "links": [
+        "https://sites.google.com/sonatype.com/vulnerabilities/cve-2025-1889",
+        "https://github.com/advisories/GHSA-769v-p64c-89pr"
+      ],
+      "epss": 0.004,
+      "epss_percentile": 0.3186,
+      "first_seen": "08-19-2026",
+      "prev_epss": 0.004
+    },
+    {
+      "id": "PYSEC-2024-115",
+      "aliases": [
+        "CVE-2024-8309"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2024-11-05",
+      "details": "A vulnerability in the GraphCypherQAChain class of langchain-ai/langchain-community version 0.2.5 allows for SQL injection through prompt injection. This vulnerability can lead to unauthorized data manipulation, data exfiltration, denial of service (",
+      "links": [
+        "https://huntr.com/bounties/8f4ad910-7fdc-4089-8f0a-b5df5f32e7c5",
+        "https://github.com/langchain-ai/langchain/commit/c2a3021bb0c5f54649d380b42a0684ca5778c255",
+        "https://github.com/advisories/GHSA-45pg-36p6-83v9"
+      ],
+      "epss": 0.1374,
+      "epss_percentile": 0.9644,
+      "first_seen": "08-19-2026",
+      "prev_epss": 0.1374
+    },
+    {
+      "id": "CVE-2026-76280",
+      "aliases": [
+        "CVE-2026-76280"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-07",
+      "details": "In Splunk Enterprise versions below 10.4.3, 10.2.7, 10.0.10, and 9.4.15, and Splunk Secure Gateway versions below 3.10.11, 3.9.25, and 3.8.72, an authenticated user who does not hold the \"admin\" or \"sc_admin\" Splunk roles could modify Splunk Secure G",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-76280"
+      ],
+      "epss": 0.0017,
+      "epss_percentile": 0.0587,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-33910",
+      "aliases": [
+        "CVE-2021-33910"
+      ],
+      "severity": "N/A",
+      "published": "2021-07-20",
+      "details": "basic/unit-name.c in systemd prior to 246.15, 247.8, 248.5, and 249.1 has a Memory Allocation with an Excessive Size Value (involving strdupa and alloca for a pathname controlled by a local attacker) that results in an operating system crash.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-33910"
+      ],
+      "epss": 0.0879,
+      "epss_percentile": 0.9508,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-33655",
+      "aliases": [
+        "CVE-2021-33655"
+      ],
+      "severity": "N/A",
+      "published": "2022-07-18",
+      "details": "When sending malicous data to kernel by ioctl cmd FBIOPUT_VSCREENINFO,kernel will write memory out of bounds.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-33655"
+      ],
+      "epss": 0.0032,
+      "epss_percentile": 0.2266,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-33574",
+      "aliases": [
+        "CVE-2021-33574"
+      ],
+      "severity": "N/A",
+      "published": "2021-05-25",
+      "details": "The mq_notify function in the GNU C Library (aka glibc) versions 2.32 and 2.33 has a use-after-free. It may use the notification thread attributes object (passed through its struct sigevent parameter) after it has been freed by the caller, leading to",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-33574"
+      ],
+      "epss": 0.0287,
+      "epss_percentile": 0.8648,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-33560",
+      "aliases": [
+        "CVE-2021-33560"
+      ],
+      "severity": "N/A",
+      "published": "2021-06-08",
+      "details": "Libgcrypt before 1.8.8 and 1.9.x before 1.9.3 mishandles ElGamal encryption because it lacks exponent blinding to address a side-channel attack against mpi_powm, and the window size is not chosen appropriately. This, for example, affects use of ElGam",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-33560"
+      ],
+      "epss": 0.0234,
+      "epss_percentile": 0.832,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-33294",
+      "aliases": [
+        "CVE-2021-33294"
+      ],
+      "severity": "N/A",
+      "published": "2023-07-18",
+      "details": "In elfutils 0.183, an infinite loop was found in the function handle_symtab in readelf.c .Which allows attackers to cause a denial of service (infinite loop) via crafted file.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-33294"
+      ],
+      "epss": 0.0029,
+      "epss_percentile": 0.2016,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-32292",
+      "aliases": [
+        "CVE-2021-32292"
+      ],
+      "severity": "N/A",
+      "published": "2023-08-22",
+      "details": "An issue was discovered in json-c from 20200420 (post 0.14 unreleased code) through 0.15-20200726. A stack-buffer-overflow exists in the auxiliary sample program json_parse which is located in the function parseit.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-32292"
+      ],
+      "epss": 0.0129,
+      "epss_percentile": 0.6943,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-31239",
+      "aliases": [
+        "CVE-2021-31239"
+      ],
+      "severity": "N/A",
+      "published": "2023-05-09",
+      "details": "An issue found in SQLite SQLite3 v.3.35.4 that allows a remote attacker to cause a denial of service via the appendvfs.c function.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-31239"
+      ],
+      "epss": 0.0216,
+      "epss_percentile": 0.8174,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-28861",
+      "aliases": [
+        "CVE-2021-28861"
+      ],
+      "severity": "N/A",
+      "published": "2022-08-23",
+      "details": "Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-28861"
+      ],
+      "epss": 0.0254,
+      "epss_percentile": 0.8455,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-28363",
+      "aliases": [
+        "CVE-2021-28363"
+      ],
+      "severity": "N/A",
+      "published": "2021-03-15",
+      "details": "The urllib3 library 1.26.x before 1.26.4 for Python omits SSL certificate validation in some cases involving HTTPS to HTTPS proxies. The initial connection to the HTTPS proxy (if an SSLContext isn't given via proxy_config) doesn't verify the hostname",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-28363"
+      ],
+      "epss": 0.0211,
+      "epss_percentile": 0.813,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-28153",
+      "aliases": [
+        "CVE-2021-28153"
+      ],
+      "severity": "N/A",
+      "published": "2021-03-11",
+      "details": "An issue was discovered in GNOME GLib before 2.66.8. When g_file_replace() is used with G_FILE_CREATE_REPLACE_DESTINATION to replace a path that is a dangling symlink, it incorrectly also creates the target of the symlink as an empty file, which coul",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-28153"
+      ],
+      "epss": 0.0262,
+      "epss_percentile": 0.8509,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-28041",
+      "aliases": [
+        "CVE-2021-28041"
+      ],
+      "severity": "N/A",
+      "published": "2021-03-05",
+      "details": "ssh-agent in OpenSSH before 8.5 has a double free that may be relevant in a few less-common scenarios, such as unconstrained agent-socket access on a legacy operating system, or the forwarding of an agent to an attacker-controlled host.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-28041"
+      ],
+      "epss": 0.0342,
+      "epss_percentile": 0.8863,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-27645",
+      "aliases": [
+        "CVE-2021-27645"
+      ],
+      "severity": "N/A",
+      "published": "2021-02-24",
+      "details": "The nameserver caching daemon (nscd) in the GNU C Library (aka glibc or libc6) 2.29 through 2.33, when processing a request for netgroup lookup, may crash due to a double-free, potentially resulting in degraded service or Denial of Service on the loc",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-27645"
+      ],
+      "epss": 0.0037,
+      "epss_percentile": 0.2953,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-84312",
+      "aliases": [
+        "CVE-2026-84312"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, GetCasdoorUri uses the configured Casdoor application name as a constant OAuth state value and CasdoorCallback does not compare the submitted state with a value bound to the i",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-84312"
+      ],
+      "epss": 0.0018,
+      "epss_percentile": 0.0647,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-27219",
+      "aliases": [
+        "CVE-2021-27219"
+      ],
+      "severity": "N/A",
+      "published": "2021-02-15",
+      "details": "An issue was discovered in GNOME GLib before 2.66.6 and 2.67.x before 2.67.3. The function g_bytes_new has an integer overflow on 64-bit platforms due to an implicit cast from 64 bits to 32 bits. The overflow could potentially lead to memory corrupti",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-27219"
+      ],
+      "epss": 0.0299,
+      "epss_percentile": 0.8701,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-27218",
+      "aliases": [
+        "CVE-2021-27218"
+      ],
+      "severity": "N/A",
+      "published": "2021-02-15",
+      "details": "An issue was discovered in GNOME GLib before 2.66.7 and 2.67.x before 2.67.4. If g_byte_array_new_take() was called with a buffer of 4GB or more on a 64-bit platform, the length would be truncated modulo 2**32, causing unintended length truncation.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-27218"
+      ],
+      "epss": 0.0408,
+      "epss_percentile": 0.9049,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-27212",
+      "aliases": [
+        "CVE-2021-27212"
+      ],
+      "severity": "N/A",
+      "published": "2021-02-14",
+      "details": "In OpenLDAP through 2.4.57 and 2.5.x through 2.5.1alpha, an assertion failure in slapd can occur in the issuerAndThisUpdateCheck function via a crafted packet, resulting in a denial of service (daemon exit) via a short timestamp. This is related to s",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-27212"
+      ],
+      "epss": 0.6332,
+      "epss_percentile": 0.9919,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-23336",
+      "aliases": [
+        "CVE-2021-23336"
+      ],
+      "severity": "N/A",
+      "published": "2021-02-15",
+      "details": "The package python/cpython from 0 and before 3.6.13, from 3.7.0 and before 3.7.10, from 3.8.0 and before 3.8.8, from 3.9.0 and before 3.9.2 are vulnerable to Web Cache Poisoning via urllib.parse.parse_qsl and urllib.parse.parse_qs by using a vector c",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-23336"
+      ],
+      "epss": 0.4074,
+      "epss_percentile": 0.9863,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-22947",
+      "aliases": [
+        "CVE-2021-22947"
+      ],
+      "severity": "N/A",
+      "published": "2021-09-29",
+      "details": "When curl >= 7.20.0 and <= 7.78.0 connects to an IMAP or POP3 server to retrieve data using STARTTLS to upgrade to TLS security, the server can respond and send back multiple responses at once that curl caches. curl would then upgrade to TLS but not ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-22947"
+      ],
+      "epss": 0.0301,
+      "epss_percentile": 0.8708,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-76655",
+      "aliases": [
+        "CVE-2026-76655"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-14",
+      "details": "A security vulnerability in\u00a0HPE NonStop SNMP Trap Multiplexer may allow remote code execution",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-76655"
+      ],
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109563",
+      "aliases": [
+        "CVE-2026-109563"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "N3.js before 2.11.1 contains a regular expression denial of service vulnerability in the N3Lexer number pattern that backtracks quadratically on long digit runs. Attackers can supply untrusted Turtle or N3 input containing long runs of digits that do",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109563"
+      ],
+      "epss": 0.0035,
+      "epss_percentile": 0.2683,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-22946",
+      "aliases": [
+        "CVE-2021-22946"
+      ],
+      "severity": "N/A",
+      "published": "2021-09-29",
+      "details": "A user can tell curl >= 7.20.0 and <= 7.78.0 to require a successful upgrade to TLS when speaking to an IMAP, POP3 or FTP server (`--ssl-reqd` on the command line or`CURLOPT_USE_SSL` set to `CURLUSESSL_CONTROL` or `CURLUSESSL_ALL` withlibcurl). This ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-22946"
+      ],
+      "epss": 0.0454,
+      "epss_percentile": 0.9137,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-73798",
+      "aliases": [
+        "CVE-2026-73798"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-14",
+      "details": "A security vulnerability in\u00a0HPE NonStop DNS 9.2.3 Non Secure Version could cause a Denial of Service.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-73798"
+      ],
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-73797",
+      "aliases": [
+        "CVE-2026-73797"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-14",
+      "details": "A security vulnerability in\u00a0HPE NonStop TSQLFIL may cause address space corruption when a specific API is called.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-73797"
+      ],
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2021-22945",
+      "aliases": [
+        "CVE-2021-22945"
+      ],
+      "severity": "N/A",
+      "published": "2021-09-23",
+      "details": "When sending data to an MQTT server, libcurl <= 7.73.0 and 7.78.0 could in some circumstances erroneously keep a pointer to an already freed memory area and both use that again in a subsequent call to send data and also free it *again*.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2021-22945"
+      ],
+      "epss": 0.0668,
+      "epss_percentile": 0.9376,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-9191",
+      "aliases": [
+        "CVE-2026-9191"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 do not sufficiently isolate user-supplied code executed through certain REST and XDBC evaluation paths from HTTP request, response, and session state. An attacker a",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-9191"
+      ],
+      "epss": 0.0021,
+      "epss_percentile": 0.1007,
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-97315",
+      "aliases": [
+        "CVE-2026-97315"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-14",
+      "details": "The Responsive Blocks WordPress plugin before 2.3.0 does not sanitise or escape some of the values submitted with its Form block before adding them to the HTML notification email sent to the site owner, allowing unauthenticated users to inject arbitr",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-97315"
+      ],
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-97312",
+      "aliases": [
+        "CVE-2026-97312"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-13",
+      "details": "Photoshop Desktop is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-97312"
+      ],
+      "first_seen": "10-14-2026",
+      "prev_epss": null
+    }
+  ],
+  "ai_advisories": [
+    {
+      "id": "GHSA-w794-rj3p-xv45",
+      "cve": "CVE-2026-105697",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "critical",
+      "cvss": 9.9,
+      "summary": "Langflow: OS command injection (RCE) via arbitrary command in MCP stdio server configuration",
+      "details": "### Summary\n\nBefore **Langflow 1.10.3**, the MCP stdio transport launched whatever `command` / `args` a user put in an MCP server configuration, with no allowlist and (before 1.10.3) wrapped in `bash -c \"exec {command} ...\"`. Any user able to reach the MCP server settings (\"Settings \u2192 MCP Servers \u2192 Add MCP Server\", `POST/PATCH /api/v2/mcp/servers/{server_name}`) or to build a flow with the MCP Too",
+      "affected": ">= 1.1.2, < 1.10.3",
+      "patched": "1.10.3",
+      "published": "10-07-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-w794-rj3p-xv45"
+      ],
+      "epss": 0.0047,
+      "epss_percentile": 0.3904,
+      "first_seen": "10-12-2026",
+      "prev_epss": 0.0047
+    },
+    {
+      "id": "GHSA-w7x8-q2gp-5cgg",
+      "cve": "CVE-2026-73487",
+      "package": "flowise",
+      "ecosystem": "npm",
+      "smb_common": true,
+      "severity": "critical",
+      "cvss": null,
+      "summary": "Flowise Prompt Injection to RCE and SSRF via CSV/Airtable Agent Python Validator Bypass",
+      "details": "## Summary\n\nFlowise <= 3.1.2 CSV Agent and Airtable Agent nodes use a regex-based blocklist (`validatePythonCodeForDataFrame()`) to sanitize LLM-generated Python code before execution in Pyodide. The validator has multiple structural bypasses that allow an attacker to exfiltrate all loaded data to an external server, perform SSRF against internal services, and potentially achieve further code exec",
+      "affected": "<= 3.1.2",
+      "patched": "3.1.3",
+      "published": "10-07-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-w7x8-q2gp-5cgg"
+      ],
+      "epss": 0.0096,
+      "epss_percentile": 0.6055,
+      "first_seen": "10-12-2026",
+      "prev_epss": 0.0096
+    },
+    {
+      "id": "GHSA-9gvv-qjj3-2p6g",
+      "cve": "CVE-2026-73483",
+      "package": "flowise",
+      "ecosystem": "npm",
+      "smb_common": true,
+      "severity": "critical",
+      "cvss": null,
+      "summary": "Flowise NodeVM sandbox escape via puppeteer allowlist - authenticated RCE and arbitrary file read via Chromium",
+      "details": "Flowise (packages flowise and flowise-components) in versions <= 3.1.2 contain a sandbox escape in the `vm2/@flowiseai/nodevm` JavaScript sandbox. An authenticated user with access to the `/api/v1/node-custom-function` endpoint can escape the sandbox by supplying attacker-controlled executablePath and args parameters to puppeteer.launch(), which internally invokes child_process.spawn() outside the",
+      "affected": "<= 3.1.2",
+      "patched": "3.1.3",
+      "published": "10-07-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-9gvv-qjj3-2p6g"
+      ],
+      "epss": 0.0062,
+      "epss_percentile": 0.484,
+      "first_seen": "10-12-2026",
+      "prev_epss": 0.0062
+    },
+    {
+      "id": "GHSA-4hmc-cfm3-w43c",
+      "cve": "CVE-2026-105699",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "high",
+      "cvss": null,
+      "summary": "Langflow has Authenticated Cross-Project File Disclosure via Unscoped MCP Resource Handlers",
+      "details": "### Summary\nLangflow's project-scoped MCP transport authenticates the caller for the `project_id` in the connection URL, but the subsequent `resources/read` operation does not authorize the resource URI being requested. An authenticated user can connect to their own project-scoped MCP endpoint and supply a crafted file-download URI that points to another user's flow-backed file. The server then re",
+      "affected": ">= 1.6.8, <= 1.9.0",
+      "patched": "1.9.1",
+      "published": "10-07-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-4hmc-cfm3-w43c"
+      ],
+      "epss": 0.0025,
+      "epss_percentile": 0.1468,
+      "first_seen": "10-12-2026",
+      "prev_epss": 0.0025
+    },
+    {
+      "id": "GHSA-4f6c-2vvp-gw82",
+      "cve": "CVE-2026-105741",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "high",
+      "cvss": 7.1,
+      "summary": "Langflow: IP Spoofing Bypass via `X-Forwarded-For` Allowing Remote Configuration Write",
+      "details": "**Description**:\n### Summary\nAn IP spoofing vulnerability in the Model Context Protocol (MCP) configuration installation endpoint (`POST /api/v1/mcp/project/{project_id}/install`) allowed authenticated remote attackers to bypass the \"local-only\" access restriction. By sending a spoofed `X-Forwarded-For: 127.0.0.1` header, an attacker could make the server treat the request as originating from loca",
+      "affected": ">= 1.5.0, < 1.10.3",
+      "patched": "1.10.3",
+      "published": "10-07-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-4f6c-2vvp-gw82"
+      ],
+      "epss": 0.0021,
+      "epss_percentile": 0.1066,
+      "first_seen": "10-12-2026",
+      "prev_epss": 0.0021
+    },
+    {
+      "id": "GHSA-gh98-4phw-6fmw",
+      "cve": "CVE-2026-105698",
+      "package": "langflow",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "medium",
+      "cvss": 5.4,
+      "summary": "Langflow : Cross-user flow access and vertex execution via deprecated /api/v1/build/{flow_id}/vertices endpoints",
+      "details": "### Summary\n\nBefore **Langflow 1.10.1**, two deprecated but still-routed endpoints in the chat API did not check that the authenticated caller owns the flow referenced in the URL path:\n\n- `POST /api/v1/build/{flow_id}/vertices` (`retrieve_vertices_order`)\n- `POST /api/v1/build/{flow_id}/vertices/{vertex_id}` (`build_vertex`)\n\nAny authenticated user who knows (or obtains) another user's `flow_id` c",
+      "affected": ">= 1.0.0, < 1.10.1",
+      "patched": "1.10.1",
+      "published": "10-07-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-gh98-4phw-6fmw"
+      ],
+      "epss": 0.0018,
+      "epss_percentile": 0.0678,
+      "first_seen": "10-12-2026",
+      "prev_epss": 0.0018
+    }
+  ],
+  "brief_plan": {
+    "rules": "max 3 findings; AI first; repeats only on a stated change; at most one non-AI item (new CRITICAL KEV)",
+    "findings": [],
+    "on_the_radar": [],
+    "quiet_ai_day": true,
+    "ai_risk_topic": null,
+    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Manufacturing (2), Healthcare (2), Professional Services (2); countries: SE (6), US (1), BR (1)."
+  }
+}
