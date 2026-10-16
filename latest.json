@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-15T13:00:46.750945+00:00",
-  "date": "10-15-2026",
+  "generated": "2026-10-16T13:00:46.410015+00:00",
+  "date": "10-16-2026",
   "sources": {
     "cisa_kev": {
       "status": "ok",
-      "count": 6
+      "count": 7
     },
     "threatfox": {
       "status": "ok",
@@ -24,14 +24,33 @@
     },
     "ai_advisories": {
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     "epss": {
-      "status": "ok (8/17 scored)",
-      "count": 8
+      "status": "ok (10/10 scored)",
+      "count": 10
     }
   },
   "kev": [
+    {
+      "cve": "CVE-2026-21589",
+      "added": "10-15-2026",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an un",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-18-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://confluence.atlassian.com/security/cve-2026-21589-arbitrary-file-access-vulnerability-impacts-multiple-products-1870495748.html?ref=labs.watchtowr.com ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements:",
+      "links": [
+        "https://confluence.atlassian.com/security/cve-2026-21589-arbitrary-file-access-vulnerability-impacts-multiple-products-1870495748.html?ref=labs.watchtowr.com",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
+      ],
+      "epss": 0.0278,
+      "epss_percentile": 0.8612,
+      "first_seen": "10-16-2026",
+      "prev_epss": null
+    },
     {
       "cve": "CVE-2026-105134",
       "added": "10-14-2026",
@@ -46,10 +65,10 @@
         "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
       ],
-      "epss": 0.0184,
-      "epss_percentile": 0.7859,
+      "epss": 0.0324,
+      "epss_percentile": 0.8806,
       "first_seen": "10-15-2026",
-      "prev_epss": null
+      "prev_epss": 0.0184
     },
     {
       "cve": "CVE-2026-76519",
@@ -65,8 +84,8 @@
         "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-76519"
       ],
-      "epss": null,
-      "epss_percentile": null,
+      "epss": 0.0174,
+      "epss_percentile": 0.7735,
       "first_seen": "10-15-2026",
       "prev_epss": null
     },
@@ -84,10 +103,10 @@
         "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-105133"
       ],
-      "epss": 0.0038,
-      "epss_percentile": 0.3067,
+      "epss": 0.0067,
+      "epss_percentile": 0.5078,
       "first_seen": "10-15-2026",
-      "prev_epss": null
+      "prev_epss": 0.0038
     },
     {
       "cve": "CVE-2026-0322",
@@ -103,8 +122,8 @@
         "https://security.paloaltonetworks.com/CVE-2026-0322",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-0322"
       ],
-      "epss": null,
-      "epss_percentile": null,
+      "epss": 0.0108,
+      "epss_percentile": 0.6435,
       "first_seen": "10-15-2026",
       "prev_epss": null
     },
@@ -125,7 +144,7 @@
       "epss": 0.2598,
       "epss_percentile": 0.9796,
       "first_seen": "10-13-2026",
-      "prev_epss": null
+      "prev_epss": 0.2598
     },
     {
       "cve": "CVE-2026-96951",
@@ -142,96 +161,96 @@
         "https://nvd.nist.gov/vuln/detail/CVE-2026-96951"
       ],
       "epss": 0.0151,
-      "epss_percentile": 0.7385,
+      "epss_percentile": 0.7399,
       "first_seen": "10-13-2026",
-      "prev_epss": null
+      "prev_epss": 0.0151
     }
   ],
   "threatfox": [
     {
       "type": "IOC",
-      "value": "https://s2.7dewaslot.org/kiz",
+      "value": "https://yv.888idrcatchy.org/n4",
       "ioc_type": "url",
       "malware": "Vidar",
       "confidence": 100,
-      "seen": "2026-10-15 12:58:48 UTC",
+      "seen": "2026-10-16 12:58:38 UTC",
       "links": [
         "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
     },
     {
       "type": "IOC",
-      "value": "https://s2.7dewaslot.org/u0",
+      "value": "https://yv.888idrcatchy.org/wv",
       "ioc_type": "url",
       "malware": "Vidar",
       "confidence": 100,
-      "seen": "2026-10-15 12:57:24 UTC",
+      "seen": "2026-10-16 12:57:58 UTC",
       "links": [
         "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
     },
     {
       "type": "IOC",
-      "value": "https://s2.7dewaslot.org/ad6/",
+      "value": "https://yv.888idrcatchy.org/m9l/",
       "ioc_type": "url",
       "malware": "Vidar",
       "confidence": 100,
-      "seen": "2026-10-15 12:55:48 UTC",
+      "seen": "2026-10-16 12:55:48 UTC",
       "links": [
         "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
     },
     {
       "type": "IOC",
-      "value": "https://s2.7dewaslot.org/ad6",
+      "value": "https://yv.888idrcatchy.org/m9l",
       "ioc_type": "url",
       "malware": "Vidar",
       "confidence": 100,
-      "seen": "2026-10-15 12:54:44 UTC",
+      "seen": "2026-10-16 12:54:41 UTC",
       "links": [
         "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
     },
     {
       "type": "IOC",
-      "value": "fe286eb882d9fcd70e471e35cce570b2862199d377588070abe6b4521d3c8fce",
-      "ioc_type": "sha256_hash",
-      "malware": "Mirai",
-      "confidence": 90,
-      "seen": "2026-10-15 12:53:31 UTC",
-      "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
-      ]
-    },
-    {
-      "type": "IOC",
-      "value": "831653f7c74cc040f33a5fe19ab52db17f49c654c401cbd61ce006750ae5864a",
-      "ioc_type": "sha256_hash",
-      "malware": "Mirai",
-      "confidence": 90,
-      "seen": "2026-10-15 12:53:30 UTC",
-      "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
-      ]
-    },
-    {
-      "type": "IOC",
-      "value": "d744542a42c4720ad36f1127ee5af5f013f23ae5822cdaae2ff03345f2839594",
-      "ioc_type": "sha256_hash",
-      "malware": "Mirai",
-      "confidence": 90,
-      "seen": "2026-10-15 12:53:29 UTC",
-      "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
-      ]
-    },
-    {
-      "type": "IOC",
-      "value": "https://s2.7dewaslot.org/e1",
+      "value": "https://yv.888idrcatchy.org/to",
       "ioc_type": "url",
       "malware": "Vidar",
       "confidence": 100,
-      "seen": "2026-10-15 12:52:36 UTC",
+      "seen": "2026-10-16 12:53:30 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://yv.888idrcatchy.org/r2/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-16 12:50:48 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://yv.888idrcatchy.org/r2",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-16 12:50:18 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://yv.888idrcatchy.org/fnj",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-16 12:48:18 UTC",
       "links": [
         "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
@@ -240,62 +259,62 @@
   "urlhaus": [
     {
       "type": "URL",
-      "value": "http://182.127.64.151:40844/bin.sh",
-      "host": "182.127.64.151",
+      "value": "http://42.235.91.212:50078/bin.sh",
+      "host": "42.235.91.212",
       "status": "online",
-      "seen": "2026-10-15 12:52:11 UTC",
+      "seen": "2026-10-16 12:47:11 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3950482/"
+        "https://urlhaus.abuse.ch/url/3950933/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://61.52.182.76:44809/i",
-      "host": "61.52.182.76",
+      "value": "http://42.237.44.123:57470/i",
+      "host": "42.237.44.123",
       "status": "online",
-      "seen": "2026-10-15 12:17:09 UTC",
+      "seen": "2026-10-16 12:47:07 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3950479/"
+        "https://urlhaus.abuse.ch/url/3950932/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://27.45.183.118:52733/i",
-      "host": "27.45.183.118",
+      "value": "http://60.23.179.155:39285/i",
+      "host": "60.23.179.155",
       "status": "online",
-      "seen": "2026-10-15 12:17:09 UTC",
+      "seen": "2026-10-16 12:32:08 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3950480/"
+        "https://urlhaus.abuse.ch/url/3950930/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://115.55.130.202:34606/bin.sh",
-      "host": "115.55.130.202",
+      "value": "http://60.214.241.229:46912/i",
+      "host": "60.214.241.229",
       "status": "online",
-      "seen": "2026-10-15 12:17:09 UTC",
+      "seen": "2026-10-16 12:32:08 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3950481/"
+        "https://urlhaus.abuse.ch/url/3950931/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://61.243.141.19:41846/bin.sh",
-      "host": "61.243.141.19",
+      "value": "http://123.8.57.120:59734/i",
+      "host": "123.8.57.120",
       "status": "online",
-      "seen": "2026-10-15 12:17:08 UTC",
+      "seen": "2026-10-16 12:21:13 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3950476/"
+        "https://urlhaus.abuse.ch/url/3950929/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://37.34.181.111:53143/i",
-      "host": "37.34.181.111",
+      "value": "http://59.97.250.175:52934/i",
+      "host": "59.97.250.175",
       "status": "online",
-      "seen": "2026-10-15 12:17:08 UTC",
+      "seen": "2026-10-16 12:18:08 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3950477/"
+        "https://urlhaus.abuse.ch/url/3950928/"
       ]
     }
   ],
@@ -303,19 +322,9 @@
     {
       "group": "N0n",
       "sector": "Not Found",
-      "country": "",
-      "description": "Software / fundraising services \u00b7 California, USA | [PENDING EXPOSURE]",
-      "discovered": "2026-10-15T04:21:44",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "iah6477",
-      "sector": "Professional Services",
-      "country": "",
-      "description": "Size: 2.6 TiB",
-      "discovered": "2026-10-15T03:02:43",
+      "country": "US",
+      "description": "fintech payments \u00b7 US | [PENDING EXPOSURE]",
+      "discovered": "2026-10-16T01:23:41",
       "links": [
         "https://www.ransomware.live"
       ]
@@ -324,78 +333,88 @@
       "group": "N0n",
       "sector": "Not Found",
       "country": "US",
-      "description": "manufacturing \u00b7 USA | [PENDING EXPOSURE]",
-      "discovered": "2026-10-15T02:52:05",
+      "description": "media technology / broadcast playout \u00b7 United States | [PENDING EXPOSURE]",
+      "discovered": "2026-10-16T01:23:06",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
       "group": "N0n",
-      "sector": "Not Found",
-      "country": "NL",
-      "description": "FX liquidity and trading technology \u00b7 Netherlands | [PENDING EXPOSURE]",
-      "discovered": "2026-10-15T01:51:47",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "N0n",
-      "sector": "Not Found",
+      "sector": "Healthcare",
       "country": "",
-      "description": "software quality assurance (Wolters Kluwer/CCH Axcess test l \u00b7 California, USA | [PENDING EXPOSURE]",
-      "discovered": "2026-10-15T01:22:36",
+      "description": "Medical device manufacturing (US) \u00b7 Texas, USA | FDA quality system records of a Texas spinal implant manufacturer: CAPAs, device history records for implant lots, management reviews, design drawings ",
+      "discovered": "2026-10-16T00:22:58",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
-      "group": "N0n",
+      "group": "incransom",
       "sector": "Technology",
-      "country": "",
-      "description": "smart building & surveillance integration (US) \u00b7 California, USA | The complete gateway configuration of a smart building and surveillance integration company: every client site, device, user and cred",
-      "discovered": "2026-10-14T22:59:09",
+      "country": "US",
+      "description": "2tb",
+      "discovered": "2026-10-15T22:58:44",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
-      "group": "qilin",
+      "group": "incransom",
       "sector": "Professional Services",
-      "country": "SG",
-      "description": "N/A",
-      "discovered": "2026-10-14T15:31:05",
+      "country": "US",
+      "description": "proof",
+      "discovered": "2026-10-15T22:59:23",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "incransom",
+      "sector": "Education",
+      "country": "PL",
+      "description": "/",
+      "discovered": "2026-10-15T22:03:22",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "incransom",
+      "sector": "Financial Services",
+      "country": "CR",
+      "description": "/",
+      "discovered": "2026-10-15T22:03:58",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
       "group": "qilin",
-      "sector": "Education",
+      "sector": "Transportation",
+      "country": "JP",
+      "description": "N/A",
+      "discovered": "2026-10-15T21:04:57",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "qilin",
+      "sector": "Financial Services",
       "country": "US",
       "description": "N/A",
-      "discovered": "2026-10-14T15:30:28",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "N0n",
-      "sector": "Professional Services",
-      "country": "",
-      "description": "architecture & design (US) \u00b7 Florida, USA | The complete business email archive of the firm's principal: client correspondence, financial records and project communications spanning the firm's history",
-      "discovered": "2026-10-14T13:54:33",
+      "discovered": "2026-10-15T20:03:53",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
       "group": "Wallstreet",
-      "sector": "Healthcare",
+      "sector": "Manufacturing",
       "country": "US",
-      "description": "Green Clinic is a community-based healthcare provider serving Ruston and North Central Louisiana. Founded in 1948, it brings primary care, pediatrics, specialty care, pharmacy, laboratory and imaging ",
-      "discovered": "2026-10-14T12:56:56",
+      "description": "TGM Manufacturing provides machining services, including automobile machine-shop work.",
+      "discovered": "2026-10-15T19:23:13",
       "links": [
         "https://www.ransomware.live"
       ]
@@ -420,7 +439,7 @@
         "https://github.com/advisories/GHSA-769v-p64c-89pr"
       ],
       "epss": 0.004,
-      "epss_percentile": 0.3204,
+      "epss_percentile": 0.321,
       "first_seen": "08-19-2026",
       "prev_epss": 0.004
     },
@@ -443,138 +462,20 @@
         "https://github.com/advisories/GHSA-45pg-36p6-83v9"
       ],
       "epss": 0.1374,
-      "epss_percentile": 0.9646,
+      "epss_percentile": 0.9647,
       "first_seen": "08-19-2026",
       "prev_epss": 0.1374
     },
     {
-      "id": "CVE-2026-110723",
-      "aliases": [
-        "CVE-2026-110723"
-      ],
+      "id": "N/A",
+      "aliases": [],
       "severity": "N/A",
-      "published": "2026-10-15",
-      "details": "In `api-gateway` versions till `1.7.3`, The default rate-limit key resolver, `ClientIpKeyResolver`, derives the per-client bucket key from the leftmost element of the `X-Forwarded-For` request header. That element is supplied by the originating HTTP ",
+      "published": "N/A",
+      "details": "N/A",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-110723"
+        "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "CVE-2026-110724",
-      "aliases": [
-        "CVE-2026-110724"
-      ],
-      "severity": "N/A",
-      "published": "2026-10-15",
-      "details": "In `api-gateway` versions till `1.7.3`, The default rate-limit key resolver, `ClientIpKeyResolver`, derives the per-client bucket key from the leftmost element of the `X-Forwarded-For` request header. That element is supplied by the originating HTTP ",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-110724"
-      ],
-      "first_seen": "10-15-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "CVE-2026-109698",
-      "aliases": [
-        "CVE-2026-109698"
-      ],
-      "severity": "N/A",
-      "published": "2026-10-15",
-      "details": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Kitae Park Mang Board WP mangboard allows SQL Injection.This issue affects Mang Board WP: from n/a through 2.4.4.",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-109698"
-      ],
-      "first_seen": "10-15-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "CVE-2026-109692",
-      "aliases": [
-        "CVE-2026-109692"
-      ],
-      "severity": "N/A",
-      "published": "2026-10-15",
-      "details": "Missing Authorization vulnerability in ThemeGrill User Registration user-registration allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects User Registration: from n/a through 5.2.8.",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-109692"
-      ],
-      "first_seen": "10-15-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "CVE-2026-109693",
-      "aliases": [
-        "CVE-2026-109693"
-      ],
-      "severity": "N/A",
-      "published": "2026-10-15",
-      "details": "Incorrect Privilege Assignment vulnerability in WP ManageNinja LLC Fluent CRM fluent-crm allows Privilege Escalation.This issue affects Fluent CRM: from n/a through 3.2.5.",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-109693"
-      ],
-      "first_seen": "10-15-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "CVE-2026-98432",
-      "aliases": [
-        "CVE-2026-98432"
-      ],
-      "severity": "N/A",
-      "published": "2026-10-15",
-      "details": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the\nchild socket (newinet->inet_opt) without copying it.\n",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-98432"
-      ],
-      "first_seen": "10-15-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "CVE-2026-79837",
-      "aliases": [
-        "CVE-2026-79837"
-      ],
-      "severity": "N/A",
-      "published": "2026-10-15",
-      "details": "A vulnerability in\u00a0HPE NonStop SQL/MX UDR SERVER may allow a crafted message to cause process termination, service disruption or memory corruption, resulting in undefined behavior.",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-79837"
-      ],
-      "first_seen": "10-15-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "CVE-2026-12912",
-      "aliases": [
-        "CVE-2026-12912"
-      ],
-      "severity": "N/A",
-      "published": "2026-06-29",
-      "details": "A flaw was found in libtiff. A remote attacker could exploit this vulnerability by providing a specially crafted PixarLog-compressed TIFF image. This issue occurs when decoding Pixarlog codec images with the PIXARLOGDATAFMT_8BITABGR output format and",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-12912"
-      ],
-      "epss": 0.0043,
-      "epss_percentile": 0.3597,
-      "first_seen": "10-15-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "CVE-2026-101258",
-      "aliases": [
-        "CVE-2026-101258"
-      ],
-      "severity": "N/A",
-      "published": "2026-10-06",
-      "details": "A flaw was found in Ghostscript. When Ghostscript renders a crafted PostScript or EPS document, it can bypass the -dSAFER sandbox and execute arbitrary shell commands in the context of the Ghostscript process. The issue chains memory corruption in do",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-101258"
-      ],
-      "epss": 0.0018,
-      "epss_percentile": 0.0694,
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -586,7 +487,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -598,7 +499,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -610,7 +511,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -622,7 +523,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -634,7 +535,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -646,7 +547,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -658,7 +559,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -670,7 +571,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -682,7 +583,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -694,7 +595,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -706,7 +607,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -718,7 +619,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -730,7 +631,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -742,7 +643,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -754,7 +655,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -766,7 +667,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -778,7 +679,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -790,7 +691,7 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
       "prev_epss": null
     },
     {
@@ -802,46 +703,166 @@
       "links": [
         "https://vulnerability.circl.lu/vuln/"
       ],
-      "first_seen": "10-15-2026",
+      "first_seen": "10-16-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-16-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-16-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-16-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-16-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-16-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-16-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-16-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-16-2026",
       "prev_epss": null
     }
   ],
-  "ai_advisories": [],
+  "ai_advisories": [
+    {
+      "id": "GHSA-84m7-p3x7-pcfv",
+      "cve": "CVE-2026-59951",
+      "package": "mcp",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "medium",
+      "cvss": 7.5,
+      "summary": "MCP Python SDK: Unbounded Session Accumulation in StreamableHTTP Transport Enables Resource Exhaustion",
+      "details": "### Summary\nIn affected versions, a Streamable HTTP server in stateful mode (the default) never reclaimed session state:\n\n- sessions did not expire;\n- a client `DELETE` ended the session but left its entry registered;\n- a session whose first request was refused stayed registered with a running task.\n\nEach session also kept its parsed `initialize` parameters, and the number of sessions was unlimite",
+      "affected": ">= 1.8.0, < 1.30.0",
+      "patched": "1.30.0",
+      "published": "10-15-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-84m7-p3x7-pcfv"
+      ],
+      "epss": 0.0046,
+      "epss_percentile": 0.3817,
+      "first_seen": "10-16-2026",
+      "prev_epss": null
+    }
+  ],
   "brief_plan": {
     "rules": "max 3 findings; AI first; repeats only on a stated change; at most one non-AI item (new CRITICAL KEV)",
     "findings": [
       {
-        "section": "kev",
-        "id": "CVE-2026-76519",
-        "cve": "CVE-2026-76519",
-        "severity": "CRITICAL",
-        "severity_reason": "in CISA KEV \u00b7 no login needed",
-        "ai": false,
+        "section": "ai_advisories",
+        "id": "GHSA-84m7-p3x7-pcfv",
+        "cve": "CVE-2026-59951",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0046)",
+        "ai": true,
         "selected_because": "new today",
         "item": {
-          "cve": "CVE-2026-76519",
-          "added": "10-14-2026",
-          "vendor": "Cisco",
-          "product": "Secure Email Gateway",
-          "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
-          "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-          "due": "10-17-2026",
-          "ransomware_use": "Unknown",
-          "notes": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04",
+          "id": "GHSA-84m7-p3x7-pcfv",
+          "cve": "CVE-2026-59951",
+          "package": "mcp",
+          "ecosystem": "pip",
+          "smb_common": true,
+          "severity": "medium",
+          "cvss": 7.5,
+          "summary": "MCP Python SDK: Unbounded Session Accumulation in StreamableHTTP Transport Enables Resource Exhaustion",
+          "details": "### Summary\nIn affected versions, a Streamable HTTP server in stateful mode (the default) never reclaimed session state:\n\n- sessions did not expire;\n- a client `DELETE` ended the session but left its entry registered;\n- a session whose first request was refused stayed registered with a running task.\n\nEach session also kept its parsed `initialize` parameters, and the number of sessions was unlimite",
+          "affected": ">= 1.8.0, < 1.30.0",
+          "patched": "1.30.0",
+          "published": "10-15-2026",
           "links": [
-            "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp",
-            "https://nvd.nist.gov/vuln/detail/CVE-2026-76519"
+            "https://github.com/advisories/GHSA-84m7-p3x7-pcfv"
           ],
-          "epss": null,
-          "epss_percentile": null,
-          "first_seen": "10-15-2026",
+          "epss": 0.0046,
+          "epss_percentile": 0.3817,
+          "first_seen": "10-16-2026",
           "prev_epss": null
         }
       }
     ],
     "on_the_radar": [],
-    "quiet_ai_day": true,
+    "quiet_ai_day": false,
     "ai_risk_topic": null,
-    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Professional Services (3), Technology (1), Education (1); countries: US (3), NL (1), SG (1)."
+    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Financial Services (2), Healthcare (1), Technology (1); countries: US (6), PL (1), CR (1)."
   }
 }
