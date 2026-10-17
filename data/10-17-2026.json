@@ -1,0 +1,885 @@
+{
+  "generated": "2026-10-17T13:00:48.030985+00:00",
+  "date": "10-17-2026",
+  "sources": {
+    "cisa_kev": {
+      "status": "ok",
+      "count": 9
+    },
+    "threatfox": {
+      "status": "ok",
+      "count": 8
+    },
+    "urlhaus": {
+      "status": "ok",
+      "count": 6
+    },
+    "ransomware_live": {
+      "status": "ok",
+      "count": 10
+    },
+    "circl": {
+      "status": "ok",
+      "count": 30
+    },
+    "ai_advisories": {
+      "status": "ok",
+      "count": 1
+    },
+    "epss": {
+      "status": "ok (14/15 scored)",
+      "count": 14
+    }
+  },
+  "kev": [
+    {
+      "cve": "CVE-2026-102764",
+      "added": "10-16-2026",
+      "vendor": "BeyondTrust",
+      "product": "Remote Support",
+      "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-19-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://www.beyondtrust.com/trust-center/security-advisories/bt26-05 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizi",
+      "links": [
+        "https://www.beyondtrust.com/trust-center/security-advisories/bt26-05",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
+      ],
+      "epss": 0.006,
+      "epss_percentile": 0.4765,
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "cve": "CVE-2025-61624",
+      "added": "10-16-2026",
+      "vendor": "Fortinet",
+      "product": "Multiple Products",
+      "description": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-19-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://fortiguard.fortinet.com/psirt/FG-IR-26-122 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-update",
+      "links": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-122",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
+      ],
+      "epss": 0.0058,
+      "epss_percentile": 0.4655,
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "cve": "CVE-2026-21589",
+      "added": "10-15-2026",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an un",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-18-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://confluence.atlassian.com/security/cve-2026-21589-arbitrary-file-access-vulnerability-impacts-multiple-products-1870495748.html?ref=labs.watchtowr.com ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements:",
+      "links": [
+        "https://confluence.atlassian.com/security/cve-2026-21589-arbitrary-file-access-vulnerability-impacts-multiple-products-1870495748.html?ref=labs.watchtowr.com",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
+      ],
+      "epss": 0.1271,
+      "epss_percentile": 0.9623,
+      "first_seen": "10-16-2026",
+      "prev_epss": 0.0278
+    },
+    {
+      "cve": "CVE-2026-105134",
+      "added": "10-14-2026",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component\u2019s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-202",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-17-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-p",
+      "links": [
+        "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
+      ],
+      "epss": 0.0478,
+      "epss_percentile": 0.9181,
+      "first_seen": "10-15-2026",
+      "prev_epss": 0.0324
+    },
+    {
+      "cve": "CVE-2026-76519",
+      "added": "10-14-2026",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-17-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04",
+      "links": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-76519"
+      ],
+      "epss": 0.0157,
+      "epss_percentile": 0.7498,
+      "first_seen": "10-15-2026",
+      "prev_epss": 0.0174
+    },
+    {
+      "cve": "CVE-2026-105133",
+      "added": "10-14-2026",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component\u2019s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-17-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-p",
+      "links": [
+        "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-105133"
+      ],
+      "epss": 0.0085,
+      "epss_percentile": 0.5754,
+      "first_seen": "10-15-2026",
+      "prev_epss": 0.0067
+    },
+    {
+      "cve": "CVE-2026-0322",
+      "added": "10-14-2026",
+      "vendor": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "description": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-17-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://security.paloaltonetworks.com/CVE-2026-0322 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updat",
+      "links": [
+        "https://security.paloaltonetworks.com/CVE-2026-0322",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-0322"
+      ],
+      "epss": 0.0121,
+      "epss_percentile": 0.6806,
+      "first_seen": "10-15-2026",
+      "prev_epss": 0.0108
+    },
+    {
+      "cve": "CVE-2026-104935",
+      "added": "10-13-2026",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-16-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https:/forums.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-CVE-2026-104935 ; https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+      "links": [
+        "https:/forums.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-CVE-2026-104935",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-104935"
+      ],
+      "epss": 0.2598,
+      "epss_percentile": 0.9797,
+      "first_seen": "10-13-2026",
+      "prev_epss": 0.2598
+    },
+    {
+      "cve": "CVE-2026-96951",
+      "added": "10-13-2026",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-16-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-96951 ; BOD 26-04: BOD 26-04: Prioritizing Security Updates Based on Risk | CISA ; Forensics Triage Requirements: BOD 26-04: Implementation Guidance for Prioritizing Security Updates Based on Risk | CISA ;  https://nvd.nist.gov/vul",
+      "links": [
+        "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-96951",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-96951"
+      ],
+      "epss": 0.0151,
+      "epss_percentile": 0.7403,
+      "first_seen": "10-13-2026",
+      "prev_epss": 0.0151
+    }
+  ],
+  "threatfox": [
+    {
+      "type": "IOC",
+      "value": "pozalogi.workers.dev",
+      "ioc_type": "domain",
+      "malware": "php.shin_webshell",
+      "confidence": 50,
+      "seen": "2026-10-17 12:59:26 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/php.shin_webshell"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://gu.8mytogel.org/t2/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-17 12:55:48 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "5569fb9242d2fdac0f3b8dc0eb29f5887aecd1ac265d7d26cbcf01c73ac59bfc",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-17 12:53:50 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "3cbab6ecb10efc2635c38cf84dc1b3d247cf1c726580747060acd889db87310c",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-17 12:53:49 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "c6a3f36b19a89f245c55c5350464854e549b9a699248c80ec402a50d75a1fea8",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-17 12:53:48 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "dbb8cb98e65dbd30032751e192c8e1af994c8d6ad1e76d5e186c806ecfcdaf3b",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 95,
+      "seen": "2026-10-17 12:53:46 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://gu.8mytogel.org/f1/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-17 12:50:48 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://j.88mdc.org/y/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-17 12:50:48 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    }
+  ],
+  "urlhaus": [
+    {
+      "type": "URL",
+      "value": "http://42.225.193.19:42706/i",
+      "host": "42.225.193.19",
+      "status": "online",
+      "seen": "2026-10-17 12:50:25 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3951384/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://27.204.225.149:34994/i",
+      "host": "27.204.225.149",
+      "status": "online",
+      "seen": "2026-10-17 12:47:16 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3951382/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://165.98.243.83:58385/bin.sh",
+      "host": "165.98.243.83",
+      "status": "online",
+      "seen": "2026-10-17 12:47:16 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3951383/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://165.98.243.83:58385/i",
+      "host": "165.98.243.83",
+      "status": "online",
+      "seen": "2026-10-17 12:47:15 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3951381/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://115.61.118.122:46115/i",
+      "host": "115.61.118.122",
+      "status": "online",
+      "seen": "2026-10-17 12:38:28 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3951380/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://115.61.118.122:46115/bin.sh",
+      "host": "115.61.118.122",
+      "status": "online",
+      "seen": "2026-10-17 12:37:24 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3951379/"
+      ]
+    }
+  ],
+  "ransomware": [
+    {
+      "group": "everest",
+      "sector": "Manufacturing",
+      "country": "",
+      "description": "[AI generated] N/A\n\nI don't have reliable, verifiable information about a company specifically named \"Chugoku Bend.\" This does not correspond to a company I can confidently identify in my knowledge ba",
+      "discovered": "2026-10-17T03:07:09",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "everest",
+      "sector": "Technology",
+      "country": "KR",
+      "description": "[AI generated] N/A",
+      "discovered": "2026-10-17T03:06:33",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "everest",
+      "sector": "Transportation",
+      "country": "AT",
+      "description": "[AI generated] The Brenner Base Tunnel (Brennerbasistunnel, BBT) is a major railway infrastructure project, not a company in the traditional sense, though it is managed by Brenner Base Tunnel BBT SE, ",
+      "discovered": "2026-10-17T03:05:58",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Manufacturing",
+      "country": "BR",
+      "description": "packaging manufacturing (extrusion) \u00b7 Brazil | Senior Sapiens ERP and Vetorh HR payroll platform; eSocial government payroll filings September and October 2026; Thousands of electronic invoices with c",
+      "discovered": "2026-10-16T21:53:44",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "play",
+      "sector": "Financial Services",
+      "country": "BE",
+      "description": "Belgium",
+      "discovered": "2026-10-16T20:40:40",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "play",
+      "sector": "Manufacturing",
+      "country": "HK",
+      "description": "Canada",
+      "discovered": "2026-10-16T20:40:05",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "play",
+      "sector": "Technology",
+      "country": "",
+      "description": "United States",
+      "discovered": "2026-10-16T20:39:30",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "play",
+      "sector": "Financial Services",
+      "country": "",
+      "description": "United States",
+      "discovered": "2026-10-16T20:38:54",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "everest",
+      "sector": "Manufacturing",
+      "country": "JP",
+      "description": "[AI generated] N/A\n\nI don't have reliable, verified information about a specific company called \"Kissei Shoji\" to provide an accurate factual description of its operations, industry, and country. Prov",
+      "discovered": "2026-10-17T03:07:45",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Redact",
+      "sector": "Energy & Utilities",
+      "country": "US",
+      "description": "Sector: Oil & Gas Energy | Revenue: $39.4B USD",
+      "discovered": "2026-10-16T18:54:41",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    }
+  ],
+  "circl": [
+    {
+      "id": "PYSEC-2025-19",
+      "aliases": [
+        "CVE-2025-1889"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2025-03-03",
+      "details": "picklescan before 0.0.22 only considers standard pickle file extensions in the scope for its vulnerability scan. An attacker could craft a malicious model that uses Pickle and include a malicious pickle file with a non-standard file extension. Becaus",
+      "links": [
+        "https://sites.google.com/sonatype.com/vulnerabilities/cve-2025-1889",
+        "https://github.com/advisories/GHSA-769v-p64c-89pr"
+      ],
+      "epss": 0.004,
+      "epss_percentile": 0.3215,
+      "first_seen": "08-19-2026",
+      "prev_epss": 0.004
+    },
+    {
+      "id": "PYSEC-2024-115",
+      "aliases": [
+        "CVE-2024-8309"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2024-11-05",
+      "details": "A vulnerability in the GraphCypherQAChain class of langchain-ai/langchain-community version 0.2.5 allows for SQL injection through prompt injection. This vulnerability can lead to unauthorized data manipulation, data exfiltration, denial of service (",
+      "links": [
+        "https://huntr.com/bounties/8f4ad910-7fdc-4089-8f0a-b5df5f32e7c5",
+        "https://github.com/langchain-ai/langchain/commit/c2a3021bb0c5f54649d380b42a0684ca5778c255",
+        "https://github.com/advisories/GHSA-45pg-36p6-83v9"
+      ],
+      "epss": 0.1374,
+      "epss_percentile": 0.9647,
+      "first_seen": "08-19-2026",
+      "prev_epss": 0.1374
+    },
+    {
+      "id": "CVE-2026-110889",
+      "aliases": [
+        "CVE-2026-110889"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-17",
+      "details": "Generation of Error Message Containing Sensitive Information vulnerability in Gantry Gantry 5 Framework gantry5 allows Retrieve Embedded Sensitive Data.This issue affects Gantry 5 Framework: from n/a through 5.6.4.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-110889"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-99999",
+      "aliases": [
+        "CVE-2026-99999"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-15",
+      "details": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: validate checksum_start before completing checksum\n\nIf a packet with bad checksum metadata gets into the ipv4 stack,\nskb_checksum_help can corrupt the network header and cause",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-99999"
+      ],
+      "epss": 0.0021,
+      "epss_percentile": 0.1066,
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108334",
+      "aliases": [
+        "CVE-2026-108334"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-15",
+      "details": "A flaw was found in the internal WebAssembly (WASM) shim used by the Kuadrant operator. When generating the CEL predicate that determines whether Gateway-level authentication and rate limiting should run, the shim does not correctly escape values fro",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108334"
+      ],
+      "epss": 0.0026,
+      "epss_percentile": 0.1595,
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-17-2026",
+      "prev_epss": null
+    }
+  ],
+  "ai_advisories": [
+    {
+      "id": "GHSA-84m7-p3x7-pcfv",
+      "cve": "CVE-2026-59951",
+      "package": "mcp",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "medium",
+      "cvss": 7.5,
+      "summary": "MCP Python SDK: Unbounded Session Accumulation in StreamableHTTP Transport Enables Resource Exhaustion",
+      "details": "### Summary\nIn affected versions, a Streamable HTTP server in stateful mode (the default) never reclaimed session state:\n\n- sessions did not expire;\n- a client `DELETE` ended the session but left its entry registered;\n- a session whose first request was refused stayed registered with a running task.\n\nEach session also kept its parsed `initialize` parameters, and the number of sessions was unlimite",
+      "affected": ">= 1.8.0, < 1.30.0",
+      "patched": "1.30.0",
+      "published": "10-15-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-84m7-p3x7-pcfv"
+      ],
+      "epss": 0.0046,
+      "epss_percentile": 0.3823,
+      "first_seen": "10-16-2026",
+      "prev_epss": 0.0046
+    }
+  ],
+  "brief_plan": {
+    "rules": "max 3 findings; AI first; repeats only on a stated change; at most one non-AI item (new CRITICAL KEV)",
+    "findings": [],
+    "on_the_radar": [],
+    "quiet_ai_day": true,
+    "ai_risk_topic": null,
+    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Manufacturing (4), Technology (2), Financial Services (2); countries: KR (1), AT (1), BR (1)."
+  }
+}
