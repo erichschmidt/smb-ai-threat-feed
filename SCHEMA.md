@@ -1,4 +1,4 @@
-# Schema — smb-ai-threat-feed structured data
+# Schema: smb-ai-threat-feed structured data
 
 Version: 1.2 · Each daily file lives at `data/MM-DD-YYYY.json` and is mirrored to `latest.json`.
 
@@ -91,7 +91,7 @@ Selection and severity are deterministic code (`plan_brief` and `rate_severity` 
 | `on_the_radar` | array | Up to 3 one-line mentions: new AI items that didn't make the cut, or recent HIGH/CRITICAL ones |
 | `ai_advisories_checked` | boolean | The AI advisory source loaded fully today (`sources.ai_advisories.status` is `"ok"`) |
 | `quiet_ai_day` | boolean | No AI finding today, and `ai_advisories_checked` is true. A failed check is never a quiet day. |
-| `ai_risk_topic` | object/null | Mondays only: `{title, scope}` for a plain-language AI risk with no CVE, rotating weekly |
+| `ai_risk_topic` | object/null | Mondays only: `{title, scope}` for an AI risk with no CVE, rotating weekly |
 | `ransomware_pulse` | string | One factual sentence: recent victim count, most-hit sectors and countries |
 
 ## `threatfox[]` / `urlhaus[]`

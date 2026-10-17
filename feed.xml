@@ -7,275 +7,275 @@
   <link rel="self" href="https://erichschmidt.com/feed.xml"/>
   <updated>2026-10-16T12:00:00Z</updated>
   <author><name>Erich Schmidt</name><uri>https://erichschmidt.com</uri></author>
-  <subtitle>Daily plain-language threat intelligence for small businesses deploying AI and automation.</subtitle>
+  <subtitle>A morning threat briefing for small businesses that use AI and automation.</subtitle>
   <entry>
-    <title>WATCH — Self-hosted servers built with the MCP Python SDK can run out of memory because sessions never expire</title>
+    <title>WATCH: Self-hosted servers built with the MCP Python SDK can run out of memory because sessions never expire.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-16-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-16-2026.md</id>
     <updated>2026-10-16T12:00:00Z</updated>
     <published>2026-10-16T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-16-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-16-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>CRITICAL — Cisco Secure Email Gateway servers are under active attack with no login needed — patch now</title>
+    <title>CRITICAL: Cisco Secure Email Gateway servers are under active attack with no login needed. Patch now.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-15-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-15-2026.md</id>
     <updated>2026-10-15T12:00:00Z</updated>
     <published>2026-10-15T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-15-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-15-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>Threat briefing for small businesses that use AI tools</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-14-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-14-2026.md</id>
     <updated>2026-10-14T12:00:00Z</updated>
     <published>2026-10-14T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-14-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-14-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>CRITICAL — Ivanti Connect Secure VPN gateways can be taken over without a login — apply the vendor fix immediately</title>
+    <title>CRITICAL: Ivanti Connect Secure VPN gateways can be taken over without a login. Apply the vendor fix immediately.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-13-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-13-2026.md</id>
     <updated>2026-10-13T12:00:00Z</updated>
     <published>2026-10-13T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-13-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-13-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>HIGH — A self-hosted AI app can let an outsider run its flows with no login — update Langflow now</title>
+    <title>HIGH: A self-hosted AI app can let an outsider run its flows with no login. Update Langflow now.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-12-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-12-2026.md</id>
     <updated>2026-10-12T12:00:00Z</updated>
     <published>2026-10-12T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-12-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-12-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>HIGH — The AI &quot;chat with your data&quot; helper is still your top AI-layer fix: a question over the network can become a database break-in</title>
+    <title>HIGH: The AI &quot;chat with your data&quot; helper is still your top AI-layer fix: a question over the network can become a database break-in.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-11-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-11-2026.md</id>
     <updated>2026-10-11T12:00:00Z</updated>
     <published>2026-10-11T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-11-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-11-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>HIGH — The AI &quot;chat with your data&quot; helper still tops the stack: a question over the network can become a database break-in</title>
+    <title>HIGH: The AI &quot;chat with your data&quot; helper still tops the stack: a question over the network can become a database break-in.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-10-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-10-2026.md</id>
     <updated>2026-10-10T12:00:00Z</updated>
     <published>2026-10-10T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-10-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-10-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>HIGH — A popular &quot;chat with your data&quot; AI tool lets a question become a database break-in over the network</title>
+    <title>HIGH: A popular &quot;chat with your data&quot; AI tool lets a question become a database break-in over the network.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-09-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-09-2026.md</id>
     <updated>2026-10-09T12:00:00Z</updated>
     <published>2026-10-09T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-09-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-09-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>HIGH — The tool that ships your software may let a user reach deployment rights they were never granted</title>
+    <title>HIGH: The tool that ships your software may let a user reach deployment rights they were never granted.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-08-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-08-2026.md</id>
     <updated>2026-10-08T12:00:00Z</updated>
     <published>2026-10-08T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-08-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-08-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>HIGH — Chat-with-your-data AI tools can be tricked into running database commands — update your LangChain</title>
+    <title>HIGH: Chat-with-your-data AI tools can be tricked into running database commands. Update your LangChain.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-07-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-07-2026.md</id>
     <updated>2026-10-07T12:00:00Z</updated>
     <published>2026-10-07T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-07-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-07-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>HIGH — The AI &quot;chat with your data&quot; framework remains your top AI-stack risk — verify your version today</title>
+    <title>HIGH: The AI &quot;chat with your data&quot; framework remains your top AI-stack risk. Verify your version today.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-06-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-06-2026.md</id>
     <updated>2026-10-06T12:00:00Z</updated>
     <published>2026-10-06T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-06-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-06-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>HIGH — A bug in a popular AI chat framework lets a crafted question reach into your database</title>
+    <title>HIGH: A bug in a popular AI chat framework lets a crafted question reach into your database.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-05-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-05-2026.md</id>
     <updated>2026-10-05T12:00:00Z</updated>
     <published>2026-10-05T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-05-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-05-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>HIGH: The AI build-blocks already in today&#x27;s feed are still live: a &quot;chat with your data&quot; helper that can run database commands from a prompt, and a model-scan check that can be sailed past. Verify both this week.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-04-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-04-2026.md</id>
     <updated>2026-10-04T12:00:00Z</updated>
     <published>2026-10-04T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-04-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-04-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>HIGH: A popular &quot;chat with your data&quot; building block can be tricked into running database commands straight from a prompt - and the odds it&#x27;s attacked soon are sky-high.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-03-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-03-2026.md</id>
     <updated>2026-10-03T12:00:00Z</updated>
     <published>2026-10-03T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-03-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-03-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>HIGH: An AI &quot;chat with your data&quot; tool can be tricked into running malicious database commands.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-01-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-01-2026.md</id>
     <updated>2026-10-01T12:00:00Z</updated>
     <published>2026-10-01T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-10-01-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-10-01-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>Threat briefing for small businesses that use AI tools</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-30-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-30-2026.md</id>
     <updated>2026-09-30T12:00:00Z</updated>
     <published>2026-09-30T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-30-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-30-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>Threat briefing for small businesses that use AI tools</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-29-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-29-2026.md</id>
     <updated>2026-09-29T12:00:00Z</updated>
     <published>2026-09-29T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-29-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-29-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>HIGH — Your &quot;chat with your data&quot; AI tool can be tricked into running database commands</title>
+    <title>HIGH: Your &quot;chat with your data&quot; AI tool can be tricked into running database commands.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-28-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-28-2026.md</id>
     <updated>2026-09-28T12:00:00Z</updated>
     <published>2026-09-28T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-28-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-28-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>Threat briefing for small businesses that use AI tools</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-27-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-27-2026.md</id>
     <updated>2026-09-27T12:00:00Z</updated>
     <published>2026-09-27T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-27-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-27-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>Threat briefing for small businesses that use AI tools</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-26-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-26-2026.md</id>
     <updated>2026-09-26T12:00:00Z</updated>
     <published>2026-09-26T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-26-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-26-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>Threat briefing for small businesses that use AI tools</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-25-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-25-2026.md</id>
     <updated>2026-09-25T12:00:00Z</updated>
     <published>2026-09-25T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-25-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-25-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>Threat briefing for small businesses that use AI tools</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-24-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-24-2026.md</id>
     <updated>2026-09-24T12:00:00Z</updated>
     <published>2026-09-24T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-24-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-24-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>Threat briefing for small businesses that use AI tools</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-22-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-22-2026.md</id>
     <updated>2026-09-22T12:00:00Z</updated>
     <published>2026-09-22T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-22-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-22-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>Threat briefing for small businesses that use AI tools</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-21-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-21-2026.md</id>
     <updated>2026-09-21T12:00:00Z</updated>
     <published>2026-09-21T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-21-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-21-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>Threat briefing for small businesses that use AI tools</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-20-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-20-2026.md</id>
     <updated>2026-09-20T12:00:00Z</updated>
     <published>2026-09-20T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-20-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-20-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>Daily threat briefing for small businesses running AI tools</title>
+    <title>Threat briefing for small businesses that use AI tools</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-19-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-19-2026.md</id>
     <updated>2026-09-19T12:00:00Z</updated>
     <published>2026-09-19T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-19-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-19-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>HIGH — The &quot;chat with our data&quot; AI component still ranks as today&#x27;s most likely thing to be attacked</title>
+    <title>HIGH: The &quot;chat with our data&quot; AI component still ranks as today&#x27;s most likely thing to be attacked.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-18-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-18-2026.md</id>
     <updated>2026-09-18T12:00:00Z</updated>
     <published>2026-09-18T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-18-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-18-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>HIGH — A &quot;chat with our database&quot; AI tool will run an attacker&#x27;s instructions instead of yours</title>
+    <title>HIGH: A &quot;chat with our database&quot; AI tool will run an attacker&#x27;s instructions instead of yours.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-17-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-17-2026.md</id>
     <updated>2026-09-17T12:00:00Z</updated>
     <published>2026-09-17T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-17-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-17-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>HIGH — Anyone with a back-office login can take every sales lead, delete your approval steps, and read the audit trail</title>
+    <title>HIGH: Anyone with a back-office login can take every sales lead, delete your approval steps, and read the audit trail.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-16-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-16-2026.md</id>
     <updated>2026-09-16T12:00:00Z</updated>
     <published>2026-09-16T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-16-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-16-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
   <entry>
-    <title>CRITICAL — One password from any app you&#x27;ve connected can make an attacker the admin of every account on your login server</title>
+    <title>CRITICAL: One password from any app you&#x27;ve connected can make an attacker the admin of every account on your login server.</title>
     <link href="https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-15-2026.md"/>
     <id>https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-15-2026.md</id>
     <updated>2026-09-15T12:00:00Z</updated>
     <published>2026-09-15T12:00:00Z</published>
-    <summary>Daily plain-language threat briefing for small businesses deploying AI and automation. Patch advice, ransomware pulse, and IOCs — every finding links to its source. AI-drafted and published automatically; check the linked source before acting.</summary>
+    <summary>A morning threat briefing for small businesses that use AI and automation. Every finding links to its source. An AI model drafts each brief from public data, and it's published automatically, so check the linked source before you act.</summary>
     <content type="html">Daily briefing: &lt;a href=&quot;https://github.com/erichschmidt/smb-ai-threat-feed/blob/main/briefs/Threat-Feed-09-15-2026.md&quot;&gt;read on GitHub&lt;/a&gt; · &lt;a href=&quot;https://raw.githubusercontent.com/erichschmidt/smb-ai-threat-feed/main/briefs/Threat-Feed-09-15-2026.md&quot;&gt;raw markdown&lt;/a&gt;</content>
   </entry>
 </feed>

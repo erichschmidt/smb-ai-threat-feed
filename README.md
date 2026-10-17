@@ -1,6 +1,6 @@
 # SMB + AI Threat Feed
 
-A plain-language threat briefing for **small businesses running AI and automation**. New security advisories for common AI tools, actively exploited flaws worth knowing about, and on Mondays one plain-language AI risk, compiled from free public sources and published most mornings.
+A morning threat briefing for **small businesses that use AI and automation**. It covers new security advisories for common AI tools, actively exploited flaws worth knowing about, and, on Mondays, one AI risk that has no CVE. It's compiled from free public sources and published most mornings.
 
 **Read it:** [erichschmidt.com/briefing](https://erichschmidt.com/briefing/) · **RSS:** [erichschmidt.com/feed.xml](https://erichschmidt.com/feed.xml) · Built by [Erich Schmidt](https://erichschmidt.com)
 
@@ -8,7 +8,7 @@ A plain-language threat briefing for **small businesses running AI and automatio
 
 Most threat intelligence is written for enterprise security teams. It's full of jargon, and it's useless if you run a 20-person company that just added an AI assistant. Every finding in this feed answers three questions:
 
-1. **What broke**, in plain language.
+1. **What broke**, in everyday words.
 2. **Why it matters to a small business running AI tools.**
 3. **What you do Monday**: concrete next steps, not vendor boilerplate.
 
@@ -17,7 +17,7 @@ Most threat intelligence is written for enterprise security teams. It's full of 
 This feed is written with AI, and here's exactly how:
 
 1. **Collect (deterministic code).** [`collector/collector.py`](collector/collector.py) pulls from the public sources listed below and writes that day's structured data to `data/MM-DD-YYYY.json`. There's no AI in this step. Each source is isolated, so one failing source never kills the run.
-2. **Select and rate (deterministic code).** The same collector decides what the brief covers. It picks at most 3 findings, puts AI tools first, and rates each one with the severity rubric below. It skips anything already reported on an earlier day unless that item got worse: it newly entered CISA's actively-exploited list, or its EPSS score crossed 0.1. On Mondays it adds one plain-language AI risk that has no CVE. The plan is saved in each day's data file as `brief_plan`.
+2. **Select and rate (deterministic code).** The same collector decides what the brief covers. It picks at most 3 findings, puts AI tools first, and rates each one with the severity rubric below. It skips anything already reported on an earlier day unless that item got worse: it newly entered CISA's actively-exploited list, or its EPSS score crossed 0.1. On Mondays it adds one AI risk that has no CVE. The plan is saved in each day's data file as `brief_plan`.
 3. **Draft (AI).** An AI model writes the prose for exactly those items, in the fixed format above, with a source link for every finding. It doesn't choose the findings or their severity.
 4. **Check (code, then AI).** Before anything is published, code checks the brief:
    - the disclosure line is present
@@ -54,7 +54,7 @@ This is general information, not security, legal or professional advice, and it 
 | `data/MM-DD-YYYY.json` | Structured, machine-readable data for that day |
 | `latest.json` | The most recent day's data. Poll this URL for automation. |
 | `feed.xml` | Atom feed of the briefs |
-| `GLOSSARY.md` | Plain-language definitions of every term used |
+| `GLOSSARY.md` | Definitions of every term used |
 | `collector/` | The open-source collector. Run it yourself and check the data. |
 
 ## Consuming the data

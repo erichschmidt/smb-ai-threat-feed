@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-SMB + AI Threat Feed — collector (deterministic source layer).
+SMB + AI Threat Feed collector (the deterministic source layer).
 ==============================================================
 Fetches public, free, read-only threat intel sources and writes that day's
 structured JSON packet (see ../SCHEMA.md). This is the same collection logic
@@ -87,7 +87,7 @@ AI_TERMS = re.compile(
     r"copilot|chatgpt|gpt-\d|retrieval[- ]augmented|rag pipeline|prompt injection|"
     r"ai agents?|agentic|hugging ?face|pytorch|tensorflow)\b", re.I)
 
-# Plain-language AI risks that have no CVE. One is covered each Monday, in order.
+# AI risks that have no CVE. One is covered each Monday, in order.
 AI_RISK_TOPICS = [
     {"title": "Prompt injection through emails and documents",
      "scope": "Hidden instructions in an email, web page or shared file that an AI assistant reads and then follows."},
@@ -624,7 +624,7 @@ def print_plan(plan, ai_status="ok"):
         item = f["item"]
         what = item.get("package") or " ".join(x for x in (item.get("vendor"), item.get("product")) if x) or item.get("id")
         print(f"  {n}. {f['severity']} | {f['section']} {f['id']}{' / ' + f['cve'] if f['cve'] and f['cve'] != f['id'] else ''}"
-              f" | {what} | reason: {f['severity_reason']} | {'AI' if f['ai'] else 'not AI: open with General IT hygiene'}"
+              f" | {what} | reason: {f['severity_reason']} | {'AI' if f['ai'] else 'not AI: open with the general IT hygiene line'}"
               f" | {f['selected_because']}")
     for r in plan["on_the_radar"]:
         print(f"  On the radar: {r['severity']} {r['id']} {r['product']} (first seen {r['first_seen']})")

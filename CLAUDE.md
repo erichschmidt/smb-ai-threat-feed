@@ -27,7 +27,7 @@ The collector writes `<out>/MM-DD-YYYY.json` for **today** and prints a BRIEF PL
 2. **Plan.** In the same run, `plan_brief()` writes `brief_plan`: up to 3 findings (AI tools first, one per product, nothing repeated unless it escalated), their severities from `rate_severity()`, "on the radar" one-liners, a quiet-day flag, and a Monday AI-risk topic. Selection is code so that a small drafting model only has to write prose.
 3. **Draft.** Outside this repo, AI writes `briefs/Threat-Feed-MM-DD-YYYY.md` from `brief_plan`, under about 900 prose words. Brief layout:
    - YAML front matter, the disclosure line, and a 3-line "How to read the scores"
-   - numbered findings `## N. <SEVERITY> — <headline>`, each with *What broke / Why it matters to an SMB running AI tools / What you do Monday / Sources*
+   - numbered findings `## N. <SEVERITY>: <headline>` (a dash before 10-17-2026), each with *What broke / Why it matters to an SMB running AI tools / What you do Monday / Sources*
    - optional "Also on the radar" and "AI risk of the week"
    - "Jargon buster"
    - an "Appendix" with the KEV table, a ransomware pulse line and a link to `latest.json`
