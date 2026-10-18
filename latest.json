@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-17T13:00:48.030985+00:00",
-  "date": "10-17-2026",
+  "generated": "2026-10-18T13:00:55.849111+00:00",
+  "date": "10-18-2026",
   "sources": {
     "cisa_kev": {
       "status": "ok",
@@ -27,8 +27,8 @@
       "count": 1
     },
     "epss": {
-      "status": "ok (14/15 scored)",
-      "count": 14
+      "status": "ok (39/40 scored)",
+      "count": 39
     }
   },
   "kev": [
@@ -49,7 +49,7 @@
       "epss": 0.006,
       "epss_percentile": 0.4765,
       "first_seen": "10-17-2026",
-      "prev_epss": null
+      "prev_epss": 0.006
     },
     {
       "cve": "CVE-2025-61624",
@@ -68,7 +68,7 @@
       "epss": 0.0058,
       "epss_percentile": 0.4655,
       "first_seen": "10-17-2026",
-      "prev_epss": null
+      "prev_epss": 0.0058
     },
     {
       "cve": "CVE-2026-21589",
@@ -87,7 +87,7 @@
       "epss": 0.1271,
       "epss_percentile": 0.9623,
       "first_seen": "10-16-2026",
-      "prev_epss": 0.0278
+      "prev_epss": 0.1271
     },
     {
       "cve": "CVE-2026-105134",
@@ -106,7 +106,7 @@
       "epss": 0.0478,
       "epss_percentile": 0.9181,
       "first_seen": "10-15-2026",
-      "prev_epss": 0.0324
+      "prev_epss": 0.0478
     },
     {
       "cve": "CVE-2026-76519",
@@ -125,7 +125,7 @@
       "epss": 0.0157,
       "epss_percentile": 0.7498,
       "first_seen": "10-15-2026",
-      "prev_epss": 0.0174
+      "prev_epss": 0.0157
     },
     {
       "cve": "CVE-2026-105133",
@@ -144,7 +144,7 @@
       "epss": 0.0085,
       "epss_percentile": 0.5754,
       "first_seen": "10-15-2026",
-      "prev_epss": 0.0067
+      "prev_epss": 0.0085
     },
     {
       "cve": "CVE-2026-0322",
@@ -163,7 +163,7 @@
       "epss": 0.0121,
       "epss_percentile": 0.6806,
       "first_seen": "10-15-2026",
-      "prev_epss": 0.0108
+      "prev_epss": 0.0121
     },
     {
       "cve": "CVE-2026-104935",
@@ -207,88 +207,88 @@
   "threatfox": [
     {
       "type": "IOC",
-      "value": "pozalogi.workers.dev",
-      "ioc_type": "domain",
-      "malware": "php.shin_webshell",
-      "confidence": 50,
-      "seen": "2026-10-17 12:59:26 UTC",
+      "value": "https://cdn.jsdelivr.net/gh/19234tr68/b3bef8b-a44f-4119-a8a5-d9ef59f0a7b/1-8c88-d5143357153",
+      "ioc_type": "url",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "seen": "2026-10-18 12:57:35 UTC",
       "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/php.shin_webshell"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake"
       ]
     },
     {
       "type": "IOC",
-      "value": "https://gu.8mytogel.org/t2/",
+      "value": "https://xw.9win.cyou/fb/",
       "ioc_type": "url",
       "malware": "Vidar",
       "confidence": 100,
-      "seen": "2026-10-17 12:55:48 UTC",
+      "seen": "2026-10-18 12:55:48 UTC",
       "links": [
         "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
     },
     {
       "type": "IOC",
-      "value": "5569fb9242d2fdac0f3b8dc0eb29f5887aecd1ac265d7d26cbcf01c73ac59bfc",
+      "value": "18b5057e1f21d9999af1799e1a18f1fb21a2d043d303f67563f4fd4bd8dcca42",
       "ioc_type": "sha256_hash",
       "malware": "Mirai",
       "confidence": 90,
-      "seen": "2026-10-17 12:53:50 UTC",
+      "seen": "2026-10-18 12:54:03 UTC",
       "links": [
         "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
       ]
     },
     {
       "type": "IOC",
-      "value": "3cbab6ecb10efc2635c38cf84dc1b3d247cf1c726580747060acd889db87310c",
+      "value": "8764195a7594befd2451882ee64557a0f03acaec9409644455741ea7990de93b",
       "ioc_type": "sha256_hash",
-      "malware": "Mirai",
+      "malware": "Remcos",
       "confidence": 90,
-      "seen": "2026-10-17 12:53:49 UTC",
+      "seen": "2026-10-18 12:54:01 UTC",
       "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos"
       ]
     },
     {
       "type": "IOC",
-      "value": "c6a3f36b19a89f245c55c5350464854e549b9a699248c80ec402a50d75a1fea8",
+      "value": "e6d81f3e45c61a47516820227d22bafe0266fef8eeb3f629f6995c90c3506a92",
       "ioc_type": "sha256_hash",
-      "malware": "Mirai",
-      "confidence": 90,
-      "seen": "2026-10-17 12:53:48 UTC",
+      "malware": "Remcos",
+      "confidence": 95,
+      "seen": "2026-10-18 12:54:00 UTC",
       "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos"
       ]
     },
     {
       "type": "IOC",
-      "value": "dbb8cb98e65dbd30032751e192c8e1af994c8d6ad1e76d5e186c806ecfcdaf3b",
+      "value": "1bfd52d448df5ac556f0abbdf342a3d074027a86a141b4725b17c8b67a719fd5",
       "ioc_type": "sha256_hash",
       "malware": "Mirai",
       "confidence": 95,
-      "seen": "2026-10-17 12:53:46 UTC",
+      "seen": "2026-10-18 12:53:59 UTC",
       "links": [
         "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
       ]
     },
     {
       "type": "IOC",
-      "value": "https://gu.8mytogel.org/f1/",
+      "value": "https://xw.9win.cyou/tp/",
       "ioc_type": "url",
       "malware": "Vidar",
       "confidence": 100,
-      "seen": "2026-10-17 12:50:48 UTC",
+      "seen": "2026-10-18 12:50:48 UTC",
       "links": [
         "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
     },
     {
       "type": "IOC",
-      "value": "https://j.88mdc.org/y/",
+      "value": "https://g.99rtp.net/b/",
       "ioc_type": "url",
       "malware": "Vidar",
       "confidence": 100,
-      "seen": "2026-10-17 12:50:48 UTC",
+      "seen": "2026-10-18 12:50:48 UTC",
       "links": [
         "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
@@ -297,162 +297,162 @@
   "urlhaus": [
     {
       "type": "URL",
-      "value": "http://42.225.193.19:42706/i",
-      "host": "42.225.193.19",
-      "status": "online",
-      "seen": "2026-10-17 12:50:25 UTC",
+      "value": "https://gitrm.sbs/apix.ps1",
+      "host": "gitrm.sbs",
+      "status": "offline",
+      "seen": "2026-10-18 12:40:15 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3951384/"
+        "https://urlhaus.abuse.ch/url/3951870/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://27.204.225.149:34994/i",
-      "host": "27.204.225.149",
-      "status": "online",
-      "seen": "2026-10-17 12:47:16 UTC",
+      "value": "http://175.165.85.155:60873/i",
+      "host": "175.165.85.155",
+      "status": "offline",
+      "seen": "2026-10-18 12:31:35 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3951382/"
+        "https://urlhaus.abuse.ch/url/3951869/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://165.98.243.83:58385/bin.sh",
-      "host": "165.98.243.83",
+      "value": "http://60.22.43.108:55415/i",
+      "host": "60.22.43.108",
       "status": "online",
-      "seen": "2026-10-17 12:47:16 UTC",
+      "seen": "2026-10-18 12:31:22 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3951383/"
+        "https://urlhaus.abuse.ch/url/3951868/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://165.98.243.83:58385/i",
-      "host": "165.98.243.83",
+      "value": "https://cdk.monther.life/DvnX.zip",
+      "host": "cdk.monther.life",
       "status": "online",
-      "seen": "2026-10-17 12:47:15 UTC",
+      "seen": "2026-10-18 12:24:19 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3951381/"
+        "https://urlhaus.abuse.ch/url/3951867/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://115.61.118.122:46115/i",
-      "host": "115.61.118.122",
+      "value": "http://64.235.41.83/AI",
+      "host": "64.235.41.83",
       "status": "online",
-      "seen": "2026-10-17 12:38:28 UTC",
+      "seen": "2026-10-18 12:24:18 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3951380/"
+        "https://urlhaus.abuse.ch/url/3951866/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://115.61.118.122:46115/bin.sh",
-      "host": "115.61.118.122",
-      "status": "online",
-      "seen": "2026-10-17 12:37:24 UTC",
+      "value": "http://178.132.198.200/bins.sh",
+      "host": "178.132.198.200",
+      "status": "offline",
+      "seen": "2026-10-18 12:24:14 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/3951379/"
+        "https://urlhaus.abuse.ch/url/3951865/"
       ]
     }
   ],
   "ransomware": [
     {
-      "group": "everest",
+      "group": "Helix",
       "sector": "Manufacturing",
-      "country": "",
-      "description": "[AI generated] N/A\n\nI don't have reliable, verifiable information about a company specifically named \"Chugoku Bend.\" This does not correspond to a company I can confidently identify in my knowledge ba",
-      "discovered": "2026-10-17T03:07:09",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "everest",
-      "sector": "Technology",
-      "country": "KR",
-      "description": "[AI generated] N/A",
-      "discovered": "2026-10-17T03:06:33",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "everest",
-      "sector": "Transportation",
-      "country": "AT",
-      "description": "[AI generated] The Brenner Base Tunnel (Brennerbasistunnel, BBT) is a major railway infrastructure project, not a company in the traditional sense, though it is managed by Brenner Base Tunnel BBT SE, ",
-      "discovered": "2026-10-17T03:05:58",
+      "country": "US",
+      "description": "Quikrete records. GoFile links and passwords unlock in 6 hours.",
+      "discovered": "2026-10-18T02:51:45",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
       "group": "N0n",
-      "sector": "Manufacturing",
-      "country": "BR",
-      "description": "packaging manufacturing (extrusion) \u00b7 Brazil | Senior Sapiens ERP and Vetorh HR payroll platform; eSocial government payroll filings September and October 2026; Thousands of electronic invoices with c",
-      "discovered": "2026-10-16T21:53:44",
+      "sector": "Other",
+      "country": "NL",
+      "description": "FX liquidity and trading technology \u00b7 Netherlands | Live client trading records: order and execution data for the banks and institutions trading through this firm, with amounts and account identifiers",
+      "discovered": "2026-10-18T01:26:57",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
-      "group": "play",
-      "sector": "Financial Services",
-      "country": "BE",
-      "description": "Belgium",
-      "discovered": "2026-10-16T20:40:40",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "play",
-      "sector": "Manufacturing",
-      "country": "HK",
-      "description": "Canada",
-      "discovered": "2026-10-16T20:40:05",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "play",
-      "sector": "Technology",
-      "country": "",
-      "description": "United States",
-      "discovered": "2026-10-16T20:39:30",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "play",
-      "sector": "Financial Services",
-      "country": "",
-      "description": "United States",
-      "discovered": "2026-10-16T20:38:54",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "everest",
-      "sector": "Manufacturing",
-      "country": "JP",
-      "description": "[AI generated] N/A\n\nI don't have reliable, verified information about a specific company called \"Kissei Shoji\" to provide an accurate factual description of its operations, industry, and country. Prov",
-      "discovered": "2026-10-17T03:07:45",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "Redact",
+      "group": "N0n",
       "sector": "Energy & Utilities",
       "country": "US",
-      "description": "Sector: Oil & Gas Energy | Revenue: $39.4B USD",
-      "discovered": "2026-10-16T18:54:41",
+      "description": "manufacturing \u00b7 USA | 217,186 production and check records from the plant production system; 33 company and partner accounts with plain text passwords; vendor and item master data with part numbers; b",
+      "discovered": "2026-10-18T01:26:16",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Professional Services",
+      "country": "",
+      "description": "software quality assurance (Wolters Kluwer/CCH Axcess test lab) \u00b7 California, USA | VPN access credentials for all 64 employee accounts; Domain controller configuration: group policies, DNS zones, net",
+      "discovered": "2026-10-18T01:25:36",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Helix",
+      "sector": "Healthcare",
+      "country": "US",
+      "description": "Personify Health records. Yearly revenue ~$500 million. GoFile links and passwords unlock in 12 hours.",
+      "discovered": "2026-10-17T22:23:45",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Helix",
+      "sector": "Professional Services",
+      "country": "US",
+      "description": "Bay Alarm records. Yearly revenue ~$256 million. GoFile links and passwords unlock in 12 hours.",
+      "discovered": "2026-10-17T22:23:24",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Helix",
+      "sector": "Manufacturing",
+      "country": "US",
+      "description": "Smith Douglas Homes records. Yearly revenue ~$971 million. GoFile links and passwords unlock in 12 hours.",
+      "discovered": "2026-10-17T22:23:03",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "US",
+      "description": "home healthcare services \u00b7 United States | [PENDING EXPOSURE]",
+      "discovered": "2026-10-17T19:24:26",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Helix",
+      "sector": "Manufacturing",
+      "country": "US",
+      "description": "Rheem Global customer records. Yearly revenue ~$6 billion. GoFile links and passwords unlock in 12 hours.",
+      "discovered": "2026-10-17T18:22:04",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "US",
+      "description": "real estate and land development \u00b7 United States | [PENDING EXPOSURE]",
+      "discovered": "2026-10-17T06:53:37",
       "links": [
         "https://www.ransomware.live"
       ]
@@ -505,349 +505,449 @@
       "prev_epss": 0.1374
     },
     {
-      "id": "CVE-2026-110889",
+      "id": "CVE-2026-110835",
       "aliases": [
-        "CVE-2026-110889"
+        "CVE-2026-110835"
       ],
       "severity": "N/A",
-      "published": "2026-10-17",
-      "details": "Generation of Error Message Containing Sensitive Information vulnerability in Gantry Gantry 5 Framework gantry5 allows Retrieve Embedded Sensitive Data.This issue affects Gantry 5 Framework: from n/a through 5.6.4.",
+      "published": "2026-10-14",
+      "details": "FreeRDP 3.0.0 before 3.32.0 allows HTTP header injection in its proxy because a lone LF in the target portion of a routing token (Cookie: msts=) is not rejected and is written by http_proxy_connect into the CONNECT request line and Host header. A rem",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-110889"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-110835"
       ],
-      "first_seen": "10-17-2026",
+      "epss": 0.0022,
+      "epss_percentile": 0.1139,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-99999",
+      "id": "CVE-2026-109951",
       "aliases": [
-        "CVE-2026-99999"
+        "CVE-2026-109951"
       ],
       "severity": "N/A",
-      "published": "2026-10-15",
-      "details": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: validate checksum_start before completing checksum\n\nIf a packet with bad checksum metadata gets into the ipv4 stack,\nskb_checksum_help can corrupt the network header and cause",
+      "published": "2026-10-13",
+      "details": "FreeRDP 3.17.1 before 3.32.0 contains a heap buffer over-read vulnerability in DynvcTrackerHandleCreateBack of the freerdp-proxy DRDYNVC channel handler that allows malicious backend RDP servers to read heap memory out of bounds. Attackers can send a",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-99999"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109951"
       ],
-      "epss": 0.0021,
-      "epss_percentile": 0.1066,
-      "first_seen": "10-17-2026",
+      "epss": 0.003,
+      "epss_percentile": 0.2168,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-109946",
+      "aliases": [
+        "CVE-2026-109946"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-13",
+      "details": "FreeRDP 3.11.0 before 3.32.0 does not validate that AVC444 and AVC444v2 region widths are even before YUV444 conversion, so an odd width reaches an assertion and aborts the client. A malicious or compromised RDP server can terminate a connected FreeR",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109946"
+      ],
+      "epss": 0.0027,
+      "epss_percentile": 0.1789,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-108334",
+      "id": "CVE-2026-109941",
       "aliases": [
-        "CVE-2026-108334"
+        "CVE-2026-109941"
       ],
       "severity": "N/A",
-      "published": "2026-10-15",
-      "details": "A flaw was found in the internal WebAssembly (WASM) shim used by the Kuadrant operator. When generating the CEL predicate that determines whether Gateway-level authentication and rate limiting should run, the shim does not correctly escape values fro",
+      "published": "2026-10-13",
+      "details": "FreeRDP from 2.3.0 before 3.32.0 contains an infinite loop vulnerability in http_chuncked_read that allows malicious RD Gateways to hang clients by sending incomplete chunked responses. Attackers can send a partial chunk-size line or footer followed ",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-108334"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109941"
+      ],
+      "epss": 0.0027,
+      "epss_percentile": 0.1789,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109679",
+      "aliases": [
+        "CVE-2026-109679"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-13",
+      "details": "FreeRDP 3.0.0-beta4 before 3.32.0 contains a NULL pointer dereference in arm_handle_request_ok when an ARM endpoint returns an empty HTTP 200 body. Attackers controlling the configured ARM gateway can return a zero-length body to pass NULL to strnlen",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109679"
+      ],
+      "epss": 0.0025,
+      "epss_percentile": 0.1556,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109640",
+      "aliases": [
+        "CVE-2026-109640"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Frappe ERPNext before 16.22.0 contains a missing authorization vulnerability that allows authenticated users to modify records by invoking endpoints lacking proper authorization checks. Attackers can call these endpoints to perform operations on reco",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109640"
+      ],
+      "epss": 0.0022,
+      "epss_percentile": 0.1197,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-110615",
+      "aliases": [
+        "CVE-2026-110615"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-14",
+      "details": "jshERP through 3.6 contains a missing authorization vulnerability in the POST /user/batchSetStatus endpoint that allows authenticated low-privilege users to change other users' account status. Attackers can submit crafted ids and status values to dis",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-110615"
+      ],
+      "epss": 0.0044,
+      "epss_percentile": 0.3644,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-111389",
+      "aliases": [
+        "CVE-2026-111389"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-16",
+      "details": "Frappe HRMS 14.x before 14.38.2, 15.x before 15.64.0, and 16.x before 16.18.0 contains a SQL injection vulnerability in some endpoints caused by missing input validation. Any authenticated attacker, including a low-privilege account, can send special",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-111389"
+      ],
+      "epss": 0.0022,
+      "epss_percentile": 0.1207,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108622",
+      "aliases": [
+        "CVE-2026-108622"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the SysLogController delete handler that allows any authenticated user to delete audit log entries. Low-privileged attackers can obtain log ids from the unguarded /sys/log/list",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108622"
+      ],
+      "epss": 0.0027,
+      "epss_percentile": 0.1782,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108627",
+      "aliases": [
+        "CVE-2026-108627"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the loadDatarule handler of SysRoleController that lets any authenticated user query role data rules. Low-privileged attackers can request GET /sys/role/datarule/{permissionId}",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108627"
+      ],
+      "epss": 0.0024,
+      "epss_percentile": 0.1438,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108632",
+      "aliases": [
+        "CVE-2026-108632"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the SysDepartPermissionController queryById handler that allows any authenticated user to read department permission records. Low-privileged attackers can request GET /sys/sysD",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108632"
+      ],
+      "epss": 0.0024,
+      "epss_percentile": 0.1438,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108637",
+      "aliases": [
+        "CVE-2026-108637"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability that allows low-privileged authenticated users to remove user group members by calling DELETE /sys/user/deleteUserGroupBatch. Attackers can supply any groupId and comma-separated ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108637"
+      ],
+      "epss": 0.0024,
+      "epss_percentile": 0.1385,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108642",
+      "aliases": [
+        "CVE-2026-108642"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability in SysAnnouncementSendController that allows authenticated users to modify other users' message delivery records. Attackers can obtain delivery ids from GET /sys/sysAnnouncementSe",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108642"
+      ],
+      "epss": 0.0024,
+      "epss_percentile": 0.1385,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108647",
+      "aliases": [
+        "CVE-2026-108647"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability that allows low-privileged authenticated users to create validation rules through the SysCheckRuleController importExcel handler. Attackers can upload a crafted Excel workbook to ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108647"
       ],
       "epss": 0.0026,
-      "epss_percentile": 0.1595,
-      "first_seen": "10-17-2026",
+      "epss_percentile": 0.1682,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-108652",
+      "aliases": [
+        "CVE-2026-108652"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the SystemApiController updateAvatar handler that allows any authenticated user to change other users' avatars. Low-privileged attackers can send PUT requests with a target use",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108652"
+      ],
+      "epss": 0.0024,
+      "epss_percentile": 0.1385,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-108657",
+      "aliases": [
+        "CVE-2026-108657"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the SysTenantController passApply handler that allows any authenticated user to approve tenant administrator applications. Attackers can file a pending application via doApplyT",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108657"
+      ],
+      "epss": 0.0023,
+      "epss_percentile": 0.1292,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-108662",
+      "aliases": [
+        "CVE-2026-108662"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability that allows low-privileged authenticated users to remove users from tenant product packs via PUT /sys/tenant/deleteTenantPackUser. Attackers can supply arbitrary userId and packId",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108662"
+      ],
+      "epss": 0.0021,
+      "epss_percentile": 0.1069,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-108667",
+      "aliases": [
+        "CVE-2026-108667"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability that allows low-privileged authenticated users to restore deleted AI prompt templates by calling the revertRecycleBin endpoint. Attackers can send PUT requests to /airag/prompts/r",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108667"
+      ],
+      "epss": 0.0019,
+      "epss_percentile": 0.0804,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-109199",
+      "aliases": [
+        "CVE-2026-109199"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "LogicalDOC Community Edition through 9.3 contains a code injection vulnerability that allows authenticated users to execute OS commands by submitting Velocity templates in DocumentService.sendAsEmail subject or message fields. Attackers can invoke Sy",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109199"
+      ],
+      "epss": 0.0039,
+      "epss_percentile": 0.3194,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-109204",
+      "aliases": [
+        "CVE-2026-109204"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "LogicalDOC Community Edition through 9.3 contains an improper authorization vulnerability in the PswRecovery servlet that fails to bind password recovery tickets to the requesting user. Attackers can obtain a ticket for their own account and reuse it",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109204"
+      ],
+      "epss": 0.002,
+      "epss_percentile": 0.0893,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-109393",
+      "aliases": [
+        "CVE-2026-109393"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "QloApps through 1.7.0 contains an insecure direct object reference vulnerability in back-office AJAX handlers of AdminOrdersController, AdminBookingDocumentController, AdminProductsController and AdminAddHotelController that skip htl_access hotel che",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109393"
+      ],
+      "epss": 0.0021,
+      "epss_percentile": 0.0989,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-109399",
+      "aliases": [
+        "CVE-2026-109399"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "SWUpdate through 2026.05.1 contains an improper certificate validation vulnerability in crypto/swupdate_cms_verify_openssl.c that trusts untrusted X.509 certificates embedded in CMS SignedData for chain building. Attackers holding a signing key from ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109399"
+      ],
+      "epss": 0.0021,
+      "epss_percentile": 0.1047,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-109241",
+      "aliases": [
+        "CVE-2026-109241"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "FreeRDP before 3.32.0 contains a NULL pointer dereference vulnerability in the client video redirection channel that allows malicious servers to crash clients by sending out-of-order messages. Attackers can send a Geometry CLEAR message that nulls pr",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109241"
+      ],
+      "epss": 0.0022,
+      "epss_percentile": 0.115,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-109291",
+      "aliases": [
+        "CVE-2026-109291"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Open WebUI from 0.6.33 before 0.11.4 contains a cross-site scripting vulnerability that allows authenticated users to execute script in victims' sessions by storing javascript: URLs in citation embed_url fields. Attackers can share a crafted chat who",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109291"
+      ],
+      "epss": 0.0028,
+      "epss_percentile": 0.19,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-109296",
+      "aliases": [
+        "CVE-2026-109296"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Open WebUI before 0.11.4 contains a missing authorization vulnerability that allows authenticated users to reach disabled model provider backends by supplying an explicit backend index. Attackers can pass the index as a path segment or query paramete",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109296"
+      ],
+      "epss": 0.0027,
+      "epss_percentile": 0.1867,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-111985",
+      "aliases": [
+        "CVE-2026-111985"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-18",
+      "details": "A vulnerability was found in AUTOMATIC1111 stable-diffusion-webui up to 1.10.1. This impacts the function read_metadata_from_safetensors of the file modules/sd_models.py of the component Metadata Extraction. The manipulation of the argument header le",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-111985"
+      ],
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-109301",
+      "aliases": [
+        "CVE-2026-109301"
       ],
-      "first_seen": "10-17-2026",
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Parse Server before 8.6.95 and 9.0.0 before 9.10.2-alpha.3 does not resolve file references lacking a URL before passing objects to Cloud Code triggers and LiveQuery, causing an uncaught exception that terminates the process. Attackers able to write ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109301"
+      ],
+      "epss": 0.0035,
+      "epss_percentile": 0.2682,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "id": "CVE-2026-109306",
+      "aliases": [
+        "CVE-2026-109306"
       ],
-      "first_seen": "10-17-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
       "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
+      "published": "2026-10-12",
+      "details": "Craft CMS from 5.0.0 before 5.10.14 contains a missing authorization vulnerability in AppController::actionSwitchToLicensedEdition() that lets any authenticated user change the installed edition. Low-privileged front-end users can call the action rou",
       "links": [
-        "https://vulnerability.circl.lu/vuln/"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109306"
       ],
-      "first_seen": "10-17-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
-      ],
-      "first_seen": "10-17-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
-      ],
-      "first_seen": "10-17-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
-      ],
-      "first_seen": "10-17-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
-      ],
-      "first_seen": "10-17-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
-      ],
-      "first_seen": "10-17-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
-      ],
-      "first_seen": "10-17-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
-      ],
-      "first_seen": "10-17-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
-      ],
-      "first_seen": "10-17-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
-      ],
-      "first_seen": "10-17-2026",
+      "epss": 0.0023,
+      "epss_percentile": 0.1322,
+      "first_seen": "10-18-2026",
       "prev_epss": null
     }
   ],
@@ -876,10 +976,61 @@
   ],
   "brief_plan": {
     "rules": "max 3 findings; AI first; repeats only on a stated change; at most one non-AI item (new CRITICAL KEV)",
-    "findings": [],
+    "findings": [
+      {
+        "section": "circl",
+        "id": "CVE-2026-109291",
+        "cve": "CVE-2026-109291",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0028)",
+        "ai": true,
+        "selected_because": "new today",
+        "item": {
+          "id": "CVE-2026-109291",
+          "aliases": [
+            "CVE-2026-109291"
+          ],
+          "severity": "N/A",
+          "published": "2026-10-12",
+          "details": "Open WebUI from 0.6.33 before 0.11.4 contains a cross-site scripting vulnerability that allows authenticated users to execute script in victims' sessions by storing javascript: URLs in citation embed_url fields. Attackers can share a crafted chat who",
+          "links": [
+            "https://vulnerability.circl.lu/vuln/CVE-2026-109291"
+          ],
+          "epss": 0.0028,
+          "epss_percentile": 0.19,
+          "first_seen": "10-18-2026",
+          "prev_epss": null
+        }
+      },
+      {
+        "section": "circl",
+        "id": "CVE-2026-109296",
+        "cve": "CVE-2026-109296",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0027)",
+        "ai": true,
+        "selected_because": "new today",
+        "item": {
+          "id": "CVE-2026-109296",
+          "aliases": [
+            "CVE-2026-109296"
+          ],
+          "severity": "N/A",
+          "published": "2026-10-12",
+          "details": "Open WebUI before 0.11.4 contains a missing authorization vulnerability that allows authenticated users to reach disabled model provider backends by supplying an explicit backend index. Attackers can pass the index as a path segment or query paramete",
+          "links": [
+            "https://vulnerability.circl.lu/vuln/CVE-2026-109296"
+          ],
+          "epss": 0.0027,
+          "epss_percentile": 0.1867,
+          "first_seen": "10-18-2026",
+          "prev_epss": null
+        }
+      }
+    ],
     "on_the_radar": [],
-    "quiet_ai_day": true,
+    "quiet_ai_day": false,
     "ai_risk_topic": null,
-    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Manufacturing (4), Technology (2), Financial Services (2); countries: KR (1), AT (1), BR (1)."
+    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Manufacturing (3), Professional Services (2), Energy & Utilities (1); countries: US (8), NL (1)."
   }
 }

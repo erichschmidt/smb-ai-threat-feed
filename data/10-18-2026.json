@@ -1,0 +1,1036 @@
+{
+  "generated": "2026-10-18T13:00:55.849111+00:00",
+  "date": "10-18-2026",
+  "sources": {
+    "cisa_kev": {
+      "status": "ok",
+      "count": 9
+    },
+    "threatfox": {
+      "status": "ok",
+      "count": 8
+    },
+    "urlhaus": {
+      "status": "ok",
+      "count": 6
+    },
+    "ransomware_live": {
+      "status": "ok",
+      "count": 10
+    },
+    "circl": {
+      "status": "ok",
+      "count": 30
+    },
+    "ai_advisories": {
+      "status": "ok",
+      "count": 1
+    },
+    "epss": {
+      "status": "ok (39/40 scored)",
+      "count": 39
+    }
+  },
+  "kev": [
+    {
+      "cve": "CVE-2026-102764",
+      "added": "10-16-2026",
+      "vendor": "BeyondTrust",
+      "product": "Remote Support",
+      "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-19-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://www.beyondtrust.com/trust-center/security-advisories/bt26-05 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizi",
+      "links": [
+        "https://www.beyondtrust.com/trust-center/security-advisories/bt26-05",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
+      ],
+      "epss": 0.006,
+      "epss_percentile": 0.4765,
+      "first_seen": "10-17-2026",
+      "prev_epss": 0.006
+    },
+    {
+      "cve": "CVE-2025-61624",
+      "added": "10-16-2026",
+      "vendor": "Fortinet",
+      "product": "Multiple Products",
+      "description": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-19-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://fortiguard.fortinet.com/psirt/FG-IR-26-122 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-update",
+      "links": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-122",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
+      ],
+      "epss": 0.0058,
+      "epss_percentile": 0.4655,
+      "first_seen": "10-17-2026",
+      "prev_epss": 0.0058
+    },
+    {
+      "cve": "CVE-2026-21589",
+      "added": "10-15-2026",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an un",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-18-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://confluence.atlassian.com/security/cve-2026-21589-arbitrary-file-access-vulnerability-impacts-multiple-products-1870495748.html?ref=labs.watchtowr.com ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements:",
+      "links": [
+        "https://confluence.atlassian.com/security/cve-2026-21589-arbitrary-file-access-vulnerability-impacts-multiple-products-1870495748.html?ref=labs.watchtowr.com",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
+      ],
+      "epss": 0.1271,
+      "epss_percentile": 0.9623,
+      "first_seen": "10-16-2026",
+      "prev_epss": 0.1271
+    },
+    {
+      "cve": "CVE-2026-105134",
+      "added": "10-14-2026",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component\u2019s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-202",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-17-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-p",
+      "links": [
+        "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
+      ],
+      "epss": 0.0478,
+      "epss_percentile": 0.9181,
+      "first_seen": "10-15-2026",
+      "prev_epss": 0.0478
+    },
+    {
+      "cve": "CVE-2026-76519",
+      "added": "10-14-2026",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-17-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04",
+      "links": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-76519"
+      ],
+      "epss": 0.0157,
+      "epss_percentile": 0.7498,
+      "first_seen": "10-15-2026",
+      "prev_epss": 0.0157
+    },
+    {
+      "cve": "CVE-2026-105133",
+      "added": "10-14-2026",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component\u2019s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-17-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-p",
+      "links": [
+        "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-105133"
+      ],
+      "epss": 0.0085,
+      "epss_percentile": 0.5754,
+      "first_seen": "10-15-2026",
+      "prev_epss": 0.0085
+    },
+    {
+      "cve": "CVE-2026-0322",
+      "added": "10-14-2026",
+      "vendor": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "description": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-17-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://security.paloaltonetworks.com/CVE-2026-0322 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updat",
+      "links": [
+        "https://security.paloaltonetworks.com/CVE-2026-0322",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-0322"
+      ],
+      "epss": 0.0121,
+      "epss_percentile": 0.6806,
+      "first_seen": "10-15-2026",
+      "prev_epss": 0.0121
+    },
+    {
+      "cve": "CVE-2026-104935",
+      "added": "10-13-2026",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-16-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https:/forums.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-CVE-2026-104935 ; https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+      "links": [
+        "https:/forums.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-CVE-2026-104935",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-104935"
+      ],
+      "epss": 0.2598,
+      "epss_percentile": 0.9797,
+      "first_seen": "10-13-2026",
+      "prev_epss": 0.2598
+    },
+    {
+      "cve": "CVE-2026-96951",
+      "added": "10-13-2026",
+      "vendor": "Microsoft",
+      "product": "Windows",
+      "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-16-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-96951 ; BOD 26-04: BOD 26-04: Prioritizing Security Updates Based on Risk | CISA ; Forensics Triage Requirements: BOD 26-04: Implementation Guidance for Prioritizing Security Updates Based on Risk | CISA ;  https://nvd.nist.gov/vul",
+      "links": [
+        "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-96951",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-96951"
+      ],
+      "epss": 0.0151,
+      "epss_percentile": 0.7403,
+      "first_seen": "10-13-2026",
+      "prev_epss": 0.0151
+    }
+  ],
+  "threatfox": [
+    {
+      "type": "IOC",
+      "value": "https://cdn.jsdelivr.net/gh/19234tr68/b3bef8b-a44f-4119-a8a5-d9ef59f0a7b/1-8c88-d5143357153",
+      "ioc_type": "url",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "seen": "2026-10-18 12:57:35 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://xw.9win.cyou/fb/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-18 12:55:48 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "18b5057e1f21d9999af1799e1a18f1fb21a2d043d303f67563f4fd4bd8dcca42",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-18 12:54:03 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "8764195a7594befd2451882ee64557a0f03acaec9409644455741ea7990de93b",
+      "ioc_type": "sha256_hash",
+      "malware": "Remcos",
+      "confidence": 90,
+      "seen": "2026-10-18 12:54:01 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "e6d81f3e45c61a47516820227d22bafe0266fef8eeb3f629f6995c90c3506a92",
+      "ioc_type": "sha256_hash",
+      "malware": "Remcos",
+      "confidence": 95,
+      "seen": "2026-10-18 12:54:00 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.remcos"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "1bfd52d448df5ac556f0abbdf342a3d074027a86a141b4725b17c8b67a719fd5",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 95,
+      "seen": "2026-10-18 12:53:59 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://xw.9win.cyou/tp/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-18 12:50:48 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://g.99rtp.net/b/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-18 12:50:48 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    }
+  ],
+  "urlhaus": [
+    {
+      "type": "URL",
+      "value": "https://gitrm.sbs/apix.ps1",
+      "host": "gitrm.sbs",
+      "status": "offline",
+      "seen": "2026-10-18 12:40:15 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3951870/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://175.165.85.155:60873/i",
+      "host": "175.165.85.155",
+      "status": "offline",
+      "seen": "2026-10-18 12:31:35 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3951869/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://60.22.43.108:55415/i",
+      "host": "60.22.43.108",
+      "status": "online",
+      "seen": "2026-10-18 12:31:22 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3951868/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "https://cdk.monther.life/DvnX.zip",
+      "host": "cdk.monther.life",
+      "status": "online",
+      "seen": "2026-10-18 12:24:19 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3951867/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://64.235.41.83/AI",
+      "host": "64.235.41.83",
+      "status": "online",
+      "seen": "2026-10-18 12:24:18 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3951866/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://178.132.198.200/bins.sh",
+      "host": "178.132.198.200",
+      "status": "offline",
+      "seen": "2026-10-18 12:24:14 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3951865/"
+      ]
+    }
+  ],
+  "ransomware": [
+    {
+      "group": "Helix",
+      "sector": "Manufacturing",
+      "country": "US",
+      "description": "Quikrete records. GoFile links and passwords unlock in 6 hours.",
+      "discovered": "2026-10-18T02:51:45",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Other",
+      "country": "NL",
+      "description": "FX liquidity and trading technology \u00b7 Netherlands | Live client trading records: order and execution data for the banks and institutions trading through this firm, with amounts and account identifiers",
+      "discovered": "2026-10-18T01:26:57",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Energy & Utilities",
+      "country": "US",
+      "description": "manufacturing \u00b7 USA | 217,186 production and check records from the plant production system; 33 company and partner accounts with plain text passwords; vendor and item master data with part numbers; b",
+      "discovered": "2026-10-18T01:26:16",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Professional Services",
+      "country": "",
+      "description": "software quality assurance (Wolters Kluwer/CCH Axcess test lab) \u00b7 California, USA | VPN access credentials for all 64 employee accounts; Domain controller configuration: group policies, DNS zones, net",
+      "discovered": "2026-10-18T01:25:36",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Helix",
+      "sector": "Healthcare",
+      "country": "US",
+      "description": "Personify Health records. Yearly revenue ~$500 million. GoFile links and passwords unlock in 12 hours.",
+      "discovered": "2026-10-17T22:23:45",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Helix",
+      "sector": "Professional Services",
+      "country": "US",
+      "description": "Bay Alarm records. Yearly revenue ~$256 million. GoFile links and passwords unlock in 12 hours.",
+      "discovered": "2026-10-17T22:23:24",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Helix",
+      "sector": "Manufacturing",
+      "country": "US",
+      "description": "Smith Douglas Homes records. Yearly revenue ~$971 million. GoFile links and passwords unlock in 12 hours.",
+      "discovered": "2026-10-17T22:23:03",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "US",
+      "description": "home healthcare services \u00b7 United States | [PENDING EXPOSURE]",
+      "discovered": "2026-10-17T19:24:26",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Helix",
+      "sector": "Manufacturing",
+      "country": "US",
+      "description": "Rheem Global customer records. Yearly revenue ~$6 billion. GoFile links and passwords unlock in 12 hours.",
+      "discovered": "2026-10-17T18:22:04",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "US",
+      "description": "real estate and land development \u00b7 United States | [PENDING EXPOSURE]",
+      "discovered": "2026-10-17T06:53:37",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    }
+  ],
+  "circl": [
+    {
+      "id": "PYSEC-2025-19",
+      "aliases": [
+        "CVE-2025-1889"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2025-03-03",
+      "details": "picklescan before 0.0.22 only considers standard pickle file extensions in the scope for its vulnerability scan. An attacker could craft a malicious model that uses Pickle and include a malicious pickle file with a non-standard file extension. Becaus",
+      "links": [
+        "https://sites.google.com/sonatype.com/vulnerabilities/cve-2025-1889",
+        "https://github.com/advisories/GHSA-769v-p64c-89pr"
+      ],
+      "epss": 0.004,
+      "epss_percentile": 0.3215,
+      "first_seen": "08-19-2026",
+      "prev_epss": 0.004
+    },
+    {
+      "id": "PYSEC-2024-115",
+      "aliases": [
+        "CVE-2024-8309"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2024-11-05",
+      "details": "A vulnerability in the GraphCypherQAChain class of langchain-ai/langchain-community version 0.2.5 allows for SQL injection through prompt injection. This vulnerability can lead to unauthorized data manipulation, data exfiltration, denial of service (",
+      "links": [
+        "https://huntr.com/bounties/8f4ad910-7fdc-4089-8f0a-b5df5f32e7c5",
+        "https://github.com/langchain-ai/langchain/commit/c2a3021bb0c5f54649d380b42a0684ca5778c255",
+        "https://github.com/advisories/GHSA-45pg-36p6-83v9"
+      ],
+      "epss": 0.1374,
+      "epss_percentile": 0.9647,
+      "first_seen": "08-19-2026",
+      "prev_epss": 0.1374
+    },
+    {
+      "id": "CVE-2026-110835",
+      "aliases": [
+        "CVE-2026-110835"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-14",
+      "details": "FreeRDP 3.0.0 before 3.32.0 allows HTTP header injection in its proxy because a lone LF in the target portion of a routing token (Cookie: msts=) is not rejected and is written by http_proxy_connect into the CONNECT request line and Host header. A rem",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-110835"
+      ],
+      "epss": 0.0022,
+      "epss_percentile": 0.1139,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109951",
+      "aliases": [
+        "CVE-2026-109951"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-13",
+      "details": "FreeRDP 3.17.1 before 3.32.0 contains a heap buffer over-read vulnerability in DynvcTrackerHandleCreateBack of the freerdp-proxy DRDYNVC channel handler that allows malicious backend RDP servers to read heap memory out of bounds. Attackers can send a",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109951"
+      ],
+      "epss": 0.003,
+      "epss_percentile": 0.2168,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109946",
+      "aliases": [
+        "CVE-2026-109946"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-13",
+      "details": "FreeRDP 3.11.0 before 3.32.0 does not validate that AVC444 and AVC444v2 region widths are even before YUV444 conversion, so an odd width reaches an assertion and aborts the client. A malicious or compromised RDP server can terminate a connected FreeR",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109946"
+      ],
+      "epss": 0.0027,
+      "epss_percentile": 0.1789,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109941",
+      "aliases": [
+        "CVE-2026-109941"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-13",
+      "details": "FreeRDP from 2.3.0 before 3.32.0 contains an infinite loop vulnerability in http_chuncked_read that allows malicious RD Gateways to hang clients by sending incomplete chunked responses. Attackers can send a partial chunk-size line or footer followed ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109941"
+      ],
+      "epss": 0.0027,
+      "epss_percentile": 0.1789,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109679",
+      "aliases": [
+        "CVE-2026-109679"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-13",
+      "details": "FreeRDP 3.0.0-beta4 before 3.32.0 contains a NULL pointer dereference in arm_handle_request_ok when an ARM endpoint returns an empty HTTP 200 body. Attackers controlling the configured ARM gateway can return a zero-length body to pass NULL to strnlen",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109679"
+      ],
+      "epss": 0.0025,
+      "epss_percentile": 0.1556,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109640",
+      "aliases": [
+        "CVE-2026-109640"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Frappe ERPNext before 16.22.0 contains a missing authorization vulnerability that allows authenticated users to modify records by invoking endpoints lacking proper authorization checks. Attackers can call these endpoints to perform operations on reco",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109640"
+      ],
+      "epss": 0.0022,
+      "epss_percentile": 0.1197,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-110615",
+      "aliases": [
+        "CVE-2026-110615"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-14",
+      "details": "jshERP through 3.6 contains a missing authorization vulnerability in the POST /user/batchSetStatus endpoint that allows authenticated low-privilege users to change other users' account status. Attackers can submit crafted ids and status values to dis",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-110615"
+      ],
+      "epss": 0.0044,
+      "epss_percentile": 0.3644,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-111389",
+      "aliases": [
+        "CVE-2026-111389"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-16",
+      "details": "Frappe HRMS 14.x before 14.38.2, 15.x before 15.64.0, and 16.x before 16.18.0 contains a SQL injection vulnerability in some endpoints caused by missing input validation. Any authenticated attacker, including a low-privilege account, can send special",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-111389"
+      ],
+      "epss": 0.0022,
+      "epss_percentile": 0.1207,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108622",
+      "aliases": [
+        "CVE-2026-108622"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the SysLogController delete handler that allows any authenticated user to delete audit log entries. Low-privileged attackers can obtain log ids from the unguarded /sys/log/list",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108622"
+      ],
+      "epss": 0.0027,
+      "epss_percentile": 0.1782,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108627",
+      "aliases": [
+        "CVE-2026-108627"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the loadDatarule handler of SysRoleController that lets any authenticated user query role data rules. Low-privileged attackers can request GET /sys/role/datarule/{permissionId}",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108627"
+      ],
+      "epss": 0.0024,
+      "epss_percentile": 0.1438,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108632",
+      "aliases": [
+        "CVE-2026-108632"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the SysDepartPermissionController queryById handler that allows any authenticated user to read department permission records. Low-privileged attackers can request GET /sys/sysD",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108632"
+      ],
+      "epss": 0.0024,
+      "epss_percentile": 0.1438,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108637",
+      "aliases": [
+        "CVE-2026-108637"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability that allows low-privileged authenticated users to remove user group members by calling DELETE /sys/user/deleteUserGroupBatch. Attackers can supply any groupId and comma-separated ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108637"
+      ],
+      "epss": 0.0024,
+      "epss_percentile": 0.1385,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108642",
+      "aliases": [
+        "CVE-2026-108642"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability in SysAnnouncementSendController that allows authenticated users to modify other users' message delivery records. Attackers can obtain delivery ids from GET /sys/sysAnnouncementSe",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108642"
+      ],
+      "epss": 0.0024,
+      "epss_percentile": 0.1385,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108647",
+      "aliases": [
+        "CVE-2026-108647"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability that allows low-privileged authenticated users to create validation rules through the SysCheckRuleController importExcel handler. Attackers can upload a crafted Excel workbook to ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108647"
+      ],
+      "epss": 0.0026,
+      "epss_percentile": 0.1682,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108652",
+      "aliases": [
+        "CVE-2026-108652"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the SystemApiController updateAvatar handler that allows any authenticated user to change other users' avatars. Low-privileged attackers can send PUT requests with a target use",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108652"
+      ],
+      "epss": 0.0024,
+      "epss_percentile": 0.1385,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108657",
+      "aliases": [
+        "CVE-2026-108657"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability in the SysTenantController passApply handler that allows any authenticated user to approve tenant administrator applications. Attackers can file a pending application via doApplyT",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108657"
+      ],
+      "epss": 0.0023,
+      "epss_percentile": 0.1292,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108662",
+      "aliases": [
+        "CVE-2026-108662"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability that allows low-privileged authenticated users to remove users from tenant product packs via PUT /sys/tenant/deleteTenantPackUser. Attackers can supply arbitrary userId and packId",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108662"
+      ],
+      "epss": 0.0021,
+      "epss_percentile": 0.1069,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-108667",
+      "aliases": [
+        "CVE-2026-108667"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-10",
+      "details": "JeecgBoot through 3.9.5 contains a missing authorization vulnerability that allows low-privileged authenticated users to restore deleted AI prompt templates by calling the revertRecycleBin endpoint. Attackers can send PUT requests to /airag/prompts/r",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-108667"
+      ],
+      "epss": 0.0019,
+      "epss_percentile": 0.0804,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109199",
+      "aliases": [
+        "CVE-2026-109199"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "LogicalDOC Community Edition through 9.3 contains a code injection vulnerability that allows authenticated users to execute OS commands by submitting Velocity templates in DocumentService.sendAsEmail subject or message fields. Attackers can invoke Sy",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109199"
+      ],
+      "epss": 0.0039,
+      "epss_percentile": 0.3194,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109204",
+      "aliases": [
+        "CVE-2026-109204"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "LogicalDOC Community Edition through 9.3 contains an improper authorization vulnerability in the PswRecovery servlet that fails to bind password recovery tickets to the requesting user. Attackers can obtain a ticket for their own account and reuse it",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109204"
+      ],
+      "epss": 0.002,
+      "epss_percentile": 0.0893,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109393",
+      "aliases": [
+        "CVE-2026-109393"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "QloApps through 1.7.0 contains an insecure direct object reference vulnerability in back-office AJAX handlers of AdminOrdersController, AdminBookingDocumentController, AdminProductsController and AdminAddHotelController that skip htl_access hotel che",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109393"
+      ],
+      "epss": 0.0021,
+      "epss_percentile": 0.0989,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109399",
+      "aliases": [
+        "CVE-2026-109399"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "SWUpdate through 2026.05.1 contains an improper certificate validation vulnerability in crypto/swupdate_cms_verify_openssl.c that trusts untrusted X.509 certificates embedded in CMS SignedData for chain building. Attackers holding a signing key from ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109399"
+      ],
+      "epss": 0.0021,
+      "epss_percentile": 0.1047,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109241",
+      "aliases": [
+        "CVE-2026-109241"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "FreeRDP before 3.32.0 contains a NULL pointer dereference vulnerability in the client video redirection channel that allows malicious servers to crash clients by sending out-of-order messages. Attackers can send a Geometry CLEAR message that nulls pr",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109241"
+      ],
+      "epss": 0.0022,
+      "epss_percentile": 0.115,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109291",
+      "aliases": [
+        "CVE-2026-109291"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Open WebUI from 0.6.33 before 0.11.4 contains a cross-site scripting vulnerability that allows authenticated users to execute script in victims' sessions by storing javascript: URLs in citation embed_url fields. Attackers can share a crafted chat who",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109291"
+      ],
+      "epss": 0.0028,
+      "epss_percentile": 0.19,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109296",
+      "aliases": [
+        "CVE-2026-109296"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Open WebUI before 0.11.4 contains a missing authorization vulnerability that allows authenticated users to reach disabled model provider backends by supplying an explicit backend index. Attackers can pass the index as a path segment or query paramete",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109296"
+      ],
+      "epss": 0.0027,
+      "epss_percentile": 0.1867,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-111985",
+      "aliases": [
+        "CVE-2026-111985"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-18",
+      "details": "A vulnerability was found in AUTOMATIC1111 stable-diffusion-webui up to 1.10.1. This impacts the function read_metadata_from_safetensors of the file modules/sd_models.py of the component Metadata Extraction. The manipulation of the argument header le",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-111985"
+      ],
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109301",
+      "aliases": [
+        "CVE-2026-109301"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Parse Server before 8.6.95 and 9.0.0 before 9.10.2-alpha.3 does not resolve file references lacking a URL before passing objects to Cloud Code triggers and LiveQuery, causing an uncaught exception that terminates the process. Attackers able to write ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109301"
+      ],
+      "epss": 0.0035,
+      "epss_percentile": 0.2682,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-109306",
+      "aliases": [
+        "CVE-2026-109306"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-12",
+      "details": "Craft CMS from 5.0.0 before 5.10.14 contains a missing authorization vulnerability in AppController::actionSwitchToLicensedEdition() that lets any authenticated user change the installed edition. Low-privileged front-end users can call the action rou",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109306"
+      ],
+      "epss": 0.0023,
+      "epss_percentile": 0.1322,
+      "first_seen": "10-18-2026",
+      "prev_epss": null
+    }
+  ],
+  "ai_advisories": [
+    {
+      "id": "GHSA-84m7-p3x7-pcfv",
+      "cve": "CVE-2026-59951",
+      "package": "mcp",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "medium",
+      "cvss": 7.5,
+      "summary": "MCP Python SDK: Unbounded Session Accumulation in StreamableHTTP Transport Enables Resource Exhaustion",
+      "details": "### Summary\nIn affected versions, a Streamable HTTP server in stateful mode (the default) never reclaimed session state:\n\n- sessions did not expire;\n- a client `DELETE` ended the session but left its entry registered;\n- a session whose first request was refused stayed registered with a running task.\n\nEach session also kept its parsed `initialize` parameters, and the number of sessions was unlimite",
+      "affected": ">= 1.8.0, < 1.30.0",
+      "patched": "1.30.0",
+      "published": "10-15-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-84m7-p3x7-pcfv"
+      ],
+      "epss": 0.0046,
+      "epss_percentile": 0.3823,
+      "first_seen": "10-16-2026",
+      "prev_epss": 0.0046
+    }
+  ],
+  "brief_plan": {
+    "rules": "max 3 findings; AI first; repeats only on a stated change; at most one non-AI item (new CRITICAL KEV)",
+    "findings": [
+      {
+        "section": "circl",
+        "id": "CVE-2026-109291",
+        "cve": "CVE-2026-109291",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0028)",
+        "ai": true,
+        "selected_because": "new today",
+        "item": {
+          "id": "CVE-2026-109291",
+          "aliases": [
+            "CVE-2026-109291"
+          ],
+          "severity": "N/A",
+          "published": "2026-10-12",
+          "details": "Open WebUI from 0.6.33 before 0.11.4 contains a cross-site scripting vulnerability that allows authenticated users to execute script in victims' sessions by storing javascript: URLs in citation embed_url fields. Attackers can share a crafted chat who",
+          "links": [
+            "https://vulnerability.circl.lu/vuln/CVE-2026-109291"
+          ],
+          "epss": 0.0028,
+          "epss_percentile": 0.19,
+          "first_seen": "10-18-2026",
+          "prev_epss": null
+        }
+      },
+      {
+        "section": "circl",
+        "id": "CVE-2026-109296",
+        "cve": "CVE-2026-109296",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0027)",
+        "ai": true,
+        "selected_because": "new today",
+        "item": {
+          "id": "CVE-2026-109296",
+          "aliases": [
+            "CVE-2026-109296"
+          ],
+          "severity": "N/A",
+          "published": "2026-10-12",
+          "details": "Open WebUI before 0.11.4 contains a missing authorization vulnerability that allows authenticated users to reach disabled model provider backends by supplying an explicit backend index. Attackers can pass the index as a path segment or query paramete",
+          "links": [
+            "https://vulnerability.circl.lu/vuln/CVE-2026-109296"
+          ],
+          "epss": 0.0027,
+          "epss_percentile": 0.1867,
+          "first_seen": "10-18-2026",
+          "prev_epss": null
+        }
+      }
+    ],
+    "on_the_radar": [],
+    "quiet_ai_day": false,
+    "ai_risk_topic": null,
+    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Manufacturing (3), Professional Services (2), Energy & Utilities (1); countries: US (8), NL (1)."
+  }
+}
