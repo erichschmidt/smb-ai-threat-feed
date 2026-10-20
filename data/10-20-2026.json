@@ -1,0 +1,945 @@
+{
+  "generated": "2026-10-20T13:00:47.937747+00:00",
+  "date": "10-20-2026",
+  "sources": {
+    "cisa_kev": {
+      "status": "ok",
+      "count": 7
+    },
+    "threatfox": {
+      "status": "ok",
+      "count": 8
+    },
+    "urlhaus": {
+      "status": "ok",
+      "count": 6
+    },
+    "ransomware_live": {
+      "status": "ok",
+      "count": 10
+    },
+    "circl": {
+      "status": "ok",
+      "count": 29
+    },
+    "ai_advisories": {
+      "status": "ok",
+      "count": 1
+    },
+    "epss": {
+      "status": "ok (10/21 scored)",
+      "count": 10
+    }
+  },
+  "kev": [
+    {
+      "cve": "CVE-2026-102764",
+      "added": "10-16-2026",
+      "vendor": "BeyondTrust",
+      "product": "Remote Support",
+      "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-19-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://www.beyondtrust.com/trust-center/security-advisories/bt26-05 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizi",
+      "links": [
+        "https://www.beyondtrust.com/trust-center/security-advisories/bt26-05",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
+      ],
+      "epss": 0.0118,
+      "epss_percentile": 0.6721,
+      "first_seen": "10-17-2026",
+      "prev_epss": 0.0118
+    },
+    {
+      "cve": "CVE-2025-61624",
+      "added": "10-16-2026",
+      "vendor": "Fortinet",
+      "product": "Multiple Products",
+      "description": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-19-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://fortiguard.fortinet.com/psirt/FG-IR-26-122 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-update",
+      "links": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-122",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
+      ],
+      "epss": 0.0108,
+      "epss_percentile": 0.646,
+      "first_seen": "10-17-2026",
+      "prev_epss": 0.0108
+    },
+    {
+      "cve": "CVE-2026-21589",
+      "added": "10-15-2026",
+      "vendor": "Atlassian",
+      "product": "Multiple Products",
+      "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an un",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-18-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://confluence.atlassian.com/security/cve-2026-21589-arbitrary-file-access-vulnerability-impacts-multiple-products-1870495748.html?ref=labs.watchtowr.com ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements:",
+      "links": [
+        "https://confluence.atlassian.com/security/cve-2026-21589-arbitrary-file-access-vulnerability-impacts-multiple-products-1870495748.html?ref=labs.watchtowr.com",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
+      ],
+      "epss": null,
+      "epss_percentile": null,
+      "first_seen": "10-16-2026",
+      "prev_epss": null
+    },
+    {
+      "cve": "CVE-2026-105134",
+      "added": "10-14-2026",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component\u2019s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-202",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-17-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-p",
+      "links": [
+        "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
+      ],
+      "epss": 0.0478,
+      "epss_percentile": 0.9183,
+      "first_seen": "10-15-2026",
+      "prev_epss": 0.0478
+    },
+    {
+      "cve": "CVE-2026-76519",
+      "added": "10-14-2026",
+      "vendor": "Cisco",
+      "product": "Secure Email Gateway",
+      "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-17-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04",
+      "links": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-76519"
+      ],
+      "epss": 0.0157,
+      "epss_percentile": 0.7504,
+      "first_seen": "10-15-2026",
+      "prev_epss": 0.0157
+    },
+    {
+      "cve": "CVE-2026-105133",
+      "added": "10-14-2026",
+      "vendor": "Ahsay",
+      "product": "AhsayCBS",
+      "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component\u2019s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-17-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-p",
+      "links": [
+        "https://www.ahsay.com/en/company/announcements/patch-cve-105133-105134-update",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-105133"
+      ],
+      "epss": 0.0085,
+      "epss_percentile": 0.5763,
+      "first_seen": "10-15-2026",
+      "prev_epss": 0.0085
+    },
+    {
+      "cve": "CVE-2026-0322",
+      "added": "10-14-2026",
+      "vendor": "Palo Alto Networks",
+      "product": "PAN-OS",
+      "description": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-17-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://security.paloaltonetworks.com/CVE-2026-0322 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updat",
+      "links": [
+        "https://security.paloaltonetworks.com/CVE-2026-0322",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-0322"
+      ],
+      "epss": 0.0121,
+      "epss_percentile": 0.6813,
+      "first_seen": "10-15-2026",
+      "prev_epss": 0.0121
+    }
+  ],
+  "threatfox": [
+    {
+      "type": "IOC",
+      "value": "https://w1.abbastoto.org/jv/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-20 12:58:02 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "http://cricket90.click:7589/invoices",
+      "ioc_type": "url",
+      "malware": "Remus",
+      "confidence": 100,
+      "seen": "2026-10-20 12:55:14 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.remus"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "9e0d7b64f1d77dfeddc4a5f620c79e5811d32ac91594759da09040580fc7261f",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-20 12:54:38 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "9a3938f164771cd77aac76c274f396df59e7a5713089f9c322a34341404d08c5",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-20 12:54:37 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "4a203def15c9d4b30d4602ed9db960d0407a6ba04114a64091b9658c5cd011f2",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-20 12:54:37 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "67cfc503966fd56d77c58cc8a689b94c6d9ba32e262646630cc55fc82037c06e",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-20 12:54:36 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "230358697a04628990cfa14a90b7c3d241a0575fba7d8fb0891492973c6e4b7d",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-20 12:54:35 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "23b69294105e45912c69618bfc97f643d4ec14156576d98134e56ca928e2e132",
+      "ioc_type": "sha256_hash",
+      "malware": "Mirai",
+      "confidence": 90,
+      "seen": "2026-10-20 12:54:34 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+      ]
+    }
+  ],
+  "urlhaus": [
+    {
+      "type": "URL",
+      "value": "http://200.115.102.246:39366/bin.sh",
+      "host": "200.115.102.246",
+      "status": "online",
+      "seen": "2026-10-20 12:40:16 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3952952/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://210.208.104.156:40179/bin.sh",
+      "host": "210.208.104.156",
+      "status": "online",
+      "seen": "2026-10-20 12:32:17 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3952951/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "https://newcert.s3.us-east-005.backblazeb2.com/ScreenConnect.ClientSetup.exe",
+      "host": "newcert.s3.us-east-005.backblazeb2.com",
+      "status": "online",
+      "seen": "2026-10-20 12:25:11 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3952950/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://60.219.162.27:36889/i",
+      "host": "60.219.162.27",
+      "status": "online",
+      "seen": "2026-10-20 12:20:22 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3952949/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://60.23.234.248:36741/i",
+      "host": "60.23.234.248",
+      "status": "online",
+      "seen": "2026-10-20 12:04:10 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3952948/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://119.102.77.73:43236/bin.sh",
+      "host": "119.102.77.73",
+      "status": "online",
+      "seen": "2026-10-20 10:53:17 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3952947/"
+      ]
+    }
+  ],
+  "ransomware": [
+    {
+      "group": "anubis",
+      "sector": "Not Found",
+      "country": "",
+      "description": "Beverage distributor data breach.",
+      "discovered": "2026-10-20T03:57:32",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "payload",
+      "sector": "Retail & E-Commerce",
+      "country": "",
+      "description": "BW Office World (bw-officeworld.de) is a German specialized online retailer providing comprehensive workspace and office supply solutions. Their catalog features office furniture, ergonomic chairs, pr",
+      "discovered": "2026-10-20T00:08:36",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "payload",
+      "sector": "Manufacturing",
+      "country": "DE",
+      "description": "Br\u00fcninghoff Group (brueninghoff.de) is a German construction and manufacturing company headquartered in Heiden, founded in 1974. The company specializes in turnkey project development, engineering, an",
+      "discovered": "2026-10-20T00:07:26",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "qilin",
+      "sector": "Government & Defense",
+      "country": "CA",
+      "description": "N/A",
+      "discovered": "2026-10-19T23:00:33",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Global Secret Group",
+      "sector": "Professional Services",
+      "country": "US",
+      "description": "NameCompany: Rosenberg & Pittinsky, LLP |\nCountry: New York, NY 10016 |\nWebsite: rpllplaw.com |\nRevenue: $5 Million |\nIndustry: Legal Services, Law Firm, Real Estate & Commercial Litigation |\nEmployee",
+      "discovered": "2026-10-19T22:23:20",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "qilin",
+      "sector": "Transportation",
+      "country": "ES",
+      "description": "N/A",
+      "discovered": "2026-10-19T21:39:49",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Redact",
+      "sector": "Professional Services",
+      "country": "US",
+      "description": "Sector: Law Firm",
+      "discovered": "2026-10-19T20:55:00",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "N0n",
+      "sector": "Not Found",
+      "country": "US",
+      "description": "ERP software and hosting company \u00b7 USA | Internal network configurations and security credentials of an ERP hosting company; Administrator and remote access credentials; Network topology of corporate ",
+      "discovered": "2026-10-19T20:53:43",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Global Secret Group",
+      "sector": "Education",
+      "country": "US",
+      "description": "NameCompany: Seminole Schools |\nDomain: internal.seminole.org |\nCountry: Seminole,Florida,US |\nWebsite: sps.k12.ok.us |\nRevenue: $15.5 Million |\nIndustry: Education General, Education |\nEmployees: 50-",
+      "discovered": "2026-10-19T20:52:13",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "lockbit5",
+      "sector": "Retail & E-Commerce",
+      "country": "US",
+      "description": "Ultimate Health Plans is a local Medicare Advantage Plan based in Spring Hill, Florida, serving vari...",
+      "discovered": "2026-10-19T21:31:17",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    }
+  ],
+  "circl": [
+    {
+      "id": "PYSEC-2025-19",
+      "aliases": [
+        "CVE-2025-1889"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2025-03-03",
+      "details": "picklescan before 0.0.22 only considers standard pickle file extensions in the scope for its vulnerability scan. An attacker could craft a malicious model that uses Pickle and include a malicious pickle file with a non-standard file extension. Becaus",
+      "links": [
+        "https://sites.google.com/sonatype.com/vulnerabilities/cve-2025-1889",
+        "https://github.com/advisories/GHSA-769v-p64c-89pr"
+      ],
+      "epss": 0.004,
+      "epss_percentile": 0.3226,
+      "first_seen": "08-19-2026",
+      "prev_epss": 0.004
+    },
+    {
+      "id": "PYSEC-2024-115",
+      "aliases": [
+        "CVE-2024-8309"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2024-11-05",
+      "details": "A vulnerability in the GraphCypherQAChain class of langchain-ai/langchain-community version 0.2.5 allows for SQL injection through prompt injection. This vulnerability can lead to unauthorized data manipulation, data exfiltration, denial of service (",
+      "links": [
+        "https://huntr.com/bounties/8f4ad910-7fdc-4089-8f0a-b5df5f32e7c5",
+        "https://github.com/langchain-ai/langchain/commit/c2a3021bb0c5f54649d380b42a0684ca5778c255",
+        "https://github.com/advisories/GHSA-45pg-36p6-83v9"
+      ],
+      "epss": 0.1374,
+      "epss_percentile": 0.9648,
+      "first_seen": "08-19-2026",
+      "prev_epss": 0.1374
+    },
+    {
+      "id": "CVE-2026-18205",
+      "aliases": [
+        "CVE-2026-18205"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Ticimax Informatics Technologies Inc. Ticimax E-Commerce Platform allows Reflected XSS.\n\nThis issue affects Ticimax E-Commerce Platform: through 202",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-18205"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-14933",
+      "aliases": [
+        "CVE-2026-14933"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "Cross-site scripting in the embedded co-browsing feature in Unblu inc. Unblu Spark 7.0 through 7.57.7 and 8.0 through 8.39.2, on on-premises and cloud deployments, allows an unauthenticated remote attacker in the visitor role to execute arbitrary Jav",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-14933"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-113583",
+      "aliases": [
+        "CVE-2026-113583"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "Cypht webmail 2.0.0 through 2.12.2 contains a DOM-based cross-site scripting vulnerability that allows remote attackers to execute arbitrary JavaScript by crafting malicious alt text or URL values in an HTML email's external image tag when ALLOW_EXTE",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-113583"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-113496",
+      "aliases": [
+        "CVE-2026-113496"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "A flaw was found in cockpit-machines. When saving Virtual Network Computing (VNC) console settings, the configured password is passed directly as a command-line argument to an underlying system utility. A local unprivileged attacker on a host that al",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-113496"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-113495",
+      "aliases": [
+        "CVE-2026-113495"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "A flaw was found in cockpit-machines. Red Hat Subscription Management (RHSM) authentication tokens are passed as command-line arguments to background helper processes during image retrieval operations. A local, unprivileged attacker on a system permi",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-113495"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-113388",
+      "aliases": [
+        "CVE-2026-113388"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "A security flaw has been discovered in opensource-socialnetwork up to 9.11/10.1. This affects the function input of the file actions/administrator/cache/dynamic.php of the component Cache Settings. Performing a manipulation of the argument host/port/",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-113388"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-113385",
+      "aliases": [
+        "CVE-2026-113385"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "A vulnerability has been found in LeeDrOiD Labs Shortcutter 2 App 9.0.48 on Android. This issue affects the function Class.forName of the file ToggleGeneric.java. The manipulation of the argument Class leads to improper export of android application ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-113385"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-105949",
+      "aliases": [
+        "CVE-2026-105949"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "Cruise Control's Jetty ConstraintSecurityHandler registers security constraints on exact path specs without a catch-all wildcard constraint and without calling setDenyUncoveredHttpMethods(true). The servlet routes requests using Path.of(pathInfo).get",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-105949"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-105312",
+      "aliases": [
+        "CVE-2026-105312"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "A Kubernetes tenant with create permission on Console custom resources can set spec.containers.api.spec.image to an arbitrary container image. The operator deploys this image into a pod whose ServiceAccount is bound via ClusterRoleBinding to a Cluste",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-105312"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-105311",
+      "aliases": [
+        "CVE-2026-105311"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "The StreamsHub Console operator acts as a confused deputy: a Kubernetes tenant with permission to create a Console custom resource can set spec.kafkaClusters[].credentials.kafkaUser.namespace to any namespace. The operator, running with cluster-wide ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-105311"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2025-49300",
+      "aliases": [
+        "CVE-2025-49300"
+      ],
+      "severity": "N/A",
+      "published": "2025-12-16",
+      "details": "Insertion of Sensitive Information Into Sent Data vulnerability in Shinetheme Traveler Option Tree custom-option-tree allows Retrieve Embedded Sensitive Data.This issue affects Traveler Option Tree: from n/a through 2.8.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2025-49300"
+      ],
+      "epss": 0.0027,
+      "epss_percentile": 0.1849,
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:83561",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "published": "2026-10-16",
+      "details": "The rpcbind utility is a server that converts Remote Procedure Call (RPC) program numbers into universal addresses. It must be running on the host to be able to make RPC calls on a server on that machine.\n\nSecurity Fix(es):\n\n* rpcbind: Unbounded memo",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:83561",
+        "https://access.redhat.com/errata/RHSA-2026:83561"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:80664",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2026-10-13",
+      "details": "The environment-modules packages provide dynamic modification of user environment using module files. Each module file contains the information needed to configure the shell for an application. Once the package is initialized, the environment can be ",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:80664",
+        "https://access.redhat.com/errata/RHSA-2026:80664"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:76734",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N"
+        }
+      ],
+      "published": "2026-10-07",
+      "details": "An implementation of the RPM PGP interface using Sequoia.\n\nSecurity Fix(es):\n\n* sequoia-openpgp: sequoia-openpgp: Cryptographic integrity compromise via key flag confusion (CVE-2026-42784)\n\nBug Fix(es) and Enhancement(s):\n\n* Uninformative error messa",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:76734",
+        "https://access.redhat.com/errata/RHSA-2026:76734"
+      ],
+      "first_seen": "10-12-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:85191",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2026-10-20",
+      "details": "Xwayland is an X server for running X clients under Wayland.\n\nSecurity Fix(es):\n\n* xorg-x11-server: xorg-x11-server: Arbitrary code execution via use-after-free in passive grab handling (CVE-2026-93516)\n\n* xorg-x11-server: xorg-x11-server: Privilege ",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:85191",
+        "https://access.redhat.com/errata/RHSA-2026:85191"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:84799",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L"
+        }
+      ],
+      "published": "2026-10-20",
+      "details": "MariaDB is a community developed fork from MySQL - a multi-user, multi-threaded SQL database server. It is a client/server implementation consisting of a server daemon (mariadbd) and many different client programs and libraries. The base package cont",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:84799",
+        "https://access.redhat.com/errata/RHSA-2026:84799"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:84796",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:H"
+        }
+      ],
+      "published": "2026-10-20",
+      "details": "OpenEXR is an open-source high-dynamic-range floating-point image file format for high-quality image processing and storage. This document presents a brief overview of OpenEXR and explains concepts that are specific to this format.  This package cont",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:84796",
+        "https://access.redhat.com/errata/RHSA-2026:84796"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:84795",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "published": "2026-10-20",
+      "details": "The librabbitmq packages provide an Advanced Message Queuing Protocol (AMQP) client library that allows you to communicate with AMQP servers using protocol version 0-9-1.\n\nSecurity Fix(es):\n\n* rabbitmq-c: rabbitmq-c: Heap buffer overflow leading to d",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:84795",
+        "https://access.redhat.com/errata/RHSA-2026:84795"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:84753",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "published": "2026-10-20",
+      "details": "The glibc packages provide the standard C libraries (libc), POSIX thread libraries (libpthread), standard math libraries (libm), and the name service cache daemon (nscd) used by multiple programs on the system. Without these libraries, the Linux syst",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:84753",
+        "https://access.redhat.com/errata/RHSA-2026:84753"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:84721",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2026-10-20",
+      "details": "The wireshark packages contain a network protocol analyzer used to capture and browse the traffic running on a computer network.\n\nSecurity Fix(es):\n\n* wireshark: Wireshark: Denial of Service via C12.22 protocol dissector crash (CVE-2026-76886)\n\n* wir",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:84721",
+        "https://access.redhat.com/errata/RHSA-2026:84721"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:84591",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2026-10-20",
+      "details": "GNU Emacs is a powerful, customizable, self-documenting text editor. It provides special code editing features, a scripting language (elisp), and the capability to read e-mail and news.\n\nSecurity Fix(es):\n\n* emacs: GNU Emacs: Heap over-read leading t",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:84591",
+        "https://access.redhat.com/errata/RHSA-2026:84591"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:84587",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "published": "2026-10-20",
+      "details": "This module implements the URI class. Objects of this class represent \"Uniform Resource Identifier references\" as specified in RFC 2396 (and updated by RFC 2732).\n\nSecurity Fix(es):\n\n* URI: URI (for Perl): Security bypass due to incorrect hostname en",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:84587",
+        "https://access.redhat.com/errata/RHSA-2026:84587"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:84578",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "published": "2026-10-20",
+      "details": "Python is an interpreted, interactive, object-oriented programming language, which includes modules, classes, exceptions, very high level dynamic data types and dynamic typing. Python supports interfaces to many system calls and libraries, as well as",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:84578",
+        "https://access.redhat.com/errata/RHSA-2026:84578"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:83551",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2026-10-16",
+      "details": "The Ghostscript suite contains utilities for rendering PostScript and PDF documents. Ghostscript translates PostScript code to common bitmap formats so that the code can be displayed or printed.\n\nSecurity Fix(es):\n\n* ghostscript: ghostscript: -dSAFER",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:83551",
+        "https://access.redhat.com/errata/RHSA-2026:83551"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:83207",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H"
+        }
+      ],
+      "published": "2026-10-16",
+      "details": "The kernel packages contain the Linux kernel, the core of any Linux operating system.\n\nSecurity Fix(es):\n\n* kernel: netfilter: nfnetlink_queue: do shared-unconfirmed check before segmentation (CVE-2026-45859)\n\n* kernel: net/sched: act_ct: Only releas",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:83207",
+        "https://access.redhat.com/errata/RHSA-2026:83207"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:82883",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2026-10-15",
+      "details": "The hplip packages contain the Hewlett-Packard Linux Imaging and Printing Project (HPLIP), which provides drivers for Hewlett-Packard printers and multi-function peripherals.\n\nSecurity Fix(es):\n\n* hplip: HP Linux Imaging and Printing Software - Use o",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:82883",
+        "https://access.redhat.com/errata/RHSA-2026:82883"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "RLSA-2026:82280",
+      "aliases": [],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "published": "2026-10-13",
+      "details": "The Trivial File Transfer Protocol (TFTP) is typically used only for booting diskless workstations. The tftp packages include the tftp and tftp-server subpackages. The tftp subpackage provides the user interface for TFTP and the tftp-server subpackag",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:82280",
+        "https://access.redhat.com/errata/RHSA-2026:82280"
+      ],
+      "first_seen": "10-20-2026",
+      "prev_epss": null
+    }
+  ],
+  "ai_advisories": [
+    {
+      "id": "GHSA-84m7-p3x7-pcfv",
+      "cve": "CVE-2026-59951",
+      "package": "mcp",
+      "ecosystem": "pip",
+      "smb_common": true,
+      "severity": "medium",
+      "cvss": 7.5,
+      "summary": "MCP Python SDK: Unbounded Session Accumulation in StreamableHTTP Transport Enables Resource Exhaustion",
+      "details": "### Summary\nIn affected versions, a Streamable HTTP server in stateful mode (the default) never reclaimed session state:\n\n- sessions did not expire;\n- a client `DELETE` ended the session but left its entry registered;\n- a session whose first request was refused stayed registered with a running task.\n\nEach session also kept its parsed `initialize` parameters, and the number of sessions was unlimite",
+      "affected": ">= 1.8.0, < 1.30.0",
+      "patched": "1.30.0",
+      "published": "10-15-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-84m7-p3x7-pcfv"
+      ],
+      "epss": 0.0046,
+      "epss_percentile": 0.3833,
+      "first_seen": "10-16-2026",
+      "prev_epss": 0.0046
+    }
+  ],
+  "brief_plan": {
+    "rules": "max 3 findings; AI first; repeats only on a stated change; at most one non-AI item (new CRITICAL KEV)",
+    "findings": [],
+    "on_the_radar": [],
+    "quiet_ai_day": true,
+    "ai_risk_topic": null,
+    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Retail & E-Commerce (2), Professional Services (2), Manufacturing (1); countries: US (5), DE (1), CA (1)."
+  }
+}
