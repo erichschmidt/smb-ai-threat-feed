@@ -1,8 +1,10 @@
 # SMB + AI Threat Feed
 
-A morning threat briefing for **small businesses that use AI and automation**. It covers new security advisories for common AI tools, actively exploited flaws worth knowing about, and, on Mondays, one AI risk that has no CVE. It's compiled from free public sources and published most mornings.
+> **This feed is no longer updated.** The last brief was published on October 20, 2026. The briefs, the daily data, and the code stay here as an archive.
 
-**Read it:** [erichschmidt.com/briefing](https://erichschmidt.com/briefing/) · **RSS:** [erichschmidt.com/feed.xml](https://erichschmidt.com/feed.xml) · Built by [Erich Schmidt](https://erichschmidt.com)
+A morning threat briefing for **small businesses that use AI and automation**. It covers new security advisories for common AI tools, actively exploited flaws worth knowing about, and, on Mondays, one AI risk that has no CVE. It was compiled from free public sources and published most mornings until October 20, 2026.
+
+**Read the archive:** [briefs/](briefs/) · Built by [Erich Schmidt](https://erichschmidt.com)
 
 ## Why this feed exists
 
