@@ -1,0 +1,1020 @@
+{
+  "generated": "2026-10-24T13:00:39.211127+00:00",
+  "date": "10-24-2026",
+  "sources": {
+    "cisa_kev": {
+      "status": "ok",
+      "count": 8
+    },
+    "threatfox": {
+      "status": "ok",
+      "count": 8
+    },
+    "urlhaus": {
+      "status": "ok",
+      "count": 6
+    },
+    "ransomware_live": {
+      "status": "ransomware.live query failed",
+      "count": 0
+    },
+    "circl": {
+      "status": "ok",
+      "count": 30
+    },
+    "ai_advisories": {
+      "status": "ok",
+      "count": 8
+    },
+    "epss": {
+      "status": "ok (14/32 scored)",
+      "count": 14
+    }
+  },
+  "kev": [
+    {
+      "cve": "CVE-2026-114625",
+      "added": "10-23-2026",
+      "vendor": "Arista",
+      "product": "VeloCloud Orchestrator",
+      "description": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data mana",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-26-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://www.arista.com/en/support/advisories-notices/security-advisory/24838-security-advisory-0199 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-imp",
+      "links": [
+        "https://www.arista.com/en/support/advisories-notices/security-advisory/24838-security-advisory-0199",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-114625"
+      ],
+      "epss": 0.0056,
+      "epss_percentile": 0.4559,
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "cve": "CVE-2026-110447",
+      "added": "10-23-2026",
+      "vendor": "Collabora",
+      "product": "Collabora Online \u2013 Built-in CODE Server",
+      "description": "Collabora Collabora Online \u2013 Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-26-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://help.nextcloud.com/t/to-collabora-built-in-user-update-asap/250516 ; https://github.com/CollaboraOnline/online/security/advisories/GHSA-g3vx-3m76-fghh ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: ",
+      "links": [
+        "https://help.nextcloud.com/t/to-collabora-built-in-user-update-asap/250516",
+        "https://github.com/CollaboraOnline/online/security/advisories/GHSA-g3vx-3m76-fghh"
+      ],
+      "epss": 0.0123,
+      "epss_percentile": 0.6862,
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "cve": "CVE-2026-106931",
+      "added": "10-20-2026",
+      "vendor": "EG Secure Solutions",
+      "product": "SiteGuard Server Edition",
+      "description": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-23-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://www.eg-secure.co.jp/siteguard/news/alert-202610-1 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security",
+      "links": [
+        "https://www.eg-secure.co.jp/siteguard/news/alert-202610-1",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-106931"
+      ],
+      "epss": 0.0117,
+      "epss_percentile": 0.6717,
+      "first_seen": "10-21-2026",
+      "prev_epss": 0.0117
+    },
+    {
+      "cve": "CVE-2026-96656",
+      "added": "10-20-2026",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-23-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-imp",
+      "links": [
+        "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-96656"
+      ],
+      "epss": 0.0082,
+      "epss_percentile": 0.5668,
+      "first_seen": "10-21-2026",
+      "prev_epss": 0.0082
+    },
+    {
+      "cve": "CVE-2026-96655",
+      "added": "10-20-2026",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and C",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "11-03-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-imp",
+      "links": [
+        "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-96655"
+      ],
+      "epss": 0.0046,
+      "epss_percentile": 0.3856,
+      "first_seen": "10-21-2026",
+      "prev_epss": 0.0046
+    },
+    {
+      "cve": "CVE-2026-96654",
+      "added": "10-20-2026",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-23-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-imp",
+      "links": [
+        "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-96654"
+      ],
+      "epss": 0.0046,
+      "epss_percentile": 0.3932,
+      "first_seen": "10-21-2026",
+      "prev_epss": 0.0046
+    },
+    {
+      "cve": "CVE-2026-96652",
+      "added": "10-20-2026",
+      "vendor": "Plex",
+      "product": "Media Server",
+      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CV",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "11-03-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-imp",
+      "links": [
+        "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-96652"
+      ],
+      "epss": 0.0046,
+      "epss_percentile": 0.3856,
+      "first_seen": "10-21-2026",
+      "prev_epss": 0.0046
+    },
+    {
+      "cve": "CVE-2026-110936",
+      "added": "10-20-2026",
+      "vendor": "Siemens",
+      "product": "Software Center",
+      "description": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "11-03-2026",
+      "ransomware_use": "Unknown",
+      "notes": "https://productcert.siemens.com/productcert/html/ssa-580366.html ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-s",
+      "links": [
+        "https://productcert.siemens.com/productcert/html/ssa-580366.html",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-110936"
+      ],
+      "epss": 0.0024,
+      "epss_percentile": 0.1402,
+      "first_seen": "10-21-2026",
+      "prev_epss": 0.0024
+    }
+  ],
+  "threatfox": [
+    {
+      "type": "IOC",
+      "value": "04b13708532af05dcca4b1294d0951f04b74e6747a2652aafb4b35b371ffd258",
+      "ioc_type": "sha256_hash",
+      "malware": "AMOS",
+      "confidence": 100,
+      "seen": "2026-10-24 12:59:17 UTC",
+      "links": [
+        "https://www.virustotal.com/gui/file/04b13708532af05dcca4b1294d0951f04b74e6747a2652aafb4b35b371ffd258",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "c780b65c5fb07a8bd744329eb6e2734c22efd5c3be481b623aa81f18fe52dbaa",
+      "ioc_type": "sha256_hash",
+      "malware": "AMOS",
+      "confidence": 100,
+      "seen": "2026-10-24 12:56:16 UTC",
+      "links": [
+        "https://www.virustotal.com/gui/file/c780b65c5fb07a8bd744329eb6e2734c22efd5c3be481b623aa81f18fe52dbaa",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "eca91ea88db9dd8904b08ff6a545ae18d88b9fb585e6da0e89c114c0368db9a2",
+      "ioc_type": "sha256_hash",
+      "malware": "AMOS",
+      "confidence": 100,
+      "seen": "2026-10-24 12:53:28 UTC",
+      "links": [
+        "https://www.virustotal.com/gui/file/eca91ea88db9dd8904b08ff6a545ae18d88b9fb585e6da0e89c114c0368db9a2",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "www.cag-promotion.fr",
+      "ioc_type": "domain",
+      "malware": "ClearFake",
+      "confidence": 90,
+      "seen": "2026-10-24 12:51:50 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "6a3e28d37b481bff1ea8668bc2201ee70f2f4858cfead07966c6461ca48449bc",
+      "ioc_type": "sha256_hash",
+      "malware": "AMOS",
+      "confidence": 100,
+      "seen": "2026-10-24 12:50:44 UTC",
+      "links": [
+        "https://www.virustotal.com/gui/file/6a3e28d37b481bff1ea8668bc2201ee70f2f4858cfead07966c6461ca48449bc",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "bnbhl00727.workers.dev",
+      "ioc_type": "domain",
+      "malware": "php.shin_webshell",
+      "confidence": 50,
+      "seen": "2026-10-24 12:49:32 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/php.shin_webshell"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "gpvnd48983.workers.dev",
+      "ioc_type": "domain",
+      "malware": "php.shin_webshell",
+      "confidence": 50,
+      "seen": "2026-10-24 12:49:23 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/php.shin_webshell"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "gdgeq74981.workers.dev",
+      "ioc_type": "domain",
+      "malware": "php.shin_webshell",
+      "confidence": 50,
+      "seen": "2026-10-24 12:48:34 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/php.shin_webshell"
+      ]
+    }
+  ],
+  "urlhaus": [
+    {
+      "type": "URL",
+      "value": "http://178.141.176.219:58411/bin.sh",
+      "host": "178.141.176.219",
+      "status": "online",
+      "seen": "2026-10-24 12:51:06 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3986539/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://27.37.225.80:44839/i",
+      "host": "27.37.225.80",
+      "status": "offline",
+      "seen": "2026-10-24 12:50:22 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3986538/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://182.235.148.10:37693/i",
+      "host": "182.235.148.10",
+      "status": "online",
+      "seen": "2026-10-24 12:50:15 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3986537/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://122.241.130.188:49312/i",
+      "host": "122.241.130.188",
+      "status": "online",
+      "seen": "2026-10-24 12:50:13 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3986536/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://105.155.52.220:44336/i",
+      "host": "105.155.52.220",
+      "status": "online",
+      "seen": "2026-10-24 12:50:11 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3986535/"
+      ]
+    },
+    {
+      "type": "URL",
+      "value": "http://27.202.29.147:44187/i",
+      "host": "27.202.29.147",
+      "status": "online",
+      "seen": "2026-10-24 12:50:11 UTC",
+      "links": [
+        "https://urlhaus.abuse.ch/url/3986534/"
+      ]
+    }
+  ],
+  "ransomware": [],
+  "circl": [
+    {
+      "id": "PYSEC-2025-19",
+      "aliases": [
+        "CVE-2025-1889"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2025-03-03",
+      "details": "picklescan before 0.0.22 only considers standard pickle file extensions in the scope for its vulnerability scan. An attacker could craft a malicious model that uses Pickle and include a malicious pickle file with a non-standard file extension. Becaus",
+      "links": [
+        "https://sites.google.com/sonatype.com/vulnerabilities/cve-2025-1889",
+        "https://github.com/advisories/GHSA-769v-p64c-89pr"
+      ],
+      "epss": 0.004,
+      "epss_percentile": 0.3258,
+      "first_seen": "08-19-2026",
+      "prev_epss": 0.004
+    },
+    {
+      "id": "PYSEC-2024-115",
+      "aliases": [
+        "CVE-2024-8309"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "published": "2024-11-05",
+      "details": "A vulnerability in the GraphCypherQAChain class of langchain-ai/langchain-community version 0.2.5 allows for SQL injection through prompt injection. This vulnerability can lead to unauthorized data manipulation, data exfiltration, denial of service (",
+      "links": [
+        "https://huntr.com/bounties/8f4ad910-7fdc-4089-8f0a-b5df5f32e7c5",
+        "https://github.com/langchain-ai/langchain/commit/c2a3021bb0c5f54649d380b42a0684ca5778c255",
+        "https://github.com/advisories/GHSA-45pg-36p6-83v9"
+      ],
+      "epss": 0.1374,
+      "epss_percentile": 0.9651,
+      "first_seen": "08-19-2026",
+      "prev_epss": 0.1374
+    },
+    {
+      "id": "CVE-2026-116020",
+      "aliases": [
+        "CVE-2026-116020"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "BookStack before 26.09.2 contains an incorrect authorization vulnerability in AttachmentController that allows authenticated users to access other users' draft page attachments by ID. Attackers with attachment permissions can enumerate sequential att",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116020"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-116019",
+      "aliases": [
+        "CVE-2026-116019"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "Grav 2.0.15 before 2.2.13 contains an allowlist bypass vulnerability that allows page editors to invoke arbitrary public static methods by relocating data-*@ directives with unset-name@ or integer keys. Attackers with page-edit permission can embed c",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116019"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-116018",
+      "aliases": [
+        "CVE-2026-116018"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "ONEARMY community-platform before 2.165.2 contains an insecure direct object reference vulnerability that allows authenticated users to mark other users' notifications as read via POST /api/notifications/:id/read. Attackers can iterate sequential not",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116018"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-116017",
+      "aliases": [
+        "CVE-2026-116017"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "Xiaozhi-esp32-server before 0.9.8 contains an insecure direct object reference vulnerability in the manager-api DeviceController.getAddressBook handler that allows authenticated users to read other users' device address books. Attackers with a normal",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116017"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-116016",
+      "aliases": [
+        "CVE-2026-116016"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "yudao-cloud through 2026.09 contains an authorization bypass vulnerability that allows authenticated users to evade row-level data scope restrictions by sending a data-permission-enable header set to false. Attackers can add this header to /admin-api",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116016"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-116015",
+      "aliases": [
+        "CVE-2026-116015"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "yudao-cloud through 2026.09 contains an insecure direct object reference vulnerability in the mall trade module that allows authenticated members to read other members' after-sale operation logs by supplying arbitrary afterSaleId values. Attackers ca",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116015"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-116014",
+      "aliases": [
+        "CVE-2026-116014"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "open62541 1.5.0 before 1.5.7 contains an integer overflow in UA_DataType_fromStructureDescription() that wraps the 16-bit memSize field for large custom structure definitions. A malicious OPC UA server can supply DataType definitions via UA_Client_ge",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116014"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-116013",
+      "aliases": [
+        "CVE-2026-116013"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "OpenResty lua-resty-dns before 0.24 contains an improper input validation vulnerability in parse_section() and _decode_name() that fails to check resource record lengths against the received message. Attackers controlling or spoofing a queried namese",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116013"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-116012",
+      "aliases": [
+        "CVE-2026-116012"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "Ghidra before 12.2 contains a numeric truncation vulnerability in PackedDecode::skipAttribute and skipAttributeRemaining in marshal.cc that stores 64-bit string lengths in 32-bit variables. Attackers can supply a crafted packed stream, such as a mali",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116012"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-116011",
+      "aliases": [
+        "CVE-2026-116011"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "Crow before 1.3.4 contains an uncontrolled recursion vulnerability in crow::json::load() that allows remote unauthenticated attackers to crash the server by sending deeply nested JSON. Attackers can send a request body with thousands of nested object",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116011"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-116010",
+      "aliases": [
+        "CVE-2026-116010"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "RosarioSIS before 12.9.1 contains a missing authorization vulnerability that allows authenticated teachers to write records for students outside their course period by supplying arbitrary student IDs. Attackers can modify the st_arr, values, or atten",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116010"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-116009",
+      "aliases": [
+        "CVE-2026-116009"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "Camaleon CMS before 2.9.3 contains a path traversal vulnerability that allows users with only the media permission to write arbitrary files by supplying ../ sequences in the name parameter. Attackers can send a base64 data: URI to the crop_url media ",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116009"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-116008",
+      "aliases": [
+        "CVE-2026-116008"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "DaybydayCRM through 2.2.1 contains a missing authorization vulnerability in ProjectsController::updateAssign() that allows any authenticated user to reassign projects without the can-assign-new-user-to-project permission. Low-privileged employees can",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116008"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-110018",
+      "aliases": [
+        "CVE-2026-110018"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-24",
+      "details": "The aBlocks \u2013 Gutenberg Blocks, User Dashboard Builder, Popup Builder, Form Builder & Animation Builder plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.17.0 via the `/ablocks/v1/form-builder/registra",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-110018"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "N/A",
+      "aliases": [],
+      "severity": "N/A",
+      "published": "N/A",
+      "details": "N/A",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/"
+      ],
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    }
+  ],
+  "ai_advisories": [
+    {
+      "id": "GHSA-46jr-4wx8-v453",
+      "cve": "CVE-2026-111768",
+      "package": "@modelcontextprotocol/sdk",
+      "ecosystem": "npm",
+      "smb_common": true,
+      "severity": "high",
+      "cvss": 7.5,
+      "summary": "MCP TypeScript SDK: One HTTP request within the default size limit could exhaust server memory during validation",
+      "details": "### Summary\nIn affected versions, servers put no limit on how many array elements and object keys they validated in one request. One HTTP request within the default 4 MiB size limit could exhaust the server's memory, and the process aborted with `JavaScript heap out of memory`.\n\nNo credentials are needed, unless you authenticate requests before they reach the SDK.\n\n### Am I affected?\nYes, if clien",
+      "affected": ">= 1.3.0, < 1.32.0",
+      "patched": "1.32.0",
+      "published": "10-20-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-46jr-4wx8-v453"
+      ],
+      "epss": null,
+      "epss_percentile": null,
+      "first_seen": "10-21-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-22jm-h49p-29qw",
+      "cve": "CVE-2026-111767",
+      "package": "@modelcontextprotocol/sdk",
+      "ecosystem": "npm",
+      "smb_common": true,
+      "severity": "high",
+      "cvss": 8.6,
+      "summary": "MCP TypeScript SDK: Experimental tasks were not tied to the session that created them",
+      "details": "### Summary\nIn affected versions, the experimental tasks feature (`taskStore`) did not check which session created a task. Clients sharing one `InMemoryTaskStore` could list, read and cancel each other's tasks.\n\nExperimental tasks are deprecated. The 2026-07-28 specification replaced them with a redesigned extension. The best course of action is to stop using them.\n\n### Am I affected?\nOnly if your",
+      "affected": ">= 1.24.0, < 1.32.0",
+      "patched": "1.32.0",
+      "published": "10-20-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-22jm-h49p-29qw"
+      ],
+      "epss": 0.0034,
+      "epss_percentile": 0.2681,
+      "first_seen": "10-21-2026",
+      "prev_epss": 0.0034
+    },
+    {
+      "id": "GHSA-gx7p-2j49-hfq4",
+      "cve": "CVE-2026-114055",
+      "package": "vllm",
+      "ecosystem": "pip",
+      "smb_common": false,
+      "severity": "high",
+      "cvss": 7.5,
+      "summary": "vLLM : DoS via unvalidated mm_processor_kwargs in multimodal image processors (Isaac, InternVL, H2OVL, etc.)",
+      "details": "## Summary\n\nAPI clients can supply arbitrary `mm_processor_kwargs` per request. vLLM\nforwards these values through the multimodal rendering and processing pipeline\nto Hugging Face and custom image/video processor constructors and calls.\nResource-sensitive values such as image size, patch size, patch count, crop\ncount, or frame count can therefore be controlled by a remote client.\n\nFor processors t",
+      "affected": ">= 0.7.3, < 0.31.0",
+      "patched": "0.31.0",
+      "published": "10-23-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-gx7p-2j49-hfq4"
+      ],
+      "epss": 0.0034,
+      "epss_percentile": 0.2667,
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-wqmh-qccw-pqwf",
+      "cve": "CVE-2026-53995",
+      "package": "mlflow",
+      "ecosystem": "pip",
+      "smb_common": false,
+      "severity": "high",
+      "cvss": 8.2,
+      "summary": "MLflow FileStore trace IDs allow path traversal and arbitrary file writes",
+      "details": "MLflow 3.17.1 and earlier contains a path traversal vulnerability in the FileStore tracking backend that allows unauthenticated attackers to control filesystem paths by submitting a crafted trace ID containing traversal sequences to the POST /api/3.0/mlflow/traces endpoint. Attackers can exploit FileStore.start_trace() to write trace_info.yaml, request_metadata, and tag files with attacker-control",
+      "affected": "<= 3.17.1",
+      "patched": "3.17.2",
+      "published": "10-20-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-wqmh-qccw-pqwf"
+      ],
+      "epss": 0.0056,
+      "epss_percentile": 0.4592,
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-rvq5-wwqv-78pq",
+      "cve": "CVE-2026-111771",
+      "package": "@modelcontextprotocol/sdk",
+      "ecosystem": "npm",
+      "smb_common": true,
+      "severity": "medium",
+      "cvss": 6.8,
+      "summary": "MCP TypeScript SDK: Server bearer authentication accepted tokens issued for another service",
+      "details": "### Summary\nIn affected versions, the SDK's server-side bearer authentication had no way to check that a token was issued for your server (its audience). Where one authorization server issues tokens for several services, a valid token for another service was also accepted by your MCP server.\n\n### Am I affected?\nYes, if your HTTP server uses `requireBearerAuth()` or `verifyBearerToken()`, its autho",
+      "affected": ">= 1.6.0, < 1.32.0",
+      "patched": "1.32.0",
+      "published": "10-20-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-rvq5-wwqv-78pq"
+      ],
+      "epss": null,
+      "epss_percentile": null,
+      "first_seen": "10-21-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-6prh-2h8m-c8cw",
+      "cve": "CVE-2026-111769",
+      "package": "@modelcontextprotocol/sdk",
+      "ecosystem": "npm",
+      "smb_common": true,
+      "severity": "medium",
+      "cvss": 6.5,
+      "summary": "MCP TypeScript client SDK: HTTP client transports and OAuth requests followed cross-origin redirects and re-sent custom headers and request bodies",
+      "details": "### Summary\nIn affected versions, the SDK's HTTP client transports and OAuth requests followed redirects to any origin.\n\nIf an MCP server or authorization server redirected a request to another origin, that origin received custom request headers (such as an `X-API-Key` set in `requestInit.headers`) and the `mcp-session-id` header. On a `307` or `308` it also received the request body, including OA",
+      "affected": "< 1.32.0",
+      "patched": "1.32.0",
+      "published": "10-20-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-6prh-2h8m-c8cw"
+      ],
+      "epss": null,
+      "epss_percentile": null,
+      "first_seen": "10-21-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-2wqp-q3c6-ccj5",
+      "cve": "CVE-2026-115886",
+      "package": "mlflow",
+      "ecosystem": "pip",
+      "smb_common": false,
+      "severity": "medium",
+      "cvss": 6.5,
+      "summary": "MLflow: SSRF on unauthenticated MLflow servers via third-party scorer kwargs in the scorer invoke, register, and GenAI evaluate endpoints",
+      "details": "### Summary\nMLflow's tracking server exposes `POST /ajax-api/3.0/mlflow/scorer/invoke` with **no authentication**, and the handler reflectively instantiates an attacker-named class from attacker-supplied JSON with unconstrained constructor kwargs. With the optional `trulens` + `trulens-providers-litellm` packages installed, an unauthenticated attacker can force the server to make an outbound HTTP ",
+      "affected": ">= 3.12.0rc0, < 3.17.0",
+      "patched": "3.17.0",
+      "published": "10-23-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-2wqp-q3c6-ccj5"
+      ],
+      "epss": null,
+      "epss_percentile": null,
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "GHSA-p92p-rxj5-7p2x",
+      "cve": "CVE-2026-114050",
+      "package": "vllm",
+      "ecosystem": "pip",
+      "smb_common": false,
+      "severity": "medium",
+      "cvss": 6.5,
+      "summary": "vLLM: Forged multimodal UUID + P0/P1 processor-cache eviction drift: unauthenticated remote crash of the whole vLLM engine",
+      "details": "## Summary\n\nMultimodal content parts (`image_url`, `video_url`, `input_audio`, ...) accept a user-supplied `uuid` field that vLLM uses **verbatim as the item's cache identity** (`mm_hash`). The two frontend/engine processor caches (P0 \"sender\" cache in the API process, P1 \"receiver\" cache in the EngineCore process) are independent LRU caches whose evictions are **not synchronized**, and the P1 hit",
+      "affected": "< 0.31.0",
+      "patched": "0.31.0",
+      "published": "10-23-2026",
+      "links": [
+        "https://github.com/advisories/GHSA-p92p-rxj5-7p2x"
+      ],
+      "epss": 0.0017,
+      "epss_percentile": 0.0605,
+      "first_seen": "10-24-2026",
+      "prev_epss": null
+    }
+  ],
+  "brief_plan": {
+    "rules": "max 3 findings; AI first; repeats only on a stated change; at most one non-AI item (new CRITICAL KEV)",
+    "findings": [
+      {
+        "section": "ai_advisories",
+        "id": "GHSA-wqmh-qccw-pqwf",
+        "cve": "CVE-2026-53995",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0056)",
+        "ai": true,
+        "selected_because": "new today",
+        "item": {
+          "id": "GHSA-wqmh-qccw-pqwf",
+          "cve": "CVE-2026-53995",
+          "package": "mlflow",
+          "ecosystem": "pip",
+          "smb_common": false,
+          "severity": "high",
+          "cvss": 8.2,
+          "summary": "MLflow FileStore trace IDs allow path traversal and arbitrary file writes",
+          "details": "MLflow 3.17.1 and earlier contains a path traversal vulnerability in the FileStore tracking backend that allows unauthenticated attackers to control filesystem paths by submitting a crafted trace ID containing traversal sequences to the POST /api/3.0/mlflow/traces endpoint. Attackers can exploit FileStore.start_trace() to write trace_info.yaml, request_metadata, and tag files with attacker-control",
+          "affected": "<= 3.17.1",
+          "patched": "3.17.2",
+          "published": "10-20-2026",
+          "links": [
+            "https://github.com/advisories/GHSA-wqmh-qccw-pqwf"
+          ],
+          "epss": 0.0056,
+          "epss_percentile": 0.4592,
+          "first_seen": "10-24-2026",
+          "prev_epss": null
+        }
+      },
+      {
+        "section": "ai_advisories",
+        "id": "GHSA-gx7p-2j49-hfq4",
+        "cve": "CVE-2026-114055",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0034)",
+        "ai": true,
+        "selected_because": "new today",
+        "item": {
+          "id": "GHSA-gx7p-2j49-hfq4",
+          "cve": "CVE-2026-114055",
+          "package": "vllm",
+          "ecosystem": "pip",
+          "smb_common": false,
+          "severity": "high",
+          "cvss": 7.5,
+          "summary": "vLLM : DoS via unvalidated mm_processor_kwargs in multimodal image processors (Isaac, InternVL, H2OVL, etc.)",
+          "details": "## Summary\n\nAPI clients can supply arbitrary `mm_processor_kwargs` per request. vLLM\nforwards these values through the multimodal rendering and processing pipeline\nto Hugging Face and custom image/video processor constructors and calls.\nResource-sensitive values such as image size, patch size, patch count, crop\ncount, or frame count can therefore be controlled by a remote client.\n\nFor processors t",
+          "affected": ">= 0.7.3, < 0.31.0",
+          "patched": "0.31.0",
+          "published": "10-23-2026",
+          "links": [
+            "https://github.com/advisories/GHSA-gx7p-2j49-hfq4"
+          ],
+          "epss": 0.0034,
+          "epss_percentile": 0.2667,
+          "first_seen": "10-24-2026",
+          "prev_epss": null
+        }
+      }
+    ],
+    "on_the_radar": [
+      {
+        "section": "ai_advisories",
+        "id": "GHSA-p92p-rxj5-7p2x",
+        "cve": "CVE-2026-114050",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 low EPSS (0.0017)",
+        "first_seen": "10-24-2026",
+        "product": "vllm",
+        "links": [
+          "https://github.com/advisories/GHSA-p92p-rxj5-7p2x"
+        ]
+      },
+      {
+        "section": "ai_advisories",
+        "id": "GHSA-2wqp-q3c6-ccj5",
+        "cve": "CVE-2026-115886",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 no EPSS score yet",
+        "first_seen": "10-24-2026",
+        "product": "mlflow",
+        "links": [
+          "https://github.com/advisories/GHSA-2wqp-q3c6-ccj5"
+        ]
+      }
+    ],
+    "quiet_ai_day": false,
+    "ai_risk_topic": null,
+    "ransomware_pulse": "No recent ransomware victim claims in the latest listing."
+  }
+}
