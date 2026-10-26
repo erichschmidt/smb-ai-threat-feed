@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-25T13:00:35.395319+00:00",
-  "date": "10-25-2026",
+  "generated": "2026-10-26T13:00:22.326826+00:00",
+  "date": "10-26-2026",
   "sources": {
     "cisa_kev": {
       "status": "ok",
@@ -27,8 +27,8 @@
       "count": 8
     },
     "epss": {
-      "status": "ok (15/28 scored)",
-      "count": 15
+      "status": "ok (19/33 scored)",
+      "count": 19
     }
   },
   "kev": [
@@ -46,10 +46,10 @@
         "https://www.arista.com/en/support/advisories-notices/security-advisory/24838-security-advisory-0199",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-114625"
       ],
-      "epss": 0.0081,
-      "epss_percentile": 0.5661,
+      "epss": 0.0103,
+      "epss_percentile": 0.6332,
       "first_seen": "10-24-2026",
-      "prev_epss": 0.0056
+      "prev_epss": 0.0081
     },
     {
       "cve": "CVE-2026-110447",
@@ -65,10 +65,10 @@
         "https://help.nextcloud.com/t/to-collabora-built-in-user-update-asap/250516",
         "https://github.com/CollaboraOnline/online/security/advisories/GHSA-g3vx-3m76-fghh"
       ],
-      "epss": 0.0228,
-      "epss_percentile": 0.8306,
+      "epss": 0.1233,
+      "epss_percentile": 0.9616,
       "first_seen": "10-24-2026",
-      "prev_epss": 0.0123
+      "prev_epss": 0.0228
     },
     {
       "cve": "CVE-2026-106931",
@@ -84,8 +84,8 @@
         "https://www.eg-secure.co.jp/siteguard/news/alert-202610-1",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-106931"
       ],
-      "epss": 0.0117,
-      "epss_percentile": 0.6721,
+      "epss": 0.0253,
+      "epss_percentile": 0.8478,
       "first_seen": "10-21-2026",
       "prev_epss": 0.0117
     },
@@ -103,8 +103,8 @@
         "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-96656"
       ],
-      "epss": 0.0082,
-      "epss_percentile": 0.5671,
+      "epss": 0.0179,
+      "epss_percentile": 0.7815,
       "first_seen": "10-21-2026",
       "prev_epss": 0.0082
     },
@@ -122,8 +122,8 @@
         "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-96655"
       ],
-      "epss": 0.0046,
-      "epss_percentile": 0.3859,
+      "epss": 0.0164,
+      "epss_percentile": 0.7616,
       "first_seen": "10-21-2026",
       "prev_epss": 0.0046
     },
@@ -141,8 +141,8 @@
         "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-96654"
       ],
-      "epss": 0.0046,
-      "epss_percentile": 0.3936,
+      "epss": 0.0195,
+      "epss_percentile": 0.8008,
       "first_seen": "10-21-2026",
       "prev_epss": 0.0046
     },
@@ -160,8 +160,8 @@
         "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-96652"
       ],
-      "epss": 0.0046,
-      "epss_percentile": 0.3859,
+      "epss": 0.0182,
+      "epss_percentile": 0.7861,
       "first_seen": "10-21-2026",
       "prev_epss": 0.0046
     },
@@ -179,8 +179,8 @@
         "https://productcert.siemens.com/productcert/html/ssa-580366.html",
         "https://nvd.nist.gov/vuln/detail/CVE-2026-110936"
       ],
-      "epss": 0.0024,
-      "epss_percentile": 0.1406,
+      "epss": 0.0097,
+      "epss_percentile": 0.6149,
       "first_seen": "10-21-2026",
       "prev_epss": 0.0024
     }
@@ -188,259 +188,255 @@
   "threatfox": [
     {
       "type": "IOC",
-      "value": "7sxnxlmko2.workers.dev",
+      "value": "td3avpdc.dota.pw",
       "ioc_type": "domain",
-      "malware": "php.shin_webshell",
-      "confidence": 50,
-      "seen": "2026-10-25 12:59:31 UTC",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "seen": "2026-10-26 12:55:57 UTC",
       "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/php.shin_webshell"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake"
       ]
     },
     {
       "type": "IOC",
-      "value": "161.142.175.56:30001",
-      "ioc_type": "ip:port",
-      "malware": "Mirai",
-      "confidence": 50,
-      "seen": "2026-10-25 12:58:19 UTC",
+      "value": "https://h4.agenplay89.org/jp/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-26 12:55:48 UTC",
       "links": [
-        "https://magnify.modat.io/hosts/161.142.175.56",
-        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
     },
     {
       "type": "IOC",
-      "value": "161.142.175.56:31444",
-      "ioc_type": "ip:port",
-      "malware": "Mirai",
-      "confidence": 50,
-      "seen": "2026-10-25 12:58:19 UTC",
+      "value": "t0kmixg4.glas-design.shop",
+      "ioc_type": "domain",
+      "malware": "ClearFake",
+      "confidence": 100,
+      "seen": "2026-10-26 12:54:28 UTC",
       "links": [
-        "https://magnify.modat.io/hosts/161.142.175.56",
-        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake"
       ]
     },
     {
       "type": "IOC",
-      "value": "161.142.175.56:10257",
-      "ioc_type": "ip:port",
-      "malware": "Mirai",
-      "confidence": 50,
-      "seen": "2026-10-25 12:58:18 UTC",
+      "value": "https://h4.agenplay89.org/bl/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-26 12:50:48 UTC",
       "links": [
-        "https://magnify.modat.io/hosts/161.142.175.56",
-        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
     },
     {
       "type": "IOC",
-      "value": "161.142.175.56:54023",
-      "ioc_type": "ip:port",
-      "malware": "Mirai",
-      "confidence": 50,
-      "seen": "2026-10-25 12:58:18 UTC",
+      "value": "5efc7daeaf2173451cc9d4de68b1fce1ac8c11724e8cf677ae8bc7deeddd3cb6",
+      "ioc_type": "sha256_hash",
+      "malware": "AMOS",
+      "confidence": 100,
+      "seen": "2026-10-26 12:48:37 UTC",
       "links": [
-        "https://magnify.modat.io/hosts/161.142.175.56",
-        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+        "https://www.virustotal.com/gui/file/5efc7daeaf2173451cc9d4de68b1fce1ac8c11724e8cf677ae8bc7deeddd3cb6",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
       ]
     },
     {
       "type": "IOC",
-      "value": "161.142.175.56:17584",
-      "ioc_type": "ip:port",
-      "malware": "Mirai",
-      "confidence": 50,
-      "seen": "2026-10-25 12:58:18 UTC",
+      "value": "https://h4.agenplay89.org/rp/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-26 12:45:48 UTC",
       "links": [
-        "https://magnify.modat.io/hosts/161.142.175.56",
-        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
       ]
     },
     {
       "type": "IOC",
-      "value": "161.142.175.56:457",
-      "ioc_type": "ip:port",
-      "malware": "Mirai",
-      "confidence": 50,
-      "seen": "2026-10-25 12:58:18 UTC",
+      "value": "99a9006e489ece97c7c36db82fc239182b8ecaefcd002af520e7d2e4451c4543",
+      "ioc_type": "sha256_hash",
+      "malware": "AMOS",
+      "confidence": 100,
+      "seen": "2026-10-26 12:45:14 UTC",
       "links": [
-        "https://magnify.modat.io/hosts/161.142.175.56",
-        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+        "https://www.virustotal.com/gui/file/99a9006e489ece97c7c36db82fc239182b8ecaefcd002af520e7d2e4451c4543",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
       ]
     },
     {
       "type": "IOC",
-      "value": "161.142.175.56:58955",
-      "ioc_type": "ip:port",
-      "malware": "Mirai",
-      "confidence": 50,
-      "seen": "2026-10-25 12:58:17 UTC",
+      "value": "5b0ce896f1c2da584b089da607f409cc537cd6a70b0ad4ced9baadb5a591c160",
+      "ioc_type": "sha256_hash",
+      "malware": "AMOS",
+      "confidence": 100,
+      "seen": "2026-10-26 12:41:43 UTC",
       "links": [
-        "https://magnify.modat.io/hosts/161.142.175.56",
-        "https://malpedia.caad.fkie.fraunhofer.de/details/elf.mirai"
+        "https://www.virustotal.com/gui/file/5b0ce896f1c2da584b089da607f409cc537cd6a70b0ad4ced9baadb5a591c160",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
       ]
     }
   ],
   "urlhaus": [
     {
       "type": "URL",
-      "value": "https://github.com/Pondthroughplunder/discordzapret/releases/download/DiscordFix/zapret-discord-youtube-1.9.9d.rar",
-      "host": "github.com",
+      "value": "http://119.117.100.53:53281/bin.sh",
+      "host": "119.117.100.53",
       "status": "online",
-      "seen": "2026-10-25 12:58:55 UTC",
+      "seen": "2026-10-26 12:50:09 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/4010203/"
+        "https://urlhaus.abuse.ch/url/4029979/"
       ]
     },
     {
       "type": "URL",
-      "value": "https://github.com/HerbalistCount/DiscordFix/releases/download/ZapretDiscord/zapret-discord-youtube-1.10.1.zip",
-      "host": "github.com",
+      "value": "http://120.84.212.154:44234/i",
+      "host": "120.84.212.154",
       "status": "online",
-      "seen": "2026-10-25 12:58:49 UTC",
+      "seen": "2026-10-26 12:47:07 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/4010202/"
+        "https://urlhaus.abuse.ch/url/4029978/"
       ]
     },
     {
       "type": "URL",
-      "value": "https://github.com/Primekyovise/zapret-discord-youtube-1.10.1/releases/download/1.10.1/zapret-discord-youtube-1.10.2.rar",
-      "host": "github.com",
+      "value": "http://188.115.169.12:25150/i",
+      "host": "188.115.169.12",
       "status": "online",
-      "seen": "2026-10-25 12:58:46 UTC",
+      "seen": "2026-10-26 12:47:05 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/4010201/"
+        "https://urlhaus.abuse.ch/url/4029977/"
       ]
     },
     {
       "type": "URL",
-      "value": "https://github.com/Goliathtireduce/DiscordZapret/releases/download/1.10.1/zapret-discord-youtube-1.10.1.zip",
-      "host": "github.com",
+      "value": "http://59.96.137.224:58830/i",
+      "host": "59.96.137.224",
       "status": "online",
-      "seen": "2026-10-25 12:58:43 UTC",
+      "seen": "2026-10-26 12:32:07 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/4010200/"
+        "https://urlhaus.abuse.ch/url/4029976/"
       ]
     },
     {
       "type": "URL",
-      "value": "https://github.com/SystemRefresh53/discordzapret/releases/download/DiscordFix/zapret-discord-youtube-1.9.9d.rar",
-      "host": "github.com",
+      "value": "http://115.49.192.100:38223/bin.sh",
+      "host": "115.49.192.100",
       "status": "online",
-      "seen": "2026-10-25 12:58:33 UTC",
+      "seen": "2026-10-26 12:32:06 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/4010199/"
+        "https://urlhaus.abuse.ch/url/4029975/"
       ]
     },
     {
       "type": "URL",
-      "value": "https://github.com/Tempestorupgrade/Discord-Fix/releases/download/zapret-discord-youtube-1.10.1/zapret-discord-youtube-1.10.1.zip",
-      "host": "github.com",
+      "value": "https://raw.githubusercontent.com/tianarsamm/backend_beritaku/main/src/api/article/controllers/backend-beritaku-1.4.zip",
+      "host": "raw.githubusercontent.com",
       "status": "online",
-      "seen": "2026-10-25 12:58:31 UTC",
+      "seen": "2026-10-26 12:23:11 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/4010198/"
+        "https://urlhaus.abuse.ch/url/4029974/"
       ]
     }
   ],
   "ransomware": [
     {
-      "group": "emperador",
-      "sector": "Agriculture and Food Production",
-      "country": "BE",
-      "description": "AB InBev is the world's largest brewer, headquartered in Belgium, known for Budweiser, Corona, and Stella Artois .\n\nWe hold 329,244 AB InBev social-listening alerts, 2,510 corporate emails across all ",
-      "discovered": "2026-10-25T03:22:10",
+      "group": "Whitearmor",
+      "sector": "Retail & E-Commerce",
+      "country": "US",
+      "description": "LoveSac (LOVE) is a premium furniture retailer operating more than 250 showrooms across the United States, generating approximately $700 million in annual revenue.\n\nWe have obtained a database contain",
+      "discovered": "2026-10-26T02:57:17",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
-      "group": "anubis",
-      "sector": "Healthcare",
-      "country": "US",
-      "description": "Customers' personal documents and the company's internal documents.",
-      "discovered": "2026-10-25T00:31:56",
+      "group": "payload",
+      "sector": "Professional Services",
+      "country": "DE",
+      "description": "Gl\u00fcckauf-Vermessung GmbH (glueckauf-vermessung.de) is a German engineering and technical company based in Sondershausen, operating as part of the ERCOSPLAN Group and specializing in surveying and mine",
+      "discovered": "2026-10-26T00:24:26",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "payload",
+      "sector": "Not Found",
+      "country": "DE",
+      "description": "Miletic GmbH is a German specialized contractor headquartered in Bad Sch\u00f6nborn that has been operating in the construction sector since 1989. The company's core business focuses on construction and re",
+      "discovered": "2026-10-26T00:23:12",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "payload",
+      "sector": "Manufacturing",
+      "country": "DE",
+      "description": "Edelstahl-Mechanik GmbH is a German manufacturing company based in G\u00f6ppingen. The company specializes in laser metal processing, including 2D and 3D laser cutting and welding, as well as structural sh",
+      "discovered": "2026-10-26T00:21:58",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
       "group": "Whitearmor",
-      "sector": "Technology",
-      "country": "CN",
-      "description": "Hisense is a Chinese multinational electronics and appliance manufacturer, founded in 1969, known globally for televisions and home appliances.\n\nWe hold Hisense's entire GCRM production document store",
-      "discovered": "2026-10-25T01:24:13",
+      "sector": "Transportation",
+      "country": "US",
+      "description": "You are so stupid JB Hunt. Instead of getting in contact with us & starting the negotiation process, not only did you not announce the breach, you silently email customers demanding them to update the",
+      "discovered": "2026-10-26T00:00:24",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
       "group": "qilin",
-      "sector": "Hospitality",
-      "country": "GB",
+      "sector": "Professional Services",
+      "country": "US",
       "description": "N/A",
-      "discovered": "2026-10-24T16:34:49",
+      "discovered": "2026-10-25T17:18:17",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
-      "group": "lamashtu",
-      "sector": "Retail & E-Commerce",
-      "country": "FR",
-      "description": "Vins Viallet is a French family-owned wine producer and distributor based in the Savoie region. Founded in 1966, the company produces and markets a range of wines, including white, red, ros\u00e9 and spark",
-      "discovered": "2026-10-24T16:30:40",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "qilin",
+      "group": "Whitearmor",
       "sector": "Government & Defense",
+      "country": "AR",
+      "description": "Brazil's Liberal Party (PL) is the political party of the Bolsonaro family. Although named \"Liberal,\" it is currently characterized by conservatism and right-wing populism. Jair Bolsonaro joined the p",
+      "discovered": "2026-10-25T16:56:33",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Falcon",
+      "sector": "Professional Services",
       "country": "US",
-      "description": "N/A",
-      "discovered": "2026-10-24T15:26:13",
+      "description": "Mass tort litigation law firm - Our 82 GB extraction includes confidentiality agreements, stipulations, NDAs, internal board documents, privileged attorney-client communications, client rosters detail",
+      "discovered": "2026-10-25T15:52:01",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Falcon",
+      "sector": "Healthcare",
+      "country": "US",
+      "description": "Healthcare services \u00c2\u00b7 NASDAQ: ASTH - Our 738 GB extraction includes internal documents, regulatory audit reports, payer financial dispute trackers, internal operational readiness reviews, acquisition",
+      "discovered": "2026-10-25T14:53:02",
       "links": [
         "https://www.ransomware.live"
       ]
     },
     {
       "group": "emperador",
-      "sector": "Energy & Utilities",
-      "country": "DE",
-      "description": "German company that sells and delivers fuels, \nprimarily heating oil (Heiz\u00f6l), \nbut also motor fuels and lubricants.\nArchived personal and corporate data of employees and customers.\nHere are the most ",
-      "discovered": "2026-10-24T14:52:41",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "emperador",
-      "sector": "Manufacturing",
-      "country": "DE",
-      "description": "German company from Frankfurt am Main, \nwhich deals with building maintenance, construction services, \nlogistics and security.\nArchived personal and corporate data of employees and customers.\nHere are",
-      "discovered": "2026-10-24T14:53:32",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "qilin",
-      "sector": "Not Found",
-      "country": "NL",
-      "description": "N/A",
-      "discovered": "2026-10-24T13:17:20",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "krybit",
-      "sector": "Retail & E-Commerce",
-      "country": "US",
-      "description": "Choice Group (Goodwill Projects) is a prominent Indian real estate developer founded in 1994, headquartered in Tingre Na...",
-      "discovered": "2026-10-24T11:22:23",
+      "sector": "Government & Defense",
+      "country": "",
+      "description": "We encrypted your servers and stole some of your source code, along with some sensitive information. If you do not pay the ransom, we will contact and attack your employees, clients, and partners to d",
+      "discovered": "2026-10-25T14:52:33",
       "links": [
         "https://www.ransomware.live"
       ]
@@ -465,7 +461,7 @@
         "https://github.com/advisories/GHSA-769v-p64c-89pr"
       ],
       "epss": 0.004,
-      "epss_percentile": 0.3261,
+      "epss_percentile": 0.3346,
       "first_seen": "08-19-2026",
       "prev_epss": 0.004
     },
@@ -488,364 +484,460 @@
         "https://github.com/advisories/GHSA-45pg-36p6-83v9"
       ],
       "epss": 0.1374,
-      "epss_percentile": 0.9651,
+      "epss_percentile": 0.9648,
       "first_seen": "08-19-2026",
       "prev_epss": 0.1374
     },
     {
-      "id": "CVE-2026-116137",
+      "id": "CVE-2026-96432",
       "aliases": [
-        "CVE-2026-116137"
+        "CVE-2026-96432"
       ],
       "severity": "N/A",
-      "published": "2026-10-25",
-      "details": "adm-zip through 0.6.1 contains a duplicate-entry validation bypass that allows attackers to evade the readEntries() check by using canonically equivalent entry names like './hello.txt' and 'hello.txt'. Attackers can craft ZIP archives where getEntry(",
+      "published": "2026-10-26",
+      "details": "A malicious or compromised HTTP/2 server withholding SETTINGS ACK can send RST_STREAM on a completed stream, planting a null pointer, and then send a PUSH_PROMISE for that stream, causing a null pointer dereference in the QNetworkAccessManager class ",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116137"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-96432"
       ],
-      "first_seen": "10-25-2026",
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116136",
+      "id": "CVE-2026-94380",
       "aliases": [
-        "CVE-2026-116136"
+        "CVE-2026-94380"
       ],
       "severity": "N/A",
-      "published": "2026-10-25",
-      "details": "ProjectSend 2.0.0 through 2.7.1 contains an incomplete authorization vulnerability in FileVersions::link() that allows staff users to share files without authorization by linking file versions. Attackers can link their file onto an intermediate revis",
+      "published": "2026-10-26",
+      "details": "Weak Password Recovery Mechanism for Forgotten Password vulnerability in HAVELSAN Inc. Liman MYS allows Password Recovery Exploitation.\n\nThis issue affects Liman MYS: from 2.3.4-1124 before 2.3.5-1131.",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116136"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-94380"
       ],
-      "first_seen": "10-25-2026",
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116073",
+      "id": "CVE-2026-84823",
       "aliases": [
-        "CVE-2026-116073"
+        "CVE-2026-84823"
       ],
       "severity": "N/A",
-      "published": "2026-10-25",
-      "details": "Leon before commit 50df142 contains a path traversal vulnerability in getModelFileNameFromURL() that allows attackers to write files outside the models directory via percent-encoded separators. Attackers can trick a user into running '/download model",
+      "published": "2026-10-15",
+      "details": "A flaw was found in WildFly. A user with the `Monitor` role, which is the lowest standard Role-Based Access Control (RBAC) role, can exploit a path traversal vulnerability in the `take-snapshot` operation. By manipulating the `name` parameter, this u",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116073"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-84823"
       ],
-      "first_seen": "10-25-2026",
+      "epss": 0.0042,
+      "epss_percentile": 0.3562,
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116072",
+      "id": "CVE-2026-116263",
       "aliases": [
-        "CVE-2026-116072"
+        "CVE-2026-116263"
       ],
       "severity": "N/A",
-      "published": "2026-10-25",
-      "details": "Infinity for Reddit through 8.3.4 contains a login cross-site request forgery vulnerability that allows attackers to log victims into an attacker-controlled account because the exported LoginChromeCustomTabActivity redirect handler checks a hardcoded",
+      "published": "2026-10-26",
+      "details": "A flaw has been found in HaschekSolutions PictShare up to 3.7.1. The impacted element is the function architect of the file src/inc/core.php of the component File Upload. This manipulation causes race condition. The attack can be initiated remotely. ",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116072"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116263"
       ],
-      "first_seen": "10-25-2026",
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116071",
+      "id": "CVE-2026-116262",
       "aliases": [
-        "CVE-2026-116071"
+        "CVE-2026-116262"
       ],
       "severity": "N/A",
-      "published": "2026-10-25",
-      "details": "rotki before 1.44.2 contains a weak key derivation vulnerability that allows attackers to brute-force backups because the premium sync key is a single unsalted SHA-256 of the user password. Attackers who obtain an uploaded backup blob can run GPU-par",
+      "published": "2026-10-26",
+      "details": "A vulnerability was detected in libimobiledevice up to 1.4.0. The affected element is the function webinspector_receive_with_timeout of the file src/webinspector.c of the component Web Inspector. The manipulation results in heap-based buffer overflow",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116071"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116262"
       ],
-      "first_seen": "10-25-2026",
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116070",
+      "id": "CVE-2026-116261",
       "aliases": [
-        "CVE-2026-116070"
+        "CVE-2026-116261"
       ],
       "severity": "N/A",
-      "published": "2026-10-25",
-      "details": "Docker-Proxy through 5.1.9 contains a missing authentication vulnerability in the hubcmdui routes/config.js that allows unauthenticated attackers to read and overwrite configuration via /api/config. Attackers can retrieve the WeChat webhook URL and T",
+      "published": "2026-10-26",
+      "details": "A security vulnerability has been detected in libimobiledevice up to 1.4.0. Impacted is the function afc_file_open of the file src/afc.c of the component AFC File Handler. The manipulation of the argument bytes leads to out-of-bounds read. It is poss",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116070"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116261"
       ],
-      "first_seen": "10-25-2026",
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116069",
+      "id": "CVE-2026-116260",
       "aliases": [
-        "CVE-2026-116069"
+        "CVE-2026-116260"
       ],
       "severity": "N/A",
-      "published": "2026-10-25",
-      "details": "NiubiGEO before 0.3.2 contains an unauthenticated server-side request forgery vulnerability that allows remote attackers to make the server fetch internal addresses by supplying a crafted domain value to POST /audit-plan. Attackers can submit IP lite",
+      "published": "2026-10-26",
+      "details": "A weakness has been identified in libimobiledevice up to 1.4.0. This issue affects the function service_receive of the file src/afc.c of the component AFC Service. Executing a manipulation can lead to double free. The attack may be performed from rem",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116069"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-116260"
       ],
-      "first_seen": "10-25-2026",
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116068",
+      "id": "CVE-2026-115720",
       "aliases": [
-        "CVE-2026-116068"
+        "CVE-2026-115720"
       ],
       "severity": "N/A",
-      "published": "2026-10-25",
-      "details": "Dokploy through 0.30.10 contains an authorization bypass vulnerability that allows owners or admins of any organization to control other tenants' applications by supplying foreign applicationId values. Attackers can call procedures like saveEnvironme",
+      "published": "2026-10-26",
+      "details": "Frappe Builder before 1.36.1 contains a server-side request forgery vulnerability in builder/api.py where the assert_not_private_url() guard validates only the initial hostname before callers invoke requests.get(url) with default redirect-following a",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116068"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-115720"
       ],
-      "first_seen": "10-25-2026",
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116067",
+      "id": "CVE-2026-115718",
       "aliases": [
-        "CVE-2026-116067"
+        "CVE-2026-115718"
       ],
       "severity": "N/A",
-      "published": "2026-10-25",
-      "details": "Paisa before 0.7.8 contains a path traversal vulnerability in the GetFile, GetSheet, DeleteBackups, and DeleteSheetBackups handlers that lets unauthenticated attackers read files and delete backups through ../ sequences in file names. Attackers can s",
+      "published": "2026-10-26",
+      "details": "Frappe Builder versions 1.33.0 before1.36.0 contain a missing authorization vulnerability in the improve_prompt endpoint that allows any authenticated non-Guest session to invoke LLM completions without proper permission checks. Attackers can call th",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116067"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-115718"
       ],
-      "first_seen": "10-25-2026",
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116066",
+      "id": "CVE-2026-115717",
       "aliases": [
-        "CVE-2026-116066"
+        "CVE-2026-115717"
       ],
       "severity": "N/A",
-      "published": "2026-10-25",
-      "details": "Firecrawl before 2.11.586 contains a server-side request forgery vulnerability in the Playwright service SSRF proxy that allows attackers to bypass isInternalHost checks via DNS rebinding. Attackers controlling DNS for a scrape target can return a pu",
+      "published": "2026-10-26",
+      "details": "Frappe Builder versions before 1.36.1 contain a server-side request forgery vulnerability in the convert_to_webp API endpoint, which lacks the has_page_write access control applied to similar asset-ingest handlers and performs an unprotected requests",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116066"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-115717"
       ],
-      "first_seen": "10-25-2026",
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "MAL-2026-18271",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "2026-10-25",
-      "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: kam193 (2a8fcff0fd4d827c6f174318ee41ea82eb2667c6d65349a01ca2215aa2f4dd5e)\nThe package most likely performs fingerprinting by exfiltrating basic information and available fonts, ",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/MAL-2026-18271"
+      "id": "CVE-2026-115453",
+      "aliases": [
+        "CVE-2026-115453"
       ],
-      "first_seen": "10-25-2026",
+      "severity": "N/A",
+      "published": "2026-10-22",
+      "details": "Authorization Bypass Through User-Controlled Key (CWE-639) in the cart and wishlist repositories of MarcosCamara01 Ecommerce Template allows any authenticated user to delete and modify the cart and wishlist rows of any other user, because cartReposit",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-115453"
+      ],
+      "epss": 0.0025,
+      "epss_percentile": 0.1612,
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
-      "aliases": [],
+      "id": "CVE-2026-115450",
+      "aliases": [
+        "CVE-2026-115450"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-22",
+      "details": "External Control of Assumed-Immutable Web Parameter (CWE-472) in the cart and checkout flow of MarcosCamara01 Ecommerce Template allows an authenticated user with no special privileges to be charged the price of one product while placing an order for",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-115450"
+      ],
+      "epss": 0.0024,
+      "epss_percentile": 0.1423,
+      "first_seen": "10-26-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-114406",
+      "aliases": [
+        "CVE-2026-114406"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-21",
+      "details": "The system certificate authority (CA) store in Red Hat products, distributed via ca-certificates RPM packages, included multiple root CA certificates of authorities, which signed intermediate CA certificates with weak private keys issued by the eMudh",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-114406"
+      ],
+      "epss": 0.0031,
+      "epss_percentile": 0.2361,
+      "first_seen": "10-26-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2026-105947",
+      "aliases": [
+        "CVE-2026-105947"
+      ],
+      "severity": "N/A",
+      "published": "2026-10-26",
+      "details": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Innotim Software, Telecommunications, and Consulting Co. Ltd. Logsign SIEM allows Path Traversal.\n\nThis issue affects Logsign SIEM: from 6.4.120 before 6.",
+      "links": [
+        "https://vulnerability.circl.lu/vuln/CVE-2026-105947"
+      ],
+      "first_seen": "10-26-2026",
+      "prev_epss": null
+    },
+    {
+      "id": "CVE-2012-20006",
+      "aliases": [
+        "CVE-2012-20006"
+      ],
       "severity": "N/A",
       "published": "N/A",
-      "details": "N/A",
+      "details": "",
       "links": [
-        "https://vulnerability.circl.lu/vuln/"
+        "https://vulnerability.circl.lu/vuln/CVE-2012-20006"
       ],
-      "first_seen": "10-25-2026",
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:86331",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
       ],
-      "first_seen": "10-25-2026",
+      "published": "2026-10-22",
+      "details": "Sandboxed and extendable image decoding.\n\nSecurity Fix(es):\n\n* librsvg: Use-after-free when XML includes have duplicated entities (CVE-2026-96889,RUSTSEC-2026-0305)\n\nFor more details about the security issue(s), including the impact, a CVSS score, ac",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:86331",
+        "https://access.redhat.com/errata/RHSA-2026:86331"
+      ],
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:88455",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
+        }
       ],
-      "first_seen": "10-25-2026",
+      "published": "2026-10-23",
+      "details": "The ca-certificates package contains a set of Certificate Authority (CA) certificates chosen by the Mozilla Foundation for use with the Internet Public Key Infrastructure (PKI).\n\nSecurity Fix(es):\n\n* ca-certificates: Distrust eMudhra intermediate CA ",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:88455",
+        "https://access.redhat.com/errata/RHSA-2026:88455"
+      ],
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:86056",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
       ],
-      "first_seen": "10-25-2026",
+      "published": "2026-10-22",
+      "details": "Lrzsz (consisting of lrz and lsz) is a cosmetically modified zmodem/ymodem/xmodem package built from the public-domain version of the rzsz package. Lrzsz was created to provide a working GNU copylefted Zmodem solution for Linux systems.\n\nSecurity Fix",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:86056",
+        "https://access.redhat.com/errata/RHSA-2026:86056"
+      ],
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:85308",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
       ],
-      "first_seen": "10-25-2026",
+      "published": "2026-10-21",
+      "details": "Bubblewrap (/usr/bin/bwrap) is a core execution engine for unprivileged containers that works as a setuid binary on kernels without user namespaces.\n\nSecurity Fix(es):\n\n* bubblewrap: symlink traversal via /oldroot allows writing files outside sandbox",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:85308",
+        "https://access.redhat.com/errata/RHSA-2026:85308"
+      ],
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:83561",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
       ],
-      "first_seen": "10-25-2026",
+      "published": "2026-10-16",
+      "details": "The rpcbind utility is a server that converts Remote Procedure Call (RPC) program numbers into universal addresses. It must be running on the host to be able to make RPC calls on a server on that machine.\n\nSecurity Fix(es):\n\n* rpcbind: Unbounded memo",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:83561",
+        "https://access.redhat.com/errata/RHSA-2026:83561"
+      ],
+      "first_seen": "10-20-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:80664",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
       ],
-      "first_seen": "10-25-2026",
+      "published": "2026-10-13",
+      "details": "The environment-modules packages provide dynamic modification of user environment using module files. Each module file contains the information needed to configure the shell for an application. Once the package is initialized, the environment can be ",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:80664",
+        "https://access.redhat.com/errata/RHSA-2026:80664"
+      ],
+      "first_seen": "10-20-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:88477",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
       ],
-      "first_seen": "10-25-2026",
+      "published": "2026-10-24",
+      "details": "The kernel packages contain the Linux kernel, the core of any Linux operating system.\n\nSecurity Fix(es):\n\n* kernel: calipso: Don't call calipso functions for AF_INET sk. (CVE-2025-38147)\n\n* kernel: ipv4: raw: reject IP_HDRINCL packets with ihl < 5 (C",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:88477",
+        "https://access.redhat.com/errata/RHSA-2026:88477"
+      ],
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:88359",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
       ],
-      "first_seen": "10-25-2026",
+      "published": "2026-10-23",
+      "details": "Open-source vector similarity search for Postgres. Supports L2 distance, inner product, and cosine distance\n\nSecurity Fix(es):\n\n* pgvector: pgvector: Arbitrary code execution via out-of-bounds write during IVFFlat index build (CVE-2026-103484)\n\nFor m",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:88359",
+        "https://access.redhat.com/errata/RHSA-2026:88359"
+      ],
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:88360",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
       ],
-      "first_seen": "10-25-2026",
+      "published": "2026-10-23",
+      "details": "Open-source vector similarity search for Postgres. Supports L2 distance, inner product, and cosine distance\n\nSecurity Fix(es):\n\n* pgvector: pgvector: Arbitrary code execution via out-of-bounds write during IVFFlat index build (CVE-2026-103484)\n\nFor m",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:88360",
+        "https://access.redhat.com/errata/RHSA-2026:88360"
+      ],
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:88336",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
       ],
-      "first_seen": "10-25-2026",
+      "published": "2026-10-23",
+      "details": "The podman tool manages pods, container images, and containers. It is part of the libpod library, which is for applications that use container pods. Container pods is a concept in Kubernetes.\n\nSecurity Fix(es):\n\n* net/http: golang: golang: Denial of ",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:88336",
+        "https://access.redhat.com/errata/RHSA-2026:88336"
+      ],
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:88316",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
       ],
-      "first_seen": "10-25-2026",
+      "published": "2026-10-23",
+      "details": "The Grafana plugin for Performance Co-Pilot includes datasources for scalable time series from pmseries and Redis, live PCP metrics and bpftrace scripts from pmdabpftrace, as well as several dashboards.\n\nSecurity Fix(es):\n\n* crypto/tls: golang: crypt",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:88316",
+        "https://access.redhat.com/errata/RHSA-2026:88316"
+      ],
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:88280",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
       ],
-      "first_seen": "10-25-2026",
+      "published": "2026-10-23",
+      "details": "HTTP reverse proxy, backed by IPP-over-USB connection to device. It enables\n driverless support for USB devices capable of using IPP-over-USB protocol.\n\nSecurity Fix(es):\n\n* net/http: golang: golang: Denial of Service via crafted HTTP Range headers (",
+      "links": [
+        "https://errata.rockylinux.org/RLSA-2026:88280",
+        "https://access.redhat.com/errata/RHSA-2026:88280"
+      ],
+      "first_seen": "10-26-2026",
       "prev_epss": null
     },
     {
-      "id": "N/A",
+      "id": "RLSA-2026:88262",
       "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
       ],
-      "first_seen": "10-25-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
+      "published": "2026-10-23",
+      "details": "The buildah package provides a tool for facilitating building OCI container images. Among other things, buildah enables you to: Create a working container, either from scratch or using an image as a starting point; Create an image, either from a work",
       "links": [
-        "https://vulnerability.circl.lu/vuln/"
+        "https://errata.rockylinux.org/RLSA-2026:88262",
+        "https://access.redhat.com/errata/RHSA-2026:88262"
       ],
-      "first_seen": "10-25-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
-      ],
-      "first_seen": "10-25-2026",
-      "prev_epss": null
-    },
-    {
-      "id": "N/A",
-      "aliases": [],
-      "severity": "N/A",
-      "published": "N/A",
-      "details": "N/A",
-      "links": [
-        "https://vulnerability.circl.lu/vuln/"
-      ],
-      "first_seen": "10-25-2026",
+      "first_seen": "10-26-2026",
       "prev_epss": null
     }
   ],
@@ -888,7 +980,7 @@
         "https://github.com/advisories/GHSA-22jm-h49p-29qw"
       ],
       "epss": 0.0034,
-      "epss_percentile": 0.2684,
+      "epss_percentile": 0.2775,
       "first_seen": "10-21-2026",
       "prev_epss": 0.0034
     },
@@ -908,8 +1000,8 @@
       "links": [
         "https://github.com/advisories/GHSA-gx7p-2j49-hfq4"
       ],
-      "epss": 0.0034,
-      "epss_percentile": 0.267,
+      "epss": 0.0042,
+      "epss_percentile": 0.3601,
       "first_seen": "10-24-2026",
       "prev_epss": 0.0034
     },
@@ -929,8 +1021,8 @@
       "links": [
         "https://github.com/advisories/GHSA-wqmh-qccw-pqwf"
       ],
-      "epss": 0.0056,
-      "epss_percentile": 0.4595,
+      "epss": 0.006,
+      "epss_percentile": 0.4861,
       "first_seen": "10-24-2026",
       "prev_epss": 0.0056
     },
@@ -992,10 +1084,10 @@
       "links": [
         "https://github.com/advisories/GHSA-2wqp-q3c6-ccj5"
       ],
-      "epss": 0.0044,
-      "epss_percentile": 0.3755,
+      "epss": 0.0032,
+      "epss_percentile": 0.2517,
       "first_seen": "10-24-2026",
-      "prev_epss": null
+      "prev_epss": 0.0044
     },
     {
       "id": "GHSA-p92p-rxj5-7p2x",
@@ -1013,18 +1105,45 @@
       "links": [
         "https://github.com/advisories/GHSA-p92p-rxj5-7p2x"
       ],
-      "epss": 0.0017,
-      "epss_percentile": 0.0604,
+      "epss": 0.002,
+      "epss_percentile": 0.1012,
       "first_seen": "10-24-2026",
       "prev_epss": 0.0017
     }
   ],
   "brief_plan": {
     "rules": "max 3 findings; AI first; repeats only on a stated change; at most one non-AI item (new CRITICAL KEV)",
-    "findings": [],
+    "findings": [
+      {
+        "section": "circl",
+        "id": "CVE-2026-115718",
+        "cve": "CVE-2026-115718",
+        "severity": "WATCH",
+        "severity_reason": "not in KEV \u00b7 no EPSS score yet",
+        "ai": true,
+        "selected_because": "new today",
+        "item": {
+          "id": "CVE-2026-115718",
+          "aliases": [
+            "CVE-2026-115718"
+          ],
+          "severity": "N/A",
+          "published": "2026-10-26",
+          "details": "Frappe Builder versions 1.33.0 before1.36.0 contain a missing authorization vulnerability in the improve_prompt endpoint that allows any authenticated non-Guest session to invoke LLM completions without proper permission checks. Attackers can call th",
+          "links": [
+            "https://vulnerability.circl.lu/vuln/CVE-2026-115718"
+          ],
+          "first_seen": "10-26-2026",
+          "prev_epss": null
+        }
+      }
+    ],
     "on_the_radar": [],
-    "quiet_ai_day": true,
-    "ai_risk_topic": null,
-    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Retail & E-Commerce (2), Agriculture and Food Production (1), Healthcare (1); countries: US (3), DE (2), BE (1)."
+    "quiet_ai_day": false,
+    "ai_risk_topic": {
+      "title": "AI-written phishing",
+      "scope": "Polished, personalized phishing that no longer has the spelling mistakes people were taught to look for."
+    },
+    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Professional Services (3), Government & Defense (2), Retail & E-Commerce (1); countries: US (5), DE (3), AR (1)."
   }
 }
