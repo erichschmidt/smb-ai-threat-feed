@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-26T13:00:22.326826+00:00",
-  "date": "10-26-2026",
+  "generated": "2026-10-27T13:00:29.071405+00:00",
+  "date": "10-27-2026",
   "sources": {
     "cisa_kev": {
       "status": "ok",
-      "count": 8
+      "count": 4
     },
     "threatfox": {
       "status": "ok",
@@ -27,11 +27,49 @@
       "count": 8
     },
     "epss": {
-      "status": "ok (19/33 scored)",
-      "count": 19
+      "status": "ok (17/42 scored)",
+      "count": 17
     }
   },
   "kev": [
+    {
+      "cve": "CVE-2026-109618",
+      "added": "10-26-2026",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-29-2026",
+      "ransomware_use": "Unknown",
+      "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://www.php.net/ ; https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require",
+      "links": [
+        "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-109618"
+      ],
+      "epss": 0.9998,
+      "epss_percentile": 0.9998,
+      "first_seen": "10-27-2026",
+      "prev_epss": null
+    },
+    {
+      "cve": "CVE-2026-109619",
+      "added": "10-26-2026",
+      "vendor": "PHP Group",
+      "product": "PHP",
+      "description": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
+      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+      "due": "10-29-2026",
+      "ransomware_use": "Unknown",
+      "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://www.php.net/ ; https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require",
+      "links": [
+        "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-109619"
+      ],
+      "epss": 1.0,
+      "epss_percentile": 0.9999,
+      "first_seen": "10-27-2026",
+      "prev_epss": null
+    },
     {
       "cve": "CVE-2026-114625",
       "added": "10-23-2026",
@@ -47,9 +85,9 @@
         "https://nvd.nist.gov/vuln/detail/CVE-2026-114625"
       ],
       "epss": 0.0103,
-      "epss_percentile": 0.6332,
+      "epss_percentile": 0.6333,
       "first_seen": "10-24-2026",
-      "prev_epss": 0.0081
+      "prev_epss": 0.0103
     },
     {
       "cve": "CVE-2026-110447",
@@ -66,377 +104,264 @@
         "https://github.com/CollaboraOnline/online/security/advisories/GHSA-g3vx-3m76-fghh"
       ],
       "epss": 0.1233,
-      "epss_percentile": 0.9616,
+      "epss_percentile": 0.9617,
       "first_seen": "10-24-2026",
-      "prev_epss": 0.0228
-    },
-    {
-      "cve": "CVE-2026-106931",
-      "added": "10-20-2026",
-      "vendor": "EG Secure Solutions",
-      "product": "SiteGuard Server Edition",
-      "description": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product.",
-      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "10-23-2026",
-      "ransomware_use": "Unknown",
-      "notes": "https://www.eg-secure.co.jp/siteguard/news/alert-202610-1 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security",
-      "links": [
-        "https://www.eg-secure.co.jp/siteguard/news/alert-202610-1",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-106931"
-      ],
-      "epss": 0.0253,
-      "epss_percentile": 0.8478,
-      "first_seen": "10-21-2026",
-      "prev_epss": 0.0117
-    },
-    {
-      "cve": "CVE-2026-96656",
-      "added": "10-20-2026",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655.",
-      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "10-23-2026",
-      "ransomware_use": "Unknown",
-      "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-imp",
-      "links": [
-        "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-96656"
-      ],
-      "epss": 0.0179,
-      "epss_percentile": 0.7815,
-      "first_seen": "10-21-2026",
-      "prev_epss": 0.0082
-    },
-    {
-      "cve": "CVE-2026-96655",
-      "added": "10-20-2026",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and C",
-      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "11-03-2026",
-      "ransomware_use": "Unknown",
-      "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-imp",
-      "links": [
-        "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-96655"
-      ],
-      "epss": 0.0164,
-      "epss_percentile": 0.7616,
-      "first_seen": "10-21-2026",
-      "prev_epss": 0.0046
-    },
-    {
-      "cve": "CVE-2026-96654",
-      "added": "10-20-2026",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656.",
-      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "10-23-2026",
-      "ransomware_use": "Unknown",
-      "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-imp",
-      "links": [
-        "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-96654"
-      ],
-      "epss": 0.0195,
-      "epss_percentile": 0.8008,
-      "first_seen": "10-21-2026",
-      "prev_epss": 0.0046
-    },
-    {
-      "cve": "CVE-2026-96652",
-      "added": "10-20-2026",
-      "vendor": "Plex",
-      "product": "Media Server",
-      "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CV",
-      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "11-03-2026",
-      "ransomware_use": "Unknown",
-      "notes": "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319 ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-imp",
-      "links": [
-        "https://forums.plex.tv/t/important-security-update-for-plex-media-server-v1-43-2-and-earlier/942319",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-96652"
-      ],
-      "epss": 0.0182,
-      "epss_percentile": 0.7861,
-      "first_seen": "10-21-2026",
-      "prev_epss": 0.0046
-    },
-    {
-      "cve": "CVE-2026-110936",
-      "added": "10-20-2026",
-      "vendor": "Siemens",
-      "product": "Software Center",
-      "description": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
-      "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
-      "due": "11-03-2026",
-      "ransomware_use": "Unknown",
-      "notes": "https://productcert.siemens.com/productcert/html/ssa-580366.html ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-s",
-      "links": [
-        "https://productcert.siemens.com/productcert/html/ssa-580366.html",
-        "https://nvd.nist.gov/vuln/detail/CVE-2026-110936"
-      ],
-      "epss": 0.0097,
-      "epss_percentile": 0.6149,
-      "first_seen": "10-21-2026",
-      "prev_epss": 0.0024
+      "prev_epss": 0.1233
     }
   ],
   "threatfox": [
     {
       "type": "IOC",
-      "value": "td3avpdc.dota.pw",
+      "value": "4bf92eb7e5102625275a18357d4338c51c42bff180f03a17e0795264290285a1",
+      "ioc_type": "sha256_hash",
+      "malware": "AMOS",
+      "confidence": 100,
+      "seen": "2026-10-27 12:57:53 UTC",
+      "links": [
+        "https://hybrid-analysis.com/sample/4bf92eb7e5102625275a18357d4338c51c42bff180f03a17e0795264290285a1",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://p8.agitawin.org/zn/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-27 12:55:48 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "b03b9c9087a10f2867cd4b9067f3e63e1ecfb295913f268fccbcd7bd5e3b6e36",
+      "ioc_type": "sha256_hash",
+      "malware": "AMOS",
+      "confidence": 100,
+      "seen": "2026-10-27 12:54:11 UTC",
+      "links": [
+        "https://hybrid-analysis.com/sample/b03b9c9087a10f2867cd4b9067f3e63e1ecfb295913f268fccbcd7bd5e3b6e36",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://p8.agitawin.org/xt/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-27 12:50:48 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "afdf2ae11bcda9cf688825c606ba74ad0f23cd86b14da6d68f97d1f230c221f2",
+      "ioc_type": "sha256_hash",
+      "malware": "AMOS",
+      "confidence": 100,
+      "seen": "2026-10-27 12:50:15 UTC",
+      "links": [
+        "https://hybrid-analysis.com/sample/afdf2ae11bcda9cf688825c606ba74ad0f23cd86b14da6d68f97d1f230c221f2",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "5748bf8e19490d5409dd107c8db39c279e51f4ad6d9a4bbc3c2d6464269f9e7e",
+      "ioc_type": "sha256_hash",
+      "malware": "AMOS",
+      "confidence": 100,
+      "seen": "2026-10-27 12:46:18 UTC",
+      "links": [
+        "https://hybrid-analysis.com/sample/5748bf8e19490d5409dd107c8db39c279e51f4ad6d9a4bbc3c2d6464269f9e7e",
+        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "https://p8.agitawin.org/wi/",
+      "ioc_type": "url",
+      "malware": "Vidar",
+      "confidence": 100,
+      "seen": "2026-10-27 12:45:48 UTC",
+      "links": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
+      ]
+    },
+    {
+      "type": "IOC",
+      "value": "5l85t8ay.slotsensi138.org",
       "ioc_type": "domain",
       "malware": "ClearFake",
       "confidence": 100,
-      "seen": "2026-10-26 12:55:57 UTC",
+      "seen": "2026-10-27 12:43:26 UTC",
       "links": [
         "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake"
-      ]
-    },
-    {
-      "type": "IOC",
-      "value": "https://h4.agenplay89.org/jp/",
-      "ioc_type": "url",
-      "malware": "Vidar",
-      "confidence": 100,
-      "seen": "2026-10-26 12:55:48 UTC",
-      "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
-      ]
-    },
-    {
-      "type": "IOC",
-      "value": "t0kmixg4.glas-design.shop",
-      "ioc_type": "domain",
-      "malware": "ClearFake",
-      "confidence": 100,
-      "seen": "2026-10-26 12:54:28 UTC",
-      "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/js.clearfake"
-      ]
-    },
-    {
-      "type": "IOC",
-      "value": "https://h4.agenplay89.org/bl/",
-      "ioc_type": "url",
-      "malware": "Vidar",
-      "confidence": 100,
-      "seen": "2026-10-26 12:50:48 UTC",
-      "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
-      ]
-    },
-    {
-      "type": "IOC",
-      "value": "5efc7daeaf2173451cc9d4de68b1fce1ac8c11724e8cf677ae8bc7deeddd3cb6",
-      "ioc_type": "sha256_hash",
-      "malware": "AMOS",
-      "confidence": 100,
-      "seen": "2026-10-26 12:48:37 UTC",
-      "links": [
-        "https://www.virustotal.com/gui/file/5efc7daeaf2173451cc9d4de68b1fce1ac8c11724e8cf677ae8bc7deeddd3cb6",
-        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
-      ]
-    },
-    {
-      "type": "IOC",
-      "value": "https://h4.agenplay89.org/rp/",
-      "ioc_type": "url",
-      "malware": "Vidar",
-      "confidence": 100,
-      "seen": "2026-10-26 12:45:48 UTC",
-      "links": [
-        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vidar"
-      ]
-    },
-    {
-      "type": "IOC",
-      "value": "99a9006e489ece97c7c36db82fc239182b8ecaefcd002af520e7d2e4451c4543",
-      "ioc_type": "sha256_hash",
-      "malware": "AMOS",
-      "confidence": 100,
-      "seen": "2026-10-26 12:45:14 UTC",
-      "links": [
-        "https://www.virustotal.com/gui/file/99a9006e489ece97c7c36db82fc239182b8ecaefcd002af520e7d2e4451c4543",
-        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
-      ]
-    },
-    {
-      "type": "IOC",
-      "value": "5b0ce896f1c2da584b089da607f409cc537cd6a70b0ad4ced9baadb5a591c160",
-      "ioc_type": "sha256_hash",
-      "malware": "AMOS",
-      "confidence": 100,
-      "seen": "2026-10-26 12:41:43 UTC",
-      "links": [
-        "https://www.virustotal.com/gui/file/5b0ce896f1c2da584b089da607f409cc537cd6a70b0ad4ced9baadb5a591c160",
-        "https://malpedia.caad.fkie.fraunhofer.de/details/osx.amos"
       ]
     }
   ],
   "urlhaus": [
     {
       "type": "URL",
-      "value": "http://119.117.100.53:53281/bin.sh",
-      "host": "119.117.100.53",
+      "value": "http://176.65.139.131/bins/sora.arm7",
+      "host": "176.65.139.131",
       "status": "online",
-      "seen": "2026-10-26 12:50:09 UTC",
+      "seen": "2026-10-27 12:58:11 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/4029979/"
+        "https://urlhaus.abuse.ch/url/4035976/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://120.84.212.154:44234/i",
-      "host": "120.84.212.154",
+      "value": "http://176.65.139.131/bins/sora.sh4",
+      "host": "176.65.139.131",
       "status": "online",
-      "seen": "2026-10-26 12:47:07 UTC",
+      "seen": "2026-10-27 12:58:11 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/4029978/"
+        "https://urlhaus.abuse.ch/url/4035975/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://188.115.169.12:25150/i",
-      "host": "188.115.169.12",
+      "value": "http://176.65.139.131/bins/sora.mips",
+      "host": "176.65.139.131",
       "status": "online",
-      "seen": "2026-10-26 12:47:05 UTC",
+      "seen": "2026-10-27 12:58:11 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/4029977/"
+        "https://urlhaus.abuse.ch/url/4035974/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://59.96.137.224:58830/i",
-      "host": "59.96.137.224",
+      "value": "http://176.65.139.131/bins/sora.arm5",
+      "host": "176.65.139.131",
       "status": "online",
-      "seen": "2026-10-26 12:32:07 UTC",
+      "seen": "2026-10-27 12:58:11 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/4029976/"
+        "https://urlhaus.abuse.ch/url/4035973/"
       ]
     },
     {
       "type": "URL",
-      "value": "http://115.49.192.100:38223/bin.sh",
-      "host": "115.49.192.100",
+      "value": "http://176.65.139.131/bins/sora.mpsl",
+      "host": "176.65.139.131",
       "status": "online",
-      "seen": "2026-10-26 12:32:06 UTC",
+      "seen": "2026-10-27 12:58:11 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/4029975/"
+        "https://urlhaus.abuse.ch/url/4035972/"
       ]
     },
     {
       "type": "URL",
-      "value": "https://raw.githubusercontent.com/tianarsamm/backend_beritaku/main/src/api/article/controllers/backend-beritaku-1.4.zip",
-      "host": "raw.githubusercontent.com",
+      "value": "http://176.65.139.131/bins/sora.arm6",
+      "host": "176.65.139.131",
       "status": "online",
-      "seen": "2026-10-26 12:23:11 UTC",
+      "seen": "2026-10-27 12:58:11 UTC",
       "links": [
-        "https://urlhaus.abuse.ch/url/4029974/"
+        "https://urlhaus.abuse.ch/url/4035971/"
       ]
     }
   ],
   "ransomware": [
     {
+      "group": "crypto24",
+      "sector": "Technology",
+      "country": "PH",
+      "description": "Once the timer reaches zero, all exfiltrated data will be published in full.",
+      "discovered": "2026-10-27T04:11:17",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "everest",
+      "sector": "Professional Services",
+      "country": "",
+      "description": "[AI generated] N/A\n\nI don't have reliable, verifiable information about a company called \"Burris & MacOmber.\" I'm not able to confirm its existence, industry, operations, or location, and providing fa",
+      "discovered": "2026-10-27T04:33:27",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "everest",
+      "sector": "Energy & Utilities",
+      "country": "SG",
+      "description": "[AI generated] N/A",
+      "discovered": "2026-10-27T04:32:51",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "everest",
+      "sector": "Technology",
+      "country": "",
+      "description": "[AI generated] N/A\n\nI don't have verified, reliable information about a company specifically named \"Point Robotics\" to confidently describe its operations, industry focus, or country of headquarters. ",
+      "discovered": "2026-10-27T04:32:17",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "everest",
+      "sector": "Manufacturing",
+      "country": "IT",
+      "description": "[AI generated] Natuzzi S.p.A. is an Italian manufacturer and distributor of furniture, specializing in leather and fabric upholstered sofas, chairs, and home furnishings. Founded in 1959 and headquart",
+      "discovered": "2026-10-27T04:31:41",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "everest",
+      "sector": "Manufacturing",
+      "country": "IT",
+      "description": "[AI generated] N/A",
+      "discovered": "2026-10-27T04:31:06",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "everest",
+      "sector": "Healthcare",
+      "country": "",
+      "description": "[AI generated] MediSolution was a Canadian software company based in Montreal, Quebec, specializing in enterprise resource planning and management software solutions for the public sector, including h",
+      "discovered": "2026-10-27T04:30:31",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "everest",
+      "sector": "Healthcare",
+      "country": "",
+      "description": "[AI generated] N/A\n\nI don't have reliable information about a company called \"SleepEx LabRetriever.\" This does not correspond to any organization I can verify, and the name's unusual construction sugg",
+      "discovered": "2026-10-27T04:29:56",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
       "group": "Whitearmor",
       "sector": "Retail & E-Commerce",
-      "country": "US",
-      "description": "LoveSac (LOVE) is a premium furniture retailer operating more than 250 showrooms across the United States, generating approximately $700 million in annual revenue.\n\nWe have obtained a database contain",
-      "discovered": "2026-10-26T02:57:17",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "payload",
-      "sector": "Professional Services",
-      "country": "DE",
-      "description": "Gl\u00fcckauf-Vermessung GmbH (glueckauf-vermessung.de) is a German engineering and technical company based in Sondershausen, operating as part of the ERCOSPLAN Group and specializing in surveying and mine",
-      "discovered": "2026-10-26T00:24:26",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "payload",
-      "sector": "Not Found",
-      "country": "DE",
-      "description": "Miletic GmbH is a German specialized contractor headquartered in Bad Sch\u00f6nborn that has been operating in the construction sector since 1989. The company's core business focuses on construction and re",
-      "discovered": "2026-10-26T00:23:12",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "payload",
-      "sector": "Manufacturing",
-      "country": "DE",
-      "description": "Edelstahl-Mechanik GmbH is a German manufacturing company based in G\u00f6ppingen. The company specializes in laser metal processing, including 2D and 3D laser cutting and welding, as well as structural sh",
-      "discovered": "2026-10-26T00:21:58",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "Whitearmor",
-      "sector": "Transportation",
-      "country": "US",
-      "description": "You are so stupid JB Hunt. Instead of getting in contact with us & starting the negotiation process, not only did you not announce the breach, you silently email customers demanding them to update the",
-      "discovered": "2026-10-26T00:00:24",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "qilin",
-      "sector": "Professional Services",
-      "country": "US",
-      "description": "N/A",
-      "discovered": "2026-10-25T17:18:17",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "Whitearmor",
-      "sector": "Government & Defense",
-      "country": "AR",
-      "description": "Brazil's Liberal Party (PL) is the political party of the Bolsonaro family. Although named \"Liberal,\" it is currently characterized by conservatism and right-wing populism. Jair Bolsonaro joined the p",
-      "discovered": "2026-10-25T16:56:33",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "Falcon",
-      "sector": "Professional Services",
-      "country": "US",
-      "description": "Mass tort litigation law firm - Our 82 GB extraction includes confidentiality agreements, stipulations, NDAs, internal board documents, privileged attorney-client communications, client rosters detail",
-      "discovered": "2026-10-25T15:52:01",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "Falcon",
-      "sector": "Healthcare",
-      "country": "US",
-      "description": "Healthcare services \u00c2\u00b7 NASDAQ: ASTH - Our 738 GB extraction includes internal documents, regulatory audit reports, payer financial dispute trackers, internal operational readiness reviews, acquisition",
-      "discovered": "2026-10-25T14:53:02",
-      "links": [
-        "https://www.ransomware.live"
-      ]
-    },
-    {
-      "group": "emperador",
-      "sector": "Government & Defense",
       "country": "",
-      "description": "We encrypted your servers and stole some of your source code, along with some sensitive information. If you do not pay the ransom, we will contact and attack your employees, clients, and partners to d",
-      "discovered": "2026-10-25T14:52:33",
+      "description": "Verification for Gamblinglore.com",
+      "discovered": "2026-10-27T04:05:36",
+      "links": [
+        "https://www.ransomware.live"
+      ]
+    },
+    {
+      "group": "Whitearmor",
+      "sector": "Technology",
+      "country": "",
+      "description": "Verification for Gamblinglore.com",
+      "discovered": "2026-10-27T03:07:40",
       "links": [
         "https://www.ransomware.live"
       ]
@@ -461,7 +386,7 @@
         "https://github.com/advisories/GHSA-769v-p64c-89pr"
       ],
       "epss": 0.004,
-      "epss_percentile": 0.3346,
+      "epss_percentile": 0.3349,
       "first_seen": "08-19-2026",
       "prev_epss": 0.004
     },
@@ -489,455 +414,407 @@
       "prev_epss": 0.1374
     },
     {
-      "id": "CVE-2026-96432",
+      "id": "CVE-2026-90732",
       "aliases": [
-        "CVE-2026-96432"
+        "CVE-2026-90732"
       ],
       "severity": "N/A",
-      "published": "2026-10-26",
-      "details": "A malicious or compromised HTTP/2 server withholding SETTINGS ACK can send RST_STREAM on a completed stream, planting a null pointer, and then send a PUSH_PROMISE for that stream, causing a null pointer dereference in the QNetworkAccessManager class ",
+      "published": "2026-10-27",
+      "details": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through LTS 2026, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain a Sta",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-96432"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-90732"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-94380",
+      "id": "CVE-2026-90731",
       "aliases": [
-        "CVE-2026-94380"
+        "CVE-2026-90731"
       ],
       "severity": "N/A",
-      "published": "2026-10-26",
-      "details": "Weak Password Recovery Mechanism for Forgotten Password vulnerability in HAVELSAN Inc. Liman MYS allows Password Recovery Exploitation.\n\nThis issue affects Liman MYS: from 2.3.4-1124 before 2.3.5-1131.",
+      "published": "2026-10-27",
+      "details": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain a Stack-ba",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-94380"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-90731"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-84823",
+      "id": "CVE-2026-90730",
       "aliases": [
-        "CVE-2026-84823"
+        "CVE-2026-90730"
       ],
       "severity": "N/A",
-      "published": "2026-10-15",
-      "details": "A flaw was found in WildFly. A user with the `Monitor` role, which is the lowest standard Role-Based Access Control (RBAC) role, can exploit a path traversal vulnerability in the `take-snapshot` operation. By manipulating the `name` parameter, this u",
+      "published": "2026-10-27",
+      "details": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain an Imprope",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-84823"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-90730"
       ],
-      "epss": 0.0042,
-      "epss_percentile": 0.3562,
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116263",
+      "id": "CVE-2026-90729",
       "aliases": [
-        "CVE-2026-116263"
+        "CVE-2026-90729"
       ],
       "severity": "N/A",
-      "published": "2026-10-26",
-      "details": "A flaw has been found in HaschekSolutions PictShare up to 3.7.1. The impacted element is the function architect of the file src/inc/core.php of the component File Upload. This manipulation causes race condition. The attack can be initiated remotely. ",
+      "published": "2026-10-27",
+      "details": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain an Imprope",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116263"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-90729"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116262",
+      "id": "CVE-2026-90728",
       "aliases": [
-        "CVE-2026-116262"
+        "CVE-2026-90728"
       ],
       "severity": "N/A",
-      "published": "2026-10-26",
-      "details": "A vulnerability was detected in libimobiledevice up to 1.4.0. The affected element is the function webinspector_receive_with_timeout of the file src/webinspector.c of the component Web Inspector. The manipulation results in heap-based buffer overflow",
+      "published": "2026-10-27",
+      "details": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain an Imprope",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116262"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-90728"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116261",
+      "id": "CVE-2026-56084",
       "aliases": [
-        "CVE-2026-116261"
+        "CVE-2026-56084"
       ],
       "severity": "N/A",
-      "published": "2026-10-26",
-      "details": "A security vulnerability has been detected in libimobiledevice up to 1.4.0. Impacted is the function afc_file_open of the file src/afc.c of the component AFC File Handler. The manipulation of the argument bytes leads to out-of-bounds read. It is poss",
+      "published": "2026-10-27",
+      "details": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.7, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release versions 8.6.1.0 through 8.6.1.20, contain a Server-S",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116261"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-56084"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-116260",
+      "id": "CVE-2026-4337",
       "aliases": [
-        "CVE-2026-116260"
+        "CVE-2026-4337"
       ],
       "severity": "N/A",
-      "published": "2026-10-26",
-      "details": "A weakness has been identified in libimobiledevice up to 1.4.0. This issue affects the function service_receive of the file src/afc.c of the component AFC Service. Executing a manipulation can lead to double free. The attack may be performed from rem",
+      "published": "2026-10-27",
+      "details": "Unrestricted Upload of File with Dangerous Type vulnerability in the PuMuKIT application allows a unauthenticated user to upload any type of file to the server, and to any path where the web server user has write permissions. This could also allow th",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-116260"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-4337"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-115720",
+      "id": "CVE-2026-41022",
       "aliases": [
-        "CVE-2026-115720"
+        "CVE-2026-41022"
       ],
       "severity": "N/A",
-      "published": "2026-10-26",
-      "details": "Frappe Builder before 1.36.1 contains a server-side request forgery vulnerability in builder/api.py where the assert_not_private_url() guard validates only the initial hostname before callers invoke requests.get(url) with default redirect-following a",
+      "published": "2026-10-27",
+      "details": "Eaton easySoft improperly validates TLS certificates presented by easyE4 devices. A network-adjacent attacker could exploit this weakness to perform a man-in-the-middle attack and potentially intercept or modify communications between easySoft and ea",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-115720"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-41022"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-115718",
+      "id": "CVE-2026-41021",
       "aliases": [
-        "CVE-2026-115718"
+        "CVE-2026-41021"
       ],
       "severity": "N/A",
-      "published": "2026-10-26",
-      "details": "Frappe Builder versions 1.33.0 before1.36.0 contain a missing authorization vulnerability in the improve_prompt endpoint that allows any authenticated non-Guest session to invoke LLM completions without proper permission checks. Attackers can call th",
+      "published": "2026-10-27",
+      "details": "Eaton easyE4 uses an insufficiently strong password policy. An attacker who obtains a password hash, including through CVE-2026-41020, could perform an offline password-guessing attack and potentially recover user credentials.",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-115718"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-41021"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-115717",
+      "id": "CVE-2026-41020",
       "aliases": [
-        "CVE-2026-115717"
+        "CVE-2026-41020"
       ],
       "severity": "N/A",
-      "published": "2026-10-26",
-      "details": "Frappe Builder versions before 1.36.1 contain a server-side request forgery vulnerability in the convert_to_webp API endpoint, which lacks the has_page_write access control applied to similar asset-ingest handlers and performs an unprotected requests",
+      "published": "2026-10-27",
+      "details": "Eaton easyE4 uses a static nonce during authentication, which could allow an unauthenticated attacker with access to captured authentication traffic to replay a valid authentication exchange and gain unauthorized access to the device.",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-115717"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-41020"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-115453",
+      "id": "CVE-2026-13162",
       "aliases": [
-        "CVE-2026-115453"
+        "CVE-2026-13162"
       ],
       "severity": "N/A",
-      "published": "2026-10-22",
-      "details": "Authorization Bypass Through User-Controlled Key (CWE-639) in the cart and wishlist repositories of MarcosCamara01 Ecommerce Template allows any authenticated user to delete and modify the cart and wishlist rows of any other user, because cartReposit",
+      "published": "2026-10-27",
+      "details": "An OS command vulnerability exists in CoreTec product\u00a0that allows authenticated users with certain roles to\u00a0execute arbitrary system commands with full control\u00a0over the device. The vulnerability exists in the\u00a0configuration daemon's time synchronizati",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-115453"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-13162"
       ],
-      "epss": 0.0025,
-      "epss_percentile": 0.1612,
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-115450",
+      "id": "CVE-2026-117499",
       "aliases": [
-        "CVE-2026-115450"
+        "CVE-2026-117499"
       ],
       "severity": "N/A",
-      "published": "2026-10-22",
-      "details": "External Control of Assumed-Immutable Web Parameter (CWE-472) in the cart and checkout flow of MarcosCamara01 Ecommerce Template allows an authenticated user with no special privileges to be charged the price of one product while placing an order for",
+      "published": "2026-10-27",
+      "details": "@fastify/session is a session plugin for Fastify. In all releases before 11.1.6, with the default rolling session behavior, a request that restored a session before a logout could save its own copy after another request had completed the session dest",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-115450"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-117499"
       ],
-      "epss": 0.0024,
-      "epss_percentile": 0.1423,
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-114406",
+      "id": "CVE-2026-115408",
       "aliases": [
-        "CVE-2026-114406"
+        "CVE-2026-115408"
       ],
       "severity": "N/A",
-      "published": "2026-10-21",
-      "details": "The system certificate authority (CA) store in Red Hat products, distributed via ca-certificates RPM packages, included multiple root CA certificates of authorities, which signed intermediate CA certificates with weak private keys issued by the eMudh",
+      "published": "2026-10-27",
+      "details": "In `github.com/eclipse-keypont/crypto11/v2` versions `>= 2.0.0-rc3, <= 2.0.0-rc8`, the ML-KEM key-pair lookup functions (`FindMLKEMKeyPair`, `FindMLKEMKeyPairs`, `FindMLKEMKeyPairsWithAttributes`) locate the public half of an ML-KEM key pair by `CKA_",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-114406"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-115408"
       ],
-      "epss": 0.0031,
-      "epss_percentile": 0.2361,
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2026-105947",
+      "id": "CVE-2026-115216",
       "aliases": [
-        "CVE-2026-105947"
+        "CVE-2026-115216"
       ],
       "severity": "N/A",
-      "published": "2026-10-26",
-      "details": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Innotim Software, Telecommunications, and Consulting Co. Ltd. Logsign SIEM allows Path Traversal.\n\nThis issue affects Logsign SIEM: from 6.4.120 before 6.",
+      "published": "2026-10-27",
+      "details": "In Eclipse ioFog Operator versions 3.8.0 before 3.9.2, TLS certificate verification is disabled when the operator contacts the Controller API and when it logs in to an external OIDC issuer. An on-path attacker can present any certificate, capture the",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2026-105947"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-115216"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "CVE-2012-20006",
+      "id": "CVE-2026-113729",
       "aliases": [
-        "CVE-2012-20006"
+        "CVE-2026-113729"
       ],
       "severity": "N/A",
-      "published": "N/A",
-      "details": "",
+      "published": "2026-10-20",
+      "details": "Moov signedxml is a pure Go library for processing signed XML documents. Prior to 1.4.1, ExclusiveCanonicalization in exclusivecanonicalization.go copies the complete accumulated namespace map at every nested element before reference digest or signat",
       "links": [
-        "https://vulnerability.circl.lu/vuln/CVE-2012-20006"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-113729"
       ],
-      "first_seen": "10-26-2026",
+      "epss": 0.0046,
+      "epss_percentile": 0.3952,
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:86331",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-        }
+      "id": "CVE-2026-113724",
+      "aliases": [
+        "CVE-2026-113724"
       ],
-      "published": "2026-10-22",
-      "details": "Sandboxed and extendable image decoding.\n\nSecurity Fix(es):\n\n* librsvg: Use-after-free when XML includes have duplicated entities (CVE-2026-96889,RUSTSEC-2026-0305)\n\nFor more details about the security issue(s), including the impact, a CVSS score, ac",
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "virtualenv is a tool for creating isolated virtual python environments. Prior to 21.14.9, the safe_delete() deletion error handler responds to a failed removal by reading mode bits with os.lstat(path) and applying owner-write permission with os.chmod",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:86331",
-        "https://access.redhat.com/errata/RHSA-2026:86331"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-113724"
       ],
-      "first_seen": "10-26-2026",
+      "epss": 0.0014,
+      "epss_percentile": 0.0364,
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:88455",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
-        }
+      "id": "CVE-2026-113644",
+      "aliases": [
+        "CVE-2026-113644"
       ],
-      "published": "2026-10-23",
-      "details": "The ca-certificates package contains a set of Certificate Authority (CA) certificates chosen by the Mozilla Foundation for use with the Internet Public Key Infrastructure (PKI).\n\nSecurity Fix(es):\n\n* ca-certificates: Distrust eMudhra intermediate CA ",
+      "severity": "N/A",
+      "published": "2026-10-27",
+      "details": "In Eclipse ioFog iofogctl versions 1.0.0 through 3.7.0 and 3.8.0-rc.1 through 3.9.1, the provisioning key and CA certificate returned by the Controller API are concatenated into shell commands (`edgelet provision` and `edgelet config cert` on support",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:88455",
-        "https://access.redhat.com/errata/RHSA-2026:88455"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-113644"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:86056",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
-        }
+      "id": "CVE-2026-112362",
+      "aliases": [
+        "CVE-2026-112362"
       ],
-      "published": "2026-10-22",
-      "details": "Lrzsz (consisting of lrz and lsz) is a cosmetically modified zmodem/ymodem/xmodem package built from the public-domain version of the rzsz package. Lrzsz was created to provide a working GNU copylefted Zmodem solution for Linux systems.\n\nSecurity Fix",
+      "severity": "N/A",
+      "published": "2026-10-27",
+      "details": "@fastify/express is a Fastify plugin that runs Express middleware inside Fastify. In versions 4.0.5 through 4.0.8, when Fastify runs with the non-default ignoreDuplicateSlashes option enabled, the plugin matches path-scoped Express middleware against",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:86056",
-        "https://access.redhat.com/errata/RHSA-2026:86056"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-112362"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:85308",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
-        }
+      "id": "CVE-2026-10756",
+      "aliases": [
+        "CVE-2026-10756"
       ],
-      "published": "2026-10-21",
-      "details": "Bubblewrap (/usr/bin/bwrap) is a core execution engine for unprivileged containers that works as a setuid binary on kernels without user namespaces.\n\nSecurity Fix(es):\n\n* bubblewrap: symlink traversal via /oldroot allows writing files outside sandbox",
+      "severity": "N/A",
+      "published": "2026-10-27",
+      "details": "TRO600 contains a vulnerability that allows an authenticated attacker to bypass network access restrictions and access services intended to be reachable only from localhost. By leveraging port forwarding, an attacker can interact with locally bound p",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:85308",
-        "https://access.redhat.com/errata/RHSA-2026:85308"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-10756"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:83561",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
+      "id": "CVE-2026-10752",
+      "aliases": [
+        "CVE-2026-10752"
       ],
-      "published": "2026-10-16",
-      "details": "The rpcbind utility is a server that converts Remote Procedure Call (RPC) program numbers into universal addresses. It must be running on the host to be able to make RPC calls on a server on that machine.\n\nSecurity Fix(es):\n\n* rpcbind: Unbounded memo",
+      "severity": "N/A",
+      "published": "2026-10-27",
+      "details": "The Advanced Custom Fields: Extended plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 0.9.2.6. This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:83561",
-        "https://access.redhat.com/errata/RHSA-2026:83561"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-10752"
       ],
-      "first_seen": "10-20-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:80664",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
-        }
+      "id": "CVE-2026-109995",
+      "aliases": [
+        "CVE-2026-109995"
       ],
-      "published": "2026-10-13",
-      "details": "The environment-modules packages provide dynamic modification of user environment using module files. Each module file contains the information needed to configure the shell for an application. Once the package is initialized, the environment can be ",
+      "severity": "N/A",
+      "published": "2026-10-27",
+      "details": "The Advanced Views \u2013 Display Framework for Gutenberg & Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to, and including, 3.9.6 due to insufficient input sanitization and outp",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:80664",
-        "https://access.redhat.com/errata/RHSA-2026:80664"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-109995"
       ],
-      "first_seen": "10-20-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:88477",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-        }
+      "id": "CVE-2026-106087",
+      "aliases": [
+        "CVE-2026-106087"
       ],
-      "published": "2026-10-24",
-      "details": "The kernel packages contain the Linux kernel, the core of any Linux operating system.\n\nSecurity Fix(es):\n\n* kernel: calipso: Don't call calipso functions for AF_INET sk. (CVE-2025-38147)\n\n* kernel: ipv4: raw: reject IP_HDRINCL packets with ihl < 5 (C",
+      "severity": "N/A",
+      "published": "2026-10-27",
+      "details": "TRO600 contains an arbitrary file read vulnerability. An unauthenticated attacker can exploit this vulnerability to read or download arbitrary files on the affected device, including sensitive configuration files and password data, resulting in the d",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:88477",
-        "https://access.redhat.com/errata/RHSA-2026:88477"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-106087"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:88359",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-        }
+      "id": "CVE-2026-105323",
+      "aliases": [
+        "CVE-2026-105323"
       ],
-      "published": "2026-10-23",
-      "details": "Open-source vector similarity search for Postgres. Supports L2 distance, inner product, and cosine distance\n\nSecurity Fix(es):\n\n* pgvector: pgvector: Arbitrary code execution via out-of-bounds write during IVFFlat index build (CVE-2026-103484)\n\nFor m",
+      "severity": "N/A",
+      "published": "2026-10-27",
+      "details": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Kulga Software and Telecommunications Limited Company Kulga News Software allows Reflected XSS.\n\nThis issue affects Kulga News Software: from v26.7.",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:88359",
-        "https://access.redhat.com/errata/RHSA-2026:88359"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-105323"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:88360",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-        }
+      "id": "CVE-2026-102800",
+      "aliases": [
+        "CVE-2026-102800"
       ],
-      "published": "2026-10-23",
-      "details": "Open-source vector similarity search for Postgres. Supports L2 distance, inner product, and cosine distance\n\nSecurity Fix(es):\n\n* pgvector: pgvector: Arbitrary code execution via out-of-bounds write during IVFFlat index build (CVE-2026-103484)\n\nFor m",
+      "severity": "N/A",
+      "published": "2026-10-27",
+      "details": "Joomla Extension - dj-extensions.com - Unauthenticated Stored XSS in DJ-HelpfulArticles < 1.3.0 - The \u201cwas this article helpful\u201d voting widget posts a client-supplied ip field to its AJAX handlers (getDeny, getConfirm, getDenyReason in mod_djhelpful_",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:88360",
-        "https://access.redhat.com/errata/RHSA-2026:88360"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-102800"
       ],
-      "first_seen": "10-26-2026",
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:88336",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
+      "id": "CVE-2026-101857",
+      "aliases": [
+        "CVE-2026-101857"
       ],
-      "published": "2026-10-23",
-      "details": "The podman tool manages pods, container images, and containers. It is part of the libpod library, which is for applications that use container pods. Container pods is a concept in Kubernetes.\n\nSecurity Fix(es):\n\n* net/http: golang: golang: Denial of ",
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "Vulnerability in the Oracle Order Management product of Oracle E-Business Suite (component: Product Diagnostic Tools).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with netw",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:88336",
-        "https://access.redhat.com/errata/RHSA-2026:88336"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-101857"
       ],
-      "first_seen": "10-26-2026",
+      "epss": 0.0036,
+      "epss_percentile": 0.29,
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:88316",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
+      "id": "CVE-2026-101856",
+      "aliases": [
+        "CVE-2026-101856"
       ],
-      "published": "2026-10-23",
-      "details": "The Grafana plugin for Performance Co-Pilot includes datasources for scalable time series from pmseries and Redis, live PCP metrics and bpftrace scripts from pmdabpftrace, as well as several dashboards.\n\nSecurity Fix(es):\n\n* crypto/tls: golang: crypt",
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "Vulnerability in the Oracle Order Management product of Oracle E-Business Suite (component: Product Diagnostic Tools).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with netw",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:88316",
-        "https://access.redhat.com/errata/RHSA-2026:88316"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-101856"
       ],
-      "first_seen": "10-26-2026",
+      "epss": 0.0036,
+      "epss_percentile": 0.29,
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:88280",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
+      "id": "CVE-2026-101855",
+      "aliases": [
+        "CVE-2026-101855"
       ],
-      "published": "2026-10-23",
-      "details": "HTTP reverse proxy, backed by IPP-over-USB connection to device. It enables\n driverless support for USB devices capable of using IPP-over-USB protocol.\n\nSecurity Fix(es):\n\n* net/http: golang: golang: Denial of Service via crafted HTTP Range headers (",
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "Vulnerability in the Oracle Product Hub product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:88280",
-        "https://access.redhat.com/errata/RHSA-2026:88280"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-101855"
       ],
-      "first_seen": "10-26-2026",
+      "epss": 0.0036,
+      "epss_percentile": 0.2901,
+      "first_seen": "10-27-2026",
       "prev_epss": null
     },
     {
-      "id": "RLSA-2026:88262",
-      "aliases": [],
-      "severity": [
-        {
-          "type": "CVSS_V3",
-          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
+      "id": "CVE-2026-101851",
+      "aliases": [
+        "CVE-2026-101851"
       ],
-      "published": "2026-10-23",
-      "details": "The buildah package provides a tool for facilitating building OCI container images. Among other things, buildah enables you to: Create a working container, either from scratch or using an image as a starting point; Create an image, either from a work",
+      "severity": "N/A",
+      "published": "2026-10-20",
+      "details": "Vulnerability in the Installed Base product of Oracle E-Business Suite (component: Data Provider UI).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HT",
       "links": [
-        "https://errata.rockylinux.org/RLSA-2026:88262",
-        "https://access.redhat.com/errata/RHSA-2026:88262"
+        "https://vulnerability.circl.lu/vuln/CVE-2026-101851"
       ],
-      "first_seen": "10-26-2026",
+      "epss": 0.0023,
+      "epss_percentile": 0.1372,
+      "first_seen": "10-27-2026",
       "prev_epss": null
     }
   ],
@@ -980,7 +857,7 @@
         "https://github.com/advisories/GHSA-22jm-h49p-29qw"
       ],
       "epss": 0.0034,
-      "epss_percentile": 0.2775,
+      "epss_percentile": 0.2778,
       "first_seen": "10-21-2026",
       "prev_epss": 0.0034
     },
@@ -1001,9 +878,9 @@
         "https://github.com/advisories/GHSA-gx7p-2j49-hfq4"
       ],
       "epss": 0.0042,
-      "epss_percentile": 0.3601,
+      "epss_percentile": 0.3604,
       "first_seen": "10-24-2026",
-      "prev_epss": 0.0034
+      "prev_epss": 0.0042
     },
     {
       "id": "GHSA-wqmh-qccw-pqwf",
@@ -1022,9 +899,9 @@
         "https://github.com/advisories/GHSA-wqmh-qccw-pqwf"
       ],
       "epss": 0.006,
-      "epss_percentile": 0.4861,
+      "epss_percentile": 0.4862,
       "first_seen": "10-24-2026",
-      "prev_epss": 0.0056
+      "prev_epss": 0.006
     },
     {
       "id": "GHSA-rvq5-wwqv-78pq",
@@ -1085,9 +962,9 @@
         "https://github.com/advisories/GHSA-2wqp-q3c6-ccj5"
       ],
       "epss": 0.0032,
-      "epss_percentile": 0.2517,
+      "epss_percentile": 0.2519,
       "first_seen": "10-24-2026",
-      "prev_epss": 0.0044
+      "prev_epss": 0.0032
     },
     {
       "id": "GHSA-p92p-rxj5-7p2x",
@@ -1106,44 +983,46 @@
         "https://github.com/advisories/GHSA-p92p-rxj5-7p2x"
       ],
       "epss": 0.002,
-      "epss_percentile": 0.1012,
+      "epss_percentile": 0.1013,
       "first_seen": "10-24-2026",
-      "prev_epss": 0.0017
+      "prev_epss": 0.002
     }
   ],
   "brief_plan": {
     "rules": "max 3 findings; AI first; repeats only on a stated change; at most one non-AI item (new CRITICAL KEV)",
     "findings": [
       {
-        "section": "circl",
-        "id": "CVE-2026-115718",
-        "cve": "CVE-2026-115718",
-        "severity": "WATCH",
-        "severity_reason": "not in KEV \u00b7 no EPSS score yet",
-        "ai": true,
+        "section": "kev",
+        "id": "CVE-2026-109619",
+        "cve": "CVE-2026-109619",
+        "severity": "CRITICAL",
+        "severity_reason": "in CISA KEV \u00b7 no login needed",
+        "ai": false,
         "selected_because": "new today",
         "item": {
-          "id": "CVE-2026-115718",
-          "aliases": [
-            "CVE-2026-115718"
-          ],
-          "severity": "N/A",
-          "published": "2026-10-26",
-          "details": "Frappe Builder versions 1.33.0 before1.36.0 contain a missing authorization vulnerability in the improve_prompt endpoint that allows any authenticated non-Guest session to invoke LLM completions without proper permission checks. Attackers can call th",
+          "cve": "CVE-2026-109619",
+          "added": "10-26-2026",
+          "vendor": "PHP Group",
+          "product": "PHP",
+          "description": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
+          "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage",
+          "due": "10-29-2026",
+          "ransomware_use": "Unknown",
+          "notes": "This vulnerability affects an open-source component, third-party library, protocol, or proprietary implementation that could be used by different products. For more information, please see: https://www.php.net/ ; https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require",
           "links": [
-            "https://vulnerability.circl.lu/vuln/CVE-2026-115718"
+            "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-109619"
           ],
-          "first_seen": "10-26-2026",
+          "epss": 1.0,
+          "epss_percentile": 0.9999,
+          "first_seen": "10-27-2026",
           "prev_epss": null
         }
       }
     ],
     "on_the_radar": [],
-    "quiet_ai_day": false,
-    "ai_risk_topic": {
-      "title": "AI-written phishing",
-      "scope": "Polished, personalized phishing that no longer has the spelling mistakes people were taught to look for."
-    },
-    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Professional Services (3), Government & Defense (2), Retail & E-Commerce (1); countries: US (5), DE (3), AR (1)."
+    "quiet_ai_day": true,
+    "ai_risk_topic": null,
+    "ransomware_pulse": "10 recent victim claims; most-hit sectors: Technology (3), Manufacturing (2), Healthcare (2); countries: IT (2), PH (1), SG (1)."
   }
 }
